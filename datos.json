@@ -415,7 +415,7 @@
     "noir"
    ],
    "resumen": "La misma historia en vídeo vertical de 40 segundos. El fondo se mueve, el texto no, y cada lámina dura lo que se tarda en leerla.",
-   "nota": "El texto va anclado y solo se mueve la imagen. Codificado con el motor por hardware de Apple, sin instalar ffmpeg.",
+   "nota": "Transiciones solo de fundido: se quitaron los cortes duros. El movimiento no se detiene ni durante la transición.",
    "video": "descargas/reel-las-termopilas.mp4",
    "descargas": [
     {
@@ -497,6 +497,208 @@
       "jpg": "reel-termopilas-06-1024.jpg",
       "1080": "reel-termopilas-06-1080.avif",
       "max": "reel-termopilas-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "reel-bushido",
+   "titulo": "Reel · Bushidō",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-11",
+   "formato": "1080×1920 · 37 s · MP4",
+   "etiquetas": [
+    "samurái",
+    "reel",
+    "9:16",
+    "vídeo",
+    "noir"
+   ],
+   "resumen": "El código samurái en vídeo vertical, con el fondo en movimiento continuo.",
+   "nota": "Transiciones solo de fundido, sin ningún corte duro. Cada lámina dura lo que se tarda en leerla.",
+   "video": "descargas/reel-bushido.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4 · 37 s",
+     "url": "descargas/reel-bushido.mp4"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/reel-samurai/FOTOGRAMAS",
+   "ruta": "out/reel-samurai/FOTOGRAMAS",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/reel-samurai/FOTOGRAMAS",
+   "piezas": [
+    {
+     "pie": "El código samurái se escribió en inglés.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-bushido-01-400.avif",
+      "1024": "reel-bushido-01-1024.avif",
+      "jpg": "reel-bushido-01-1024.jpg",
+      "1080": "reel-bushido-01-1080.avif",
+      "max": "reel-bushido-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Honor, espada y muerte hermosa.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-bushido-02-400.avif",
+      "1024": "reel-bushido-02-1024.avif",
+      "jpg": "reel-bushido-02-1024.jpg",
+      "1080": "reel-bushido-02-1080.avif",
+      "max": "reel-bushido-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Nitobe Inazō lo publicó en 1900.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-bushido-03-400.avif",
+      "1024": "reel-bushido-03-1024.avif",
+      "jpg": "reel-bushido-03-1024.jpg",
+      "1080": "reel-bushido-03-1080.avif",
+      "max": "reel-bushido-03-1080.avif"
+     }
+    },
+    {
+     "pie": "No codificó esgrima. Codificó mando.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-bushido-04-400.avif",
+      "1024": "reel-bushido-04-1024.avif",
+      "jpg": "reel-bushido-04-1024.jpg",
+      "1080": "reel-bushido-04-1080.avif",
+      "max": "reel-bushido-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Makoto no admite «prometer».",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-bushido-05-400.avif",
+      "1024": "reel-bushido-05-1024.avif",
+      "jpg": "reel-bushido-05-1024.jpg",
+      "1080": "reel-bushido-05-1080.avif",
+      "max": "reel-bushido-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Un código no vale por ser antiguo.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-bushido-06-400.avif",
+      "1024": "reel-bushido-06-1024.avif",
+      "jpg": "reel-bushido-06-1024.jpg",
+      "1080": "reel-bushido-06-1080.avif",
+      "max": "reel-bushido-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "reel-azteca",
+   "titulo": "Reel · Disciplina mexica",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-11",
+   "formato": "1080×1920 · 38 s · MP4",
+   "etiquetas": [
+    "azteca",
+    "reel",
+    "9:16",
+    "vídeo",
+    "noir"
+   ],
+   "resumen": "La escuela obligatoria mexica en vídeo vertical.",
+   "nota": "Mismo montaje que los otros dos reels: fundidos suaves y movimiento que nunca se detiene.",
+   "video": "descargas/reel-azteca.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4 · 38 s",
+     "url": "descargas/reel-azteca.mp4"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/reel-azteca/FOTOGRAMAS",
+   "ruta": "out/reel-azteca/FOTOGRAMAS",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/reel-azteca/FOTOGRAMAS",
+   "piezas": [
+    {
+     "pie": "Los aztecas tenían escuela obligatoria.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-azteca-01-400.avif",
+      "1024": "reel-azteca-01-1024.avif",
+      "jpg": "reel-azteca-01-1024.jpg",
+      "1080": "reel-azteca-01-1080.avif",
+      "max": "reel-azteca-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Sangre, guerra y sacrificio.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-azteca-02-400.avif",
+      "1024": "reel-azteca-02-1024.avif",
+      "jpg": "reel-azteca-02-1024.jpg",
+      "1080": "reel-azteca-02-1080.avif",
+      "max": "reel-azteca-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Iban todos. También las niñas.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-azteca-03-400.avif",
+      "1024": "reel-azteca-03-1024.avif",
+      "jpg": "reel-azteca-03-1024.jpg",
+      "1080": "reel-azteca-03-1080.avif",
+      "max": "reel-azteca-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Cuatro instituciones, un objetivo.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-azteca-04-400.avif",
+      "1024": "reel-azteca-04-1024.avif",
+      "jpg": "reel-azteca-04-1024.jpg",
+      "1080": "reel-azteca-04-1080.avif",
+      "max": "reel-azteca-04-1080.avif"
+     }
+    },
+    {
+     "pie": "La disciplina no era una metáfora.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-azteca-05-400.avif",
+      "1024": "reel-azteca-05-1024.avif",
+      "jpg": "reel-azteca-05-1024.jpg",
+      "1080": "reel-azteca-05-1080.avif",
+      "max": "reel-azteca-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Ningún imperio se sostiene sobre el miedo.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-azteca-06-400.avif",
+      "1024": "reel-azteca-06-1024.avif",
+      "jpg": "reel-azteca-06-1024.jpg",
+      "1080": "reel-azteca-06-1080.avif",
+      "max": "reel-azteca-06-1080.avif"
      }
     }
    ]
