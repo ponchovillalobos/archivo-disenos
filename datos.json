@@ -210,6 +210,197 @@
    ]
   },
   {
+   "id": "azteca",
+   "titulo": "Disciplina mexica",
+   "tipo": "carrusel",
+   "estado": "publicado",
+   "fecha": "2026-08-11",
+   "formato": "1080×1350",
+   "etiquetas": [
+    "azteca",
+    "noir",
+    "disciplina",
+    "historia",
+    "carrusel"
+   ],
+   "resumen": "Seis láminas sobre el imperio que hizo obligatoria la escuela para todos.",
+   "nota": "Tercera de la serie. Aquí el color que sobrevive al noir es el turquesa, la piedra más preciada para los mexicas.",
+   "descargas": [
+    {
+     "etq": "PDF · 7 páginas",
+     "url": "descargas/carrusel-azteca.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/azteca-laminas.zip"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/carrusel-azteca/CON-TEXTO",
+   "ruta": "out/carrusel-azteca/CON-TEXTO",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/carrusel-azteca/CON-TEXTO",
+   "piezas": [
+    {
+     "pie": "Los aztecas tenían escuela obligatoria.",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "azteca-01-400.avif",
+      "1024": "azteca-01-1024.avif",
+      "jpg": "azteca-01-1024.jpg",
+      "1080": "azteca-01-1080.avif",
+      "max": "azteca-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Sangre, guerra y sacrificio.",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "azteca-02-400.avif",
+      "1024": "azteca-02-1024.avif",
+      "jpg": "azteca-02-1024.jpg",
+      "1080": "azteca-02-1080.avif",
+      "max": "azteca-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Iban todos. También las niñas.",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "azteca-03-400.avif",
+      "1024": "azteca-03-1024.avif",
+      "jpg": "azteca-03-1024.jpg",
+      "1080": "azteca-03-1080.avif",
+      "max": "azteca-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Cuatro instituciones, un solo objetivo.",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "azteca-04-400.avif",
+      "1024": "azteca-04-1024.avif",
+      "jpg": "azteca-04-1024.jpg",
+      "1080": "azteca-04-1080.avif",
+      "max": "azteca-04-1080.avif"
+     }
+    },
+    {
+     "pie": "La disciplina no era una metáfora.",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "azteca-05-400.avif",
+      "1024": "azteca-05-1024.avif",
+      "jpg": "azteca-05-1024.jpg",
+      "1080": "azteca-05-1080.avif",
+      "max": "azteca-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Ningún imperio se sostiene sobre el miedo.",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "azteca-06-400.avif",
+      "1024": "azteca-06-1024.avif",
+      "jpg": "azteca-06-1024.jpg",
+      "1080": "azteca-06-1080.avif",
+      "max": "azteca-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "azteca-limpias",
+   "titulo": "Mexica · sin texto",
+   "tipo": "fondos",
+   "estado": "publicado",
+   "fecha": "2026-08-11",
+   "formato": "864×1080",
+   "etiquetas": [
+    "azteca",
+    "noir",
+    "fondos",
+    "sin texto"
+   ],
+   "resumen": "Las seis escenas mexicas sin titular, en 4:5 exacto.",
+   "nota": "Dos se regeneraron tras la revisión: la 1 salió un águila literal y la 4 tenía caras emborronadas.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/carrusel-azteca",
+   "ruta": "out/carrusel-azteca",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/carrusel-azteca",
+   "piezas": [
+    {
+     "pie": "Guerrero águila de espaldas",
+     "w": 864,
+     "h": 1080,
+     "src": {
+      "400": "azteca-limpias-01-400.avif",
+      "864": "azteca-limpias-01-864.avif",
+      "jpg": "azteca-limpias-01-864.jpg",
+      "max": "azteca-limpias-01-864.avif"
+     }
+    },
+    {
+     "pie": "El retrato con pintura de guerra",
+     "w": 864,
+     "h": 1080,
+     "src": {
+      "400": "azteca-limpias-02-400.avif",
+      "864": "azteca-limpias-02-864.avif",
+      "jpg": "azteca-limpias-02-864.jpg",
+      "max": "azteca-limpias-02-864.avif"
+     }
+    },
+    {
+     "pie": "El códice",
+     "w": 864,
+     "h": 1080,
+     "src": {
+      "400": "azteca-limpias-03-400.avif",
+      "864": "azteca-limpias-03-864.avif",
+      "jpg": "azteca-limpias-03-864.jpg",
+      "max": "azteca-limpias-03-864.avif"
+     }
+    },
+    {
+     "pie": "El patio de la escuela",
+     "w": 864,
+     "h": 1080,
+     "src": {
+      "400": "azteca-limpias-04-400.avif",
+      "864": "azteca-limpias-04-864.avif",
+      "jpg": "azteca-limpias-04-864.jpg",
+      "max": "azteca-limpias-04-864.avif"
+     }
+    },
+    {
+     "pie": "El maguey en la piedra",
+     "w": 864,
+     "h": 1080,
+     "src": {
+      "400": "azteca-limpias-05-400.avif",
+      "864": "azteca-limpias-05-864.avif",
+      "jpg": "azteca-limpias-05-864.jpg",
+      "max": "azteca-limpias-05-864.avif"
+     }
+    },
+    {
+     "pie": "El casco de águila",
+     "w": 864,
+     "h": 1080,
+     "src": {
+      "400": "azteca-limpias-06-400.avif",
+      "864": "azteca-limpias-06-864.avif",
+      "jpg": "azteca-limpias-06-864.jpg",
+      "max": "azteca-limpias-06-864.avif"
+     }
+    }
+   ]
+  },
+  {
    "id": "reel-termopilas",
    "titulo": "Reel · Las Termópilas",
    "tipo": "reel",
