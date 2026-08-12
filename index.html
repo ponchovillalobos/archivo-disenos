@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archivo · Diseños generados en local</title>
+<meta name="description" content="Archivo de carruseles e imágenes generadas con ComfyUI y SDXL en un Mac mini M4.">
+<style>
+:root{
+  --papel:#faf7f6; --tarjeta:#fffdfd; --tinta:#171214; --media:#6d6165; --leve:#9c9095;
+  --filete:#e9e1e0; --sangre:#a81d26; --hueso:#efe7e5; --fondo-visor:rgba(14,10,11,.94);
+  --serif:"Didot","Bodoni 72","Hoefler Text",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --papel:#100c0d; --tarjeta:#191314; --tinta:#f6f1f0; --media:#a89ea1; --leve:#786e71;
+  --filete:#2b2223; --sangre:#e85159; --hueso:#241c1d; --fondo-visor:rgba(6,4,5,.96);
+}}
+:root[data-theme="dark"]{
+  --papel:#100c0d; --tarjeta:#191314; --tinta:#f6f1f0; --media:#a89ea1; --leve:#786e71;
+  --filete:#2b2223; --sangre:#e85159; --hueso:#241c1d; --fondo-visor:rgba(6,4,5,.96);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font:16px/1.6 var(--sans);
+  -webkit-font-smoothing:antialiased}
+.w{max-width:1240px;margin:0 auto;padding:0 26px}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--sangre);outline-offset:3px;border-radius:3px}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+
+header{padding:66px 0 30px}
+.eyebrow{margin:0;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:700;color:var(--sangre)}
+h1{font-family:var(--serif);font-weight:700;margin:14px 0 0;
+  font-size:clamp(40px,7vw,76px);line-height:.95;letter-spacing:-.03em;text-wrap:balance}
+.lead{max-width:56ch;margin:18px 0 0;color:var(--media);font-size:17px}
+.regla{height:1px;background:var(--filete);margin-top:34px;position:relative}
+.regla::after{content:"";position:absolute;left:0;top:0;width:72px;height:3px;
+  background:var(--sangre)}
+
+/* ---- controles ---- */
+.ctrl{display:flex;gap:14px;flex-wrap:wrap;align-items:center;padding:24px 0 6px;
+  position:sticky;top:0;background:var(--papel);z-index:20}
+.buscar{flex:1 1 240px;max-width:340px;position:relative}
+.buscar input{width:100%;padding:10px 14px 10px 36px;border:1px solid var(--filete);
+  border-radius:6px;background:var(--tarjeta);color:var(--tinta);font-size:14.5px}
+.buscar svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);
+  width:15px;height:15px;color:var(--leve)}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chip{font-size:12.5px;padding:6px 12px;border:1px solid var(--filete);border-radius:999px;
+  color:var(--media);background:var(--tarjeta);transition:.13s}
+.chip:hover{border-color:var(--leve)}
+.chip[aria-pressed="true"]{background:var(--sangre);border-color:var(--sangre);color:#fff}
+.cuenta{margin-left:auto;font-size:12.5px;color:var(--leve);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---- colecciones ---- */
+.cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px;
+  padding:22px 0 0}
+.col{background:var(--tarjeta);border:1px solid var(--filete);border-radius:5px;
+  overflow:hidden;display:flex;flex-direction:column}
+.tira{display:grid;gap:1px;background:var(--filete)}
+.tira button{padding:0;display:block;position:relative;overflow:hidden}
+.tira img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .3s ease}
+.tira button:hover img{transform:scale(1.04)}
+.cx{padding:16px 18px 18px;display:flex;flex-direction:column;gap:7px;flex:1}
+.col h2{font-family:var(--serif);margin:0;font-size:21px;font-weight:700;
+  letter-spacing:-.015em;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.et{font:700 9.5px/1 var(--sans);letter-spacing:.11em;text-transform:uppercase;
+  padding:4px 7px;border-radius:2px;border:1px solid var(--filete);color:var(--leve)}
+.et.publicado{background:var(--sangre);color:#fff;border-color:var(--sangre)}
+.meta{margin:0;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--leve)}
+.res{margin:0;font-size:14px;color:var(--media);line-height:1.55}
+.nota{margin:2px 0 0;font-size:12.5px;color:var(--leve);line-height:1.5;
+  padding-left:11px;border-left:2px solid var(--filete)}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto;padding-top:9px}
+.tag{font-size:11px;color:var(--leve);background:var(--hueso);padding:3px 8px;border-radius:3px}
+.vacio{padding:60px 0;text-align:center;color:var(--leve)}
+
+/* ---- visor ---- */
+.visor{position:fixed;inset:0;background:var(--fondo-visor);z-index:80;display:none;
+  place-items:center;padding:26px;backdrop-filter:blur(6px)}
+.visor.on{display:grid}
+.visor figure{margin:0;max-height:100%;display:flex;flex-direction:column;gap:12px;
+  align-items:center}
+.visor img{max-height:78vh;width:auto;border-radius:4px;
+  box-shadow:0 24px 70px rgba(0,0,0,.5)}
+.visor figcaption{color:#f4efee;font-size:14px;text-align:center;max-width:60ch}
+.visor figcaption b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:3px}
+.vbtn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;
+  border-radius:50%;background:rgba(255,255,255,.1);color:#fff;font-size:20px;
+  display:grid;place-items:center}
+.vbtn:hover{background:rgba(255,255,255,.2)}
+.vprev{left:18px} .vnext{right:18px}
+.vcerrar{position:absolute;top:18px;right:18px;width:42px;height:42px;border-radius:50%;
+  background:rgba(255,255,255,.1);color:#fff;font-size:19px;display:grid;place-items:center}
+.vcerrar:hover{background:rgba(255,255,255,.2)}
+
+footer{margin-top:70px;padding:26px 0 64px;border-top:1px solid var(--filete);
+  font-size:13px;color:var(--leve);line-height:1.8}
+code{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--hueso);
+  border-radius:3px;padding:2px 6px}
+@media (max-width:620px){.w{padding:0 17px}header{padding:44px 0 22px}
+  .ctrl{position:static}.cuenta{margin-left:0;width:100%}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="w">
+  <header>
+    <p class="eyebrow">Archivo de trabajo</p>
+    <h1>Diseños generados en local</h1>
+    <p class="lead">Carruseles, estudios y experimentos hechos con ComfyUI y SDXL en un Mac mini
+    M4 de 16 GB. Incluye lo que salió bien y lo que salió mal, porque los fallos son la mitad de
+    lo que se aprende.</p>
+    <div class="regla"></div>
+  </header>
+
+  <div class="ctrl">
+    <div class="buscar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+           aria-hidden="true"><circle cx="11" cy="11" r="7"></circle>
+        <path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="Buscar por tema, técnica o frase…"
+             aria-label="Buscar en el archivo" autocomplete="off">
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filtrar por etiqueta"></div>
+    <span class="cuenta" id="cuenta"></span>
+  </div>
+
+  <main class="cols" id="cols"></main>
+  <p class="vacio" id="vacio" hidden>Nada coincide con esa búsqueda.</p>
+
+  <footer>
+    Generado desde <code>out/</code> con un script propio: deriva AVIF en tres tamaños y escribe
+    <code>datos.json</code>. Las imágenes originales se quedan en el Mac; aquí solo viven los
+    derivados ligeros.<br>
+    <span id="pie-stats"></span>
+  </footer>
+</div>
+
+<div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <button class="vcerrar" id="vcerrar" aria-label="Cerrar">✕</button>
+  <button class="vbtn vprev" id="vprev" aria-label="Anterior">‹</button>
+  <button class="vbtn vnext" id="vnext" aria-label="Siguiente">›</button>
+  <figure>
+    <img id="vimg" alt="">
+    <figcaption id="vpie"></figcaption>
+  </figure>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let DATOS = {colecciones: []}, activos = new Set(), consulta = "";
+let visorCol = null, visorIdx = 0;
+
+// "max" apunta siempre al AVIF más grande disponible de esa pieza.
+const src = (p, ancho) => "img/" + (p.src[String(ancho)] ||
+                                    (ancho >= 1024 ? p.src.max : null) ||
+                                    p.src["400"] || p.src.max);
+
+function texto(c) {
+  return [c.titulo, c.resumen, c.nota, c.tipo, c.formato,
+          c.etiquetas.join(" "), c.piezas.map(p => p.pie).join(" ")]
+         .join(" ").toLowerCase();
+}
+
+function visibles() {
+  return DATOS.colecciones.filter(c => {
+    if (activos.size && !c.etiquetas.some(e => activos.has(e))) return false;
+    if (consulta && !texto(c).includes(consulta)) return false;
+    return true;
+  });
+}
+
+function pintar() {
+  const lista = visibles();
+  const cols = $("#cols");
+  cols.innerHTML = lista.map(c => {
+    const n = Math.min(c.piezas.length, 4);
+    const tira = c.piezas.slice(0, 4).map((p, i) => `
+      <button data-col="${c.id}" data-i="${i}" aria-label="Ver: ${p.pie}">
+        <img src="${src(p, 400)}" alt="${p.pie}" loading="lazy" decoding="async"
+             width="400" height="${Math.round(400 * p.h / p.w)}">
+      </button>`).join("");
+    return `
+    <article class="col">
+      <div class="tira" style="grid-template-columns:repeat(${n},1fr)">${tira}</div>
+      <div class="cx">
+        <h2>${c.titulo}<span class="et ${c.estado}">${c.estado}</span></h2>
+        <p class="meta">${c.tipo} · ${c.formato} · ${c.piezas.length} imágenes · ${c.fecha}</p>
+        <p class="res">${c.resumen}</p>
+        <p class="nota">${c.nota}</p>
+        <div class="tags">${c.etiquetas.map(e => `<span class="tag">${e}</span>`).join("")}</div>
+      </div>
+    </article>`;
+  }).join("");
+
+  $("#vacio").hidden = lista.length > 0;
+  const piezas = lista.reduce((s, c) => s + c.piezas.length, 0);
+  $("#cuenta").textContent = `${lista.length} colecciones · ${piezas} imágenes`;
+
+  cols.querySelectorAll(".tira button").forEach(b =>
+    b.addEventListener("click", () => abrir(b.dataset.col, +b.dataset.i)));
+}
+
+function pintarChips() {
+  const cuenta = {};
+  DATOS.colecciones.forEach(c => c.etiquetas.forEach(e => cuenta[e] = (cuenta[e] || 0) + 1));
+  const orden = Object.keys(cuenta).sort((a, b) => cuenta[b] - cuenta[a] || a.localeCompare(b));
+  $("#chips").innerHTML = orden.slice(0, 10).map(e =>
+    `<button class="chip" data-tag="${e}" aria-pressed="false">${e}</button>`).join("");
+  $("#chips").querySelectorAll(".chip").forEach(b =>
+    b.addEventListener("click", () => {
+      const t = b.dataset.tag;
+      activos.has(t) ? activos.delete(t) : activos.add(t);
+      b.setAttribute("aria-pressed", activos.has(t));
+      pintar();
+    }));
+}
+
+function abrir(idCol, i) {
+  visorCol = DATOS.colecciones.find(c => c.id === idCol);
+  visorIdx = i;
+  mostrar();
+  $("#visor").classList.add("on");
+  $("#vcerrar").focus();
+}
+function mostrar() {
+  const p = visorCol.piezas[visorIdx];
+  $("#vimg").src = src(p, 1600);
+  $("#vimg").alt = p.pie;
+  $("#vpie").innerHTML = `<b>${p.pie}</b>${visorCol.titulo} · ${visorIdx + 1} de ` +
+                         `${visorCol.piezas.length} · ${p.w}×${p.h}`;
+}
+function mover(d) {
+  visorIdx = (visorIdx + d + visorCol.piezas.length) % visorCol.piezas.length;
+  mostrar();
+}
+function cerrar() { $("#visor").classList.remove("on"); }
+
+$("#vcerrar").addEventListener("click", cerrar);
+$("#vprev").addEventListener("click", () => mover(-1));
+$("#vnext").addEventListener("click", () => mover(1));
+$("#visor").addEventListener("click", e => { if (e.target.id === "visor") cerrar(); });
+document.addEventListener("keydown", e => {
+  if (!$("#visor").classList.contains("on")) return;
+  if (e.key === "Escape") cerrar();
+  if (e.key === "ArrowLeft") mover(-1);
+  if (e.key === "ArrowRight") mover(1);
+});
+$("#q").addEventListener("input", e => {
+  consulta = e.target.value.trim().toLowerCase();
+  pintar();
+});
+
+fetch("datos.json").then(r => r.json()).then(d => {
+  DATOS = d;
+  pintarChips();
+  pintar();
+  const n = d.colecciones.reduce((s, c) => s + c.piezas.length, 0);
+  $("#pie-stats").textContent =
+    `${n} imágenes · última actualización ${d.generado}`;
+}).catch(() => {
+  $("#cols").innerHTML =
+    '<p class="vacio">No se pudo cargar <code>datos.json</code>.</p>';
+});
+</script>
+</body>
+</html>
