@@ -1,0 +1,59 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": { "ckpt_name": "juggernautXL_v9.safetensors" },
+    "_meta": { "title": "Modelo base" }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": { "vae_name": "sdxl_vae_fp16fix.safetensors" },
+    "_meta": { "title": "VAE fp16-fix" }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "epic cinematic film still of a lone Spartan hoplite warrior on a windswept rocky cliff at dawn, three-quarter view facing the camera, bronze Corinthian helmet with tall crimson horsehair crest, his face and eyes visible through the helmet opening, gripping a long straight wooden spear with a small narrow pointed bronze spearhead raised toward the sky, round bronze hoplon shield on his other arm, soft warm fill light revealing the detail of his bronze armor and skin, deep crimson wool cloak billowing violently in the wind, muscular scarred physique, leather and bronze greaves, low camera angle looking up at him, warrior positioned in the lower third of the frame, vast empty dramatic sky filling the entire upper half with glowing storm clouds and open negative space, golden rim light outlining his silhouette, volumetric god rays cutting through haze, swirling dust and glowing embers in the air, teal and orange color grading, high contrast chiaroscuro lighting, anamorphic lens flare, shallow depth of field, 35mm anamorphic film, heavy film grain, hyper detailed bronze and skin textures",
+      "clip": ["1", 1]
+    },
+    "_meta": { "title": "PROMPT final (cara visible + lanza + hueco arriba)" }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "giant leaf, feather, plume, palm frond, foliage, plant, wide blade, sword, longsword, sabre, katana, curved blade, fantasy weapon, ornate crossguard, back view, facing away from camera, head turned away, cluttered sky, busy background, blurry, low quality, deformed hands, extra fingers, modern clothing, watermark, text, logo, cartoon, plastic skin, flat lighting",
+      "clip": ["1", 1]
+    },
+    "_meta": { "title": "NEGATIVO (aqui SI funciona, CFG 5.5)" }
+  },
+  "6": {
+    "class_type": "EmptyLatentImage",
+    "inputs": { "width": 768, "height": 1344, "batch_size": 1 },
+    "_meta": { "title": "Lienzo 9:16 vertical" }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 202020,
+      "steps": 30,
+      "cfg": 5.5,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": ["1", 0],
+      "positive": ["4", 0],
+      "negative": ["5", 0],
+      "latent_image": ["6", 0]
+    },
+    "_meta": { "title": "Generador calidad" }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": { "samples": ["7", 0], "vae": ["3", 0] },
+    "_meta": { "title": "Convertir a imagen" }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": { "filename_prefix": "reels/espartano-final", "images": ["8", 0] },
+    "_meta": { "title": "Guardar" }
+  }
+}

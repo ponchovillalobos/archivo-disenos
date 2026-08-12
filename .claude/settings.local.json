@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sw_vers)",
+      "Bash(sysctl -n hw.memsize)",
+      "Bash(awk '{print $1/1073741824\" GB\"}')",
+      "Bash(sysctl -n machdep.cpu.brand_string)",
+      "Bash(sysctl -n hw.model)",
+      "WebSearch",
+      "mcp__comfy-mcp__server_info",
+      "Bash(curl -s --max-time 8 http://127.0.0.1:8188/system_stats -o /dev/null -w \"HTTP %{http_code}\\\\n\")",
+      "Bash(sysctl vm.swapusage)",
+      "Read(//Users/maity/comfy/user/**)"
+    ]
+  }
+}

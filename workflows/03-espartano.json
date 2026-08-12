@@ -1,0 +1,68 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": { "ckpt_name": "juggernautXL_v9.safetensors" },
+    "_meta": { "title": "Modelo base" }
+  },
+  "2": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "lora_name": "sdxl_lightning_8step_lora.safetensors",
+      "strength_model": 1.0,
+      "model": ["1", 0]
+    },
+    "_meta": { "title": "Acelerador Lightning 8 pasos" }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": { "vae_name": "sdxl_vae_fp16fix.safetensors" },
+    "_meta": { "title": "VAE fp16-fix" }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "epic cinematic film still of a lone Spartan hoplite warrior standing on a windswept rocky cliff at dawn, bronze Corinthian helmet with tall crimson horsehair crest, deep crimson wool cloak billowing violently in the wind, battle-worn bronze hoplon shield and long ash spear, muscular scarred physique, leather and bronze greaves, low camera angle looking up at him, dramatic golden backlight from the rising sun behind his silhouette, volumetric god rays cutting through haze, swirling dust and glowing embers in the air, distant storm clouds over the aegean sea, teal and orange color grading, high contrast chiaroscuro lighting, anamorphic lens flare, shallow depth of field, 35mm anamorphic film, heavy film grain, hyper detailed metal and skin textures, vertical composition with the warrior in the lower third and dramatic sky filling the upper half",
+      "clip": ["1", 1]
+    },
+    "_meta": { "title": "PROMPT espartano epico" }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "blurry, low quality, deformed hands, extra fingers, modern clothing, watermark, text, logo, cartoon, plastic skin, flat lighting",
+      "clip": ["1", 1]
+    },
+    "_meta": { "title": "NEGATIVO (sin efecto a CFG 1.0)" }
+  },
+  "6": {
+    "class_type": "EmptyLatentImage",
+    "inputs": { "width": 768, "height": 1344, "batch_size": 1 },
+    "_meta": { "title": "Lienzo 9:16 vertical" }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 101010,
+      "steps": 8,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "sgm_uniform",
+      "denoise": 1.0,
+      "model": ["2", 0],
+      "positive": ["4", 0],
+      "negative": ["5", 0],
+      "latent_image": ["6", 0]
+    },
+    "_meta": { "title": "Generador rapido" }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": { "samples": ["7", 0], "vae": ["3", 0] },
+    "_meta": { "title": "Convertir a imagen" }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": { "filename_prefix": "reels/espartano", "images": ["8", 0] },
+    "_meta": { "title": "Guardar" }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": { "ckpt_name": "juggernautXL_v9.safetensors" },
+    "_meta": { "title": "Modelo base" }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": { "vae_name": "sdxl_vae_fp16fix.safetensors" },
+    "_meta": { "title": "VAE fp16-fix" }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cinematic portrait photograph of a young woman standing on a rooftop at golden hour, city skyline behind her, warm rim light, shallow depth of field, 85mm lens, natural skin texture, editorial fashion photography, highly detailed",
+      "clip": ["1", 1]
+    },
+    "_meta": { "title": "PROMPT (lo que SI quieres)" }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "blurry, low quality, deformed hands, extra fingers, watermark, text, logo, oversaturated, plastic skin, cartoon",
+      "clip": ["1", 1]
+    },
+    "_meta": { "title": "NEGATIVO (lo que NO quieres)" }
+  },
+  "6": {
+    "class_type": "EmptyLatentImage",
+    "inputs": { "width": 768, "height": 1344, "batch_size": 1 },
+    "_meta": { "title": "Lienzo 9:16 vertical" }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 424242,
+      "steps": 30,
+      "cfg": 5.5,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": ["1", 0],
+      "positive": ["4", 0],
+      "negative": ["5", 0],
+      "latent_image": ["6", 0]
+    },
+    "_meta": { "title": "Generador (calidad)" }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": { "samples": ["7", 0], "vae": ["3", 0] },
+    "_meta": { "title": "Convertir a imagen" }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": { "filename_prefix": "reels/calidad", "images": ["8", 0] },
+    "_meta": { "title": "Guardar" }
+  }
+}
