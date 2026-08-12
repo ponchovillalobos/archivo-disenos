@@ -27,6 +27,8 @@
      "url": "descargas/termopilas-laminas.zip"
     }
    ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/carrusel-espartano/CON-TEXTO",
+   "ruta": "out/carrusel-espartano/CON-TEXTO",
    "piezas": [
     {
      "pie": "Trescientos hombres perdieron. Y eso era el plan.",
@@ -128,6 +130,8 @@
      "url": "descargas/bushido-laminas.zip"
     }
    ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/carrusel-samurai/CON-TEXTO",
+   "ruta": "out/carrusel-samurai/CON-TEXTO",
    "piezas": [
     {
      "pie": "El código samurái se escribió en inglés.",
@@ -225,6 +229,8 @@
      "url": "descargas/reel-las-termopilas.mp4"
     }
    ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/reel-termopilas/FOTOGRAMAS",
+   "ruta": "out/reel-termopilas/FOTOGRAMAS",
    "piezas": [
     {
      "pie": "Trescientos hombres perdieron. Y eso era el plan.",
@@ -316,6 +322,8 @@
    ],
    "resumen": "Los seis fondos verticales del reel, sin texto.",
    "nota": "Generados a 720×1280 = proporción 0,5625 exacta. Escalan a 1080×1920 sin recortar un píxel.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/reel-termopilas",
+   "ruta": "out/reel-termopilas",
    "piezas": [
     {
      "pie": "Acantilado",
@@ -400,6 +408,8 @@
    ],
    "resumen": "Las seis escenas japonesas sin titular, en proporción 4:5 exacta.",
    "nota": "Generadas ya a 864×1080 para no recortar nada al publicar. Ninguna tiene manos visibles.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/carrusel-samurai",
+   "ruta": "out/carrusel-samurai",
    "piezas": [
     {
      "pie": "Camino bajo la lluvia",
@@ -484,6 +494,8 @@
    ],
    "resumen": "Las mismas seis escenas sin titular, para reutilizar con otro guion.",
    "nota": "Cuatro de las seis no tienen manos visibles: fue una decisión de encuadre, no suerte.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/carrusel-espartano",
+   "ruta": "out/carrusel-espartano",
    "piezas": [
     {
      "pie": "Acantilado",
@@ -568,6 +580,8 @@
    ],
    "resumen": "Cuatro cielos sobre la misma escena y la misma semilla.",
    "nota": "De aquí salió la regla: cielo frío hace que el carmesí exista; cielo cálido se lo traga.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out",
+   "ruta": "out",
    "piezas": [
     {
      "pie": "Tormenta — la ganadora",
@@ -630,6 +644,8 @@
    ],
    "resumen": "Cuatro tratamientos de color sobre la escena de tormenta.",
    "nota": "El noir salió con color selectivo por accidente: el modelo no supo desaturar el carmesí que pedía el prompt.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out",
+   "ruta": "out",
    "piezas": [
     {
      "pie": "Noir — color selectivo accidental",
@@ -692,6 +708,8 @@
    ],
    "resumen": "Pedí capa negra, azul, blanca y verde. Salieron cuatro rojas.",
    "nota": "A CFG 1.0 el modelo no acepta que se le contradiga. El color entró, pero lo pintó en la túnica.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out",
+   "ruta": "out",
    "piezas": [
     {
      "pie": "Pedí negra",
@@ -754,6 +772,8 @@
    ],
    "resumen": "Peso (black:1.6) más el rojo en el negativo. Funcionó, con un coste.",
    "nota": "La capa salió negra de verdad, pero el negro se desbordó al resto y murió el penacho carmesí.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out",
+   "ruta": "out",
    "piezas": [
     {
      "pie": "Peso 1.6 — negro desbordado",
@@ -794,6 +814,8 @@
    ],
    "resumen": "Las primeras piezas, en formato reel. La base de todo lo demás.",
    "nota": "Aquí se midió por primera vez el rendimiento real: 4,8 segundos por paso.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out",
+   "ruta": "out",
    "piezas": [
     {
      "pie": "Versión final — cara visible y lanza",
@@ -855,6 +877,8 @@
    ],
    "resumen": "La misma lámina compuesta con cinco parejas de tipografías.",
    "nota": "Todas verificadas con tildes y eñe antes de proponerlas.",
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/carrusel-espartano/ESTILOS",
+   "ruta": "out/carrusel-espartano/ESTILOS",
    "piezas": [
     {
      "pie": "Cine · Arial Black + Avenir Next Condensed",
@@ -918,5 +942,9 @@
     }
    ]
   }
- ]
+ ],
+ "proyecto": "/Users/maity/Desktop/Confy Imagenes",
+ "url_sitio": "file:///Users/maity/Desktop/Confy%20Imagenes/sitio/index.html",
+ "url_proyecto": "file:///Users/maity/Desktop/Confy%20Imagenes",
+ "url_originales": "file:///Users/maity/Desktop/Confy%20Imagenes/out"
 }
