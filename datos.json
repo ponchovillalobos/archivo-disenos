@@ -217,7 +217,7 @@
     "vídeo",
     "noir"
    ],
-   "resumen": "La misma historia en vídeo vertical de 24 segundos, con el fondo en movimiento. Cada lámina dura lo que se tarda en leerla.",
+   "resumen": "La misma historia en vídeo vertical de 40 segundos. El fondo se mueve, el texto no, y cada lámina dura lo que se tarda en leerla.",
    "nota": "El texto va anclado y solo se mueve la imagen. Codificado con el motor por hardware de Apple, sin instalar ffmpeg.",
    "descargas": [
     {
