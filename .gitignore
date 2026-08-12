@@ -1,1 +1,6 @@
 .DS_Store
+
+# Los vídeos se quedan en el Mac: son pesados (~37 MB cada uno) y Git
+# guarda TODAS las versiones para siempre. El sitio local los sirve igual
+# desde descargas/; en GitHub solo viven la estructura y las imágenes ligeras.
+descargas/*.mp4

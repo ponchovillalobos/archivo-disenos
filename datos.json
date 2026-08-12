@@ -17,6 +17,16 @@
    ],
    "resumen": "Seis láminas sobre una batalla perdida que cambió el resultado de la guerra.",
    "nota": "Tratamiento noir con color selectivo. El único color que sobrevive es el carmesí de la capa.",
+   "descargas": [
+    {
+     "etq": "PDF · 7 páginas",
+     "url": "descargas/carrusel-las-termopilas.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/termopilas-laminas.zip"
+    }
+   ],
    "piezas": [
     {
      "pie": "Trescientos hombres perdieron. Y eso era el plan.",
@@ -108,6 +118,16 @@
    ],
    "resumen": "Seis láminas sobre un código que no es tan antiguo como todos creen.",
    "nota": "Serie hermana de las Termópilas: mismo noir con color selectivo, pero el color que sobrevive es añil.",
+   "descargas": [
+    {
+     "etq": "PDF · 7 páginas",
+     "url": "descargas/carrusel-bushido.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/bushido-laminas.zip"
+    }
+   ],
    "piezas": [
     {
      "pie": "El código samurái se escribió en inglés.",
@@ -189,7 +209,7 @@
    "tipo": "reel",
    "estado": "publicado",
    "fecha": "2026-08-11",
-   "formato": "1080×1920 · 24 s · MP4",
+   "formato": "1080×1920 · 40 s · MP4",
    "etiquetas": [
     "espartano",
     "reel",
@@ -197,8 +217,14 @@
     "vídeo",
     "noir"
    ],
-   "resumen": "La misma historia en vídeo vertical de 24 segundos, con el fondo en movimiento.",
+   "resumen": "La misma historia en vídeo vertical de 24 segundos, con el fondo en movimiento. Cada lámina dura lo que se tarda en leerla.",
    "nota": "El texto va anclado y solo se mueve la imagen. Codificado con el motor por hardware de Apple, sin instalar ffmpeg.",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4 · 40 s",
+     "url": "descargas/reel-las-termopilas.mp4"
+    }
+   ],
    "piezas": [
     {
      "pie": "Trescientos hombres perdieron. Y eso era el plan.",
