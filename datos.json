@@ -401,12 +401,624 @@
    ]
   },
   {
+   "id": "com-vacio",
+   "titulo": "El vacío",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-12",
+   "formato": "1080×1920 · MP4 con música",
+   "etiquetas": [
+    "curiosidad",
+    "gancho",
+    "comunicación",
+    "reel",
+    "9:16",
+    "vídeo"
+   ],
+   "resumen": "La curiosidad no nace del misterio, nace del hueco.",
+   "nota": "Loewenstein, 1994: la curiosidad es privación. Necesitas saber qué te falta, no que falta algo.",
+   "video": "descargas/reel-com-vacio.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-vacio.mp4"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-vacio/FOTOGRAMAS",
+   "ruta": "out/com-vacio/FOTOGRAMAS",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-vacio/FOTOGRAMAS",
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-vacio-01-400.avif",
+      "1024": "com-vacio-01-1024.avif",
+      "jpg": "com-vacio-01-1024.jpg",
+      "1080": "com-vacio-01-1080.avif",
+      "max": "com-vacio-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-vacio-02-400.avif",
+      "1024": "com-vacio-02-1024.avif",
+      "jpg": "com-vacio-02-1024.jpg",
+      "1080": "com-vacio-02-1080.avif",
+      "max": "com-vacio-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-vacio-03-400.avif",
+      "1024": "com-vacio-03-1024.avif",
+      "jpg": "com-vacio-03-1024.jpg",
+      "1080": "com-vacio-03-1080.avif",
+      "max": "com-vacio-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-vacio-04-400.avif",
+      "1024": "com-vacio-04-1024.avif",
+      "jpg": "com-vacio-04-1024.jpg",
+      "1080": "com-vacio-04-1080.avif",
+      "max": "com-vacio-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-vacio-05-400.avif",
+      "1024": "com-vacio-05-1024.avif",
+      "jpg": "com-vacio-05-1024.jpg",
+      "1080": "com-vacio-05-1080.avif",
+      "max": "com-vacio-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-vacio-06-400.avif",
+      "1024": "com-vacio-06-1024.avif",
+      "jpg": "com-vacio-06-1024.jpg",
+      "1080": "com-vacio-06-1080.avif",
+      "max": "com-vacio-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "com-relato",
+   "titulo": "El relato",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-12",
+   "formato": "1080×1920 · MP4 con música",
+   "etiquetas": [
+    "historia",
+    "narrativa",
+    "comunicación",
+    "reel",
+    "9:16",
+    "vídeo"
+   ],
+   "resumen": "Una historia no convence: baja la guardia.",
+   "nota": "Green y Brock, 2000. Reducir el pensamiento crítico es el efecto más DÉBIL del modelo: r = −0,18 sobre 7 estudios.",
+   "video": "descargas/reel-com-relato.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-relato.mp4"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-relato/FOTOGRAMAS",
+   "ruta": "out/com-relato/FOTOGRAMAS",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-relato/FOTOGRAMAS",
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-relato-01-400.avif",
+      "1024": "com-relato-01-1024.avif",
+      "jpg": "com-relato-01-1024.jpg",
+      "1080": "com-relato-01-1080.avif",
+      "max": "com-relato-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-relato-02-400.avif",
+      "1024": "com-relato-02-1024.avif",
+      "jpg": "com-relato-02-1024.jpg",
+      "1080": "com-relato-02-1080.avif",
+      "max": "com-relato-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-relato-03-400.avif",
+      "1024": "com-relato-03-1024.avif",
+      "jpg": "com-relato-03-1024.jpg",
+      "1080": "com-relato-03-1080.avif",
+      "max": "com-relato-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-relato-04-400.avif",
+      "1024": "com-relato-04-1024.avif",
+      "jpg": "com-relato-04-1024.jpg",
+      "1080": "com-relato-04-1080.avif",
+      "max": "com-relato-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-relato-05-400.avif",
+      "1024": "com-relato-05-1024.avif",
+      "jpg": "com-relato-05-1024.jpg",
+      "1080": "com-relato-05-1080.avif",
+      "max": "com-relato-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-relato-06-400.avif",
+      "1024": "com-relato-06-1024.avif",
+      "jpg": "com-relato-06-1024.jpg",
+      "1080": "com-relato-06-1080.avif",
+      "max": "com-relato-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "com-emocion",
+   "titulo": "La emoción",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-12",
+   "formato": "1080×1920 · MP4 con música",
+   "etiquetas": [
+    "viralidad",
+    "emoción",
+    "comunicación",
+    "reel",
+    "9:16",
+    "vídeo"
+   ],
+   "resumen": "La tristeza no se comparte.",
+   "nota": "Berger y Milkman, 6.956 artículos del New York Times. Ira +34 %, asombro +30 %.",
+   "video": "descargas/reel-com-emocion.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-emocion.mp4"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-emocion/FOTOGRAMAS",
+   "ruta": "out/com-emocion/FOTOGRAMAS",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-emocion/FOTOGRAMAS",
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-emocion-01-400.avif",
+      "1024": "com-emocion-01-1024.avif",
+      "jpg": "com-emocion-01-1024.jpg",
+      "1080": "com-emocion-01-1080.avif",
+      "max": "com-emocion-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-emocion-02-400.avif",
+      "1024": "com-emocion-02-1024.avif",
+      "jpg": "com-emocion-02-1024.jpg",
+      "1080": "com-emocion-02-1080.avif",
+      "max": "com-emocion-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-emocion-03-400.avif",
+      "1024": "com-emocion-03-1024.avif",
+      "jpg": "com-emocion-03-1024.jpg",
+      "1080": "com-emocion-03-1080.avif",
+      "max": "com-emocion-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-emocion-04-400.avif",
+      "1024": "com-emocion-04-1024.avif",
+      "jpg": "com-emocion-04-1024.jpg",
+      "1080": "com-emocion-04-1080.avif",
+      "max": "com-emocion-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-emocion-05-400.avif",
+      "1024": "com-emocion-05-1024.avif",
+      "jpg": "com-emocion-05-1024.jpg",
+      "1080": "com-emocion-05-1080.avif",
+      "max": "com-emocion-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-emocion-06-400.avif",
+      "1024": "com-emocion-06-1024.avif",
+      "jpg": "com-emocion-06-1024.jpg",
+      "1080": "com-emocion-06-1080.avif",
+      "max": "com-emocion-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "com-prueba-social",
+   "titulo": "La prueba social",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-12",
+   "formato": "1080×1920 · MP4 con música",
+   "etiquetas": [
+    "persuasión",
+    "réplica",
+    "comunicación",
+    "reel",
+    "9:16",
+    "vídeo"
+   ],
+   "resumen": "El dato más citado de la persuasión falló al repetirlo.",
+   "nota": "Réplica alemana de 2014: el mensaje ecológico de siempre ganó, 93,3 % frente a 76,5 %.",
+   "video": "descargas/reel-com-prueba-social.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-prueba-social.mp4"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-prueba-social/FOTOGRAMAS",
+   "ruta": "out/com-prueba-social/FOTOGRAMAS",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-prueba-social/FOTOGRAMAS",
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-prueba-social-01-400.avif",
+      "1024": "com-prueba-social-01-1024.avif",
+      "jpg": "com-prueba-social-01-1024.jpg",
+      "1080": "com-prueba-social-01-1080.avif",
+      "max": "com-prueba-social-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-prueba-social-02-400.avif",
+      "1024": "com-prueba-social-02-1024.avif",
+      "jpg": "com-prueba-social-02-1024.jpg",
+      "1080": "com-prueba-social-02-1080.avif",
+      "max": "com-prueba-social-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-prueba-social-03-400.avif",
+      "1024": "com-prueba-social-03-1024.avif",
+      "jpg": "com-prueba-social-03-1024.jpg",
+      "1080": "com-prueba-social-03-1080.avif",
+      "max": "com-prueba-social-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-prueba-social-04-400.avif",
+      "1024": "com-prueba-social-04-1024.avif",
+      "jpg": "com-prueba-social-04-1024.jpg",
+      "1080": "com-prueba-social-04-1080.avif",
+      "max": "com-prueba-social-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-prueba-social-05-400.avif",
+      "1024": "com-prueba-social-05-1024.avif",
+      "jpg": "com-prueba-social-05-1024.jpg",
+      "1080": "com-prueba-social-05-1080.avif",
+      "max": "com-prueba-social-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-prueba-social-06-400.avif",
+      "1024": "com-prueba-social-06-1024.avif",
+      "jpg": "com-prueba-social-06-1024.jpg",
+      "1080": "com-prueba-social-06-1080.avif",
+      "max": "com-prueba-social-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "com-indignacion",
+   "titulo": "La indignación",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-12",
+   "formato": "1080×1920 · MP4 con música",
+   "etiquetas": [
+    "ética",
+    "clickbait",
+    "comunicación",
+    "reel",
+    "9:16",
+    "vídeo"
+   ],
+   "resumen": "Vende, y arruina el negocio.",
+   "nota": "Center for Media Engagement, 1.535 personas: baja el clic, el comentario y la intención de pagar.",
+   "video": "descargas/reel-com-indignacion.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-indignacion.mp4"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-indignacion/FOTOGRAMAS",
+   "ruta": "out/com-indignacion/FOTOGRAMAS",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-indignacion/FOTOGRAMAS",
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-indignacion-01-400.avif",
+      "1024": "com-indignacion-01-1024.avif",
+      "jpg": "com-indignacion-01-1024.jpg",
+      "1080": "com-indignacion-01-1080.avif",
+      "max": "com-indignacion-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-indignacion-02-400.avif",
+      "1024": "com-indignacion-02-1024.avif",
+      "jpg": "com-indignacion-02-1024.jpg",
+      "1080": "com-indignacion-02-1080.avif",
+      "max": "com-indignacion-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-indignacion-03-400.avif",
+      "1024": "com-indignacion-03-1024.avif",
+      "jpg": "com-indignacion-03-1024.jpg",
+      "1080": "com-indignacion-03-1080.avif",
+      "max": "com-indignacion-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-indignacion-04-400.avif",
+      "1024": "com-indignacion-04-1024.avif",
+      "jpg": "com-indignacion-04-1024.jpg",
+      "1080": "com-indignacion-04-1080.avif",
+      "max": "com-indignacion-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-indignacion-05-400.avif",
+      "1024": "com-indignacion-05-1024.avif",
+      "jpg": "com-indignacion-05-1024.jpg",
+      "1080": "com-indignacion-05-1080.avif",
+      "max": "com-indignacion-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-indignacion-06-400.avif",
+      "1024": "com-indignacion-06-1024.avif",
+      "jpg": "com-indignacion-06-1024.jpg",
+      "1080": "com-indignacion-06-1080.avif",
+      "max": "com-indignacion-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "com-manipular",
+   "titulo": "Persuadir o manipular",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-12",
+   "formato": "1080×1920 · MP4 con música",
+   "etiquetas": [
+    "ética",
+    "persuasión",
+    "comunicación",
+    "reel",
+    "9:16",
+    "vídeo"
+   ],
+   "resumen": "No son lo mismo, y hay una prueba.",
+   "nota": "Sunstein: manipular es esquivar la capacidad del otro de decidir. Cuanto mejor funciona, peor es.",
+   "video": "descargas/reel-com-manipular.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-manipular.mp4"
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-manipular/FOTOGRAMAS",
+   "ruta": "out/com-manipular/FOTOGRAMAS",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-manipular/FOTOGRAMAS",
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-manipular-01-400.avif",
+      "1024": "com-manipular-01-1024.avif",
+      "jpg": "com-manipular-01-1024.jpg",
+      "1080": "com-manipular-01-1080.avif",
+      "max": "com-manipular-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-manipular-02-400.avif",
+      "1024": "com-manipular-02-1024.avif",
+      "jpg": "com-manipular-02-1024.jpg",
+      "1080": "com-manipular-02-1080.avif",
+      "max": "com-manipular-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-manipular-03-400.avif",
+      "1024": "com-manipular-03-1024.avif",
+      "jpg": "com-manipular-03-1024.jpg",
+      "1080": "com-manipular-03-1080.avif",
+      "max": "com-manipular-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-manipular-04-400.avif",
+      "1024": "com-manipular-04-1024.avif",
+      "jpg": "com-manipular-04-1024.jpg",
+      "1080": "com-manipular-04-1080.avif",
+      "max": "com-manipular-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-manipular-05-400.avif",
+      "1024": "com-manipular-05-1024.avif",
+      "jpg": "com-manipular-05-1024.jpg",
+      "1080": "com-manipular-05-1080.avif",
+      "max": "com-manipular-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-manipular-06-400.avif",
+      "1024": "com-manipular-06-1024.avif",
+      "jpg": "com-manipular-06-1024.jpg",
+      "1080": "com-manipular-06-1080.avif",
+      "max": "com-manipular-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
    "id": "reel-termopilas",
    "titulo": "Reel · Las Termópilas",
    "tipo": "reel",
    "estado": "publicado",
    "fecha": "2026-08-11",
-   "formato": "1080×1920 · 40 s · MP4",
+   "formato": "1080×1920 · 41 s · MP4",
    "etiquetas": [
     "espartano",
     "reel",
@@ -415,11 +1027,11 @@
     "noir"
    ],
    "resumen": "La misma historia en vídeo vertical de 40 segundos. El fondo se mueve, el texto no, y cada lámina dura lo que se tarda en leerla.",
-   "nota": "Transiciones solo de fundido: se quitaron los cortes duros. El movimiento no se detiene ni durante la transición.",
+   "nota": "Fundidos de 1,45 s y zoom de deriva constante: el movimiento avanza igual de lento de principio a fin.",
    "video": "descargas/reel-las-termopilas.mp4",
    "descargas": [
     {
-     "etq": "Vídeo MP4 · 40 s",
+     "etq": "Vídeo MP4 · 41 s",
      "url": "descargas/reel-las-termopilas.mp4"
     }
    ],
@@ -507,7 +1119,7 @@
    "tipo": "reel",
    "estado": "publicado",
    "fecha": "2026-08-11",
-   "formato": "1080×1920 · 37 s · MP4",
+   "formato": "1080×1920 · 39 s · MP4",
    "etiquetas": [
     "samurái",
     "reel",
@@ -516,11 +1128,11 @@
     "noir"
    ],
    "resumen": "El código samurái en vídeo vertical, con el fondo en movimiento continuo.",
-   "nota": "Transiciones solo de fundido, sin ningún corte duro. Cada lámina dura lo que se tarda en leerla.",
+   "nota": "Zoom de deriva constante y fundidos largos. Cada lámina dura lo que se tarda en leerla.",
    "video": "descargas/reel-bushido.mp4",
    "descargas": [
     {
-     "etq": "Vídeo MP4 · 37 s",
+     "etq": "Vídeo MP4 · 39 s",
      "url": "descargas/reel-bushido.mp4"
     }
    ],
@@ -608,7 +1220,7 @@
    "tipo": "reel",
    "estado": "publicado",
    "fecha": "2026-08-11",
-   "formato": "1080×1920 · 38 s · MP4",
+   "formato": "1080×1920 · 40 s · MP4",
    "etiquetas": [
     "azteca",
     "reel",
@@ -617,11 +1229,11 @@
     "noir"
    ],
    "resumen": "La escuela obligatoria mexica en vídeo vertical.",
-   "nota": "Mismo montaje que los otros dos reels: fundidos suaves y movimiento que nunca se detiene.",
+   "nota": "Mismo montaje: deriva de cámara uniforme y fundidos de 1,45 s, sin ningún corte.",
    "video": "descargas/reel-azteca.mp4",
    "descargas": [
     {
-     "etq": "Vídeo MP4 · 38 s",
+     "etq": "Vídeo MP4 · 40 s",
      "url": "descargas/reel-azteca.mp4"
     }
    ],
