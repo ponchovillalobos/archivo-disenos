@@ -184,6 +184,182 @@
    ]
   },
   {
+   "id": "reel-termopilas",
+   "titulo": "Reel · Las Termópilas",
+   "tipo": "reel",
+   "estado": "publicado",
+   "fecha": "2026-08-11",
+   "formato": "1080×1920 · 24 s · MP4",
+   "etiquetas": [
+    "espartano",
+    "reel",
+    "9:16",
+    "vídeo",
+    "noir"
+   ],
+   "resumen": "La misma historia en vídeo vertical de 24 segundos, con el fondo en movimiento.",
+   "nota": "El texto va anclado y solo se mueve la imagen. Codificado con el motor por hardware de Apple, sin instalar ffmpeg.",
+   "piezas": [
+    {
+     "pie": "Trescientos hombres perdieron. Y eso era el plan.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-termopilas-01-400.avif",
+      "1024": "reel-termopilas-01-1024.avif",
+      "jpg": "reel-termopilas-01-1024.jpg",
+      "1080": "reel-termopilas-01-1080.avif",
+      "max": "reel-termopilas-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Trescientos contra un imperio.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-termopilas-02-400.avif",
+      "1024": "reel-termopilas-02-1024.avif",
+      "jpg": "reel-termopilas-02-1024.jpg",
+      "1080": "reel-termopilas-02-1080.avif",
+      "max": "reel-termopilas-02-1080.avif"
+     }
+    },
+    {
+     "pie": "No eran trescientos. Y nunca esperaron ganar.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-termopilas-03-400.avif",
+      "1024": "reel-termopilas-03-1024.avif",
+      "jpg": "reel-termopilas-03-1024.jpg",
+      "1080": "reel-termopilas-03-1080.avif",
+      "max": "reel-termopilas-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Un paso estrecho anula un ejército enorme.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-termopilas-04-400.avif",
+      "1024": "reel-termopilas-04-1024.avif",
+      "jpg": "reel-termopilas-04-1024.jpg",
+      "1080": "reel-termopilas-04-1080.avif",
+      "max": "reel-termopilas-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Tiempo. Solo compraron tiempo.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-termopilas-05-400.avif",
+      "1024": "reel-termopilas-05-1024.avif",
+      "jpg": "reel-termopilas-05-1024.jpg",
+      "1080": "reel-termopilas-05-1080.avif",
+      "max": "reel-termopilas-05-1080.avif"
+     }
+    },
+    {
+     "pie": "No siempre ganas ganando.",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "reel-termopilas-06-400.avif",
+      "1024": "reel-termopilas-06-1024.avif",
+      "jpg": "reel-termopilas-06-1024.jpg",
+      "1080": "reel-termopilas-06-1080.avif",
+      "max": "reel-termopilas-06-1080.avif"
+     }
+    }
+   ]
+  },
+  {
+   "id": "reel-fondos",
+   "titulo": "Reel · fondos 9:16",
+   "tipo": "fondos",
+   "estado": "publicado",
+   "fecha": "2026-08-11",
+   "formato": "720×1280 (9:16)",
+   "etiquetas": [
+    "espartano",
+    "reel",
+    "9:16",
+    "fondos",
+    "sin texto"
+   ],
+   "resumen": "Los seis fondos verticales del reel, sin texto.",
+   "nota": "Generados a 720×1280 = proporción 0,5625 exacta. Escalan a 1080×1920 sin recortar un píxel.",
+   "piezas": [
+    {
+     "pie": "Acantilado",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "reel-fondos-01-400.avif",
+      "720": "reel-fondos-01-720.avif",
+      "jpg": "reel-fondos-01-720.jpg",
+      "max": "reel-fondos-01-720.avif"
+     }
+    },
+    {
+     "pie": "La horda",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "reel-fondos-02-400.avif",
+      "720": "reel-fondos-02-720.avif",
+      "jpg": "reel-fondos-02-720.jpg",
+      "max": "reel-fondos-02-720.avif"
+     }
+    },
+    {
+     "pie": "Espalda con cicatrices",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "reel-fondos-03-400.avif",
+      "720": "reel-fondos-03-720.avif",
+      "jpg": "reel-fondos-03-720.jpg",
+      "max": "reel-fondos-03-720.avif"
+     }
+    },
+    {
+     "pie": "El escudo clavado",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "reel-fondos-04-400.avif",
+      "720": "reel-fondos-04-720.avif",
+      "jpg": "reel-fondos-04-720.jpg",
+      "max": "reel-fondos-04-720.avif"
+     }
+    },
+    {
+     "pie": "La falange",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "reel-fondos-05-400.avif",
+      "720": "reel-fondos-05-720.avif",
+      "jpg": "reel-fondos-05-720.jpg",
+      "max": "reel-fondos-05-720.avif"
+     }
+    },
+    {
+     "pie": "El casco",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "reel-fondos-06-400.avif",
+      "720": "reel-fondos-06-720.avif",
+      "jpg": "reel-fondos-06-720.jpg",
+      "max": "reel-fondos-06-720.avif"
+     }
+    }
+   ]
+  },
+  {
    "id": "bushido-limpias",
    "titulo": "Bushidō · sin texto",
    "tipo": "fondos",
