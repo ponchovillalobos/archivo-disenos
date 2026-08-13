@@ -1,18 +1,14 @@
 {
- "total": 631,
+ "total": 599,
  "aprobadas": 438,
  "sin_metadatos": 0,
  "semillas": {
   "101010": {
-   "usos": 626,
+   "usos": 597,
    "publicadas": 438
   },
   "202020": {
-   "usos": 4,
-   "publicadas": 0
-  },
-  "303030": {
-   "usos": 1,
+   "usos": 2,
    "publicadas": 0
   }
  },
@@ -8911,21 +8907,6 @@
    "aprobada": true
   },
   {
-   "imagen": "espartano-final_00001_.png",
-   "textos": {},
-   "modelo": "juggernautXL_v9.safetensors",
-   "ancho": 768,
-   "alto": 1344,
-   "semilla": 202020,
-   "pasos": 30,
-   "cfg": 5.5,
-   "muestreador": "dpmpp_2m",
-   "planificador": "karras",
-   "denoise": 1.0,
-   "huella": "044676c9c28b",
-   "aprobada": false
-  },
-  {
    "imagen": "espartano-final_00002_.png",
    "textos": {},
    "modelo": "juggernautXL_v9.safetensors",
@@ -8938,57 +8919,6 @@
    "planificador": "karras",
    "denoise": 1.0,
    "huella": "044676c9c28b",
-   "aprobada": false
-  },
-  {
-   "imagen": "espartano_00001_.png",
-   "textos": {},
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "ancho": 768,
-   "alto": 1344,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "ba013635289d",
-   "aprobada": false
-  },
-  {
-   "imagen": "espartano_00002_.png",
-   "textos": {},
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "ancho": 768,
-   "alto": 1344,
-   "semilla": 202020,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "044676c9c28b",
-   "aprobada": false
-  },
-  {
-   "imagen": "espartano_00003_.png",
-   "textos": {},
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "ancho": 768,
-   "alto": 1344,
-   "semilla": 303030,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "dbb17acbc046",
    "aprobada": false
   },
   {
@@ -9631,32 +9561,6 @@
    "aprobada": false
   },
   {
-   "imagen": "idea1-01_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an empty rollercoaster track cresting against a black night sky, one crimson warning lamp burning on the rail, city far below",
-    "ropa": "dark simple clothing",
-    "objeto": "an empty rollercoaster track cresting against a black night sky",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "5010f0926ce1",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1-01_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of an empty rollercoaster track cresting against a black night sky, one crimson warning lamp burning on the rail, city far below",
@@ -9681,32 +9585,6 @@
    "denoise": 1.0,
    "huella": "065a8e1d112f",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1-02_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of looking straight up an enormous empty elevator shaft, one red lamp far above, steel walls receding into darkness",
-    "ropa": "dark simple clothing",
-    "objeto": "looking straight up an enormous empty elevator shaft",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "dc71c43dec90",
-   "aprobada": false
   },
   {
    "imagen": "idea1-02_00002_.png",
@@ -9735,32 +9613,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1-03_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an empty rollercoaster car stopped at the very top of a drop at night, seen from behind, a sea of small lights far below",
-    "ropa": "dark simple clothing",
-    "objeto": "an empty rollercoaster car stopped at the very top of a drop at night",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "d616ad964bc6",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1-03_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of an empty rollercoaster car stopped at the very top of a drop at night, seen from behind, a sea of small lights far below",
@@ -9785,32 +9637,6 @@
    "denoise": 1.0,
    "huella": "332bce7e5f5b",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1-04_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of two identical closed doors side by side in a vast dark wall, crimson light spilling under one of them only",
-    "ropa": "dark simple clothing",
-    "objeto": "two identical closed doors side by side in a vast dark wall",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "352e485e4ac2",
-   "aprobada": false
   },
   {
    "imagen": "idea1-04_00002_.png",
@@ -9839,32 +9665,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1-05_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a very long dark corridor with a small illuminated doorway at the far end, one tiny silhouette walking away from the camera",
-    "ropa": "dark simple clothing",
-    "objeto": "a very long dark corridor with a small illuminated doorway at the far end",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "6599e261b9e0",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1-05_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of a very long dark corridor with a small illuminated doorway at the far end, one tiny silhouette walking away from the camera",
@@ -9889,58 +9689,6 @@
    "denoise": 1.0,
    "huella": "ef9f6e8a13b0",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1-06_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of empty starting blocks on a dark running track at night, one crimson lane line cutting across, low angle, stadium lights above",
-    "ropa": "dark simple clothing",
-    "objeto": "empty starting blocks on a dark running track at night",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "138eab7f09e9",
-   "aprobada": false
-  },
-  {
-   "imagen": "idea1-06_00002_.png",
-   "textos": {
-    "escena": "epic cinematic film still of completely deserted athletics track at night, empty starting blocks in the foreground, crimson lane markings receding, nobody present, stadium lights high above, low angle",
-    "ropa": "dark simple clothing",
-    "objeto": "completely deserted athletics track at night",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands, absolutely no people",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "cf20ee22ca03",
-   "aprobada": false
   },
   {
    "imagen": "idea1-06_00003_.png",
@@ -9969,32 +9717,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1-07_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a fork in a dark stone tunnel, two identical passages, one glowing crimson and the other cold white",
-    "ropa": "dark simple clothing",
-    "objeto": "a fork in a dark stone tunnel",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "366680120428",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1-07_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of a fork in a dark stone tunnel, two identical passages, one glowing crimson and the other cold white",
@@ -10019,32 +9741,6 @@
    "denoise": 1.0,
    "huella": "62f2fe3b3198",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1-08_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an old telephone alone on a bare desk under one hard lamp, everything else in black, a small red light glowing on it",
-    "ropa": "dark simple clothing",
-    "objeto": "an old telephone alone on a bare desk under one hard lamp",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "0d1520c17bfe",
-   "aprobada": false
   },
   {
    "imagen": "idea1-08_00002_.png",
@@ -10073,32 +9769,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1-09_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an empty boardroom at night, one chair pulled back from a long polished table, city lights burning through the glass wall",
-    "ropa": "dark simple clothing",
-    "objeto": "an empty boardroom at night",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "6156c020ec9f",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1-09_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of an empty boardroom at night, one chair pulled back from a long polished table, city lights burning through the glass wall",
@@ -10123,32 +9793,6 @@
    "denoise": 1.0,
    "huella": "0ec435e90b34",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1-10_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a single filament bulb glowing deep crimson in an enormous pitch black space, the filament sharp and hot",
-    "ropa": "dark simple clothing",
-    "objeto": "a single filament bulb glowing deep crimson in an enormous pitch black space",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "fc650478b821",
-   "aprobada": false
   },
   {
    "imagen": "idea1-10_00002_.png",
@@ -10177,32 +9821,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1-11_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a heavy stage curtain parting onto an empty lit stage, crimson light pouring through the gap into a dark auditorium",
-    "ropa": "dark simple clothing",
-    "objeto": "a heavy stage curtain parting onto an empty lit stage",
-    "encuadre": "vertical composition, wide cinematic shot, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "8db7c7646782",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1-11_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of a heavy stage curtain parting onto an empty lit stage, crimson light pouring through the gap into a dark auditorium",
@@ -10227,32 +9845,6 @@
    "denoise": 1.0,
    "huella": "8ecc4fdf6dd7",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1h-01_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an empty rollercoaster track cresting against a black night sky, one crimson warning lamp burning on the rail, city far below",
-    "ropa": "dark simple clothing",
-    "objeto": "an empty rollercoaster track cresting against a black night sky",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "734d263eb190",
-   "aprobada": false
   },
   {
    "imagen": "idea1h-01_00002_.png",
@@ -10281,32 +9873,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1h-02_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of looking straight up an enormous empty elevator shaft, one red lamp far above, steel walls receding into darkness",
-    "ropa": "dark simple clothing",
-    "objeto": "looking straight up an enormous empty elevator shaft",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "70fefd093511",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1h-02_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of looking straight up an enormous empty elevator shaft, one red lamp far above, steel walls receding into darkness",
@@ -10331,32 +9897,6 @@
    "denoise": 1.0,
    "huella": "c79bc9615715",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1h-03_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an empty rollercoaster car stopped at the very top of a drop at night, seen from behind, a sea of small lights far below",
-    "ropa": "dark simple clothing",
-    "objeto": "an empty rollercoaster car stopped at the very top of a drop at night",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "c65ffb44fc34",
-   "aprobada": false
   },
   {
    "imagen": "idea1h-03_00002_.png",
@@ -10385,32 +9925,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1h-04_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of two identical closed doors side by side in a vast dark wall, crimson light spilling under one of them only",
-    "ropa": "dark simple clothing",
-    "objeto": "two identical closed doors side by side in a vast dark wall",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "2a337e8e3b4c",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1h-04_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of two identical closed doors side by side in a vast dark wall, crimson light spilling under one of them only",
@@ -10435,32 +9949,6 @@
    "denoise": 1.0,
    "huella": "8906cadeeabb",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1h-05_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a very long dark corridor with a small illuminated doorway at the far end, one tiny silhouette walking away from the camera",
-    "ropa": "dark simple clothing",
-    "objeto": "a very long dark corridor with a small illuminated doorway at the far end",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "012b17593b76",
-   "aprobada": false
   },
   {
    "imagen": "idea1h-05_00002_.png",
@@ -10489,58 +9977,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1h-06_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of empty starting blocks on a dark running track at night, one crimson lane line cutting across, low angle, stadium lights above",
-    "ropa": "dark simple clothing",
-    "objeto": "empty starting blocks on a dark running track at night",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "ff11e739d129",
-   "aprobada": false
-  },
-  {
-   "imagen": "idea1h-06_00002_.png",
-   "textos": {
-    "escena": "epic cinematic film still of completely deserted athletics track at night, empty starting blocks in the foreground, crimson lane markings receding, nobody present, stadium lights high above, low angle",
-    "ropa": "dark simple clothing",
-    "objeto": "completely deserted athletics track at night",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands, absolutely no people",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "46b2536f8ddc",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1h-06_00003_.png",
    "textos": {
     "escena": "epic cinematic film still of completely deserted athletics track at night, empty starting blocks in the foreground, crimson lane markings receding, nobody present, stadium lights high above, low angle",
@@ -10565,32 +10001,6 @@
    "denoise": 1.0,
    "huella": "a51f82f100a8",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1h-07_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a fork in a dark stone tunnel, two identical passages, one glowing crimson and the other cold white",
-    "ropa": "dark simple clothing",
-    "objeto": "a fork in a dark stone tunnel",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "46e4fec7c477",
-   "aprobada": false
   },
   {
    "imagen": "idea1h-07_00002_.png",
@@ -10619,32 +10029,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1h-08_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an old telephone alone on a bare desk under one hard lamp, everything else in black, a small red light glowing on it",
-    "ropa": "dark simple clothing",
-    "objeto": "an old telephone alone on a bare desk under one hard lamp",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "118d2f0182ae",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1h-08_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of an old telephone alone on a bare desk under one hard lamp, everything else in black, a small red light glowing on it",
@@ -10669,32 +10053,6 @@
    "denoise": 1.0,
    "huella": "4944938b71ce",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1h-09_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an empty boardroom at night, one chair pulled back from a long polished table, city lights burning through the glass wall",
-    "ropa": "dark simple clothing",
-    "objeto": "an empty boardroom at night",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "897917e812cc",
-   "aprobada": false
   },
   {
    "imagen": "idea1h-09_00002_.png",
@@ -10723,32 +10081,6 @@
    "aprobada": true
   },
   {
-   "imagen": "idea1h-10_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a single filament bulb glowing deep crimson in an enormous pitch black space, the filament sharp and hot",
-    "ropa": "dark simple clothing",
-    "objeto": "a single filament bulb glowing deep crimson in an enormous pitch black space",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "9a9bc71e2bd8",
-   "aprobada": false
-  },
-  {
    "imagen": "idea1h-10_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of a single filament bulb glowing deep crimson in an enormous pitch black space, the filament sharp and hot",
@@ -10773,32 +10105,6 @@
    "denoise": 1.0,
    "huella": "b8240d1e46e6",
    "aprobada": true
-  },
-  {
-   "imagen": "idea1h-11_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a heavy stage curtain parting onto an empty lit stage, crimson light pouring through the gap into a dark auditorium",
-    "ropa": "dark simple clothing",
-    "objeto": "a heavy stage curtain parting onto an empty lit stage",
-    "encuadre": "wide horizontal cinematic composition, subject offset to one side, generous empty space across the lower third, no people in frame or a tiny distant silhouette seen from behind, no faces, no hands",
-    "aire": "still heavy air, fine haze",
-    "luz": "one hard directional light, deep black shadows",
-    "tratamiento": "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), (scarlet glow:1.3), everything else near monochrome, hard contrast"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (blue:1.3), (cyan:1.3), (teal:1.3), (green:1.3), (yellow:1.3)",
-   "ancho": 1344,
-   "alto": 768,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "9e43774c6af3",
-   "aprobada": false
   },
   {
    "imagen": "idea1h-11_00002_.png",
@@ -13245,32 +12551,6 @@
    "aprobada": true
   },
   {
-   "imagen": "preguntar-04_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of two doors in a pale stone wall, one shut and one standing wide open onto brilliant daylight, clean and calm",
-    "ropa": "dark simple clothing",
-    "objeto": "two doors, one open",
-    "encuadre": "wide cinematic shot, any human tiny and distant, seen from behind, no faces, no hands, vast space around\n",
-    "aire": "clear air over water",
-    "luz": "bright light bouncing off water, shimmering highlights",
-    "tratamiento": "(cool mint green and graphite:1.5), (pale seafoam tones:1.3), clean modern palette, soft highlights"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (horror:1.4), (creepy:1.4), (sinister:1.3), (ominous:1.3), (bleak:1.2), (desolate:1.2), (decay:1.2), (grimdark:1.3), (nightmare:1.3), (haunted:1.3), (oppressive:1.2), (murky:1.2), muddy colors, washed out, (orange:1.3), (red:1.3), (yellow:1.3), (magenta:1.3), (purple:1.3), (blue:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "f05ca8c0da73",
-   "aprobada": false
-  },
-  {
    "imagen": "preguntar-04_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of two doors in a pale stone wall, one shut and one standing wide open onto brilliant daylight, dry stone floor, clean and calm",
@@ -13295,32 +12575,6 @@
    "denoise": 1.0,
    "huella": "e34af0e9303d",
    "aprobada": true
-  },
-  {
-   "imagen": "preguntar-05_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a bright tiled room with one plain wooden cubicle door left ajar, cold clean daylight from a high window, nobody present",
-    "ropa": "dark simple clothing",
-    "objeto": "a door left ajar",
-    "encuadre": "wide cinematic shot, any human tiny and distant, seen from behind, no faces, no hands, vast space around\n",
-    "aire": "clear air over water",
-    "luz": "bright light bouncing off water, shimmering highlights",
-    "tratamiento": "(cool mint green and graphite:1.5), (pale seafoam tones:1.3), clean modern palette, soft highlights"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (horror:1.4), (creepy:1.4), (sinister:1.3), (ominous:1.3), (bleak:1.2), (desolate:1.2), (decay:1.2), (grimdark:1.3), (nightmare:1.3), (haunted:1.3), (oppressive:1.2), (murky:1.2), muddy colors, washed out, (orange:1.3), (red:1.3), (yellow:1.3), (magenta:1.3), (purple:1.3), (blue:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "c59cb1af9806",
-   "aprobada": false
   },
   {
    "imagen": "preguntar-05_00002_.png",
@@ -13427,32 +12681,6 @@
    "aprobada": true
   },
   {
-   "imagen": "preguntar-09_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of an open notebook and a pen on a sunlit table, the page completely blank, light bouncing off the paper",
-    "ropa": "dark simple clothing",
-    "objeto": "an open blank notebook",
-    "encuadre": "wide cinematic shot, any human tiny and distant, seen from behind, no faces, no hands, vast space around\n",
-    "aire": "clear air over water",
-    "luz": "bright light bouncing off water, shimmering highlights",
-    "tratamiento": "(cool mint green and graphite:1.5), (pale seafoam tones:1.3), clean modern palette, soft highlights"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (horror:1.4), (creepy:1.4), (sinister:1.3), (ominous:1.3), (bleak:1.2), (desolate:1.2), (decay:1.2), (grimdark:1.3), (nightmare:1.3), (haunted:1.3), (oppressive:1.2), (murky:1.2), muddy colors, washed out, (orange:1.3), (red:1.3), (yellow:1.3), (magenta:1.3), (purple:1.3), (blue:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "587dd2e348f0",
-   "aprobada": false
-  },
-  {
    "imagen": "preguntar-09_00002_.png",
    "textos": {
     "escena": "epic cinematic film still of an open notebook lying alone on a sunlit wooden table, a pen resting beside it untouched, the page completely blank, nobody present, no hands",
@@ -13477,32 +12705,6 @@
    "denoise": 1.0,
    "huella": "3898af478eae",
    "aprobada": true
-  },
-  {
-   "imagen": "preguntar-10_00001_.png",
-   "textos": {
-    "escena": "epic cinematic film still of a doorway opening onto brilliant light, seen from inside a calm bright room, the threshold worn smooth",
-    "ropa": "dark simple clothing",
-    "objeto": "a doorway full of light",
-    "encuadre": "wide cinematic shot, any human tiny and distant, seen from behind, no faces, no hands, vast space around\n",
-    "aire": "clear air over water",
-    "luz": "bright light bouncing off water, shimmering highlights",
-    "tratamiento": "(cool mint green and graphite:1.5), (pale seafoam tones:1.3), clean modern palette, soft highlights"
-   },
-   "modelo": "juggernautXL_v9.safetensors",
-   "lora": "sdxl_lightning_8step_lora.safetensors",
-   "lora_peso": 1.0,
-   "negativo": "(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial features:1.5), (eyes:1.4), (hands:1.6), (fingers:1.6), (visible hands:1.5), (arms in foreground:1.3), blurry, low quality, deformed, extra limbs, disfigured, watermark, text, letters, signature, logo, cartoon, plastic skin, flat lighting, modern clothing, smartphone, (horror:1.4), (creepy:1.4), (sinister:1.3), (ominous:1.3), (bleak:1.2), (desolate:1.2), (decay:1.2), (grimdark:1.3), (nightmare:1.3), (haunted:1.3), (oppressive:1.2), (murky:1.2), muddy colors, washed out, (orange:1.3), (red:1.3), (yellow:1.3), (magenta:1.3), (purple:1.3), (blue:1.3)",
-   "ancho": 720,
-   "alto": 1280,
-   "semilla": 101010,
-   "pasos": 8,
-   "cfg": 1.0,
-   "muestreador": "euler",
-   "planificador": "sgm_uniform",
-   "denoise": 1.0,
-   "huella": "5a3fb3493b39",
-   "aprobada": false
   },
   {
    "imagen": "preguntar-10_00002_.png",

@@ -231,13 +231,70 @@ Con 32 GB de RAM probablemente no haga falta nunca.
 
 ---
 
+## Qué funciona, medido sobre 599 recetas
+
+El recetario no solo guarda qué se hizo: cruza cada receta contra las que
+llegaron a publicarse y saca la tasa de aprobación.
+
+```
+python -c "import sys;sys.path.insert(0,'herramientas');from recetario import informe;informe()"
+```
+
+Sobre 599 recetas y 438 aprobadas:
+
+| Paleta | Imágenes | Aprobadas |
+|---|---|---|
+| `noir` | 265 | **48 %** |
+| `rojo-carbon` | 60 | 60 % |
+| las 12 restantes | 6-46 cada una | **100 %** |
+
+| Ánimo | Imágenes | Aprobadas |
+|---|---|---|
+| `niebla` | 346 | **61 %** |
+| los 9 restantes | 12-28 cada uno | **100 %** |
+
+**Léelo con este sesgo delante:** las paletas antiguas se usaron en una época en
+que se generaba de más y se descartaba mucho; las nuevas se generan por pedido y
+se usan casi todas. Parte de la diferencia es el método, no la paleta.
+
+Lo que el dato **sí** sostiene: el `noir` con `niebla` producía descartes que las
+paletas con veto no producen. Si empiezas de cero, empieza por una paleta con
+veto y un ánimo luminoso.
+
+---
+
+## El sistema se limpia solo
+
+Tres cosas crecen sin freno: los PNG de ComfyUI (llegaron a 664 MB), la caché de
+capas de texto y los registros.
+
+```
+python herramientas/mantenimiento.py             # solo informa
+python herramientas/mantenimiento.py --limpiar   # ejecuta
+```
+
+**La regla que lo hace seguro: nunca borra un archivo cuyo contenido esté
+publicado.** No compara por nombre —que puede coincidir por accidente— sino por
+md5 contra todo lo que vive en `out/`. Lo que sí borra son **versiones
+superadas**: ComfyUI numera `_00001_`, `_00002_`… y el sistema siempre usa la
+más reciente.
+
+Lleva freno: si el barrido quiere borrar más de 300 imágenes, se para y avisa.
+Eso no es limpieza, es un fallo.
+
+Y **`prueba_sistema.py` avisa antes** de que estorbe: falla si quedan menos de
+15 GB libres o si hay más de 250 versiones sin barrer. La limpieza es una
+decisión, no un accidente.
+
+---
+
 ## Cómo empezar sin romper nada
 
 ```bash
 python herramientas/prueba_sistema.py
 ```
 
-17 comprobaciones en cuatro segundos. Entre ellas: que ComfyUI esté vivo **y no
+18 comprobaciones en unos segundos. Entre ellas: que ComfyUI esté vivo **y no
 degradado**, que el negativo conserve los vetos de cara, de color y de terror,
 que las paletas declaren solo ejes tipográficos que las fuentes tengan de
 verdad, y que ningún archivo entregable exista sin aparecer en el portal.

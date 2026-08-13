@@ -101,15 +101,27 @@ regeneraciones.
 python herramientas/prueba_sistema.py
 ```
 
-17 comprobaciones en cuatro segundos: ComfyUI vivo y sin degradar, los vetos del
+18 comprobaciones en unos segundos: ComfyUI vivo y sin degradar, los vetos del
 negativo, las paletas y sus ejes tipográficos, la composición con Chromium, el
 carrusel PDF, la transcripción, el troceo, el ritmo del audio, los montadores en
 los dos formatos, el catálogo sin enlaces rotos, el guardián que impide borrar
 trabajo, el contrato reproducible, y que **ningún archivo entregable exista sin
 aparecer en el portal**.
 
-Cada una nació de un fallo real. La última existe porque 17 vídeos vivieron en
-disco sin que nadie los viera.
+Cada una nació de un fallo real: la de «nada huérfano» existe porque 17 vídeos
+vivieron en disco sin que nadie los viera, y la de higiene porque los PNG
+llegaron a 664 MB sin que nada los barriera.
+
+## Mantenimiento
+
+```bash
+python herramientas/mantenimiento.py             # solo informa
+python herramientas/mantenimiento.py --limpiar   # ejecuta
+```
+
+**Nunca borra un archivo cuyo contenido esté publicado** — compara por md5
+contra `out/`, no por nombre. Y si el barrido quiere llevarse más de 300
+imágenes, se para: eso no es limpieza, es un fallo.
 
 ---
 
@@ -158,7 +170,8 @@ Piezas centrales:
 | `guardian.py` | vigila el ritmo y reinicia si se degrada |
 | `catalogo.py` | construye el portal, con guardianes contra el borrado |
 | `recetario.py` | recupera de cada PNG su receta completa |
-| `prueba_sistema.py` | las 17 comprobaciones |
+| `mantenimiento.py` | limpia lo que crece, sin tocar lo publicado |
+| `prueba_sistema.py` | las 18 comprobaciones |
 
 ---
 

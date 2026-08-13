@@ -285,6 +285,26 @@ def nada_huerfano():
         len(en_disco), len(en_cat))
 
 
+def higiene():
+    """Avisa ANTES de que la basura estorbe, no cuando el disco se llene.
+
+    Tres cosas crecen sin freno: los PNG de ComfyUI, la caché de capas de texto
+    y los registros. Ninguna es urgente hoy, y ése es el problema: no lo será
+    hasta que el disco reviente a mitad de una tanda nocturna.
+
+    Esta prueba NO limpia. Solo mide y falla si hay demasiado pendiente, para
+    que la limpieza sea una decisión y no un accidente.
+    """
+    import mantenimiento
+    libre = mantenimiento.disco_libre_gb()
+    assert libre > 15, "quedan %.0f GB libres: limpia antes de producir" % libre
+    r = mantenimiento.revisar(seco=True)
+    assert r["versiones"] < 250, (
+        "%d versiones superadas acumuladas (%.0f MB). Ejecuta "
+        "`python herramientas/mantenimiento.py --limpiar`" % (r["versiones"], r["mb"]))
+    return "%.0f GB libres · %d por barrer (%.0f MB)" % (libre, r["versiones"], r["mb"])
+
+
 def recetario_vivo():
     import recetario
     a = recetario.ARCHIVO
@@ -322,6 +342,7 @@ PRUEBAS = [
     ("contrato congruente", contrato_congruente),
     ("la voz no diverge", voz_no_diverge),
     ("nada huérfano", nada_huerfano),
+    ("higiene", higiene),
     ("recetario", recetario_vivo),
 ]
 
