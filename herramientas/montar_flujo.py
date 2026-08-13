@@ -29,6 +29,7 @@ Así que aquí:
     corte. Se eligen los N picos de energía más separados entre sí, para que no
     se amontonen en el primer tercio (defecto que sí tiene Viralito).
 """
+import math
 import os
 import subprocess
 import sys
@@ -49,18 +50,43 @@ FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 PROY = os.path.dirname(S)
 FPS = 30
 
-# Apertura de cámara: profunda y siempre de dentro hacia fuera.
-Z0, Z1 = 1.22, 1.00
+# Apertura de cámara. La VELOCIDAD es fija, no el recorrido: antes el zoom
+# iba siempre de 1,22 a 1,00 en la duración del bloque, y como los bloques van
+# de 2,6 a 7,5 s, la cámara corría a 8,5 %/s en unos planos y a 2,9 %/s en
+# otros. Casi el triple, sin motivo. En una pieza montada la cámara tiene una
+# velocidad, no una duración; con duración se lee como pase automático.
+Z0, Z1 = 1.20, 1.00
+VELOCIDAD = 0.022        # proporción de zoom por segundo (2,2 %/s, ritmo de cine)
+DERIVA = 0.055           # cuánto se desplaza el ancla a lo largo del plano
 CENTROS = [(.50, .44), (.40, .40), (.60, .50), (.46, .56), (.54, .38)]
 
+# --- animación del texto, cifras medidas en el motor de Viralito ---
+# El texto no debe APARECER: debe LLEGAR. Un cambio instantáneo entre PNG se
+# lee como pase de diapositivas; el sobrepaso es la diferencia entera entre
+# «aparece un texto» y «el texto llega».
+TXT_ENTRADA = 0.35      # s en resolverse (equivale a damping 12/stiffness 200)
+TXT_SOBREPASO = 0.035   # cuánto se pasa de tamaño antes de asentar
+TXT_SUBIDA = 14         # px que sube al entrar
+TXT_FUNDE = 0.08        # s de opacidad al entrar
+
+# Ningún píxel completamente quieto. Un área del cuadro con valor idéntico
+# fotograma a fotograma el ojo la lee como IMAGEN, no como vídeo — y ése es el
+# delator más silencioso de todos. Con imágenes fijas es letal.
+GRANO = 7               # amplitud. Por encima de 15 se ve sucio; por debajo de 4 no existe
+
 GOLPES = 7          # cuántos acentos reciben empuje, en TODO el vídeo
-GOLPE_ESCALA = .035  # cuánto empuja. Más que esto y marea
-GOLPE_F = 7          # en cuántos fotogramas se resuelve
+GOLPE_ESCALA = .026  # con ataque real hace falta menos amplitud
+GOLPE_F = 12         # en cuántos fotogramas se resuelve
 FUNDIDO = 1.25       # segundos entre imagen e imagen
 
 
 def _suave(t):
     return t * t * t * (t * (t * 6 - 15) + 10)
+
+
+def _salida_cubica(t):
+    """Arranca rápido y frena. Lo que ENTRA y se queda usa esta."""
+    return 1 - (1 - t) ** 3
 
 
 def elegir_golpes(an, dur, n=GOLPES, margen=None):
@@ -102,15 +128,49 @@ def montar(bloques, palabras, audio, fondos_dir, salida, acento="#e0b53c",
     capas = capas_de_bloque(palabras, acento, W, H,
                             abajo=(W > H))
     por_marco = indice(capas, FPS)
+    # de qué fotograma arranca cada capa, para saber en qué punto de su entrada
+    # estamos en cada momento
+    arranque = {}
+    for ini, _fin, png in capas:
+        arranque.setdefault(png, []).append(int(ini * FPS))
     _abiertas = {}
 
-    def texto(f):
-        p = por_marco.get(f)
-        if not p:
-            return None
+    def _cargar(p):
         if p not in _abiertas:
             _abiertas[p] = Image.open(p).convert("RGBA")
         return _abiertas[p]
+
+    n_ent = max(1, int(TXT_ENTRADA * FPS))
+    n_fnd = max(1, int(TXT_FUNDE * FPS))
+
+    def texto(f):
+        """Devuelve la capa YA ANIMADA para este fotograma."""
+        p = por_marco.get(f)
+        if not p:
+            return None
+        c = _cargar(p)
+        arr = [a for a in arranque.get(p, []) if a <= f]
+        k = f - max(arr) if arr else 0
+        if k >= n_ent:
+            return c
+
+        t = k / n_ent
+        e = _salida_cubica(t)
+        # sobrepasa y asienta: una campana sobre la curva de entrada
+        z = 1 + TXT_SOBREPASO * math.sin(math.pi * t) * (1 - t * .35)
+        dy = int(TXT_SUBIDA * (1 - e))
+        op = min(1.0, k / n_fnd)
+
+        aw, ah = int(W * z), int(H * z)
+        g = c.resize((aw, ah), Image.LANCZOS).crop(
+            ((aw - W) // 2, (ah - H) // 2, (aw - W) // 2 + W, (ah - H) // 2 + H))
+        if dy:
+            g = g.transform((W, H), Image.AFFINE, (1, 0, 0, 0, 1, -dy),
+                            resample=Image.BILINEAR)
+        if op < 1:
+            a = g.getchannel("A").point(lambda v: int(v * op))
+            g.putalpha(a)
+        return g
 
     # marcos anclados a tiempos absolutos: sin acumulación de redondeo
     bordes = [0]
@@ -119,31 +179,69 @@ def montar(bloques, palabras, audio, fondos_dir, salida, acento="#e0b53c",
         t += d
         bordes.append(round(t * FPS))
     marcos = [bordes[i + 1] - bordes[i] for i in range(len(durs))]
-    n_fun = int(FUNDIDO * FPS)
+    # el fundido nunca puede pasar del 40 % del plano más corto: con 1,25 s
+    # fijos sobre un bloque de 2,6 s, el 47 % del plano estaba en disolución
+    n_fun = int(min(FUNDIDO, 0.40 * min(durs)) * FPS)
     tramos = [m + (n_fun if i > 0 else 0) for i, m in enumerate(marcos)]
     desfase = [n_fun if i > 0 else 0 for i in range(len(marcos))]
 
-    def base(i, kloc):
-        """Fotograma de la imagen i en su posición local kloc."""
+    def base(i, kloc, empuje=0.0):
+        """Fotograma de la imagen i en su posición local kloc.
+
+        UNA sola transformación afín en coma flotante desde el original. Antes
+        eran dos reescalados encadenados con los offsets redondeados a entero,
+        y eso dejaba la cámara literalmente PARADA en el 65 % de los fotogramas
+        de un plano largo, avanzando a saltos de 1 px. No se percibe como
+        movimiento lento: se percibe como temblor a escalones.
+        """
+        seg = kloc / FPS
+        z = max(Z1, Z0 - VELOCIDAD * seg) + empuje
         t = kloc / max(1, tramos[i] - 1)
-        z = Z0 + (Z1 - Z0) * t
-        aw, ah = int(W * z), int(H * z)
-        im = fondos[i].resize((aw, ah), Image.LANCZOS)
-        ax, ay = CENTROS[i % len(CENTROS)]
-        im = im.crop((int((aw - W) * ax), int((ah - H) * ay),
-                      int((aw - W) * ax) + W, int((ah - H) * ay) + H))
+
+        src = fondos[i]
+        sw, sh = src.size
+        # cobertura: la fuente cubre el lienzo sin deformarse (antes se estiraba
+        # un 1,6 % porque los PNG de 768×1344 no son exactamente 9:16)
+        cob = max(W / sw, H / sh) * z
+        vw, vh = W / cob, H / cob
+
+        # el ancla se DESPLAZA a lo largo del plano: un zoom radial puro sobre
+        # imagen fija es el efecto más pobre que hay; lo que da vida es la
+        # traslación lateral, y antes era exactamente cero
+        ax0, ay0 = CENTROS[i % len(CENTROS)]
+        ax1, ay1 = CENTROS[(i + 2) % len(CENTROS)]
+        ax = ax0 + (ax1 - ax0) * t * DERIVA * 18
+        ay = ay0 + (ay1 - ay0) * t * DERIVA * 18
+        ax = min(1.0, max(0.0, ax))
+        ay = min(1.0, max(0.0, ay))
+
+        x0 = (sw - vw) * ax
+        y0 = (sh - vh) * ay
+        im = src.transform((W, H), Image.AFFINE,
+                           (vw / W, 0, x0, 0, vh / H, y0), Image.BICUBIC)
         im.paste(r2.NEGRO, (0, 0), r2.SCRIM)
         return im
 
     def golpe(f):
-        """Escala extra si estamos justo después de un acento fuerte."""
+        """Escala extra tras un acento. Con ATAQUE, no de golpe.
+
+        Antes la rampa arrancaba en su valor máximo: del fotograma g-1 al g los
+        bordes saltaban 19 px de una vez. Eso no es un acento, es un fallo de
+        reproducción. Ahora sube desde cero, pica hacia el 25 % y cae con cola.
+        """
         for g in golpes:
-            if 0 <= f - g < GOLPE_F:
-                return GOLPE_ESCALA * (1 - (f - g) / GOLPE_F)
+            u = (f - g) / GOLPE_F
+            if 0 <= u < 1:
+                return (GOLPE_ESCALA * math.exp(-4.2 * u)
+                        * math.sin(math.pi * min(1.0, u * 1.9)))
         return 0.0
 
     cmd = [FFMPEG, "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
            "-s", "%dx%d" % (W, H), "-r", str(FPS), "-i", "-",
+           # allf=t+u re-sortea el patrón CADA fotograma: es lo que impide que
+           # haya zonas con el píxel idéntico. Y la viñeta va elíptica, no
+           # circular — circular es invisible.
+           "-vf", "noise=alls=%d:allf=t+u,vignette=PI/6.5" % GRANO,
            "-c:v", "libx264", "-preset", "slow", "-crf", str(crf),
            "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.1",
            "-movflags", "+faststart", "-color_primaries", "bt709",
@@ -155,17 +253,14 @@ def montar(bloques, palabras, audio, fondos_dir, salida, acento="#e0b53c",
     g_global = 0
     for i, n in enumerate(marcos):
         for k in range(n):
-            img = base(i, k + desfase[i])
+            img = base(i, k + desfase[i], golpe(g_global))
             if i + 1 < len(fondos) and k >= n - n_fun:
                 t = (k - (n - n_fun)) / max(1, n_fun - 1)
-                img = Image.blend(img, base(i + 1, int(t * n_fun)), _suave(t))
+                # la entrante avanza SIN redondear: con int() se comía un
+                # fotograma y repetía el siguiente, o sea un tropiezo por corte
+                kk = t * (n_fun - 1)
+                img = Image.blend(img, base(i + 1, kk, golpe(g_global)), _suave(t))
 
-            e = golpe(g_global)
-            if e:
-                aw, ah = int(W * (1 + e)), int(H * (1 + e))
-                img = img.resize((aw, ah), Image.LANCZOS).crop(
-                    ((aw - W) // 2, (ah - H) // 2,
-                     (aw - W) // 2 + W, (ah - H) // 2 + H))
 
             c = texto(g_global)
             if c is not None:

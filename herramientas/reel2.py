@@ -117,11 +117,23 @@ def capa_texto(html, salida):
     return Image.open(salida).convert("RGBA")
 
 
-def _scrim(alto=1400, alpha=234):
+def _scrim(alto=1400, alpha=150, curva=2.2):
+    """Degradado bajo el texto.
+
+    alpha era 234 sobre 255 —un negro al 92 %— cubriendo el 73 % del alto. Con
+    eso el montaje partía la luminosidad de la imagen por la mitad (49,9 → 24)
+    y duplicaba la sombra (36 % → 74 %). Llevábamos horas ajustando la
+    GENERACIÓN cuando el estrago estaba aquí, después.
+
+    150 con curva 2,2 da contraste de sobra bajo el texto y devuelve la imagen.
+    """
     g = Image.new("L", (1, alto))
     px = g.load()
     for y in range(alto):
-        px[0, y] = int(alpha * (1 - y / alto) ** 1.5)
+        v = alpha * (1 - y / alto) ** curva
+        # medio nivel de ruido antes de cuantizar: sin esto la cola del
+        # degradado sale en franjas planas de hasta 36 px sobre un cielo liso
+        px[0, y] = max(0, min(255, int(v + (0.5 if y % 2 else -0.5))))
     return g.resize((W, alto))
 
 
