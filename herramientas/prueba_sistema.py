@@ -82,6 +82,23 @@ def paletas_y_animos():
         len(PALETAS), len(ANIMOS), claros * 100 // 40)
 
 
+def catalogo_de_fuentes():
+    """Cada familia declarada tiene que existir en disco Y tener los ejes que
+    dice. Pedir un eje que la fuente no tiene no da error: el navegador lo
+    ignora en silencio y uno cree que la fuente no responde."""
+    from fontTools.ttLib import TTFont
+    from fuentes import CATALOGO, VOCES, ruta, voz
+    for fam, (_, _, ejes, _) in CATALOGO.items():
+        f = TTFont(ruta(fam), lazy=True)
+        reales = {a.axisTag for a in f["fvar"].axes} if "fvar" in f else set()
+        faltan = set(ejes) - reales
+        assert not faltan, "%s declara ejes que no tiene: %s" % (fam, faltan)
+    for v in VOCES:
+        css, _ = voz(v)
+        assert css.count("@font-face") == 3, "la voz %s no trae tres caras" % v
+    return "%d familias · %d voces · ejes verificados" % (len(CATALOGO), len(VOCES))
+
+
 # ------------------------------------------------------------------- carrusel
 def composicion_tipografica():
     from reel2 import capa_texto, html_texto
@@ -208,6 +225,7 @@ PRUEBAS = [
     ("ComfyUI en pie", comfyui),
     ("flujo de imagen + vetos", flujo_de_imagen),
     ("paletas y ánimos", paletas_y_animos),
+    ("catálogo de fuentes", catalogo_de_fuentes),
     ("composición tipográfica", composicion_tipografica),
     ("carrusel PDF + ZIP", pdf_y_zip),
     ("transcriptor", transcriptor),
