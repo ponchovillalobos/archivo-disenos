@@ -1,0 +1,74 @@
+[
+ {
+  "config": "turbo",
+  "wer": 26.54,
+  "peor": 50.0,
+  "signos_ref": 17,
+  "signos_obt": 17,
+  "segundos": 18.0,
+  "textos": [
+   "Levenstein demostró en 1994 que la curiosidad es privación.",
+   "Si Aldini y Kahneman coinciden, el anclaje replicó en 36 muestras de 36.",
+   "El estudio analizó 6.956 artículos del New York Times.",
+   "Nitobe Inás publicó El Bucid en 1900, en Filadelfia, y lo escribió en inglés.",
+   "montaña rusa o hablar en público? Tu cuerpo no sabe la diferencia. Solo tú se la pones.",
+   "La proporción era 43 sobre 57, pero Gon la actualizó después.",
+   "El niño pequeño añoraba el cariño de su abuela, que le enseñaba a distinguir la cigüeña.",
+   "Dana Carney escribió que ya no cree que los efectos sean reales, y dejó de enseñarlo."
+  ]
+ },
+ {
+  "config": "turbo+contexto",
+  "wer": 24.02,
+  "peor": 46.67,
+  "signos_ref": 17,
+  "signos_obt": 18,
+  "segundos": 11.1,
+  "textos": [
+   "Loewenstein demostró en 1994 que la curiosidad es privación.",
+   "Cialdini y Kahneman coinciden, el anclaje replicó en 36 muestras de 36.",
+   "El estudio analizó 6.956 artículos del New York Times.",
+   "Nitobe Inaz publicó El Bucid en 1900, en Filadelfia, y lo escribió en inglés.",
+   "¿Montaña rusa o hablar en público? Tu cuerpo no sabe la diferencia. Solo tú se la pones.",
+   "La proporción era 43 sobre 57, pero Ghosn la actualizó después.",
+   "El niño pequeño añoraba el cariño de su abuela, que le enseñaba a distinguir la cigüeña.",
+   "Dana Carney escribió que ya no cree que los efectos sean reales, y dejó de enseñarlo."
+  ]
+ },
+ {
+  "config": "large-v3",
+  "wer": 25.71,
+  "peor": 50.0,
+  "signos_ref": 17,
+  "signos_obt": 17,
+  "segundos": 164.5,
+  "textos": [
+   "Levenstein demostró en 1994 que la curiosidad es privación.",
+   "Si Aldini y Kahneman coinciden, el anclaje replicó en 36 muestras de 36.",
+   "El estudio analizó 6.956 artículos del New York Times.",
+   "Nitobe Inás publicó el Bucid en 1900, en Filadelfia, y lo escribió en inglés.",
+   "montaña rusa o hablar en público? Tu cuerpo no sabe la diferencia, solo tú se la pones.",
+   "La proporción era 43 sobre 57, pero Gong la actualizó después.",
+   "El niño pequeño añoraba el cariño de su abuela, que le enseñaba a distinguir la cigüeña.",
+   "Dana Carney escribió que ya no cree que los efectos sean reales, y dejó de enseñarlo."
+  ]
+ },
+ {
+  "config": "large-v3+contexto",
+  "wer": 25.34,
+  "peor": 43.75,
+  "signos_ref": 17,
+  "signos_obt": 18,
+  "segundos": 15.3,
+  "textos": [
+   "Loewenstein demostró en 1994 que la curiosidad es privación.",
+   "Si Cialdini y Kahneman coinciden, el anclaje replicó en 36 muestras de 36.",
+   "El estudio analizó 6.956 artículos del New York Times.",
+   "Nitobe Inazō publicó el Bucid en 1900, en Filadelfia, y lo escribió en inglés.",
+   "¿Puedes montar en montaña rusa o hablar en público? Tu cuerpo no sabe la diferencia, solo tú se la pones.",
+   "La proporción era 43 sobre 57, pero Gong la actualizó después.",
+   "El niño pequeño añoraba el cariño de su abuela, que le enseñaba a distinguir la cigüeña.",
+   "Dana Carney escribió que ya no cree que los efectos sean reales, y dejó de enseñarlo."
+  ]
+ }
+]

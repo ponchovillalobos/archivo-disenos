@@ -1,0 +1,20 @@
+ARRASTRA AQUÍ TUS AUDIOS
+========================
+
+Cualquier formato sirve: mp3, m4a, wav, aiff, o el archivo de un vídeo.
+
+En cuanto sueltes un archivo aquí, se transcribe solo. No tienes que hacer
+nada más. El texto aparece en la carpeta "transcripciones" (un .txt para
+leerlo y un .json con las marcas de tiempo), y el audio original se mueve
+a "procesados" para que esta carpeta quede siempre limpia.
+
+Luego avísame y yo escribo las escenas y monto el vídeo.
+
+Dos cosas que conviene saber:
+
+  · Los nombres propios y las cifras se transcriben mal a veces. Está medido:
+    "Loewenstein" salió "Levenstein". Lee el .txt antes de que yo escriba
+    nada encima.
+
+  · Para la primera prueba, mejor un audio de 1 a 3 minutos. Uno de 5 minutos
+    son unas 40 imágenes, y eso es casi una hora de generación.

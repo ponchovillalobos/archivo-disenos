@@ -4,6 +4,600 @@
  "url_sitio": "file:///Users/maity/Desktop/Confy%20Imagenes/sitio/index.html",
  "proyectos": [
   {
+   "id": "idea1",
+   "titulo": "Idea 1",
+   "serie": "Desde audio",
+   "resumen": "El miedo y la emoción son la misma sensación.",
+   "nota": "Primer vídeo hecho a partir de un audio: transcripción con marcas por palabra, troceado por las pausas reales y once escenas escritas para cada bloque. Vertical y apaisado desde el mismo audio.",
+   "etiquetas": [
+    "audio",
+    "comunicación",
+    "rojo-carbón",
+    "desde audio"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920 y 1920×1080",
+   "video": "descargas/idea1-flujo-vertical.mp4",
+   "videos": [
+    {
+     "etq": "Ver vertical · texto vivo",
+     "url": "descargas/idea1-flujo-vertical.mp4"
+    },
+    {
+     "etq": "Ver vertical · reposado",
+     "url": "descargas/idea1-vertical.mp4"
+    },
+    {
+     "etq": "Ver horizontal · texto vivo",
+     "url": "descargas/idea1-flujo-horizontal.mp4"
+    },
+    {
+     "etq": "Ver horizontal · reposado",
+     "url": "descargas/idea1-horizontal.mp4"
+    }
+   ],
+   "descargas": [
+    {
+     "etq": "Vídeo vertical · texto vivo",
+     "url": "descargas/idea1-flujo-vertical.mp4"
+    },
+    {
+     "etq": "Vídeo vertical · reposado",
+     "url": "descargas/idea1-vertical.mp4"
+    },
+    {
+     "etq": "ZIP · 11 láminas vertical",
+     "url": "descargas/laminas-idea1-vertical.zip"
+    },
+    {
+     "etq": "Vídeo horizontal · texto vivo",
+     "url": "descargas/idea1-flujo-horizontal.mp4"
+    },
+    {
+     "etq": "Vídeo horizontal · reposado",
+     "url": "descargas/idea1-horizontal.mp4"
+    },
+    {
+     "etq": "ZIP · 11 láminas horizontal",
+     "url": "descargas/laminas-idea1-horizontal.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-01-400.avif",
+      "1024": "idea1-vertical-01-1024.avif",
+      "jpg": "idea1-vertical-01-1024.jpg",
+      "1080": "idea1-vertical-01-1080.avif",
+      "max": "idea1-vertical-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-02-400.avif",
+      "1024": "idea1-vertical-02-1024.avif",
+      "jpg": "idea1-vertical-02-1024.jpg",
+      "1080": "idea1-vertical-02-1080.avif",
+      "max": "idea1-vertical-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-03-400.avif",
+      "1024": "idea1-vertical-03-1024.avif",
+      "jpg": "idea1-vertical-03-1024.jpg",
+      "1080": "idea1-vertical-03-1080.avif",
+      "max": "idea1-vertical-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-04-400.avif",
+      "1024": "idea1-vertical-04-1024.avif",
+      "jpg": "idea1-vertical-04-1024.jpg",
+      "1080": "idea1-vertical-04-1080.avif",
+      "max": "idea1-vertical-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-05-400.avif",
+      "1024": "idea1-vertical-05-1024.avif",
+      "jpg": "idea1-vertical-05-1024.jpg",
+      "1080": "idea1-vertical-05-1080.avif",
+      "max": "idea1-vertical-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-06-400.avif",
+      "1024": "idea1-vertical-06-1024.avif",
+      "jpg": "idea1-vertical-06-1024.jpg",
+      "1080": "idea1-vertical-06-1080.avif",
+      "max": "idea1-vertical-06-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 7",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-07-400.avif",
+      "1024": "idea1-vertical-07-1024.avif",
+      "jpg": "idea1-vertical-07-1024.jpg",
+      "1080": "idea1-vertical-07-1080.avif",
+      "max": "idea1-vertical-07-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 8",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-08-400.avif",
+      "1024": "idea1-vertical-08-1024.avif",
+      "jpg": "idea1-vertical-08-1024.jpg",
+      "1080": "idea1-vertical-08-1080.avif",
+      "max": "idea1-vertical-08-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 9",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-09-400.avif",
+      "1024": "idea1-vertical-09-1024.avif",
+      "jpg": "idea1-vertical-09-1024.jpg",
+      "1080": "idea1-vertical-09-1080.avif",
+      "max": "idea1-vertical-09-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 10",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-10-400.avif",
+      "1024": "idea1-vertical-10-1024.avif",
+      "jpg": "idea1-vertical-10-1024.jpg",
+      "1080": "idea1-vertical-10-1080.avif",
+      "max": "idea1-vertical-10-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 11",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "idea1-vertical-11-400.avif",
+      "1024": "idea1-vertical-11-1024.avif",
+      "jpg": "idea1-vertical-11-1024.jpg",
+      "1080": "idea1-vertical-11-1080.avif",
+      "max": "idea1-vertical-11-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 1",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-01-400.avif",
+      "1024": "idea1-horizontal-01-1024.avif",
+      "jpg": "idea1-horizontal-01-1024.jpg",
+      "1600": "idea1-horizontal-01-1600.avif",
+      "1920": "idea1-horizontal-01-1920.avif",
+      "max": "idea1-horizontal-01-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-02-400.avif",
+      "1024": "idea1-horizontal-02-1024.avif",
+      "jpg": "idea1-horizontal-02-1024.jpg",
+      "1600": "idea1-horizontal-02-1600.avif",
+      "1920": "idea1-horizontal-02-1920.avif",
+      "max": "idea1-horizontal-02-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-03-400.avif",
+      "1024": "idea1-horizontal-03-1024.avif",
+      "jpg": "idea1-horizontal-03-1024.jpg",
+      "1600": "idea1-horizontal-03-1600.avif",
+      "1920": "idea1-horizontal-03-1920.avif",
+      "max": "idea1-horizontal-03-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-04-400.avif",
+      "1024": "idea1-horizontal-04-1024.avif",
+      "jpg": "idea1-horizontal-04-1024.jpg",
+      "1600": "idea1-horizontal-04-1600.avif",
+      "1920": "idea1-horizontal-04-1920.avif",
+      "max": "idea1-horizontal-04-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-05-400.avif",
+      "1024": "idea1-horizontal-05-1024.avif",
+      "jpg": "idea1-horizontal-05-1024.jpg",
+      "1600": "idea1-horizontal-05-1600.avif",
+      "1920": "idea1-horizontal-05-1920.avif",
+      "max": "idea1-horizontal-05-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-06-400.avif",
+      "1024": "idea1-horizontal-06-1024.avif",
+      "jpg": "idea1-horizontal-06-1024.jpg",
+      "1600": "idea1-horizontal-06-1600.avif",
+      "1920": "idea1-horizontal-06-1920.avif",
+      "max": "idea1-horizontal-06-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 7",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-07-400.avif",
+      "1024": "idea1-horizontal-07-1024.avif",
+      "jpg": "idea1-horizontal-07-1024.jpg",
+      "1600": "idea1-horizontal-07-1600.avif",
+      "1920": "idea1-horizontal-07-1920.avif",
+      "max": "idea1-horizontal-07-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 8",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-08-400.avif",
+      "1024": "idea1-horizontal-08-1024.avif",
+      "jpg": "idea1-horizontal-08-1024.jpg",
+      "1600": "idea1-horizontal-08-1600.avif",
+      "1920": "idea1-horizontal-08-1920.avif",
+      "max": "idea1-horizontal-08-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 9",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-09-400.avif",
+      "1024": "idea1-horizontal-09-1024.avif",
+      "jpg": "idea1-horizontal-09-1024.jpg",
+      "1600": "idea1-horizontal-09-1600.avif",
+      "1920": "idea1-horizontal-09-1920.avif",
+      "max": "idea1-horizontal-09-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 10",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-10-400.avif",
+      "1024": "idea1-horizontal-10-1024.avif",
+      "jpg": "idea1-horizontal-10-1024.jpg",
+      "1600": "idea1-horizontal-10-1600.avif",
+      "1920": "idea1-horizontal-10-1920.avif",
+      "max": "idea1-horizontal-10-1920.avif"
+     }
+    },
+    {
+     "pie": "Lámina 11",
+     "w": 1920,
+     "h": 1080,
+     "src": {
+      "400": "idea1-horizontal-11-400.avif",
+      "1024": "idea1-horizontal-11-1024.avif",
+      "jpg": "idea1-horizontal-11-1024.jpg",
+      "1600": "idea1-horizontal-11-1600.avif",
+      "1920": "idea1-horizontal-11-1920.avif",
+      "max": "idea1-horizontal-11-1920.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-01-400.avif",
+      "720": "idea1-vertical-sin-01-720.avif",
+      "jpg": "idea1-vertical-sin-01-720.jpg",
+      "max": "idea1-vertical-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-02-400.avif",
+      "720": "idea1-vertical-sin-02-720.avif",
+      "jpg": "idea1-vertical-sin-02-720.jpg",
+      "max": "idea1-vertical-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-03-400.avif",
+      "720": "idea1-vertical-sin-03-720.avif",
+      "jpg": "idea1-vertical-sin-03-720.jpg",
+      "max": "idea1-vertical-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-04-400.avif",
+      "720": "idea1-vertical-sin-04-720.avif",
+      "jpg": "idea1-vertical-sin-04-720.jpg",
+      "max": "idea1-vertical-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-05-400.avif",
+      "720": "idea1-vertical-sin-05-720.avif",
+      "jpg": "idea1-vertical-sin-05-720.jpg",
+      "max": "idea1-vertical-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-06-400.avif",
+      "720": "idea1-vertical-sin-06-720.avif",
+      "jpg": "idea1-vertical-sin-06-720.jpg",
+      "max": "idea1-vertical-sin-06-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 7",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-07-400.avif",
+      "720": "idea1-vertical-sin-07-720.avif",
+      "jpg": "idea1-vertical-sin-07-720.jpg",
+      "max": "idea1-vertical-sin-07-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 8",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-08-400.avif",
+      "720": "idea1-vertical-sin-08-720.avif",
+      "jpg": "idea1-vertical-sin-08-720.jpg",
+      "max": "idea1-vertical-sin-08-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 9",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-09-400.avif",
+      "720": "idea1-vertical-sin-09-720.avif",
+      "jpg": "idea1-vertical-sin-09-720.jpg",
+      "max": "idea1-vertical-sin-09-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 10",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-10-400.avif",
+      "720": "idea1-vertical-sin-10-720.avif",
+      "jpg": "idea1-vertical-sin-10-720.jpg",
+      "max": "idea1-vertical-sin-10-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 11",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "idea1-vertical-sin-11-400.avif",
+      "720": "idea1-vertical-sin-11-720.avif",
+      "jpg": "idea1-vertical-sin-11-720.jpg",
+      "max": "idea1-vertical-sin-11-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 1",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-01-400.avif",
+      "1024": "idea1-horizontal-sin-01-1024.avif",
+      "jpg": "idea1-horizontal-sin-01-1024.jpg",
+      "1344": "idea1-horizontal-sin-01-1344.avif",
+      "max": "idea1-horizontal-sin-01-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-02-400.avif",
+      "1024": "idea1-horizontal-sin-02-1024.avif",
+      "jpg": "idea1-horizontal-sin-02-1024.jpg",
+      "1344": "idea1-horizontal-sin-02-1344.avif",
+      "max": "idea1-horizontal-sin-02-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-03-400.avif",
+      "1024": "idea1-horizontal-sin-03-1024.avif",
+      "jpg": "idea1-horizontal-sin-03-1024.jpg",
+      "1344": "idea1-horizontal-sin-03-1344.avif",
+      "max": "idea1-horizontal-sin-03-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-04-400.avif",
+      "1024": "idea1-horizontal-sin-04-1024.avif",
+      "jpg": "idea1-horizontal-sin-04-1024.jpg",
+      "1344": "idea1-horizontal-sin-04-1344.avif",
+      "max": "idea1-horizontal-sin-04-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-05-400.avif",
+      "1024": "idea1-horizontal-sin-05-1024.avif",
+      "jpg": "idea1-horizontal-sin-05-1024.jpg",
+      "1344": "idea1-horizontal-sin-05-1344.avif",
+      "max": "idea1-horizontal-sin-05-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-06-400.avif",
+      "1024": "idea1-horizontal-sin-06-1024.avif",
+      "jpg": "idea1-horizontal-sin-06-1024.jpg",
+      "1344": "idea1-horizontal-sin-06-1344.avif",
+      "max": "idea1-horizontal-sin-06-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 7",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-07-400.avif",
+      "1024": "idea1-horizontal-sin-07-1024.avif",
+      "jpg": "idea1-horizontal-sin-07-1024.jpg",
+      "1344": "idea1-horizontal-sin-07-1344.avif",
+      "max": "idea1-horizontal-sin-07-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 8",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-08-400.avif",
+      "1024": "idea1-horizontal-sin-08-1024.avif",
+      "jpg": "idea1-horizontal-sin-08-1024.jpg",
+      "1344": "idea1-horizontal-sin-08-1344.avif",
+      "max": "idea1-horizontal-sin-08-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 9",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-09-400.avif",
+      "1024": "idea1-horizontal-sin-09-1024.avif",
+      "jpg": "idea1-horizontal-sin-09-1024.jpg",
+      "1344": "idea1-horizontal-sin-09-1344.avif",
+      "max": "idea1-horizontal-sin-09-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 10",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-10-400.avif",
+      "1024": "idea1-horizontal-sin-10-1024.avif",
+      "jpg": "idea1-horizontal-sin-10-1024.jpg",
+      "1344": "idea1-horizontal-sin-10-1344.avif",
+      "max": "idea1-horizontal-sin-10-1344.avif"
+     }
+    },
+    {
+     "pie": "Lámina 11",
+     "w": 1344,
+     "h": 768,
+     "src": {
+      "400": "idea1-horizontal-sin-11-400.avif",
+      "1024": "idea1-horizontal-sin-11-1024.avif",
+      "jpg": "idea1-horizontal-sin-11-1024.jpg",
+      "1344": "idea1-horizontal-sin-11-1344.avif",
+      "max": "idea1-horizontal-sin-11-1344.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/idea1-vertical",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/idea1-vertical"
+  },
+  {
    "id": "com-vacio",
    "titulo": "El vacío",
    "serie": "Comunicación",

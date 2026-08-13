@@ -23,7 +23,34 @@ W, H, FPS = 1080, 1920, 30
 # reutilizamos la maquetación de texto de v2
 import sys
 sys.path.insert(0, S)
+import reel2 as r2
 from reel2 import html_texto, capa_texto, duracion, ESCALA, SCRIM, NEGRO
+
+
+def formato(ancho, alto, y_texto=None, margen=None):
+    """Cambia el lienzo. Hay que tocar los dos módulos y recalcular el degradado.
+
+    El tamaño vive como global en `reel3` y en `reel2`, y `reel2` calcula al
+    importarse el degradado inferior (SCRIM) y su fondo negro a partir del ancho.
+    Cambiar solo `W` deja un degradado del tamaño viejo que no cubre la imagen:
+    por eso aquí se recalculan los dos.
+
+    En apaisado el texto no puede ir donde va en vertical —quedaría en el centro
+    de la escena—, así que baja al tercio inferior y el margen crece.
+    """
+    global W, H
+    W, H = ancho, alto
+    r2.W, r2.H = ancho, alto
+    apaisado = ancho > alto
+    r2.MARGEN = margen if margen is not None else (int(ancho * 0.075) if apaisado else 72)
+    # en apaisado Y_TEXTO es distancia desde ABAJO (ver html_texto); el 13 %
+    # deja libre la franja de los controles del reproductor
+    r2.Y_TEXTO = y_texto if y_texto is not None else (
+        int(alto * 0.13) if apaisado else 300)
+    r2.SCRIM = r2._scrim(alto=int(alto * (0.55 if apaisado else 0.73)))
+    r2.NEGRO = Image.new("RGB", (ancho, r2.SCRIM.height), (0, 0, 0))
+    globals()["SCRIM"], globals()["NEGRO"] = r2.SCRIM, r2.NEGRO
+    return W, H
 
 
 def suavisimo(t):
@@ -43,13 +70,16 @@ def deriva(t):
     return t
 
 
-# Cuatro recorridos de cámara, ninguno se detiene. El recorrido total es
-# corto (≈5%) porque a lo largo de 7-9 segundos eso ya es movimiento de sobra.
+# Cuatro recorridos, TODOS de dentro hacia fuera y mucho más profundos que
+# antes (5 % → 20 %). Se arranca cerca y se abre despacio: la imagen empieza
+# íntima y va revelando el espacio, que es lo que da sensación de crecimiento.
+# Lo que cambia entre uno y otro es el punto hacia el que se abre, no el
+# sentido — un zoom que entra detrás de otro que sale se lee como un tirón.
 MOVS = [
-    dict(z0=1.00, z1=1.052, ax=.50, ay=.42),   # acercarse
-    dict(z0=1.052, z1=1.00, ax=.50, ay=.46),   # alejarse
-    dict(z0=1.03, z1=1.078, ax=.38, ay=.35),   # acercarse hacia un lado
-    dict(z0=1.078, z1=1.028, ax=.60, ay=.51),  # alejarse desde el otro
+    dict(z0=1.22, z1=1.00, ax=.50, ay=.44),   # se abre al centro
+    dict(z0=1.20, z1=1.01, ax=.38, ay=.38),   # se abre hacia arriba-izquierda
+    dict(z0=1.24, z1=1.02, ax=.62, ay=.50),   # se abre hacia abajo-derecha
+    dict(z0=1.18, z1=1.00, ax=.46, ay=.56),   # se abre hacia abajo
 ]
 
 # Todas son fundidos. Cambia el micro-zoom que los acompaña.
@@ -87,7 +117,7 @@ def fundir(a, b, t, tipo):
 
 
 def montar(laminas, fondos_dir, salida_mp4, dir_capas, acento="#d8353d",
-           seg_transicion=1.45, crf=20):
+           seg_transicion=1.8, crf=20):
     os.makedirs(dir_capas, exist_ok=True)
     piezas, duraciones = [], []
     for i, L in enumerate(laminas, 1):
@@ -99,12 +129,26 @@ def montar(laminas, fondos_dir, salida_mp4, dir_capas, acento="#d8353d",
                        L.get("lista"), "%02d / %02d" % (i, len(laminas)),
                        acento, L.get("tam", ESCALA[4])),
             os.path.join(dir_capas, "capa-%02d.png" % i))
-        d = duracion(L)
+        # con audio manda el audio: si la lámina trae su duración, se respeta
+        d = L["dur"] if L.get("dur") else duracion(L)
         piezas.append((fondo, capa, MOVS[(i - 1) % len(MOVS)]))
         duraciones.append(d)
         print("   lámina %d — %.1f s" % (i, d))
 
-    n_tr = int(seg_transicion * FPS)
+    # la transición no puede durar más que el bloque: en vídeo con audio hay
+    # bloques de 2,3 s, y un fundido fijo se los comería enteros
+    n_tr = int(min(seg_transicion, 0.45 * min(duraciones)) * FPS)
+
+    # Cada lámina es VISIBLE durante su propio tramo MÁS el fundido en el que
+    # entra. Su cámara tiene que recorrer todo ese trecho de una vez.
+    #
+    # Antes no era así y ahí estaba el brinco: durante el fundido la entrante
+    # avanzaba del fotograma 0 al 33, y al empezar su tramo volvía al 0. La
+    # cámara saltaba hacia atrás en CADA transición. No era falta de suavidad,
+    # era un salto de verdad.
+    marcos = [int(d * FPS) for d in duraciones]
+    tramos = [m + (n_tr if i > 0 else 0) for i, m in enumerate(marcos)]
+    desfase = [n_tr if i > 0 else 0 for i in range(len(marcos))]
 
     cmd = [FFMPEG, "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
            "-s", "%dx%d" % (W, H), "-r", str(FPS), "-i", "-",
@@ -123,15 +167,14 @@ def montar(laminas, fondos_dir, salida_mp4, dir_capas, acento="#d8353d",
         return base
 
     total = 0
-    for i, d in enumerate(duraciones):
-        n = int(d * FPS)
+    for i, n in enumerate(marcos):
         for k in range(n):
-            img = compuesta(i, k, n)
+            img = compuesta(i, k + desfase[i], tramos[i])
             if i + 1 < len(piezas) and k >= n - n_tr:
                 t = (k - (n - n_tr)) / max(1, n_tr - 1)
-                n_sig = int(duraciones[i + 1] * FPS)
-                # la entrante ya viene en movimiento: nada se congela
-                img = fundir(img, compuesta(i + 1, int(t * n_tr), n_sig),
+                # la entrante recorre AQUÍ sus primeros n_tr fotogramas y sigue
+                # desde ahí en su propio tramo: la cámara nunca retrocede
+                img = fundir(img, compuesta(i + 1, int(t * n_tr), tramos[i + 1]),
                              t, FUNDIDOS[i % len(FUNDIDOS)])
             p.stdin.write(img.convert("RGB").tobytes())
             total += 1

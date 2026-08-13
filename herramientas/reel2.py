@@ -54,6 +54,12 @@ def duracion(L):
 
 
 def html_texto(kicker, titular, cuerpo, lista, pie, acento, tam):
+    # Anclaje del bloque de texto. En vertical va desde ARRIBA (el diseño de la
+    # serie pone el titular en el tercio superior). En apaisado va desde ABAJO:
+    # anclando arriba, un bloque de dos líneas deja medio cuadro vacío y otro de
+    # cuatro se sale. Anclado abajo aguanta cualquier número de líneas y respeta
+    # la franja donde el reproductor pone sus controles.
+    ANCLA = ("bottom:%dpx;" % Y_TEXTO) if W > H else ("top:%dpx;" % Y_TEXTO)
     bloque = ""
     if lista:
         bloque = '<div class="v">' + "".join(
@@ -68,7 +74,7 @@ def html_texto(kicker, titular, cuerpo, lista, pie, acento, tam):
   font-weight:200 800;font-display:block}}
 *{{margin:0;padding:0;box-sizing:border-box}}
 html,body{{width:{W}px;height:{H}px;background:transparent;overflow:hidden}}
-.caja{{position:absolute;left:{MARGEN}px;top:{Y_TEXTO}px;width:{W - 2 * MARGEN}px;
+.caja{{position:absolute;left:{MARGEN}px;{ANCLA}width:{W - 2 * MARGEN}px;
   display:flex;flex-direction:column;gap:24px}}
 .k{{font-family:N;font-weight:600;font-size:{ESCALA[0] - 4}px;
   font-variation-settings:"opsz" 20;letter-spacing:.24em;text-transform:uppercase;

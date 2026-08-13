@@ -96,7 +96,49 @@ HIST = [
 ]
 
 
+MANIFIESTO = os.path.join(IMG, ".manifiesto.json")
+_cache = {}
+_vivos = set()
+
+
+def _cargar_cache():
+    """Qué derivadas existen ya y de qué original salieron.
+
+    Sin esto, cada reconstrucción borraba sitio/img y volvía a convertir las
+    1016 derivadas: 47 segundos. Con caché son ~2 s cuando nada cambió, y eso
+    importa porque la regla es actualizar el portal SIEMPRE, y algo que cuesta
+    47 segundos se actualiza menos.
+    """
+    global _cache
+    try:
+        with open(MANIFIESTO, encoding="utf-8") as f:
+            _cache = json.load(f)
+    except (OSError, ValueError):
+        _cache = {}
+
+
+def _guardar_cache():
+    with open(MANIFIESTO, "w", encoding="utf-8") as f:
+        json.dump(_cache, f)
+
+
+def _sello(p):
+    """mtime y tamaño: basta para saber si el original cambió, y es instantáneo
+    frente a leer y hashear 66 MB de PNG."""
+    st = os.stat(p)
+    return [int(st.st_mtime), st.st_size]
+
+
 def derivar(origen, base):
+    clave = base
+    sello = _sello(origen)
+    guardado = _cache.get(clave)
+    if guardado and guardado["sello"] == sello and all(
+            os.path.exists(os.path.join(IMG, v))
+            for k, v in guardado["src"].items() if k != "max"):
+        _vivos.update(v for k, v in guardado["src"].items() if k != "max")
+        return guardado["src"], guardado["w"], guardado["h"]
+
     im = Image.open(origen).convert("RGB")
     w0, h0 = im.size
     anchos = [a for a in TAM if a <= w0]
@@ -115,6 +157,9 @@ def derivar(origen, base):
             red.save(os.path.join(IMG, j), "JPEG", quality=82, optimize=True)
             sal["jpg"] = j
     sal["max"] = sal[grande]
+    sal = {str(k): v for k, v in sal.items()}
+    _cache[clave] = {"sello": sello, "src": sal, "w": w0, "h": h0}
+    _vivos.update(v for k, v in sal.items() if k != "max")
     return sal, w0, h0
 
 
@@ -126,8 +171,7 @@ def piezas(idp, carpeta, patron, n=6, sufijo=""):
         if not os.path.exists(p):
             return None
         src, w, h = derivar(p, "%s%s-%02d" % (idp, sufijo, i))
-        out.append({"pie": "Lámina %d" % i, "w": w, "h": h,
-                    "src": {str(k): v for k, v in src.items()}})
+        out.append({"pie": "Lámina %d" % i, "w": w, "h": h, "src": src})
     return out
 
 
@@ -135,18 +179,89 @@ def existe(p):
     return os.path.exists(os.path.join(DESC, p))
 
 
-def construir():
-    if os.path.isdir(IMG):
-        shutil.rmtree(IMG)
+# --- proyectos nacidos de un audio: una ficha, los dos formatos dentro ---
+AUDIO = [
+ ("idea1", "Idea 1", "El miedo y la emoción son la misma sensación.",
+  "Primer vídeo hecho a partir de un audio: transcripción con marcas por palabra, "
+  "troceado por las pausas reales y once escenas escritas para cada bloque. "
+  "Vertical y apaisado desde el mismo audio.",
+  ["audio", "comunicación", "rojo-carbón"], 11),
+]
+
+
+def desde_audio():
+    """Una ficha con los DOS formatos dentro, no dos fichas.
+
+    La regla del portal no cambia porque el vídeo venga de un audio: un proyecto
+    es una ficha con todo. Aquí «todo» incluye vertical y apaisado, que son el
+    mismo contenido en dos lienzos.
+    """
+    fuera = []
+    for slug, tit, res, nota, tags, n in AUDIO:
+        vids, desc, con, sin = [], [], [], []
+        for etq in ("vertical", "horizontal"):
+            d = f"{OUT}/{slug}-{etq}"
+            # dos montajes del mismo material: el de fundidos largos y el de
+            # ritmo (34 planos cortados sobre el pulso del habla)
+            # «ritmo-» se retiró: cortaba entre encuadres de la misma imagen
+            # fija y eso se lee como fallo de reproducción, no como edición
+            for pref, nombre in (("flujo-", "texto vivo"), ("", "reposado")):
+                mp4 = f"{slug}-{pref}{etq}.mp4"
+                if existe(mp4):
+                    vids.append({"etq": "Ver %s · %s" % (etq, nombre),
+                                 "url": "descargas/" + mp4})
+                    desc.append({"etq": "Vídeo %s · %s" % (etq, nombre),
+                                 "url": "descargas/" + mp4})
+            z = f"laminas-{slug}-{etq}.zip"
+            if existe(z):
+                desc.append({"etq": "ZIP · %d láminas %s" % (n, etq),
+                             "url": "descargas/" + z})
+            c = piezas(f"{slug}-{etq}", f"{d}/LAMINAS", "l-%02d.png", n=n)
+            if c:
+                con += c
+            s_ = piezas(f"{slug}-{etq}", d, "f%02d.png", n=n, sufijo="-sin")
+            if s_:
+                sin += s_
+        if not con:
+            print("  ! sin láminas:", slug)
+            continue
+        fuera.append({
+            "id": slug, "titulo": tit, "serie": "Desde audio",
+            "resumen": res, "nota": nota, "etiquetas": tags + ["desde audio"],
+            "fecha": "2026-08-12", "formato": "1080×1920 y 1920×1080",
+            "video": vids[0]["url"] if vids else None, "videos": vids,
+            "descargas": desc, "piezas": con, "sin_texto": sin,
+            "carpeta": "file://" + quote(f"{OUT}/{slug}-vertical"),
+            "rutaAbs": f"{OUT}/{slug}-vertical",
+        })
+    return fuera
+
+
+# Cuántas derivadas puede barrer una reconstrucción sin sospechar. Un proyecto
+# son ~48, así que 60 permite rehacer uno entero y se planta si desaparecen dos.
+TOPE_BARRIDO = 60
+
+
+def construir(minimo_proyectos=None, barrer=True):
+    """minimo_proyectos: se niega a publicar si salen menos.
+
+    Existe porque este constructor podía DESTRUIR TRABAJO EN SILENCIO. Si un
+    cambio de pipeline renombraba una salida, `piezas()` devolvía None, el
+    proyecto caía de la lista con un `continue`, sus derivadas dejaban de estar
+    en `_vivos` y el barrido las borraba. Con código de salida 0 y sin un solo
+    error en pantalla. Y `out/` y `sitio/img/` están en .gitignore: no hay copia.
+    """
     os.makedirs(IMG, exist_ok=True)
+    _cargar_cache()
     proyectos = []
+    saltados = []
 
     for slug, tit, res, nota, tags in COM:
         d = f"{OUT}/com-{slug}"
         con = piezas("com-" + slug, f"{d}/LAMINAS", "l-%02d.png")
         sin = piezas("com-" + slug, d, "f%d.png", sufijo="-sin")
         if not con:
-            print("  ! sin láminas:", slug); continue
+            saltados.append(slug); continue
         desc = []
         for etq, arch in (("Vídeo MP4", f"reel-com-{slug}.mp4"),
                           ("PDF · 6 páginas", f"carrusel-com-{slug}.pdf"),
@@ -170,7 +285,7 @@ def construir():
                            for i, a in enumerate(arch_sin, 1)) if x]
         sin = [x[0] for x in sin]
         if not con:
-            print("  ! sin láminas:", slug); continue
+            saltados.append(slug); continue
         desc = [{"etq": e, "url": "descargas/" + a}
                 for e, a in (("Vídeo MP4", mp4), ("PDF · 7 páginas", pdf),
                              ("ZIP · 6 láminas", zipf)) if existe(a)]
@@ -182,6 +297,8 @@ def construir():
             "descargas": desc, "piezas": con, "sin_texto": sin,
             "carpeta": "file://" + quote(dsin), "rutaAbs": dsin,
         })
+
+    proyectos = desde_audio() + proyectos
 
     datos = {"generado": "2026-08-12", "proyecto": PROY,
              "url_sitio": "file://" + quote(os.path.join(SITIO, "index.html")),
@@ -197,6 +314,35 @@ def construir():
     if n != 1:
         raise RuntimeError("no encontré el bloque de datos en index.html")
     open(idx, "w", encoding="utf-8").write(html)
+
+    if saltados:
+        print("  ! sin láminas: %s" % ", ".join(saltados))
+    if minimo_proyectos and len(proyectos) < minimo_proyectos:
+        raise RuntimeError(
+            "solo salieron %d proyectos y se esperaban al menos %d (faltan: %s). "
+            "NO se ha barrido nada ni tocado el portal."
+            % (len(proyectos), minimo_proyectos, ", ".join(saltados) or "?"))
+
+    # barrer solo lo que ya no referencia nadie, y NUNCA a lo bruto
+    sobran = [n for n in os.listdir(IMG)
+              if not n.startswith(".") and n not in _vivos]
+    if len(sobran) > TOPE_BARRIDO and barrer:
+        raise RuntimeError(
+            "el barrido quería borrar %d derivadas (tope %d). Eso significa que "
+            "un proyecto ha desaparecido de la lista, no que sobren archivos. "
+            "Revísalo; no se ha borrado nada." % (len(sobran), TOPE_BARRIDO))
+    huerfanos = 0
+    if barrer:
+        for n in sobran:
+            os.remove(os.path.join(IMG, n))
+            huerfanos += 1
+    for k in [k for k, v in _cache.items()
+              if not all(os.path.exists(os.path.join(IMG, x))
+                         for kk, x in v["src"].items() if kk != "max")]:
+        del _cache[k]
+    _guardar_cache()
+    if huerfanos:
+        print("  %d derivadas huérfanas barridas" % huerfanos)
 
     nc = sum(len(p["piezas"]) for p in proyectos)
     ns = sum(len(p["sin_texto"]) for p in proyectos)

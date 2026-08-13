@@ -1,0 +1,501 @@
+{
+ "texto": "El miedo y la emoción son la misma sensación, exacta. Corazón acelerado, manos frías, vacío en el estómago. ¿Montaña rusa o hablar en público? Tu cuerpo no sabe la diferencia, solo tú se la pones. Estoy muerto de miedo y tu cerebro se prepara para huir. Estoy emocionado y se prepara para atacar. Misma sensación, resultado opuesto. Antes de esa llamada, no digas qué nervios, di qué emoción Antes del aumento, no me va a temblar la voz, sino esto me prende No estás mintiendo, es la misma energía con otro nombre El miedo no se quita, se renombra",
+ "palabras": [
+  {
+   "palabra": "El",
+   "inicio": 0.0,
+   "fin": 0.44
+  },
+  {
+   "palabra": "miedo",
+   "inicio": 0.44,
+   "fin": 0.84
+  },
+  {
+   "palabra": "y",
+   "inicio": 0.84,
+   "fin": 1.0
+  },
+  {
+   "palabra": "la",
+   "inicio": 1.0,
+   "fin": 1.12
+  },
+  {
+   "palabra": "emoción",
+   "inicio": 1.12,
+   "fin": 1.68
+  },
+  {
+   "palabra": "son",
+   "inicio": 1.68,
+   "fin": 2.26
+  },
+  {
+   "palabra": "la",
+   "inicio": 2.26,
+   "fin": 2.44
+  },
+  {
+   "palabra": "misma",
+   "inicio": 2.44,
+   "fin": 2.84
+  },
+  {
+   "palabra": "sensación,",
+   "inicio": 2.84,
+   "fin": 3.54
+  },
+  {
+   "palabra": "exacta.",
+   "inicio": 3.76,
+   "fin": 4.68
+  },
+  {
+   "palabra": "Corazón",
+   "inicio": 5.16,
+   "fin": 5.88
+  },
+  {
+   "palabra": "acelerado,",
+   "inicio": 5.88,
+   "fin": 6.62
+  },
+  {
+   "palabra": "manos",
+   "inicio": 6.92,
+   "fin": 7.3
+  },
+  {
+   "palabra": "frías,",
+   "inicio": 7.3,
+   "fin": 7.82
+  },
+  {
+   "palabra": "vacío",
+   "inicio": 8.38,
+   "fin": 8.82
+  },
+  {
+   "palabra": "en",
+   "inicio": 8.82,
+   "fin": 8.96
+  },
+  {
+   "palabra": "el",
+   "inicio": 8.96,
+   "fin": 9.08
+  },
+  {
+   "palabra": "estómago.",
+   "inicio": 9.08,
+   "fin": 9.58
+  },
+  {
+   "palabra": "¿Montaña",
+   "inicio": 10.34,
+   "fin": 10.98
+  },
+  {
+   "palabra": "rusa",
+   "inicio": 10.98,
+   "fin": 11.38
+  },
+  {
+   "palabra": "o",
+   "inicio": 11.38,
+   "fin": 11.86
+  },
+  {
+   "palabra": "hablar",
+   "inicio": 11.86,
+   "fin": 12.14
+  },
+  {
+   "palabra": "en",
+   "inicio": 12.14,
+   "fin": 12.28
+  },
+  {
+   "palabra": "público?",
+   "inicio": 12.28,
+   "fin": 12.64
+  },
+  {
+   "palabra": "Tu",
+   "inicio": 13.1,
+   "fin": 13.66
+  },
+  {
+   "palabra": "cuerpo",
+   "inicio": 13.66,
+   "fin": 13.98
+  },
+  {
+   "palabra": "no",
+   "inicio": 13.98,
+   "fin": 14.26
+  },
+  {
+   "palabra": "sabe",
+   "inicio": 14.26,
+   "fin": 14.6
+  },
+  {
+   "palabra": "la",
+   "inicio": 14.6,
+   "fin": 14.76
+  },
+  {
+   "palabra": "diferencia,",
+   "inicio": 14.76,
+   "fin": 15.28
+  },
+  {
+   "palabra": "solo",
+   "inicio": 16.0,
+   "fin": 16.3
+  },
+  {
+   "palabra": "tú",
+   "inicio": 16.3,
+   "fin": 16.6
+  },
+  {
+   "palabra": "se",
+   "inicio": 16.6,
+   "fin": 16.82
+  },
+  {
+   "palabra": "la",
+   "inicio": 16.82,
+   "fin": 16.92
+  },
+  {
+   "palabra": "pones.",
+   "inicio": 16.92,
+   "fin": 17.34
+  },
+  {
+   "palabra": "Estoy",
+   "inicio": 18.38,
+   "fin": 18.82
+  },
+  {
+   "palabra": "muerto",
+   "inicio": 18.82,
+   "fin": 19.42
+  },
+  {
+   "palabra": "de",
+   "inicio": 19.42,
+   "fin": 19.6
+  },
+  {
+   "palabra": "miedo",
+   "inicio": 19.6,
+   "fin": 19.92
+  },
+  {
+   "palabra": "y",
+   "inicio": 19.92,
+   "fin": 20.62
+  },
+  {
+   "palabra": "tu",
+   "inicio": 20.62,
+   "fin": 20.78
+  },
+  {
+   "palabra": "cerebro",
+   "inicio": 20.78,
+   "fin": 21.18
+  },
+  {
+   "palabra": "se",
+   "inicio": 21.18,
+   "fin": 21.36
+  },
+  {
+   "palabra": "prepara",
+   "inicio": 21.36,
+   "fin": 21.74
+  },
+  {
+   "palabra": "para",
+   "inicio": 21.74,
+   "fin": 21.92
+  },
+  {
+   "palabra": "huir.",
+   "inicio": 21.92,
+   "fin": 22.22
+  },
+  {
+   "palabra": "Estoy",
+   "inicio": 22.7,
+   "fin": 23.48
+  },
+  {
+   "palabra": "emocionado",
+   "inicio": 23.48,
+   "fin": 24.44
+  },
+  {
+   "palabra": "y",
+   "inicio": 24.44,
+   "fin": 25.08
+  },
+  {
+   "palabra": "se",
+   "inicio": 25.08,
+   "fin": 25.22
+  },
+  {
+   "palabra": "prepara",
+   "inicio": 25.22,
+   "fin": 25.66
+  },
+  {
+   "palabra": "para",
+   "inicio": 25.66,
+   "fin": 25.84
+  },
+  {
+   "palabra": "atacar.",
+   "inicio": 25.84,
+   "fin": 26.34
+  },
+  {
+   "palabra": "Misma",
+   "inicio": 27.16,
+   "fin": 27.66
+  },
+  {
+   "palabra": "sensación,",
+   "inicio": 27.66,
+   "fin": 28.34
+  },
+  {
+   "palabra": "resultado",
+   "inicio": 28.92,
+   "fin": 29.36
+  },
+  {
+   "palabra": "opuesto.",
+   "inicio": 29.36,
+   "fin": 29.92
+  },
+  {
+   "palabra": "Antes",
+   "inicio": 30.0,
+   "fin": 31.28
+  },
+  {
+   "palabra": "de",
+   "inicio": 31.28,
+   "fin": 31.48
+  },
+  {
+   "palabra": "esa",
+   "inicio": 31.48,
+   "fin": 31.68
+  },
+  {
+   "palabra": "llamada,",
+   "inicio": 31.68,
+   "fin": 32.12
+  },
+  {
+   "palabra": "no",
+   "inicio": 32.36,
+   "fin": 32.8
+  },
+  {
+   "palabra": "digas",
+   "inicio": 32.8,
+   "fin": 33.34
+  },
+  {
+   "palabra": "qué",
+   "inicio": 33.34,
+   "fin": 33.82
+  },
+  {
+   "palabra": "nervios,",
+   "inicio": 33.82,
+   "fin": 34.42
+  },
+  {
+   "palabra": "di",
+   "inicio": 35.06,
+   "fin": 35.26
+  },
+  {
+   "palabra": "qué",
+   "inicio": 35.26,
+   "fin": 35.8
+  },
+  {
+   "palabra": "emoción",
+   "inicio": 35.8,
+   "fin": 36.52
+  },
+  {
+   "palabra": "Antes",
+   "inicio": 36.52,
+   "fin": 37.76
+  },
+  {
+   "palabra": "del",
+   "inicio": 37.76,
+   "fin": 37.98
+  },
+  {
+   "palabra": "aumento,",
+   "inicio": 37.98,
+   "fin": 38.4
+  },
+  {
+   "palabra": "no",
+   "inicio": 38.8,
+   "fin": 39.36
+  },
+  {
+   "palabra": "me",
+   "inicio": 39.36,
+   "fin": 40.06
+  },
+  {
+   "palabra": "va",
+   "inicio": 40.06,
+   "fin": 40.22
+  },
+  {
+   "palabra": "a",
+   "inicio": 40.22,
+   "fin": 40.36
+  },
+  {
+   "palabra": "temblar",
+   "inicio": 40.36,
+   "fin": 40.7
+  },
+  {
+   "palabra": "la",
+   "inicio": 40.7,
+   "fin": 40.82
+  },
+  {
+   "palabra": "voz,",
+   "inicio": 40.82,
+   "fin": 41.1
+  },
+  {
+   "palabra": "sino",
+   "inicio": 41.36,
+   "fin": 42.0
+  },
+  {
+   "palabra": "esto",
+   "inicio": 42.0,
+   "fin": 42.98
+  },
+  {
+   "palabra": "me",
+   "inicio": 42.98,
+   "fin": 43.18
+  },
+  {
+   "palabra": "prende",
+   "inicio": 43.18,
+   "fin": 43.8
+  },
+  {
+   "palabra": "No",
+   "inicio": 43.8,
+   "fin": 44.96
+  },
+  {
+   "palabra": "estás",
+   "inicio": 44.96,
+   "fin": 45.28
+  },
+  {
+   "palabra": "mintiendo,",
+   "inicio": 45.28,
+   "fin": 45.84
+  },
+  {
+   "palabra": "es",
+   "inicio": 46.18,
+   "fin": 46.58
+  },
+  {
+   "palabra": "la",
+   "inicio": 46.58,
+   "fin": 46.76
+  },
+  {
+   "palabra": "misma",
+   "inicio": 46.76,
+   "fin": 47.18
+  },
+  {
+   "palabra": "energía",
+   "inicio": 47.18,
+   "fin": 47.64
+  },
+  {
+   "palabra": "con",
+   "inicio": 47.64,
+   "fin": 48.12
+  },
+  {
+   "palabra": "otro",
+   "inicio": 48.12,
+   "fin": 48.4
+  },
+  {
+   "palabra": "nombre",
+   "inicio": 48.4,
+   "fin": 48.76
+  },
+  {
+   "palabra": "El",
+   "inicio": 48.76,
+   "fin": 49.94
+  },
+  {
+   "palabra": "miedo",
+   "inicio": 49.94,
+   "fin": 50.22
+  },
+  {
+   "palabra": "no",
+   "inicio": 50.22,
+   "fin": 50.48
+  },
+  {
+   "palabra": "se",
+   "inicio": 50.48,
+   "fin": 50.68
+  },
+  {
+   "palabra": "quita,",
+   "inicio": 50.68,
+   "fin": 50.98
+  },
+  {
+   "palabra": "se",
+   "inicio": 51.32,
+   "fin": 51.74
+  },
+  {
+   "palabra": "renombra",
+   "inicio": 51.74,
+   "fin": 52.38
+  }
+ ],
+ "duracion": 52.38
+}

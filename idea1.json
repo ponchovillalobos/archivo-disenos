@@ -1,0 +1,20 @@
+{
+ "vertical": {
+  "salida": "/Users/maity/Desktop/Confy Imagenes/sitio/descargas/idea1-vertical.mp4",
+  "fotogramas": 1598,
+  "video_s": 53.27,
+  "audio_s": 53.36,
+  "desfase_s": -0.09,
+  "mb": 18.38,
+  "formato": "1080x1920"
+ },
+ "horizontal": {
+  "salida": "/Users/maity/Desktop/Confy Imagenes/sitio/descargas/idea1-horizontal.mp4",
+  "fotogramas": 1598,
+  "video_s": 53.27,
+  "audio_s": 53.36,
+  "desfase_s": -0.09,
+  "mb": 18.5,
+  "formato": "1920x1080"
+ }
+}

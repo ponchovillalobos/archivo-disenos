@@ -1,0 +1,90 @@
+[
+ {
+  "n": 1,
+  "inicio": 0.0,
+  "fin": 4.68,
+  "duracion": 4.68,
+  "texto": "El miedo y la emoción son la misma sensación, exacta.",
+  "sospechoso": false
+ },
+ {
+  "n": 2,
+  "inicio": 5.16,
+  "fin": 7.82,
+  "duracion": 2.66,
+  "texto": "Corazón acelerado, manos frías,",
+  "sospechoso": false
+ },
+ {
+  "n": 3,
+  "inicio": 8.38,
+  "fin": 12.64,
+  "duracion": 4.26,
+  "texto": "vacío en el estómago. ¿Montaña rusa o hablar en público?",
+  "sospechoso": true
+ },
+ {
+  "n": 4,
+  "inicio": 13.1,
+  "fin": 17.34,
+  "duracion": 4.24,
+  "texto": "Tu cuerpo no sabe la diferencia, solo tú se la pones.",
+  "sospechoso": false
+ },
+ {
+  "n": 5,
+  "inicio": 18.38,
+  "fin": 22.22,
+  "duracion": 3.84,
+  "texto": "Estoy muerto de miedo y tu cerebro se prepara para huir.",
+  "sospechoso": false
+ },
+ {
+  "n": 6,
+  "inicio": 22.7,
+  "fin": 26.34,
+  "duracion": 3.64,
+  "texto": "Estoy emocionado y se prepara para atacar.",
+  "sospechoso": false
+ },
+ {
+  "n": 7,
+  "inicio": 27.16,
+  "fin": 29.92,
+  "duracion": 2.76,
+  "texto": "Misma sensación, resultado opuesto.",
+  "sospechoso": false
+ },
+ {
+  "n": 8,
+  "inicio": 30.0,
+  "fin": 34.42,
+  "duracion": 4.42,
+  "texto": "Antes de esa llamada, no digas qué nervios,",
+  "sospechoso": false
+ },
+ {
+  "n": 9,
+  "inicio": 35.06,
+  "fin": 42.98,
+  "duracion": 7.92,
+  "texto": "di qué emoción Antes del aumento, no me va a temblar la voz, sino esto",
+  "sospechoso": true
+ },
+ {
+  "n": 10,
+  "inicio": 42.98,
+  "fin": 48.76,
+  "duracion": 5.78,
+  "texto": "me prende No estás mintiendo, es la misma energía con otro nombre",
+  "sospechoso": false
+ },
+ {
+  "n": 11,
+  "inicio": 48.76,
+  "fin": 52.38,
+  "duracion": 3.62,
+  "texto": "El miedo no se quita, se renombra",
+  "sospechoso": false
+ }
+]
