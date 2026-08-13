@@ -55,6 +55,21 @@ def comfyui():
     return "MPS activo"
 
 
+def salud_de_produccion():
+    """Que ComfyUI viva no basta: hay que saber si está degradado.
+
+    Tres veces la generación cayó de 57 s a más de 10 min por imagen y las tres
+    lo descubrió el usuario. El swap por encima de ~9 GB es la señal temprana.
+    """
+    from guardian import salud
+    s = salud()
+    assert s["comfyui"], "ComfyUI no responde o no está en MPS"
+    assert s["swap_mb"] < 9000, (
+        "swap en %d MB: la generación se degradará. Reinicia ComfyUI"
+        % s["swap_mb"])
+    return "MPS · cola %d · swap %d MB" % (s["cola"], s["swap_mb"])
+
+
 def flujo_de_imagen():
     from lote import flujo
     p = flujo("zz-humo", "escena", "objeto", "encuadre", "aire", "luz",
@@ -241,6 +256,35 @@ def voz_no_diverge():
     return "escala, paletas, ánimos y fps cuadran con el código"
 
 
+def nada_huerfano():
+    """Ningún archivo entregable puede existir sin aparecer en el portal.
+
+    Pasó y costó: 17 vídeos vivían en `descargas/` y ninguno se veía, porque el
+    catálogo los descartaba con un `continue` al faltarles las láminas. La causa
+    de fondo fue peor — el productor llevaba una hora corriendo con una versión
+    vieja del código en memoria, así que editar el módulo no cambió nada.
+
+    Esta prueba compara DISCO contra CATÁLOGO. Si algo se produce y no se
+    publica, salta aquí y no dentro de dos horas.
+    """
+    import glob
+    S_ = os.path.join(PROY, "sitio")
+    h = open(os.path.join(S_, "index.html"), encoding="utf-8").read()
+    d = json.loads(re.search(r'<script id="datos"[^>]*>(.*?)</script>',
+                             h, re.S).group(1))
+    en_cat = {os.path.basename(p["video"]) for p in d["proyectos"] if p.get("video")}
+    en_cat |= {os.path.basename(v["url"]) for p in d["proyectos"]
+               for v in p.get("videos", [])}
+    en_disco = {os.path.basename(x) for x in glob.glob(S_ + "/descargas/*.mp4")}
+    sueltos = sorted(en_disco - en_cat)
+    assert not sueltos, ("%d vídeos existen y NO se ven en el portal: %s"
+                         % (len(sueltos), ", ".join(sueltos[:4])))
+    assert d.get("sello"), "el catálogo se publicó sin sello: la página no se "\
+                           "auto-actualizará"
+    return "%d vídeos en disco, %d en el portal, 0 sueltos" % (
+        len(en_disco), len(en_cat))
+
+
 def recetario_vivo():
     import recetario
     a = recetario.ARCHIVO
@@ -263,6 +307,7 @@ def montadores():
 
 PRUEBAS = [
     ("ComfyUI en pie", comfyui),
+    ("salud de producción", salud_de_produccion),
     ("flujo de imagen + vetos", flujo_de_imagen),
     ("paletas y ánimos", paletas_y_animos),
     ("catálogo de fuentes", catalogo_de_fuentes),
@@ -276,6 +321,7 @@ PRUEBAS = [
     ("guardián del catálogo", guardian_del_catalogo),
     ("contrato congruente", contrato_congruente),
     ("la voz no diverge", voz_no_diverge),
+    ("nada huérfano", nada_huerfano),
     ("recetario", recetario_vivo),
 ]
 

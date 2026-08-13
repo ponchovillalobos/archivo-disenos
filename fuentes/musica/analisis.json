@@ -1,0 +1,434 @@
+[
+ {
+  "pista": "Itty_Bitty_8_Bit",
+  "tempo": 108,
+  "brillo": 2744,
+  "energia": 0.1742,
+  "modo": 0.199,
+  "puntos": 3.754
+ },
+ {
+  "pista": "Wallpaper",
+  "tempo": 92,
+  "brillo": 1166,
+  "energia": 0.2421,
+  "modo": 0.321,
+  "puntos": 3.416
+ },
+ {
+  "pista": "Funky_Chunk",
+  "tempo": 117,
+  "brillo": 2030,
+  "energia": 0.1577,
+  "modo": 0.171,
+  "puntos": 3.339
+ },
+ {
+  "pista": "Who_Likes_to_Party",
+  "tempo": 117,
+  "brillo": 2993,
+  "energia": 0.2015,
+  "modo": -0.034,
+  "puntos": 3.337
+ },
+ {
+  "pista": "Take_a_Chance",
+  "tempo": 123,
+  "brillo": 1305,
+  "energia": 0.1997,
+  "modo": 0.187,
+  "puntos": 3.173
+ },
+ {
+  "pista": "Killers",
+  "tempo": 103,
+  "brillo": 2088,
+  "energia": 0.1305,
+  "modo": 0.144,
+  "puntos": 3.098
+ },
+ {
+  "pista": "Disco_con_Tutti",
+  "tempo": 117,
+  "brillo": 2109,
+  "energia": 0.1463,
+  "modo": 0.08,
+  "puntos": 3.085
+ },
+ {
+  "pista": "Funk_Game_Loop",
+  "tempo": 103,
+  "brillo": 1866,
+  "energia": 0.1024,
+  "modo": 0.269,
+  "puntos": 3.077
+ },
+ {
+  "pista": "Cut_and_Run",
+  "tempo": 108,
+  "brillo": 2084,
+  "energia": 0.2585,
+  "modo": -0.018,
+  "puntos": 3.022
+ },
+ {
+  "pista": "Exhilarate",
+  "tempo": 172,
+  "brillo": 2760,
+  "energia": 0.2564,
+  "modo": 0.096,
+  "puntos": 2.833
+ },
+ {
+  "pista": "Adventure_Meme",
+  "tempo": 112,
+  "brillo": 2351,
+  "energia": 0.2531,
+  "modo": -0.159,
+  "puntos": 2.814
+ },
+ {
+  "pista": "Clash_Defiant",
+  "tempo": 86,
+  "brillo": 1318,
+  "energia": 0.2077,
+  "modo": 0.018,
+  "puntos": 2.807
+ },
+ {
+  "pista": "Mechanolith",
+  "tempo": 144,
+  "brillo": 1820,
+  "energia": 0.1347,
+  "modo": 0.016,
+  "puntos": 2.745
+ },
+ {
+  "pista": "Local_Forecast_-_Elevator",
+  "tempo": 108,
+  "brillo": 2595,
+  "energia": 0.0413,
+  "modo": 0.114,
+  "puntos": 2.558
+ },
+ {
+  "pista": "Inspired",
+  "tempo": 117,
+  "brillo": 630,
+  "energia": 0.1835,
+  "modo": 0.024,
+  "puntos": 2.554
+ },
+ {
+  "pista": "Heroic_Age",
+  "tempo": 129,
+  "brillo": 1518,
+  "energia": 0.122,
+  "modo": 0.014,
+  "puntos": 2.53
+ },
+ {
+  "pista": "Five_Armies",
+  "tempo": 117,
+  "brillo": 1023,
+  "energia": 0.1337,
+  "modo": 0.007,
+  "puntos": 2.413
+ },
+ {
+  "pista": "Hitman",
+  "tempo": 99,
+  "brillo": 2028,
+  "energia": 0.1387,
+  "modo": -0.187,
+  "puntos": 2.409
+ },
+ {
+  "pista": "Spy_Glass",
+  "tempo": 112,
+  "brillo": 1830,
+  "energia": 0.0721,
+  "modo": 0.063,
+  "puntos": 2.384
+ },
+ {
+  "pista": "Voltaic",
+  "tempo": 117,
+  "brillo": 2756,
+  "energia": 0.1106,
+  "modo": -0.234,
+  "puntos": 2.376
+ },
+ {
+  "pista": "Wholesome",
+  "tempo": 129,
+  "brillo": 555,
+  "energia": 0.0946,
+  "modo": 0.194,
+  "puntos": 2.349
+ },
+ {
+  "pista": "Curse_of_the_Scarab",
+  "tempo": 96,
+  "brillo": 1830,
+  "energia": 0.0723,
+  "modo": 0.026,
+  "puntos": 2.302
+ },
+ {
+  "pista": "Deliberate_Thought",
+  "tempo": 136,
+  "brillo": 391,
+  "energia": 0.0814,
+  "modo": 0.224,
+  "puntos": 2.253
+ },
+ {
+  "pista": "Meditation_Impromptu_02",
+  "tempo": 144,
+  "brillo": 587,
+  "energia": 0.0421,
+  "modo": 0.32,
+  "puntos": 2.246
+ },
+ {
+  "pista": "Bossa_Antigua",
+  "tempo": 144,
+  "brillo": 1207,
+  "energia": 0.0548,
+  "modo": 0.167,
+  "puntos": 2.244
+ },
+ {
+  "pista": "The_Complex",
+  "tempo": 103,
+  "brillo": 1338,
+  "energia": 0.1135,
+  "modo": -0.072,
+  "puntos": 2.207
+ },
+ {
+  "pista": "Electrodoodle",
+  "tempo": 161,
+  "brillo": 1241,
+  "energia": 0.1986,
+  "modo": 0.017,
+  "puntos": 2.074
+ },
+ {
+  "pista": "Redletter",
+  "tempo": 123,
+  "brillo": 667,
+  "energia": 0.0576,
+  "modo": 0.173,
+  "puntos": 2.069
+ },
+ {
+  "pista": "Dispersion_Relation",
+  "tempo": 103,
+  "brillo": 1671,
+  "energia": 0.077,
+  "modo": -0.072,
+  "puntos": 2.061
+ },
+ {
+  "pista": "Oppressive_Gloom",
+  "tempo": 123,
+  "brillo": 700,
+  "energia": 0.0766,
+  "modo": 0.09,
+  "puntos": 2.041
+ },
+ {
+  "pista": "Arcadia",
+  "tempo": 112,
+  "brillo": 1342,
+  "energia": 0.06,
+  "modo": 0.025,
+  "puntos": 2.022
+ },
+ {
+  "pista": "Easy_Lemon",
+  "tempo": 161,
+  "brillo": 616,
+  "energia": 0.1178,
+  "modo": 0.271,
+  "puntos": 2.017
+ },
+ {
+  "pista": "Anxiety",
+  "tempo": 136,
+  "brillo": 194,
+  "energia": 0.0963,
+  "modo": 0.098,
+  "puntos": 2.013
+ },
+ {
+  "pista": "Crusade",
+  "tempo": 92,
+  "brillo": 1024,
+  "energia": 0.1069,
+  "modo": -0.089,
+  "puntos": 2.0
+ },
+ {
+  "pista": "Stormfront",
+  "tempo": 123,
+  "brillo": 565,
+  "energia": 0.1194,
+  "modo": -0.061,
+  "puntos": 1.979
+ },
+ {
+  "pista": "Severe_Tire_Damage",
+  "tempo": 152,
+  "brillo": 2567,
+  "energia": 0.1979,
+  "modo": -0.261,
+  "puntos": 1.973
+ },
+ {
+  "pista": "Achilles",
+  "tempo": 112,
+  "brillo": 1133,
+  "energia": 0.1409,
+  "modo": -0.239,
+  "puntos": 1.967
+ },
+ {
+  "pista": "Overworld",
+  "tempo": 66,
+  "brillo": 2918,
+  "energia": 0.1093,
+  "modo": -0.129,
+  "puntos": 1.958
+ },
+ {
+  "pista": "Darkest_Child",
+  "tempo": 129,
+  "brillo": 706,
+  "energia": 0.1173,
+  "modo": -0.099,
+  "puntos": 1.933
+ },
+ {
+  "pista": "Investigations",
+  "tempo": 96,
+  "brillo": 786,
+  "energia": 0.0561,
+  "modo": 0.091,
+  "puntos": 1.924
+ },
+ {
+  "pista": "Volatile_Reaction",
+  "tempo": 152,
+  "brillo": 1250,
+  "energia": 0.3278,
+  "modo": -0.072,
+  "puntos": 1.883
+ },
+ {
+  "pista": "The_Descent",
+  "tempo": 103,
+  "brillo": 958,
+  "energia": 0.1038,
+  "modo": -0.17,
+  "puntos": 1.772
+ },
+ {
+  "pista": "Anguish",
+  "tempo": 108,
+  "brillo": 694,
+  "energia": 0.0471,
+  "modo": 0.005,
+  "puntos": 1.63
+ },
+ {
+  "pista": "Echoes_of_Time",
+  "tempo": 96,
+  "brillo": 356,
+  "energia": 0.0849,
+  "modo": -0.081,
+  "puntos": 1.597
+ },
+ {
+  "pista": "Off_to_Osaka",
+  "tempo": 117,
+  "brillo": 1211,
+  "energia": 0.0785,
+  "modo": -0.233,
+  "puntos": 1.543
+ },
+ {
+  "pista": "Echoes_of_Time_v2",
+  "tempo": 123,
+  "brillo": 309,
+  "energia": 0.0781,
+  "modo": -0.075,
+  "puntos": 1.54
+ },
+ {
+  "pista": "Epic_Unease",
+  "tempo": 123,
+  "brillo": 1051,
+  "energia": 0.0566,
+  "modo": -0.136,
+  "puntos": 1.53
+ },
+ {
+  "pista": "Long_Note_One",
+  "tempo": 123,
+  "brillo": 816,
+  "energia": 0.0204,
+  "modo": 0.004,
+  "puntos": 1.477
+ },
+ {
+  "pista": "Rites",
+  "tempo": 123,
+  "brillo": 444,
+  "energia": 0.0344,
+  "modo": 0.017,
+  "puntos": 1.467
+ },
+ {
+  "pista": "Rollin_at_5",
+  "tempo": 103,
+  "brillo": 829,
+  "energia": 0.1147,
+  "modo": -0.367,
+  "puntos": 1.371
+ },
+ {
+  "pista": "Backbay_Lounge",
+  "tempo": 117,
+  "brillo": 955,
+  "energia": 0.0484,
+  "modo": -0.213,
+  "puntos": 1.262
+ },
+ {
+  "pista": "Lightless_Dawn",
+  "tempo": 123,
+  "brillo": 618,
+  "energia": 0.0277,
+  "modo": -0.254,
+  "puntos": 0.887
+ },
+ {
+  "pista": "George_Street_Shuffle",
+  "tempo": 152,
+  "brillo": 887,
+  "energia": 0.1139,
+  "modo": -0.285,
+  "puntos": 0.868
+ },
+ {
+  "pista": "Ossuary_6_-_Air",
+  "tempo": 123,
+  "brillo": 949,
+  "energia": 0.0258,
+  "modo": -0.345,
+  "puntos": 0.8
+ }
+]

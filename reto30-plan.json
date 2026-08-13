@@ -1,0 +1,182 @@
+{
+ "1": {
+  "paleta": "magenta-cian",
+  "animo": "reflejo",
+  "acento": "#d84f9e",
+  "valor": "apertura"
+ },
+ "2": {
+  "paleta": "purpura",
+  "animo": "reflejo",
+  "acento": "#a98fd4",
+  "valor": "justicia"
+ },
+ "3": {
+  "paleta": "vino",
+  "animo": "brisa",
+  "acento": "#b8563c",
+  "valor": "justicia"
+ },
+ "4": {
+  "paleta": "rojo-carbon",
+  "animo": "brisa",
+  "acento": "#d8353d",
+  "valor": "justicia"
+ },
+ "5": {
+  "paleta": "cobre",
+  "animo": "amanecer",
+  "acento": "#c47a4a",
+  "valor": "justicia"
+ },
+ "6": {
+  "paleta": "ladrillo",
+  "animo": "tormenta",
+  "acento": "#c85a3c",
+  "valor": "valor"
+ },
+ "7": {
+  "paleta": "teal-naranja",
+  "animo": "amanecer",
+  "acento": "#e08a3c",
+  "valor": "valor"
+ },
+ "8": {
+  "paleta": "rojo-carbon",
+  "animo": "mediodia",
+  "acento": "#d8353d",
+  "valor": "valor"
+ },
+ "9": {
+  "paleta": "oliva",
+  "animo": "amanecer",
+  "acento": "#9fbf5a",
+  "valor": "valor"
+ },
+ "10": {
+  "paleta": "purpura",
+  "animo": "verano",
+  "acento": "#a98fd4",
+  "valor": "compasion"
+ },
+ "11": {
+  "paleta": "indigo-ambar",
+  "animo": "niebla",
+  "acento": "#e0a23c",
+  "valor": "compasion"
+ },
+ "12": {
+  "paleta": "azul-hielo",
+  "animo": "amanecer",
+  "acento": "#7fc4e0",
+  "valor": "compasion"
+ },
+ "13": {
+  "paleta": "vino",
+  "animo": "niebla",
+  "acento": "#b8563c",
+  "valor": "compasion"
+ },
+ "14": {
+  "paleta": "rojo-carbon",
+  "animo": "verano",
+  "acento": "#d8353d",
+  "valor": "respeto"
+ },
+ "15": {
+  "paleta": "rojo-carbon",
+  "animo": "ventanal",
+  "acento": "#d8353d",
+  "valor": "respeto"
+ },
+ "16": {
+  "paleta": "dorado-selva",
+  "animo": "tormenta",
+  "acento": "#c9a227",
+  "valor": "respeto"
+ },
+ "17": {
+  "paleta": "indigo-ambar",
+  "animo": "nocturno",
+  "acento": "#e0a23c",
+  "valor": "respeto"
+ },
+ "18": {
+  "paleta": "dorado-selva",
+  "animo": "polvo",
+  "acento": "#c9a227",
+  "valor": "verdad"
+ },
+ "19": {
+  "paleta": "mostaza",
+  "animo": "tormenta",
+  "acento": "#d4a017",
+  "valor": "verdad"
+ },
+ "20": {
+  "paleta": "oliva",
+  "animo": "polvo",
+  "acento": "#9fbf5a",
+  "valor": "verdad"
+ },
+ "21": {
+  "paleta": "magenta-cian",
+  "animo": "mediodia",
+  "acento": "#d84f9e",
+  "valor": "verdad"
+ },
+ "22": {
+  "paleta": "rojo-carbon",
+  "animo": "reflejo",
+  "acento": "#d8353d",
+  "valor": "honor"
+ },
+ "23": {
+  "paleta": "ladrillo",
+  "animo": "nocturno",
+  "acento": "#c85a3c",
+  "valor": "honor"
+ },
+ "24": {
+  "paleta": "dorado-selva",
+  "animo": "verano",
+  "acento": "#c9a227",
+  "valor": "honor"
+ },
+ "25": {
+  "paleta": "oliva",
+  "animo": "ventanal",
+  "acento": "#9fbf5a",
+  "valor": "honor"
+ },
+ "26": {
+  "paleta": "sepia",
+  "animo": "reflejo",
+  "acento": "#d9a05b",
+  "valor": "lealtad"
+ },
+ "27": {
+  "paleta": "azul-hielo",
+  "animo": "brisa",
+  "acento": "#7fc4e0",
+  "valor": "lealtad"
+ },
+ "28": {
+  "paleta": "teal-naranja",
+  "animo": "ventanal",
+  "acento": "#e08a3c",
+  "valor": "lealtad"
+ },
+ "29": {
+  "paleta": "oliva",
+  "animo": "mediodia",
+  "acento": "#9fbf5a",
+  "valor": "lealtad"
+ },
+ "30": {
+  "paleta": "cobre",
+  "animo": "polvo",
+  "acento": "#c47a4a",
+  "valor": "cierre"
+ }
+}

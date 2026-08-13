@@ -17,14 +17,14 @@ from montar_serie import serie
 _lock = threading.Lock()
 
 
-def correr(guiones, hilos=3):
+def correr(guiones, hilos=3, patron="{tema}-{i}"):
     ok, fallos = [], []
     t0 = time.time()
 
     def uno(arg):
         tema, ac, pista, lam = arg
         try:
-            r, err = serie(tema, ac, pista, lam)
+            r, err = serie(tema, ac, pista, lam, patron=patron)
             return tema, r, err
         except Exception as e:
             return tema, None, "%s: %s" % (type(e).__name__, e)

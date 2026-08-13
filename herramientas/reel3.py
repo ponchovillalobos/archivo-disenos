@@ -125,7 +125,7 @@ def montar(laminas, fondos_dir, salida_mp4, dir_capas, acento="#d8353d",
         if fondo.size != (W, H):
             fondo = fondo.resize((W, H), Image.LANCZOS)
         capa = capa_texto(
-            html_texto(L.get("kicker", ""), L["titular"], L.get("cuerpo"),
+            html_texto(L.get("kicker") or "", L["titular"], L.get("cuerpo"),
                        L.get("lista"), "%02d / %02d" % (i, len(laminas)),
                        acento, L.get("tam", ESCALA[4])),
             os.path.join(dir_capas, "capa-%02d.png" % i))

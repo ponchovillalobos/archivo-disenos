@@ -76,13 +76,25 @@ class Manejador(http.server.SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b)
 
+
     def do_GET(self):
         if self.path.startswith("/abrir?"):
             return self._abrir_en_finder()
         return super().do_GET()
 
     def end_headers(self):
-        # Sin esto el navegador REPRODUCE el MP4 en vez de descargarlo: al
+        # Prohíbe la caché. Sin esto, SimpleHTTPRequestHandler solo manda
+        # Last-Modified y el navegador se queda con la copia que ya tenía: el
+        # catálogo había crecido de 22 a 38 fichas y en pantalla seguían las
+        # viejas. Un portal que se reconstruye cada vez que se produce algo no
+        # puede permitir que el navegador decida qué versión enseña.
+        #
+        # OJO: esto va AQUÍ y no en un segundo `end_headers`. Había ya uno y yo
+        # definí otro; Python se queda con el último y el mío quedó muerto.
+        self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
+        self.send_header("Pragma", "no-cache")
+        self.send_header("Expires", "0")
+        # Sin lo siguiente el navegador REPRODUCE el MP4 en vez de descargarlo: al
         # servirse como video/mp4 se abre en el reproductor y no hay archivo.
         # Con esta cabecera, pulsar la descarga guarda el fichero siempre.
         ruta = urllib.parse.urlparse(self.path).path

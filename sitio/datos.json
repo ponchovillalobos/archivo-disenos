@@ -1,8 +1,4159 @@
 {
+ "sello": "41ad603219cc",
  "generado": "2026-08-12",
  "proyecto": "/Users/maity/Desktop/Confy Imagenes",
  "url_sitio": "file:///Users/maity/Desktop/Confy%20Imagenes/sitio/index.html",
  "proyectos": [
+  {
+   "id": "esp-01",
+   "titulo": "Día 01 · Apertura",
+   "serie": "El camino del espartano",
+   "resumen": "Nadie nace espartano.",
+   "nota": "Empieza hoy. Mañana ya son veintinueve.",
+   "etiquetas": [
+    "apertura",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-01.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-01.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-01-01-400.avif",
+      "1024": "esp-01-01-1024.avif",
+      "jpg": "esp-01-01-1024.jpg",
+      "1080": "esp-01-01-1080.avif",
+      "max": "esp-01-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-01-02-400.avif",
+      "1024": "esp-01-02-1024.avif",
+      "jpg": "esp-01-02-1024.jpg",
+      "1080": "esp-01-02-1080.avif",
+      "max": "esp-01-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-01-03-400.avif",
+      "1024": "esp-01-03-1024.avif",
+      "jpg": "esp-01-03-1024.jpg",
+      "1080": "esp-01-03-1080.avif",
+      "max": "esp-01-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-01-04-400.avif",
+      "1024": "esp-01-04-1024.avif",
+      "jpg": "esp-01-04-1024.jpg",
+      "1080": "esp-01-04-1080.avif",
+      "max": "esp-01-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-01-05-400.avif",
+      "1024": "esp-01-05-1024.avif",
+      "jpg": "esp-01-05-1024.jpg",
+      "1080": "esp-01-05-1080.avif",
+      "max": "esp-01-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-01-06-400.avif",
+      "1024": "esp-01-06-1024.avif",
+      "jpg": "esp-01-06-1024.jpg",
+      "1080": "esp-01-06-1080.avif",
+      "max": "esp-01-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-01-sin-01-400.avif",
+      "720": "esp-01-sin-01-720.avif",
+      "jpg": "esp-01-sin-01-720.jpg",
+      "max": "esp-01-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-01-sin-02-400.avif",
+      "720": "esp-01-sin-02-720.avif",
+      "jpg": "esp-01-sin-02-720.jpg",
+      "max": "esp-01-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-01-sin-03-400.avif",
+      "720": "esp-01-sin-03-720.avif",
+      "jpg": "esp-01-sin-03-720.jpg",
+      "max": "esp-01-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-01-sin-04-400.avif",
+      "720": "esp-01-sin-04-720.avif",
+      "jpg": "esp-01-sin-04-720.jpg",
+      "max": "esp-01-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-01-sin-05-400.avif",
+      "720": "esp-01-sin-05-720.avif",
+      "jpg": "esp-01-sin-05-720.jpg",
+      "max": "esp-01-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-01-sin-06-400.avif",
+      "720": "esp-01-sin-06-720.avif",
+      "jpg": "esp-01-sin-06-720.jpg",
+      "max": "esp-01-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-01",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-01"
+  },
+  {
+   "id": "esp-02",
+   "titulo": "Día 02 · Justicia",
+   "serie": "El camino del espartano",
+   "resumen": "Lo justo cuesta cuando te toca a ti.",
+   "nota": "Justo es quien se corrige a sí mismo primero.",
+   "etiquetas": [
+    "justicia",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-02.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-02.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-02-01-400.avif",
+      "1024": "esp-02-01-1024.avif",
+      "jpg": "esp-02-01-1024.jpg",
+      "1080": "esp-02-01-1080.avif",
+      "max": "esp-02-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-02-02-400.avif",
+      "1024": "esp-02-02-1024.avif",
+      "jpg": "esp-02-02-1024.jpg",
+      "1080": "esp-02-02-1080.avif",
+      "max": "esp-02-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-02-03-400.avif",
+      "1024": "esp-02-03-1024.avif",
+      "jpg": "esp-02-03-1024.jpg",
+      "1080": "esp-02-03-1080.avif",
+      "max": "esp-02-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-02-04-400.avif",
+      "1024": "esp-02-04-1024.avif",
+      "jpg": "esp-02-04-1024.jpg",
+      "1080": "esp-02-04-1080.avif",
+      "max": "esp-02-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-02-05-400.avif",
+      "1024": "esp-02-05-1024.avif",
+      "jpg": "esp-02-05-1024.jpg",
+      "1080": "esp-02-05-1080.avif",
+      "max": "esp-02-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-02-06-400.avif",
+      "1024": "esp-02-06-1024.avif",
+      "jpg": "esp-02-06-1024.jpg",
+      "1080": "esp-02-06-1080.avif",
+      "max": "esp-02-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-02-sin-01-400.avif",
+      "720": "esp-02-sin-01-720.avif",
+      "jpg": "esp-02-sin-01-720.jpg",
+      "max": "esp-02-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-02-sin-02-400.avif",
+      "720": "esp-02-sin-02-720.avif",
+      "jpg": "esp-02-sin-02-720.jpg",
+      "max": "esp-02-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-02-sin-03-400.avif",
+      "720": "esp-02-sin-03-720.avif",
+      "jpg": "esp-02-sin-03-720.jpg",
+      "max": "esp-02-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-02-sin-04-400.avif",
+      "720": "esp-02-sin-04-720.avif",
+      "jpg": "esp-02-sin-04-720.jpg",
+      "max": "esp-02-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-02-sin-05-400.avif",
+      "720": "esp-02-sin-05-720.avif",
+      "jpg": "esp-02-sin-05-720.jpg",
+      "max": "esp-02-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-02-sin-06-400.avif",
+      "720": "esp-02-sin-06-720.avif",
+      "jpg": "esp-02-sin-06-720.jpg",
+      "max": "esp-02-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-02",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-02"
+  },
+  {
+   "id": "esp-03",
+   "titulo": "Día 03 · Justicia",
+   "serie": "El camino del espartano",
+   "resumen": "El reparto habla más que el discurso.",
+   "nota": "El reparto es el mensaje.",
+   "etiquetas": [
+    "justicia",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-03.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-03.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-03-01-400.avif",
+      "1024": "esp-03-01-1024.avif",
+      "jpg": "esp-03-01-1024.jpg",
+      "1080": "esp-03-01-1080.avif",
+      "max": "esp-03-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-03-02-400.avif",
+      "1024": "esp-03-02-1024.avif",
+      "jpg": "esp-03-02-1024.jpg",
+      "1080": "esp-03-02-1080.avif",
+      "max": "esp-03-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-03-03-400.avif",
+      "1024": "esp-03-03-1024.avif",
+      "jpg": "esp-03-03-1024.jpg",
+      "1080": "esp-03-03-1080.avif",
+      "max": "esp-03-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-03-04-400.avif",
+      "1024": "esp-03-04-1024.avif",
+      "jpg": "esp-03-04-1024.jpg",
+      "1080": "esp-03-04-1080.avif",
+      "max": "esp-03-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-03-05-400.avif",
+      "1024": "esp-03-05-1024.avif",
+      "jpg": "esp-03-05-1024.jpg",
+      "1080": "esp-03-05-1080.avif",
+      "max": "esp-03-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-03-06-400.avif",
+      "1024": "esp-03-06-1024.avif",
+      "jpg": "esp-03-06-1024.jpg",
+      "1080": "esp-03-06-1080.avif",
+      "max": "esp-03-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-03-sin-01-400.avif",
+      "720": "esp-03-sin-01-720.avif",
+      "jpg": "esp-03-sin-01-720.jpg",
+      "max": "esp-03-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-03-sin-02-400.avif",
+      "720": "esp-03-sin-02-720.avif",
+      "jpg": "esp-03-sin-02-720.jpg",
+      "max": "esp-03-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-03-sin-03-400.avif",
+      "720": "esp-03-sin-03-720.avif",
+      "jpg": "esp-03-sin-03-720.jpg",
+      "max": "esp-03-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-03-sin-04-400.avif",
+      "720": "esp-03-sin-04-720.avif",
+      "jpg": "esp-03-sin-04-720.jpg",
+      "max": "esp-03-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-03-sin-05-400.avif",
+      "720": "esp-03-sin-05-720.avif",
+      "jpg": "esp-03-sin-05-720.jpg",
+      "max": "esp-03-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-03-sin-06-400.avif",
+      "720": "esp-03-sin-06-720.avif",
+      "jpg": "esp-03-sin-06-720.jpg",
+      "max": "esp-03-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-03",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-03"
+  },
+  {
+   "id": "esp-04",
+   "titulo": "Día 04 · Justicia",
+   "serie": "El camino del espartano",
+   "resumen": "Defender al ausente cuesta un segundo.",
+   "nota": "Al ausente lo defiende quien tiene poco que ganar.",
+   "etiquetas": [
+    "justicia",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-04.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-04.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-04-01-400.avif",
+      "1024": "esp-04-01-1024.avif",
+      "jpg": "esp-04-01-1024.jpg",
+      "1080": "esp-04-01-1080.avif",
+      "max": "esp-04-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-04-02-400.avif",
+      "1024": "esp-04-02-1024.avif",
+      "jpg": "esp-04-02-1024.jpg",
+      "1080": "esp-04-02-1080.avif",
+      "max": "esp-04-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-04-03-400.avif",
+      "1024": "esp-04-03-1024.avif",
+      "jpg": "esp-04-03-1024.jpg",
+      "1080": "esp-04-03-1080.avif",
+      "max": "esp-04-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-04-04-400.avif",
+      "1024": "esp-04-04-1024.avif",
+      "jpg": "esp-04-04-1024.jpg",
+      "1080": "esp-04-04-1080.avif",
+      "max": "esp-04-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-04-05-400.avif",
+      "1024": "esp-04-05-1024.avif",
+      "jpg": "esp-04-05-1024.jpg",
+      "1080": "esp-04-05-1080.avif",
+      "max": "esp-04-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-04-06-400.avif",
+      "1024": "esp-04-06-1024.avif",
+      "jpg": "esp-04-06-1024.jpg",
+      "1080": "esp-04-06-1080.avif",
+      "max": "esp-04-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-04-sin-01-400.avif",
+      "720": "esp-04-sin-01-720.avif",
+      "jpg": "esp-04-sin-01-720.jpg",
+      "max": "esp-04-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-04-sin-02-400.avif",
+      "720": "esp-04-sin-02-720.avif",
+      "jpg": "esp-04-sin-02-720.jpg",
+      "max": "esp-04-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-04-sin-03-400.avif",
+      "720": "esp-04-sin-03-720.avif",
+      "jpg": "esp-04-sin-03-720.jpg",
+      "max": "esp-04-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-04-sin-04-400.avif",
+      "720": "esp-04-sin-04-720.avif",
+      "jpg": "esp-04-sin-04-720.jpg",
+      "max": "esp-04-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-04-sin-05-400.avif",
+      "720": "esp-04-sin-05-720.avif",
+      "jpg": "esp-04-sin-05-720.jpg",
+      "max": "esp-04-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-04-sin-06-400.avif",
+      "720": "esp-04-sin-06-720.avif",
+      "jpg": "esp-04-sin-06-720.jpg",
+      "max": "esp-04-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-04",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-04"
+  },
+  {
+   "id": "esp-05",
+   "titulo": "Día 05 · Justicia",
+   "serie": "El camino del espartano",
+   "resumen": "La regla que aplicas a otros es la tuya.",
+   "nota": "La misma vara. Siempre. Empezando por ti.",
+   "etiquetas": [
+    "justicia",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-05.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-05.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-05-01-400.avif",
+      "1024": "esp-05-01-1024.avif",
+      "jpg": "esp-05-01-1024.jpg",
+      "1080": "esp-05-01-1080.avif",
+      "max": "esp-05-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-05-02-400.avif",
+      "1024": "esp-05-02-1024.avif",
+      "jpg": "esp-05-02-1024.jpg",
+      "1080": "esp-05-02-1080.avif",
+      "max": "esp-05-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-05-03-400.avif",
+      "1024": "esp-05-03-1024.avif",
+      "jpg": "esp-05-03-1024.jpg",
+      "1080": "esp-05-03-1080.avif",
+      "max": "esp-05-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-05-04-400.avif",
+      "1024": "esp-05-04-1024.avif",
+      "jpg": "esp-05-04-1024.jpg",
+      "1080": "esp-05-04-1080.avif",
+      "max": "esp-05-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-05-05-400.avif",
+      "1024": "esp-05-05-1024.avif",
+      "jpg": "esp-05-05-1024.jpg",
+      "1080": "esp-05-05-1080.avif",
+      "max": "esp-05-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-05-06-400.avif",
+      "1024": "esp-05-06-1024.avif",
+      "jpg": "esp-05-06-1024.jpg",
+      "1080": "esp-05-06-1080.avif",
+      "max": "esp-05-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-05-sin-01-400.avif",
+      "720": "esp-05-sin-01-720.avif",
+      "jpg": "esp-05-sin-01-720.jpg",
+      "max": "esp-05-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-05-sin-02-400.avif",
+      "720": "esp-05-sin-02-720.avif",
+      "jpg": "esp-05-sin-02-720.jpg",
+      "max": "esp-05-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-05-sin-03-400.avif",
+      "720": "esp-05-sin-03-720.avif",
+      "jpg": "esp-05-sin-03-720.jpg",
+      "max": "esp-05-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-05-sin-04-400.avif",
+      "720": "esp-05-sin-04-720.avif",
+      "jpg": "esp-05-sin-04-720.jpg",
+      "max": "esp-05-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-05-sin-05-400.avif",
+      "720": "esp-05-sin-05-720.avif",
+      "jpg": "esp-05-sin-05-720.jpg",
+      "max": "esp-05-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-05-sin-06-400.avif",
+      "720": "esp-05-sin-06-720.avif",
+      "jpg": "esp-05-sin-06-720.jpg",
+      "max": "esp-05-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-05",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-05"
+  },
+  {
+   "id": "esp-06",
+   "titulo": "Día 06 · Valor",
+   "serie": "El camino del espartano",
+   "resumen": "El valor no es no tener miedo.",
+   "nota": "El miedo no se va. Se camina con él.",
+   "etiquetas": [
+    "valor",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-06.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-06.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-06-01-400.avif",
+      "1024": "esp-06-01-1024.avif",
+      "jpg": "esp-06-01-1024.jpg",
+      "1080": "esp-06-01-1080.avif",
+      "max": "esp-06-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-06-02-400.avif",
+      "1024": "esp-06-02-1024.avif",
+      "jpg": "esp-06-02-1024.jpg",
+      "1080": "esp-06-02-1080.avif",
+      "max": "esp-06-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-06-03-400.avif",
+      "1024": "esp-06-03-1024.avif",
+      "jpg": "esp-06-03-1024.jpg",
+      "1080": "esp-06-03-1080.avif",
+      "max": "esp-06-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-06-04-400.avif",
+      "1024": "esp-06-04-1024.avif",
+      "jpg": "esp-06-04-1024.jpg",
+      "1080": "esp-06-04-1080.avif",
+      "max": "esp-06-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-06-05-400.avif",
+      "1024": "esp-06-05-1024.avif",
+      "jpg": "esp-06-05-1024.jpg",
+      "1080": "esp-06-05-1080.avif",
+      "max": "esp-06-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-06-06-400.avif",
+      "1024": "esp-06-06-1024.avif",
+      "jpg": "esp-06-06-1024.jpg",
+      "1080": "esp-06-06-1080.avif",
+      "max": "esp-06-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-06-sin-01-400.avif",
+      "720": "esp-06-sin-01-720.avif",
+      "jpg": "esp-06-sin-01-720.jpg",
+      "max": "esp-06-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-06-sin-02-400.avif",
+      "720": "esp-06-sin-02-720.avif",
+      "jpg": "esp-06-sin-02-720.jpg",
+      "max": "esp-06-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-06-sin-03-400.avif",
+      "720": "esp-06-sin-03-720.avif",
+      "jpg": "esp-06-sin-03-720.jpg",
+      "max": "esp-06-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-06-sin-04-400.avif",
+      "720": "esp-06-sin-04-720.avif",
+      "jpg": "esp-06-sin-04-720.jpg",
+      "max": "esp-06-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-06-sin-05-400.avif",
+      "720": "esp-06-sin-05-720.avif",
+      "jpg": "esp-06-sin-05-720.jpg",
+      "max": "esp-06-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-06-sin-06-400.avif",
+      "720": "esp-06-sin-06-720.avif",
+      "jpg": "esp-06-sin-06-720.jpg",
+      "max": "esp-06-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-06",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-06"
+  },
+  {
+   "id": "esp-07",
+   "titulo": "Día 07 · Valor",
+   "serie": "El camino del espartano",
+   "resumen": "Decir «no sé» es una forma de coraje.",
+   "nota": "El que admite el límite es el que tiene autoridad dentro de él.",
+   "etiquetas": [
+    "valor",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-07.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-07.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-07-01-400.avif",
+      "1024": "esp-07-01-1024.avif",
+      "jpg": "esp-07-01-1024.jpg",
+      "1080": "esp-07-01-1080.avif",
+      "max": "esp-07-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-07-02-400.avif",
+      "1024": "esp-07-02-1024.avif",
+      "jpg": "esp-07-02-1024.jpg",
+      "1080": "esp-07-02-1080.avif",
+      "max": "esp-07-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-07-03-400.avif",
+      "1024": "esp-07-03-1024.avif",
+      "jpg": "esp-07-03-1024.jpg",
+      "1080": "esp-07-03-1080.avif",
+      "max": "esp-07-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-07-04-400.avif",
+      "1024": "esp-07-04-1024.avif",
+      "jpg": "esp-07-04-1024.jpg",
+      "1080": "esp-07-04-1080.avif",
+      "max": "esp-07-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-07-05-400.avif",
+      "1024": "esp-07-05-1024.avif",
+      "jpg": "esp-07-05-1024.jpg",
+      "1080": "esp-07-05-1080.avif",
+      "max": "esp-07-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-07-06-400.avif",
+      "1024": "esp-07-06-1024.avif",
+      "jpg": "esp-07-06-1024.jpg",
+      "1080": "esp-07-06-1080.avif",
+      "max": "esp-07-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-07-sin-01-400.avif",
+      "720": "esp-07-sin-01-720.avif",
+      "jpg": "esp-07-sin-01-720.jpg",
+      "max": "esp-07-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-07-sin-02-400.avif",
+      "720": "esp-07-sin-02-720.avif",
+      "jpg": "esp-07-sin-02-720.jpg",
+      "max": "esp-07-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-07-sin-03-400.avif",
+      "720": "esp-07-sin-03-720.avif",
+      "jpg": "esp-07-sin-03-720.jpg",
+      "max": "esp-07-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-07-sin-04-400.avif",
+      "720": "esp-07-sin-04-720.avif",
+      "jpg": "esp-07-sin-04-720.jpg",
+      "max": "esp-07-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-07-sin-05-400.avif",
+      "720": "esp-07-sin-05-720.avif",
+      "jpg": "esp-07-sin-05-720.jpg",
+      "max": "esp-07-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-07-sin-06-400.avif",
+      "720": "esp-07-sin-06-720.avif",
+      "jpg": "esp-07-sin-06-720.jpg",
+      "max": "esp-07-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-07",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-07"
+  },
+  {
+   "id": "esp-08",
+   "titulo": "Día 08 · Valor",
+   "serie": "El camino del espartano",
+   "resumen": "Lo difícil primero.",
+   "nota": "Lo que aplazas no descansa. Trabaja contra ti.",
+   "etiquetas": [
+    "valor",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-08.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-08.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-08-01-400.avif",
+      "1024": "esp-08-01-1024.avif",
+      "jpg": "esp-08-01-1024.jpg",
+      "1080": "esp-08-01-1080.avif",
+      "max": "esp-08-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-08-02-400.avif",
+      "1024": "esp-08-02-1024.avif",
+      "jpg": "esp-08-02-1024.jpg",
+      "1080": "esp-08-02-1080.avif",
+      "max": "esp-08-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-08-03-400.avif",
+      "1024": "esp-08-03-1024.avif",
+      "jpg": "esp-08-03-1024.jpg",
+      "1080": "esp-08-03-1080.avif",
+      "max": "esp-08-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-08-04-400.avif",
+      "1024": "esp-08-04-1024.avif",
+      "jpg": "esp-08-04-1024.jpg",
+      "1080": "esp-08-04-1080.avif",
+      "max": "esp-08-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-08-05-400.avif",
+      "1024": "esp-08-05-1024.avif",
+      "jpg": "esp-08-05-1024.jpg",
+      "1080": "esp-08-05-1080.avif",
+      "max": "esp-08-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-08-06-400.avif",
+      "1024": "esp-08-06-1024.avif",
+      "jpg": "esp-08-06-1024.jpg",
+      "1080": "esp-08-06-1080.avif",
+      "max": "esp-08-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-08-sin-01-400.avif",
+      "720": "esp-08-sin-01-720.avif",
+      "jpg": "esp-08-sin-01-720.jpg",
+      "max": "esp-08-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-08-sin-02-400.avif",
+      "720": "esp-08-sin-02-720.avif",
+      "jpg": "esp-08-sin-02-720.jpg",
+      "max": "esp-08-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-08-sin-03-400.avif",
+      "720": "esp-08-sin-03-720.avif",
+      "jpg": "esp-08-sin-03-720.jpg",
+      "max": "esp-08-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-08-sin-04-400.avif",
+      "720": "esp-08-sin-04-720.avif",
+      "jpg": "esp-08-sin-04-720.jpg",
+      "max": "esp-08-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-08-sin-05-400.avif",
+      "720": "esp-08-sin-05-720.avif",
+      "jpg": "esp-08-sin-05-720.jpg",
+      "max": "esp-08-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-08-sin-06-400.avif",
+      "720": "esp-08-sin-06-720.avif",
+      "jpg": "esp-08-sin-06-720.jpg",
+      "max": "esp-08-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-08",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-08"
+  },
+  {
+   "id": "esp-09",
+   "titulo": "Día 09 · Valor",
+   "serie": "El camino del espartano",
+   "resumen": "Pedir ayuda no es rendirse.",
+   "nota": "Solo llegas antes. Acompañado llegas.",
+   "etiquetas": [
+    "valor",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-09.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-09.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-09-01-400.avif",
+      "1024": "esp-09-01-1024.avif",
+      "jpg": "esp-09-01-1024.jpg",
+      "1080": "esp-09-01-1080.avif",
+      "max": "esp-09-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-09-02-400.avif",
+      "1024": "esp-09-02-1024.avif",
+      "jpg": "esp-09-02-1024.jpg",
+      "1080": "esp-09-02-1080.avif",
+      "max": "esp-09-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-09-03-400.avif",
+      "1024": "esp-09-03-1024.avif",
+      "jpg": "esp-09-03-1024.jpg",
+      "1080": "esp-09-03-1080.avif",
+      "max": "esp-09-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-09-04-400.avif",
+      "1024": "esp-09-04-1024.avif",
+      "jpg": "esp-09-04-1024.jpg",
+      "1080": "esp-09-04-1080.avif",
+      "max": "esp-09-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-09-05-400.avif",
+      "1024": "esp-09-05-1024.avif",
+      "jpg": "esp-09-05-1024.jpg",
+      "1080": "esp-09-05-1080.avif",
+      "max": "esp-09-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-09-06-400.avif",
+      "1024": "esp-09-06-1024.avif",
+      "jpg": "esp-09-06-1024.jpg",
+      "1080": "esp-09-06-1080.avif",
+      "max": "esp-09-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-09-sin-01-400.avif",
+      "720": "esp-09-sin-01-720.avif",
+      "jpg": "esp-09-sin-01-720.jpg",
+      "max": "esp-09-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-09-sin-02-400.avif",
+      "720": "esp-09-sin-02-720.avif",
+      "jpg": "esp-09-sin-02-720.jpg",
+      "max": "esp-09-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-09-sin-03-400.avif",
+      "720": "esp-09-sin-03-720.avif",
+      "jpg": "esp-09-sin-03-720.jpg",
+      "max": "esp-09-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-09-sin-04-400.avif",
+      "720": "esp-09-sin-04-720.avif",
+      "jpg": "esp-09-sin-04-720.jpg",
+      "max": "esp-09-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-09-sin-05-400.avif",
+      "720": "esp-09-sin-05-720.avif",
+      "jpg": "esp-09-sin-05-720.jpg",
+      "max": "esp-09-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-09-sin-06-400.avif",
+      "720": "esp-09-sin-06-720.avif",
+      "jpg": "esp-09-sin-06-720.jpg",
+      "max": "esp-09-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-09",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-09"
+  },
+  {
+   "id": "esp-10",
+   "titulo": "Día 10 · Compasion",
+   "serie": "El camino del espartano",
+   "resumen": "La fuerza que no sabe ser suave es solo dureza.",
+   "nota": "El escudo protege al de al lado, no a ti.",
+   "etiquetas": [
+    "compasion",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-10.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-10.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-10-01-400.avif",
+      "1024": "esp-10-01-1024.avif",
+      "jpg": "esp-10-01-1024.jpg",
+      "1080": "esp-10-01-1080.avif",
+      "max": "esp-10-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-10-02-400.avif",
+      "1024": "esp-10-02-1024.avif",
+      "jpg": "esp-10-02-1024.jpg",
+      "1080": "esp-10-02-1080.avif",
+      "max": "esp-10-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-10-03-400.avif",
+      "1024": "esp-10-03-1024.avif",
+      "jpg": "esp-10-03-1024.jpg",
+      "1080": "esp-10-03-1080.avif",
+      "max": "esp-10-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-10-04-400.avif",
+      "1024": "esp-10-04-1024.avif",
+      "jpg": "esp-10-04-1024.jpg",
+      "1080": "esp-10-04-1080.avif",
+      "max": "esp-10-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-10-05-400.avif",
+      "1024": "esp-10-05-1024.avif",
+      "jpg": "esp-10-05-1024.jpg",
+      "1080": "esp-10-05-1080.avif",
+      "max": "esp-10-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-10-06-400.avif",
+      "1024": "esp-10-06-1024.avif",
+      "jpg": "esp-10-06-1024.jpg",
+      "1080": "esp-10-06-1080.avif",
+      "max": "esp-10-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-10-sin-01-400.avif",
+      "720": "esp-10-sin-01-720.avif",
+      "jpg": "esp-10-sin-01-720.jpg",
+      "max": "esp-10-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-10-sin-02-400.avif",
+      "720": "esp-10-sin-02-720.avif",
+      "jpg": "esp-10-sin-02-720.jpg",
+      "max": "esp-10-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-10-sin-03-400.avif",
+      "720": "esp-10-sin-03-720.avif",
+      "jpg": "esp-10-sin-03-720.jpg",
+      "max": "esp-10-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-10-sin-04-400.avif",
+      "720": "esp-10-sin-04-720.avif",
+      "jpg": "esp-10-sin-04-720.jpg",
+      "max": "esp-10-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-10-sin-05-400.avif",
+      "720": "esp-10-sin-05-720.avif",
+      "jpg": "esp-10-sin-05-720.jpg",
+      "max": "esp-10-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-10-sin-06-400.avif",
+      "720": "esp-10-sin-06-720.avif",
+      "jpg": "esp-10-sin-06-720.jpg",
+      "max": "esp-10-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-10",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-10"
+  },
+  {
+   "id": "esp-11",
+   "titulo": "Día 11 · Compasion",
+   "serie": "El camino del espartano",
+   "resumen": "Casi nadie te está atacando.",
+   "nota": "Casi nadie madruga para hacerte daño.",
+   "etiquetas": [
+    "compasion",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-11.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-11.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-11-01-400.avif",
+      "1024": "esp-11-01-1024.avif",
+      "jpg": "esp-11-01-1024.jpg",
+      "1080": "esp-11-01-1080.avif",
+      "max": "esp-11-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-11-02-400.avif",
+      "1024": "esp-11-02-1024.avif",
+      "jpg": "esp-11-02-1024.jpg",
+      "1080": "esp-11-02-1080.avif",
+      "max": "esp-11-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-11-03-400.avif",
+      "1024": "esp-11-03-1024.avif",
+      "jpg": "esp-11-03-1024.jpg",
+      "1080": "esp-11-03-1080.avif",
+      "max": "esp-11-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-11-04-400.avif",
+      "1024": "esp-11-04-1024.avif",
+      "jpg": "esp-11-04-1024.jpg",
+      "1080": "esp-11-04-1080.avif",
+      "max": "esp-11-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-11-05-400.avif",
+      "1024": "esp-11-05-1024.avif",
+      "jpg": "esp-11-05-1024.jpg",
+      "1080": "esp-11-05-1080.avif",
+      "max": "esp-11-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-11-06-400.avif",
+      "1024": "esp-11-06-1024.avif",
+      "jpg": "esp-11-06-1024.jpg",
+      "1080": "esp-11-06-1080.avif",
+      "max": "esp-11-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-11-sin-01-400.avif",
+      "720": "esp-11-sin-01-720.avif",
+      "jpg": "esp-11-sin-01-720.jpg",
+      "max": "esp-11-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-11-sin-02-400.avif",
+      "720": "esp-11-sin-02-720.avif",
+      "jpg": "esp-11-sin-02-720.jpg",
+      "max": "esp-11-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-11-sin-03-400.avif",
+      "720": "esp-11-sin-03-720.avif",
+      "jpg": "esp-11-sin-03-720.jpg",
+      "max": "esp-11-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-11-sin-04-400.avif",
+      "720": "esp-11-sin-04-720.avif",
+      "jpg": "esp-11-sin-04-720.jpg",
+      "max": "esp-11-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-11-sin-05-400.avif",
+      "720": "esp-11-sin-05-720.avif",
+      "jpg": "esp-11-sin-05-720.jpg",
+      "max": "esp-11-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-11-sin-06-400.avif",
+      "720": "esp-11-sin-06-720.avif",
+      "jpg": "esp-11-sin-06-720.jpg",
+      "max": "esp-11-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-11",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-11"
+  },
+  {
+   "id": "esp-12",
+   "titulo": "Día 12 · Compasion",
+   "serie": "El camino del espartano",
+   "resumen": "El que se equivoca ya lo sabe.",
+   "nota": "El que puede confesar un error, corrige dos.",
+   "etiquetas": [
+    "compasion",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-12.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-12.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-12-01-400.avif",
+      "1024": "esp-12-01-1024.avif",
+      "jpg": "esp-12-01-1024.jpg",
+      "1080": "esp-12-01-1080.avif",
+      "max": "esp-12-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-12-02-400.avif",
+      "1024": "esp-12-02-1024.avif",
+      "jpg": "esp-12-02-1024.jpg",
+      "1080": "esp-12-02-1080.avif",
+      "max": "esp-12-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-12-03-400.avif",
+      "1024": "esp-12-03-1024.avif",
+      "jpg": "esp-12-03-1024.jpg",
+      "1080": "esp-12-03-1080.avif",
+      "max": "esp-12-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-12-04-400.avif",
+      "1024": "esp-12-04-1024.avif",
+      "jpg": "esp-12-04-1024.jpg",
+      "1080": "esp-12-04-1080.avif",
+      "max": "esp-12-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-12-05-400.avif",
+      "1024": "esp-12-05-1024.avif",
+      "jpg": "esp-12-05-1024.jpg",
+      "1080": "esp-12-05-1080.avif",
+      "max": "esp-12-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-12-06-400.avif",
+      "1024": "esp-12-06-1024.avif",
+      "jpg": "esp-12-06-1024.jpg",
+      "1080": "esp-12-06-1080.avif",
+      "max": "esp-12-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-12-sin-01-400.avif",
+      "720": "esp-12-sin-01-720.avif",
+      "jpg": "esp-12-sin-01-720.jpg",
+      "max": "esp-12-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-12-sin-02-400.avif",
+      "720": "esp-12-sin-02-720.avif",
+      "jpg": "esp-12-sin-02-720.jpg",
+      "max": "esp-12-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-12-sin-03-400.avif",
+      "720": "esp-12-sin-03-720.avif",
+      "jpg": "esp-12-sin-03-720.jpg",
+      "max": "esp-12-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-12-sin-04-400.avif",
+      "720": "esp-12-sin-04-720.avif",
+      "jpg": "esp-12-sin-04-720.jpg",
+      "max": "esp-12-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-12-sin-05-400.avif",
+      "720": "esp-12-sin-05-720.avif",
+      "jpg": "esp-12-sin-05-720.jpg",
+      "max": "esp-12-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-12-sin-06-400.avif",
+      "720": "esp-12-sin-06-720.avif",
+      "jpg": "esp-12-sin-06-720.jpg",
+      "max": "esp-12-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-12",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-12"
+  },
+  {
+   "id": "esp-13",
+   "titulo": "Día 13 · Compasion",
+   "serie": "El camino del espartano",
+   "resumen": "Dar sin que se note es dar dos veces.",
+   "nota": "Da algo que no puedas cobrar.",
+   "etiquetas": [
+    "compasion",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-13.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-13.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-13-01-400.avif",
+      "1024": "esp-13-01-1024.avif",
+      "jpg": "esp-13-01-1024.jpg",
+      "1080": "esp-13-01-1080.avif",
+      "max": "esp-13-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-13-02-400.avif",
+      "1024": "esp-13-02-1024.avif",
+      "jpg": "esp-13-02-1024.jpg",
+      "1080": "esp-13-02-1080.avif",
+      "max": "esp-13-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-13-03-400.avif",
+      "1024": "esp-13-03-1024.avif",
+      "jpg": "esp-13-03-1024.jpg",
+      "1080": "esp-13-03-1080.avif",
+      "max": "esp-13-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-13-04-400.avif",
+      "1024": "esp-13-04-1024.avif",
+      "jpg": "esp-13-04-1024.jpg",
+      "1080": "esp-13-04-1080.avif",
+      "max": "esp-13-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-13-05-400.avif",
+      "1024": "esp-13-05-1024.avif",
+      "jpg": "esp-13-05-1024.jpg",
+      "1080": "esp-13-05-1080.avif",
+      "max": "esp-13-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-13-06-400.avif",
+      "1024": "esp-13-06-1024.avif",
+      "jpg": "esp-13-06-1024.jpg",
+      "1080": "esp-13-06-1080.avif",
+      "max": "esp-13-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-13-sin-01-400.avif",
+      "720": "esp-13-sin-01-720.avif",
+      "jpg": "esp-13-sin-01-720.jpg",
+      "max": "esp-13-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-13-sin-02-400.avif",
+      "720": "esp-13-sin-02-720.avif",
+      "jpg": "esp-13-sin-02-720.jpg",
+      "max": "esp-13-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-13-sin-03-400.avif",
+      "720": "esp-13-sin-03-720.avif",
+      "jpg": "esp-13-sin-03-720.jpg",
+      "max": "esp-13-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-13-sin-04-400.avif",
+      "720": "esp-13-sin-04-720.avif",
+      "jpg": "esp-13-sin-04-720.jpg",
+      "max": "esp-13-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-13-sin-05-400.avif",
+      "720": "esp-13-sin-05-720.avif",
+      "jpg": "esp-13-sin-05-720.jpg",
+      "max": "esp-13-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-13-sin-06-400.avif",
+      "720": "esp-13-sin-06-720.avif",
+      "jpg": "esp-13-sin-06-720.jpg",
+      "max": "esp-13-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-13",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-13"
+  },
+  {
+   "id": "esp-14",
+   "titulo": "Día 14 · Respeto",
+   "serie": "El camino del espartano",
+   "resumen": "El respeto se ve en los detalles pequeños.",
+   "nota": "La puntualidad es la primera forma del respeto.",
+   "etiquetas": [
+    "respeto",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-14.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-14.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-14-01-400.avif",
+      "1024": "esp-14-01-1024.avif",
+      "jpg": "esp-14-01-1024.jpg",
+      "1080": "esp-14-01-1080.avif",
+      "max": "esp-14-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-14-02-400.avif",
+      "1024": "esp-14-02-1024.avif",
+      "jpg": "esp-14-02-1024.jpg",
+      "1080": "esp-14-02-1080.avif",
+      "max": "esp-14-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-14-03-400.avif",
+      "1024": "esp-14-03-1024.avif",
+      "jpg": "esp-14-03-1024.jpg",
+      "1080": "esp-14-03-1080.avif",
+      "max": "esp-14-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-14-04-400.avif",
+      "1024": "esp-14-04-1024.avif",
+      "jpg": "esp-14-04-1024.jpg",
+      "1080": "esp-14-04-1080.avif",
+      "max": "esp-14-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-14-05-400.avif",
+      "1024": "esp-14-05-1024.avif",
+      "jpg": "esp-14-05-1024.jpg",
+      "1080": "esp-14-05-1080.avif",
+      "max": "esp-14-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-14-06-400.avif",
+      "1024": "esp-14-06-1024.avif",
+      "jpg": "esp-14-06-1024.jpg",
+      "1080": "esp-14-06-1080.avif",
+      "max": "esp-14-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-14-sin-01-400.avif",
+      "720": "esp-14-sin-01-720.avif",
+      "jpg": "esp-14-sin-01-720.jpg",
+      "max": "esp-14-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-14-sin-02-400.avif",
+      "720": "esp-14-sin-02-720.avif",
+      "jpg": "esp-14-sin-02-720.jpg",
+      "max": "esp-14-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-14-sin-03-400.avif",
+      "720": "esp-14-sin-03-720.avif",
+      "jpg": "esp-14-sin-03-720.jpg",
+      "max": "esp-14-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-14-sin-04-400.avif",
+      "720": "esp-14-sin-04-720.avif",
+      "jpg": "esp-14-sin-04-720.jpg",
+      "max": "esp-14-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-14-sin-05-400.avif",
+      "720": "esp-14-sin-05-720.avif",
+      "jpg": "esp-14-sin-05-720.jpg",
+      "max": "esp-14-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-14-sin-06-400.avif",
+      "720": "esp-14-sin-06-720.avif",
+      "jpg": "esp-14-sin-06-720.jpg",
+      "max": "esp-14-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-14",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-14"
+  },
+  {
+   "id": "esp-15",
+   "titulo": "Día 15 · Respeto",
+   "serie": "El camino del espartano",
+   "resumen": "Escuchar es más caro que hablar.",
+   "nota": "Quien escucha entero, decide mejor.",
+   "etiquetas": [
+    "respeto",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-15.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-15.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-15-01-400.avif",
+      "1024": "esp-15-01-1024.avif",
+      "jpg": "esp-15-01-1024.jpg",
+      "1080": "esp-15-01-1080.avif",
+      "max": "esp-15-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-15-02-400.avif",
+      "1024": "esp-15-02-1024.avif",
+      "jpg": "esp-15-02-1024.jpg",
+      "1080": "esp-15-02-1080.avif",
+      "max": "esp-15-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-15-03-400.avif",
+      "1024": "esp-15-03-1024.avif",
+      "jpg": "esp-15-03-1024.jpg",
+      "1080": "esp-15-03-1080.avif",
+      "max": "esp-15-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-15-04-400.avif",
+      "1024": "esp-15-04-1024.avif",
+      "jpg": "esp-15-04-1024.jpg",
+      "1080": "esp-15-04-1080.avif",
+      "max": "esp-15-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-15-05-400.avif",
+      "1024": "esp-15-05-1024.avif",
+      "jpg": "esp-15-05-1024.jpg",
+      "1080": "esp-15-05-1080.avif",
+      "max": "esp-15-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-15-06-400.avif",
+      "1024": "esp-15-06-1024.avif",
+      "jpg": "esp-15-06-1024.jpg",
+      "1080": "esp-15-06-1080.avif",
+      "max": "esp-15-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-15-sin-01-400.avif",
+      "720": "esp-15-sin-01-720.avif",
+      "jpg": "esp-15-sin-01-720.jpg",
+      "max": "esp-15-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-15-sin-02-400.avif",
+      "720": "esp-15-sin-02-720.avif",
+      "jpg": "esp-15-sin-02-720.jpg",
+      "max": "esp-15-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-15-sin-03-400.avif",
+      "720": "esp-15-sin-03-720.avif",
+      "jpg": "esp-15-sin-03-720.jpg",
+      "max": "esp-15-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-15-sin-04-400.avif",
+      "720": "esp-15-sin-04-720.avif",
+      "jpg": "esp-15-sin-04-720.jpg",
+      "max": "esp-15-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-15-sin-05-400.avif",
+      "720": "esp-15-sin-05-720.avif",
+      "jpg": "esp-15-sin-05-720.jpg",
+      "max": "esp-15-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-15-sin-06-400.avif",
+      "720": "esp-15-sin-06-720.avif",
+      "jpg": "esp-15-sin-06-720.jpg",
+      "max": "esp-15-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-15",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-15"
+  },
+  {
+   "id": "esp-16",
+   "titulo": "Día 16 · Respeto",
+   "serie": "El camino del espartano",
+   "resumen": "El nombre de la gente importa.",
+   "nota": "Con el nombre empieza el trato.",
+   "etiquetas": [
+    "respeto",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-16.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-16.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-16-01-400.avif",
+      "1024": "esp-16-01-1024.avif",
+      "jpg": "esp-16-01-1024.jpg",
+      "1080": "esp-16-01-1080.avif",
+      "max": "esp-16-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-16-02-400.avif",
+      "1024": "esp-16-02-1024.avif",
+      "jpg": "esp-16-02-1024.jpg",
+      "1080": "esp-16-02-1080.avif",
+      "max": "esp-16-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-16-03-400.avif",
+      "1024": "esp-16-03-1024.avif",
+      "jpg": "esp-16-03-1024.jpg",
+      "1080": "esp-16-03-1080.avif",
+      "max": "esp-16-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-16-04-400.avif",
+      "1024": "esp-16-04-1024.avif",
+      "jpg": "esp-16-04-1024.jpg",
+      "1080": "esp-16-04-1080.avif",
+      "max": "esp-16-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-16-05-400.avif",
+      "1024": "esp-16-05-1024.avif",
+      "jpg": "esp-16-05-1024.jpg",
+      "1080": "esp-16-05-1080.avif",
+      "max": "esp-16-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-16-06-400.avif",
+      "1024": "esp-16-06-1024.avif",
+      "jpg": "esp-16-06-1024.jpg",
+      "1080": "esp-16-06-1080.avif",
+      "max": "esp-16-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-16-sin-01-400.avif",
+      "720": "esp-16-sin-01-720.avif",
+      "jpg": "esp-16-sin-01-720.jpg",
+      "max": "esp-16-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-16-sin-02-400.avif",
+      "720": "esp-16-sin-02-720.avif",
+      "jpg": "esp-16-sin-02-720.jpg",
+      "max": "esp-16-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-16-sin-03-400.avif",
+      "720": "esp-16-sin-03-720.avif",
+      "jpg": "esp-16-sin-03-720.jpg",
+      "max": "esp-16-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-16-sin-04-400.avif",
+      "720": "esp-16-sin-04-720.avif",
+      "jpg": "esp-16-sin-04-720.jpg",
+      "max": "esp-16-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-16-sin-05-400.avif",
+      "720": "esp-16-sin-05-720.avif",
+      "jpg": "esp-16-sin-05-720.jpg",
+      "max": "esp-16-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-16-sin-06-400.avif",
+      "720": "esp-16-sin-06-720.avif",
+      "jpg": "esp-16-sin-06-720.jpg",
+      "max": "esp-16-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-16",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-16"
+  },
+  {
+   "id": "esp-17",
+   "titulo": "Día 17 · Respeto",
+   "serie": "El camino del espartano",
+   "resumen": "Al que no te sirve de nada.",
+   "nota": "Se te juzga por cómo tratas a quien no puede pagarte.",
+   "etiquetas": [
+    "respeto",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-17.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-17.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-17-01-400.avif",
+      "1024": "esp-17-01-1024.avif",
+      "jpg": "esp-17-01-1024.jpg",
+      "1080": "esp-17-01-1080.avif",
+      "max": "esp-17-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-17-02-400.avif",
+      "1024": "esp-17-02-1024.avif",
+      "jpg": "esp-17-02-1024.jpg",
+      "1080": "esp-17-02-1080.avif",
+      "max": "esp-17-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-17-03-400.avif",
+      "1024": "esp-17-03-1024.avif",
+      "jpg": "esp-17-03-1024.jpg",
+      "1080": "esp-17-03-1080.avif",
+      "max": "esp-17-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-17-04-400.avif",
+      "1024": "esp-17-04-1024.avif",
+      "jpg": "esp-17-04-1024.jpg",
+      "1080": "esp-17-04-1080.avif",
+      "max": "esp-17-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-17-05-400.avif",
+      "1024": "esp-17-05-1024.avif",
+      "jpg": "esp-17-05-1024.jpg",
+      "1080": "esp-17-05-1080.avif",
+      "max": "esp-17-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-17-06-400.avif",
+      "1024": "esp-17-06-1024.avif",
+      "jpg": "esp-17-06-1024.jpg",
+      "1080": "esp-17-06-1080.avif",
+      "max": "esp-17-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-17-sin-01-400.avif",
+      "720": "esp-17-sin-01-720.avif",
+      "jpg": "esp-17-sin-01-720.jpg",
+      "max": "esp-17-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-17-sin-02-400.avif",
+      "720": "esp-17-sin-02-720.avif",
+      "jpg": "esp-17-sin-02-720.jpg",
+      "max": "esp-17-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-17-sin-03-400.avif",
+      "720": "esp-17-sin-03-720.avif",
+      "jpg": "esp-17-sin-03-720.jpg",
+      "max": "esp-17-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-17-sin-04-400.avif",
+      "720": "esp-17-sin-04-720.avif",
+      "jpg": "esp-17-sin-04-720.jpg",
+      "max": "esp-17-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-17-sin-05-400.avif",
+      "720": "esp-17-sin-05-720.avif",
+      "jpg": "esp-17-sin-05-720.jpg",
+      "max": "esp-17-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-17-sin-06-400.avif",
+      "720": "esp-17-sin-06-720.avif",
+      "jpg": "esp-17-sin-06-720.jpg",
+      "max": "esp-17-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-17",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-17"
+  },
+  {
+   "id": "esp-18",
+   "titulo": "Día 18 · Verdad",
+   "serie": "El camino del espartano",
+   "resumen": "La palabra dada, sin contrato.",
+   "nota": "La palabra pesa lo que pesa la última que cumpliste.",
+   "etiquetas": [
+    "verdad",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-18.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-18.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-18-01-400.avif",
+      "1024": "esp-18-01-1024.avif",
+      "jpg": "esp-18-01-1024.jpg",
+      "1080": "esp-18-01-1080.avif",
+      "max": "esp-18-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-18-02-400.avif",
+      "1024": "esp-18-02-1024.avif",
+      "jpg": "esp-18-02-1024.jpg",
+      "1080": "esp-18-02-1080.avif",
+      "max": "esp-18-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-18-03-400.avif",
+      "1024": "esp-18-03-1024.avif",
+      "jpg": "esp-18-03-1024.jpg",
+      "1080": "esp-18-03-1080.avif",
+      "max": "esp-18-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-18-04-400.avif",
+      "1024": "esp-18-04-1024.avif",
+      "jpg": "esp-18-04-1024.jpg",
+      "1080": "esp-18-04-1080.avif",
+      "max": "esp-18-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-18-05-400.avif",
+      "1024": "esp-18-05-1024.avif",
+      "jpg": "esp-18-05-1024.jpg",
+      "1080": "esp-18-05-1080.avif",
+      "max": "esp-18-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-18-06-400.avif",
+      "1024": "esp-18-06-1024.avif",
+      "jpg": "esp-18-06-1024.jpg",
+      "1080": "esp-18-06-1080.avif",
+      "max": "esp-18-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-18-sin-01-400.avif",
+      "720": "esp-18-sin-01-720.avif",
+      "jpg": "esp-18-sin-01-720.jpg",
+      "max": "esp-18-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-18-sin-02-400.avif",
+      "720": "esp-18-sin-02-720.avif",
+      "jpg": "esp-18-sin-02-720.jpg",
+      "max": "esp-18-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-18-sin-03-400.avif",
+      "720": "esp-18-sin-03-720.avif",
+      "jpg": "esp-18-sin-03-720.jpg",
+      "max": "esp-18-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-18-sin-04-400.avif",
+      "720": "esp-18-sin-04-720.avif",
+      "jpg": "esp-18-sin-04-720.jpg",
+      "max": "esp-18-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-18-sin-05-400.avif",
+      "720": "esp-18-sin-05-720.avif",
+      "jpg": "esp-18-sin-05-720.jpg",
+      "max": "esp-18-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-18-sin-06-400.avif",
+      "720": "esp-18-sin-06-720.avif",
+      "jpg": "esp-18-sin-06-720.jpg",
+      "max": "esp-18-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-18",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-18"
+  },
+  {
+   "id": "esp-19",
+   "titulo": "Día 19 · Verdad",
+   "serie": "El camino del espartano",
+   "resumen": "Decirlo antes de que se sepa.",
+   "nota": "La verdad tarde es una mentira que se agotó.",
+   "etiquetas": [
+    "verdad",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-19.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-19.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-19-01-400.avif",
+      "1024": "esp-19-01-1024.avif",
+      "jpg": "esp-19-01-1024.jpg",
+      "1080": "esp-19-01-1080.avif",
+      "max": "esp-19-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-19-02-400.avif",
+      "1024": "esp-19-02-1024.avif",
+      "jpg": "esp-19-02-1024.jpg",
+      "1080": "esp-19-02-1080.avif",
+      "max": "esp-19-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-19-03-400.avif",
+      "1024": "esp-19-03-1024.avif",
+      "jpg": "esp-19-03-1024.jpg",
+      "1080": "esp-19-03-1080.avif",
+      "max": "esp-19-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-19-04-400.avif",
+      "1024": "esp-19-04-1024.avif",
+      "jpg": "esp-19-04-1024.jpg",
+      "1080": "esp-19-04-1080.avif",
+      "max": "esp-19-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-19-05-400.avif",
+      "1024": "esp-19-05-1024.avif",
+      "jpg": "esp-19-05-1024.jpg",
+      "1080": "esp-19-05-1080.avif",
+      "max": "esp-19-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-19-06-400.avif",
+      "1024": "esp-19-06-1024.avif",
+      "jpg": "esp-19-06-1024.jpg",
+      "1080": "esp-19-06-1080.avif",
+      "max": "esp-19-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-19-sin-01-400.avif",
+      "720": "esp-19-sin-01-720.avif",
+      "jpg": "esp-19-sin-01-720.jpg",
+      "max": "esp-19-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-19-sin-02-400.avif",
+      "720": "esp-19-sin-02-720.avif",
+      "jpg": "esp-19-sin-02-720.jpg",
+      "max": "esp-19-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-19-sin-03-400.avif",
+      "720": "esp-19-sin-03-720.avif",
+      "jpg": "esp-19-sin-03-720.jpg",
+      "max": "esp-19-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-19-sin-04-400.avif",
+      "720": "esp-19-sin-04-720.avif",
+      "jpg": "esp-19-sin-04-720.jpg",
+      "max": "esp-19-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-19-sin-05-400.avif",
+      "720": "esp-19-sin-05-720.avif",
+      "jpg": "esp-19-sin-05-720.jpg",
+      "max": "esp-19-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-19-sin-06-400.avif",
+      "720": "esp-19-sin-06-720.avif",
+      "jpg": "esp-19-sin-06-720.jpg",
+      "max": "esp-19-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-19",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-19"
+  },
+  {
+   "id": "esp-20",
+   "titulo": "Día 20 · Verdad",
+   "serie": "El camino del espartano",
+   "resumen": "Exagerar es mentir despacio.",
+   "nota": "El que no exagera no tiene que recordar qué dijo.",
+   "etiquetas": [
+    "verdad",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-20.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-20.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-20-01-400.avif",
+      "1024": "esp-20-01-1024.avif",
+      "jpg": "esp-20-01-1024.jpg",
+      "1080": "esp-20-01-1080.avif",
+      "max": "esp-20-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-20-02-400.avif",
+      "1024": "esp-20-02-1024.avif",
+      "jpg": "esp-20-02-1024.jpg",
+      "1080": "esp-20-02-1080.avif",
+      "max": "esp-20-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-20-03-400.avif",
+      "1024": "esp-20-03-1024.avif",
+      "jpg": "esp-20-03-1024.jpg",
+      "1080": "esp-20-03-1080.avif",
+      "max": "esp-20-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-20-04-400.avif",
+      "1024": "esp-20-04-1024.avif",
+      "jpg": "esp-20-04-1024.jpg",
+      "1080": "esp-20-04-1080.avif",
+      "max": "esp-20-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-20-05-400.avif",
+      "1024": "esp-20-05-1024.avif",
+      "jpg": "esp-20-05-1024.jpg",
+      "1080": "esp-20-05-1080.avif",
+      "max": "esp-20-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-20-06-400.avif",
+      "1024": "esp-20-06-1024.avif",
+      "jpg": "esp-20-06-1024.jpg",
+      "1080": "esp-20-06-1080.avif",
+      "max": "esp-20-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-20-sin-01-400.avif",
+      "720": "esp-20-sin-01-720.avif",
+      "jpg": "esp-20-sin-01-720.jpg",
+      "max": "esp-20-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-20-sin-02-400.avif",
+      "720": "esp-20-sin-02-720.avif",
+      "jpg": "esp-20-sin-02-720.jpg",
+      "max": "esp-20-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-20-sin-03-400.avif",
+      "720": "esp-20-sin-03-720.avif",
+      "jpg": "esp-20-sin-03-720.jpg",
+      "max": "esp-20-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-20-sin-04-400.avif",
+      "720": "esp-20-sin-04-720.avif",
+      "jpg": "esp-20-sin-04-720.jpg",
+      "max": "esp-20-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-20-sin-05-400.avif",
+      "720": "esp-20-sin-05-720.avif",
+      "jpg": "esp-20-sin-05-720.jpg",
+      "max": "esp-20-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-20-sin-06-400.avif",
+      "720": "esp-20-sin-06-720.avif",
+      "jpg": "esp-20-sin-06-720.jpg",
+      "max": "esp-20-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-20",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-20"
+  },
+  {
+   "id": "esp-21",
+   "titulo": "Día 21 · Verdad",
+   "serie": "El camino del espartano",
+   "resumen": "La disculpa sin «pero».",
+   "nota": "La disculpa entera cabe en una línea.",
+   "etiquetas": [
+    "verdad",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-21.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-21.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-21-01-400.avif",
+      "1024": "esp-21-01-1024.avif",
+      "jpg": "esp-21-01-1024.jpg",
+      "1080": "esp-21-01-1080.avif",
+      "max": "esp-21-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-21-02-400.avif",
+      "1024": "esp-21-02-1024.avif",
+      "jpg": "esp-21-02-1024.jpg",
+      "1080": "esp-21-02-1080.avif",
+      "max": "esp-21-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-21-03-400.avif",
+      "1024": "esp-21-03-1024.avif",
+      "jpg": "esp-21-03-1024.jpg",
+      "1080": "esp-21-03-1080.avif",
+      "max": "esp-21-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-21-04-400.avif",
+      "1024": "esp-21-04-1024.avif",
+      "jpg": "esp-21-04-1024.jpg",
+      "1080": "esp-21-04-1080.avif",
+      "max": "esp-21-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-21-05-400.avif",
+      "1024": "esp-21-05-1024.avif",
+      "jpg": "esp-21-05-1024.jpg",
+      "1080": "esp-21-05-1080.avif",
+      "max": "esp-21-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-21-06-400.avif",
+      "1024": "esp-21-06-1024.avif",
+      "jpg": "esp-21-06-1024.jpg",
+      "1080": "esp-21-06-1080.avif",
+      "max": "esp-21-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-21-sin-01-400.avif",
+      "720": "esp-21-sin-01-720.avif",
+      "jpg": "esp-21-sin-01-720.jpg",
+      "max": "esp-21-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-21-sin-02-400.avif",
+      "720": "esp-21-sin-02-720.avif",
+      "jpg": "esp-21-sin-02-720.jpg",
+      "max": "esp-21-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-21-sin-03-400.avif",
+      "720": "esp-21-sin-03-720.avif",
+      "jpg": "esp-21-sin-03-720.jpg",
+      "max": "esp-21-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-21-sin-04-400.avif",
+      "720": "esp-21-sin-04-720.avif",
+      "jpg": "esp-21-sin-04-720.jpg",
+      "max": "esp-21-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-21-sin-05-400.avif",
+      "720": "esp-21-sin-05-720.avif",
+      "jpg": "esp-21-sin-05-720.jpg",
+      "max": "esp-21-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-21-sin-06-400.avif",
+      "720": "esp-21-sin-06-720.avif",
+      "jpg": "esp-21-sin-06-720.jpg",
+      "max": "esp-21-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-21",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-21"
+  },
+  {
+   "id": "esp-22",
+   "titulo": "Día 22 · Honor",
+   "serie": "El camino del espartano",
+   "resumen": "Lo que haces cuando no te ven.",
+   "nota": "El honor no tiene testigos.",
+   "etiquetas": [
+    "honor",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-22.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-22.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-22-01-400.avif",
+      "1024": "esp-22-01-1024.avif",
+      "jpg": "esp-22-01-1024.jpg",
+      "1080": "esp-22-01-1080.avif",
+      "max": "esp-22-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-22-02-400.avif",
+      "1024": "esp-22-02-1024.avif",
+      "jpg": "esp-22-02-1024.jpg",
+      "1080": "esp-22-02-1080.avif",
+      "max": "esp-22-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-22-03-400.avif",
+      "1024": "esp-22-03-1024.avif",
+      "jpg": "esp-22-03-1024.jpg",
+      "1080": "esp-22-03-1080.avif",
+      "max": "esp-22-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-22-04-400.avif",
+      "1024": "esp-22-04-1024.avif",
+      "jpg": "esp-22-04-1024.jpg",
+      "1080": "esp-22-04-1080.avif",
+      "max": "esp-22-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-22-05-400.avif",
+      "1024": "esp-22-05-1024.avif",
+      "jpg": "esp-22-05-1024.jpg",
+      "1080": "esp-22-05-1080.avif",
+      "max": "esp-22-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-22-06-400.avif",
+      "1024": "esp-22-06-1024.avif",
+      "jpg": "esp-22-06-1024.jpg",
+      "1080": "esp-22-06-1080.avif",
+      "max": "esp-22-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-22-sin-01-400.avif",
+      "720": "esp-22-sin-01-720.avif",
+      "jpg": "esp-22-sin-01-720.jpg",
+      "max": "esp-22-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-22-sin-02-400.avif",
+      "720": "esp-22-sin-02-720.avif",
+      "jpg": "esp-22-sin-02-720.jpg",
+      "max": "esp-22-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-22-sin-03-400.avif",
+      "720": "esp-22-sin-03-720.avif",
+      "jpg": "esp-22-sin-03-720.jpg",
+      "max": "esp-22-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-22-sin-04-400.avif",
+      "720": "esp-22-sin-04-720.avif",
+      "jpg": "esp-22-sin-04-720.jpg",
+      "max": "esp-22-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-22-sin-05-400.avif",
+      "720": "esp-22-sin-05-720.avif",
+      "jpg": "esp-22-sin-05-720.jpg",
+      "max": "esp-22-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-22-sin-06-400.avif",
+      "720": "esp-22-sin-06-720.avif",
+      "jpg": "esp-22-sin-06-720.jpg",
+      "max": "esp-22-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-22",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-22"
+  },
+  {
+   "id": "esp-23",
+   "titulo": "Día 23 · Honor",
+   "serie": "El camino del espartano",
+   "resumen": "No aceptar lo que no te has ganado.",
+   "nota": "Lo que no ganaste, pesa.",
+   "etiquetas": [
+    "honor",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-23.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-23.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-23-01-400.avif",
+      "1024": "esp-23-01-1024.avif",
+      "jpg": "esp-23-01-1024.jpg",
+      "1080": "esp-23-01-1080.avif",
+      "max": "esp-23-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-23-02-400.avif",
+      "1024": "esp-23-02-1024.avif",
+      "jpg": "esp-23-02-1024.jpg",
+      "1080": "esp-23-02-1080.avif",
+      "max": "esp-23-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-23-03-400.avif",
+      "1024": "esp-23-03-1024.avif",
+      "jpg": "esp-23-03-1024.jpg",
+      "1080": "esp-23-03-1080.avif",
+      "max": "esp-23-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-23-04-400.avif",
+      "1024": "esp-23-04-1024.avif",
+      "jpg": "esp-23-04-1024.jpg",
+      "1080": "esp-23-04-1080.avif",
+      "max": "esp-23-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-23-05-400.avif",
+      "1024": "esp-23-05-1024.avif",
+      "jpg": "esp-23-05-1024.jpg",
+      "1080": "esp-23-05-1080.avif",
+      "max": "esp-23-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-23-06-400.avif",
+      "1024": "esp-23-06-1024.avif",
+      "jpg": "esp-23-06-1024.jpg",
+      "1080": "esp-23-06-1080.avif",
+      "max": "esp-23-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-23-sin-01-400.avif",
+      "720": "esp-23-sin-01-720.avif",
+      "jpg": "esp-23-sin-01-720.jpg",
+      "max": "esp-23-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-23-sin-02-400.avif",
+      "720": "esp-23-sin-02-720.avif",
+      "jpg": "esp-23-sin-02-720.jpg",
+      "max": "esp-23-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-23-sin-03-400.avif",
+      "720": "esp-23-sin-03-720.avif",
+      "jpg": "esp-23-sin-03-720.jpg",
+      "max": "esp-23-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-23-sin-04-400.avif",
+      "720": "esp-23-sin-04-720.avif",
+      "jpg": "esp-23-sin-04-720.jpg",
+      "max": "esp-23-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-23-sin-05-400.avif",
+      "720": "esp-23-sin-05-720.avif",
+      "jpg": "esp-23-sin-05-720.jpg",
+      "max": "esp-23-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-23-sin-06-400.avif",
+      "720": "esp-23-sin-06-720.avif",
+      "jpg": "esp-23-sin-06-720.jpg",
+      "max": "esp-23-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-23",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-23"
+  },
+  {
+   "id": "esp-24",
+   "titulo": "Día 24 · Honor",
+   "serie": "El camino del espartano",
+   "resumen": "Sostener lo que dijiste ayer.",
+   "nota": "El que dice lo mismo en dos habitaciones, descansa.",
+   "etiquetas": [
+    "honor",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-24.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-24.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-24-01-400.avif",
+      "1024": "esp-24-01-1024.avif",
+      "jpg": "esp-24-01-1024.jpg",
+      "1080": "esp-24-01-1080.avif",
+      "max": "esp-24-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-24-02-400.avif",
+      "1024": "esp-24-02-1024.avif",
+      "jpg": "esp-24-02-1024.jpg",
+      "1080": "esp-24-02-1080.avif",
+      "max": "esp-24-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-24-03-400.avif",
+      "1024": "esp-24-03-1024.avif",
+      "jpg": "esp-24-03-1024.jpg",
+      "1080": "esp-24-03-1080.avif",
+      "max": "esp-24-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-24-04-400.avif",
+      "1024": "esp-24-04-1024.avif",
+      "jpg": "esp-24-04-1024.jpg",
+      "1080": "esp-24-04-1080.avif",
+      "max": "esp-24-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-24-05-400.avif",
+      "1024": "esp-24-05-1024.avif",
+      "jpg": "esp-24-05-1024.jpg",
+      "1080": "esp-24-05-1080.avif",
+      "max": "esp-24-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-24-06-400.avif",
+      "1024": "esp-24-06-1024.avif",
+      "jpg": "esp-24-06-1024.jpg",
+      "1080": "esp-24-06-1080.avif",
+      "max": "esp-24-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-24-sin-01-400.avif",
+      "720": "esp-24-sin-01-720.avif",
+      "jpg": "esp-24-sin-01-720.jpg",
+      "max": "esp-24-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-24-sin-02-400.avif",
+      "720": "esp-24-sin-02-720.avif",
+      "jpg": "esp-24-sin-02-720.jpg",
+      "max": "esp-24-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-24-sin-03-400.avif",
+      "720": "esp-24-sin-03-720.avif",
+      "jpg": "esp-24-sin-03-720.jpg",
+      "max": "esp-24-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-24-sin-04-400.avif",
+      "720": "esp-24-sin-04-720.avif",
+      "jpg": "esp-24-sin-04-720.jpg",
+      "max": "esp-24-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-24-sin-05-400.avif",
+      "720": "esp-24-sin-05-720.avif",
+      "jpg": "esp-24-sin-05-720.jpg",
+      "max": "esp-24-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-24-sin-06-400.avif",
+      "720": "esp-24-sin-06-720.avif",
+      "jpg": "esp-24-sin-06-720.jpg",
+      "max": "esp-24-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-24",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-24"
+  },
+  {
+   "id": "esp-25",
+   "titulo": "Día 25 · Honor",
+   "serie": "El camino del espartano",
+   "resumen": "Perder bien.",
+   "nota": "Se mide más en la derrota que en la victoria.",
+   "etiquetas": [
+    "honor",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-25.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-25.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-25-01-400.avif",
+      "1024": "esp-25-01-1024.avif",
+      "jpg": "esp-25-01-1024.jpg",
+      "1080": "esp-25-01-1080.avif",
+      "max": "esp-25-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-25-02-400.avif",
+      "1024": "esp-25-02-1024.avif",
+      "jpg": "esp-25-02-1024.jpg",
+      "1080": "esp-25-02-1080.avif",
+      "max": "esp-25-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-25-03-400.avif",
+      "1024": "esp-25-03-1024.avif",
+      "jpg": "esp-25-03-1024.jpg",
+      "1080": "esp-25-03-1080.avif",
+      "max": "esp-25-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-25-04-400.avif",
+      "1024": "esp-25-04-1024.avif",
+      "jpg": "esp-25-04-1024.jpg",
+      "1080": "esp-25-04-1080.avif",
+      "max": "esp-25-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-25-05-400.avif",
+      "1024": "esp-25-05-1024.avif",
+      "jpg": "esp-25-05-1024.jpg",
+      "1080": "esp-25-05-1080.avif",
+      "max": "esp-25-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-25-06-400.avif",
+      "1024": "esp-25-06-1024.avif",
+      "jpg": "esp-25-06-1024.jpg",
+      "1080": "esp-25-06-1080.avif",
+      "max": "esp-25-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-25-sin-01-400.avif",
+      "720": "esp-25-sin-01-720.avif",
+      "jpg": "esp-25-sin-01-720.jpg",
+      "max": "esp-25-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-25-sin-02-400.avif",
+      "720": "esp-25-sin-02-720.avif",
+      "jpg": "esp-25-sin-02-720.jpg",
+      "max": "esp-25-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-25-sin-03-400.avif",
+      "720": "esp-25-sin-03-720.avif",
+      "jpg": "esp-25-sin-03-720.jpg",
+      "max": "esp-25-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-25-sin-04-400.avif",
+      "720": "esp-25-sin-04-720.avif",
+      "jpg": "esp-25-sin-04-720.jpg",
+      "max": "esp-25-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-25-sin-05-400.avif",
+      "720": "esp-25-sin-05-720.avif",
+      "jpg": "esp-25-sin-05-720.jpg",
+      "max": "esp-25-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-25-sin-06-400.avif",
+      "720": "esp-25-sin-06-720.avif",
+      "jpg": "esp-25-sin-06-720.jpg",
+      "max": "esp-25-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-25",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-25"
+  },
   {
    "id": "idea1",
    "titulo": "Idea 1",
@@ -3467,6 +7618,2790 @@
    "sin_texto": [],
    "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-preguntar",
    "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-preguntar"
+  },
+  {
+   "id": "com-analogia",
+   "titulo": "La analogía",
+   "serie": "Comunicación",
+   "resumen": "Explicar es traducir.",
+   "nota": "No expliques mejor. Explica desde otro sitio.",
+   "etiquetas": [
+    "explicar",
+    "analogía",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-analogia.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-analogia.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-analogia.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-analogia.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-analogia-01-400.avif",
+      "1024": "com-analogia-01-1024.avif",
+      "jpg": "com-analogia-01-1024.jpg",
+      "1080": "com-analogia-01-1080.avif",
+      "max": "com-analogia-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-analogia-02-400.avif",
+      "1024": "com-analogia-02-1024.avif",
+      "jpg": "com-analogia-02-1024.jpg",
+      "1080": "com-analogia-02-1080.avif",
+      "max": "com-analogia-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-analogia-03-400.avif",
+      "1024": "com-analogia-03-1024.avif",
+      "jpg": "com-analogia-03-1024.jpg",
+      "1080": "com-analogia-03-1080.avif",
+      "max": "com-analogia-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-analogia-04-400.avif",
+      "1024": "com-analogia-04-1024.avif",
+      "jpg": "com-analogia-04-1024.jpg",
+      "1080": "com-analogia-04-1080.avif",
+      "max": "com-analogia-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-analogia-05-400.avif",
+      "1024": "com-analogia-05-1024.avif",
+      "jpg": "com-analogia-05-1024.jpg",
+      "1080": "com-analogia-05-1080.avif",
+      "max": "com-analogia-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-analogia-06-400.avif",
+      "1024": "com-analogia-06-1024.avif",
+      "jpg": "com-analogia-06-1024.jpg",
+      "1080": "com-analogia-06-1080.avif",
+      "max": "com-analogia-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-analogia-sin-01-400.avif",
+      "720": "com-analogia-sin-01-720.avif",
+      "jpg": "com-analogia-sin-01-720.jpg",
+      "max": "com-analogia-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-analogia-sin-02-400.avif",
+      "720": "com-analogia-sin-02-720.avif",
+      "jpg": "com-analogia-sin-02-720.jpg",
+      "max": "com-analogia-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-analogia-sin-03-400.avif",
+      "720": "com-analogia-sin-03-720.avif",
+      "jpg": "com-analogia-sin-03-720.jpg",
+      "max": "com-analogia-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-analogia-sin-04-400.avif",
+      "720": "com-analogia-sin-04-720.avif",
+      "jpg": "com-analogia-sin-04-720.jpg",
+      "max": "com-analogia-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-analogia-sin-05-400.avif",
+      "720": "com-analogia-sin-05-720.avif",
+      "jpg": "com-analogia-sin-05-720.jpg",
+      "max": "com-analogia-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-analogia-sin-06-400.avif",
+      "720": "com-analogia-sin-06-720.avif",
+      "jpg": "com-analogia-sin-06-720.jpg",
+      "max": "com-analogia-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-analogia",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-analogia"
+  },
+  {
+   "id": "com-autoridad",
+   "titulo": "La autoridad",
+   "serie": "Comunicación",
+   "resumen": "La autoridad no se reclama. Se concede.",
+   "nota": "Se te concede mientras la mereces. Ni un minuto más.",
+   "etiquetas": [
+    "autoridad",
+    "credibilidad",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-autoridad.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-autoridad.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-autoridad.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-autoridad.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-autoridad-01-400.avif",
+      "1024": "com-autoridad-01-1024.avif",
+      "jpg": "com-autoridad-01-1024.jpg",
+      "1080": "com-autoridad-01-1080.avif",
+      "max": "com-autoridad-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-autoridad-02-400.avif",
+      "1024": "com-autoridad-02-1024.avif",
+      "jpg": "com-autoridad-02-1024.jpg",
+      "1080": "com-autoridad-02-1080.avif",
+      "max": "com-autoridad-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-autoridad-03-400.avif",
+      "1024": "com-autoridad-03-1024.avif",
+      "jpg": "com-autoridad-03-1024.jpg",
+      "1080": "com-autoridad-03-1080.avif",
+      "max": "com-autoridad-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-autoridad-04-400.avif",
+      "1024": "com-autoridad-04-1024.avif",
+      "jpg": "com-autoridad-04-1024.jpg",
+      "1080": "com-autoridad-04-1080.avif",
+      "max": "com-autoridad-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-autoridad-05-400.avif",
+      "1024": "com-autoridad-05-1024.avif",
+      "jpg": "com-autoridad-05-1024.jpg",
+      "1080": "com-autoridad-05-1080.avif",
+      "max": "com-autoridad-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-autoridad-06-400.avif",
+      "1024": "com-autoridad-06-1024.avif",
+      "jpg": "com-autoridad-06-1024.jpg",
+      "1080": "com-autoridad-06-1080.avif",
+      "max": "com-autoridad-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-autoridad-sin-01-400.avif",
+      "720": "com-autoridad-sin-01-720.avif",
+      "jpg": "com-autoridad-sin-01-720.jpg",
+      "max": "com-autoridad-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-autoridad-sin-02-400.avif",
+      "720": "com-autoridad-sin-02-720.avif",
+      "jpg": "com-autoridad-sin-02-720.jpg",
+      "max": "com-autoridad-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-autoridad-sin-03-400.avif",
+      "720": "com-autoridad-sin-03-720.avif",
+      "jpg": "com-autoridad-sin-03-720.jpg",
+      "max": "com-autoridad-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-autoridad-sin-04-400.avif",
+      "720": "com-autoridad-sin-04-720.avif",
+      "jpg": "com-autoridad-sin-04-720.jpg",
+      "max": "com-autoridad-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-autoridad-sin-05-400.avif",
+      "720": "com-autoridad-sin-05-720.avif",
+      "jpg": "com-autoridad-sin-05-720.jpg",
+      "max": "com-autoridad-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-autoridad-sin-06-400.avif",
+      "720": "com-autoridad-sin-06-720.avif",
+      "jpg": "com-autoridad-sin-06-720.jpg",
+      "max": "com-autoridad-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-autoridad",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-autoridad"
+  },
+  {
+   "id": "com-cerrar",
+   "titulo": "Cerrar",
+   "serie": "Comunicación",
+   "resumen": "Cerrar no es empujar.",
+   "nota": "No cierres. Quita lo que estorba y deja cerrar.",
+   "etiquetas": [
+    "ventas",
+    "cierre",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-cerrar.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-cerrar.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-cerrar.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-cerrar.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-cerrar-01-400.avif",
+      "1024": "com-cerrar-01-1024.avif",
+      "jpg": "com-cerrar-01-1024.jpg",
+      "1080": "com-cerrar-01-1080.avif",
+      "max": "com-cerrar-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-cerrar-02-400.avif",
+      "1024": "com-cerrar-02-1024.avif",
+      "jpg": "com-cerrar-02-1024.jpg",
+      "1080": "com-cerrar-02-1080.avif",
+      "max": "com-cerrar-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-cerrar-03-400.avif",
+      "1024": "com-cerrar-03-1024.avif",
+      "jpg": "com-cerrar-03-1024.jpg",
+      "1080": "com-cerrar-03-1080.avif",
+      "max": "com-cerrar-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-cerrar-04-400.avif",
+      "1024": "com-cerrar-04-1024.avif",
+      "jpg": "com-cerrar-04-1024.jpg",
+      "1080": "com-cerrar-04-1080.avif",
+      "max": "com-cerrar-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-cerrar-05-400.avif",
+      "1024": "com-cerrar-05-1024.avif",
+      "jpg": "com-cerrar-05-1024.jpg",
+      "1080": "com-cerrar-05-1080.avif",
+      "max": "com-cerrar-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-cerrar-06-400.avif",
+      "1024": "com-cerrar-06-1024.avif",
+      "jpg": "com-cerrar-06-1024.jpg",
+      "1080": "com-cerrar-06-1080.avif",
+      "max": "com-cerrar-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-cerrar-sin-01-400.avif",
+      "720": "com-cerrar-sin-01-720.avif",
+      "jpg": "com-cerrar-sin-01-720.jpg",
+      "max": "com-cerrar-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-cerrar-sin-02-400.avif",
+      "720": "com-cerrar-sin-02-720.avif",
+      "jpg": "com-cerrar-sin-02-720.jpg",
+      "max": "com-cerrar-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-cerrar-sin-03-400.avif",
+      "720": "com-cerrar-sin-03-720.avif",
+      "jpg": "com-cerrar-sin-03-720.jpg",
+      "max": "com-cerrar-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-cerrar-sin-04-400.avif",
+      "720": "com-cerrar-sin-04-720.avif",
+      "jpg": "com-cerrar-sin-04-720.jpg",
+      "max": "com-cerrar-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-cerrar-sin-05-400.avif",
+      "720": "com-cerrar-sin-05-720.avif",
+      "jpg": "com-cerrar-sin-05-720.jpg",
+      "max": "com-cerrar-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-cerrar-sin-06-400.avif",
+      "720": "com-cerrar-sin-06-720.avif",
+      "jpg": "com-cerrar-sin-06-720.jpg",
+      "max": "com-cerrar-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-cerrar",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-cerrar"
+  },
+  {
+   "id": "com-compromiso",
+   "titulo": "El compromiso",
+   "serie": "Comunicación",
+   "resumen": "Lo que se dice en voz alta pesa distinto.",
+   "nota": "No pidas la decisión. Pide el primer paso.",
+   "etiquetas": [
+    "decisión",
+    "coherencia",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-compromiso.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-compromiso.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-compromiso.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-compromiso.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-compromiso-01-400.avif",
+      "1024": "com-compromiso-01-1024.avif",
+      "jpg": "com-compromiso-01-1024.jpg",
+      "1080": "com-compromiso-01-1080.avif",
+      "max": "com-compromiso-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-compromiso-02-400.avif",
+      "1024": "com-compromiso-02-1024.avif",
+      "jpg": "com-compromiso-02-1024.jpg",
+      "1080": "com-compromiso-02-1080.avif",
+      "max": "com-compromiso-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-compromiso-03-400.avif",
+      "1024": "com-compromiso-03-1024.avif",
+      "jpg": "com-compromiso-03-1024.jpg",
+      "1080": "com-compromiso-03-1080.avif",
+      "max": "com-compromiso-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-compromiso-04-400.avif",
+      "1024": "com-compromiso-04-1024.avif",
+      "jpg": "com-compromiso-04-1024.jpg",
+      "1080": "com-compromiso-04-1080.avif",
+      "max": "com-compromiso-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-compromiso-05-400.avif",
+      "1024": "com-compromiso-05-1024.avif",
+      "jpg": "com-compromiso-05-1024.jpg",
+      "1080": "com-compromiso-05-1080.avif",
+      "max": "com-compromiso-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-compromiso-06-400.avif",
+      "1024": "com-compromiso-06-1024.avif",
+      "jpg": "com-compromiso-06-1024.jpg",
+      "1080": "com-compromiso-06-1080.avif",
+      "max": "com-compromiso-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-compromiso-sin-01-400.avif",
+      "720": "com-compromiso-sin-01-720.avif",
+      "jpg": "com-compromiso-sin-01-720.jpg",
+      "max": "com-compromiso-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-compromiso-sin-02-400.avif",
+      "720": "com-compromiso-sin-02-720.avif",
+      "jpg": "com-compromiso-sin-02-720.jpg",
+      "max": "com-compromiso-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-compromiso-sin-03-400.avif",
+      "720": "com-compromiso-sin-03-720.avif",
+      "jpg": "com-compromiso-sin-03-720.jpg",
+      "max": "com-compromiso-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-compromiso-sin-04-400.avif",
+      "720": "com-compromiso-sin-04-720.avif",
+      "jpg": "com-compromiso-sin-04-720.jpg",
+      "max": "com-compromiso-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-compromiso-sin-05-400.avif",
+      "720": "com-compromiso-sin-05-720.avif",
+      "jpg": "com-compromiso-sin-05-720.jpg",
+      "max": "com-compromiso-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-compromiso-sin-06-400.avif",
+      "720": "com-compromiso-sin-06-720.avif",
+      "jpg": "com-compromiso-sin-06-720.jpg",
+      "max": "com-compromiso-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-compromiso",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-compromiso"
+  },
+  {
+   "id": "com-contraste",
+   "titulo": "El contraste",
+   "serie": "Comunicación",
+   "resumen": "Nada significa nada solo.",
+   "nota": "No describas más. Pon algo al lado.",
+   "etiquetas": [
+    "contraste",
+    "comparación",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-contraste.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-contraste.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-contraste.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-contraste.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-contraste-01-400.avif",
+      "1024": "com-contraste-01-1024.avif",
+      "jpg": "com-contraste-01-1024.jpg",
+      "1080": "com-contraste-01-1080.avif",
+      "max": "com-contraste-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-contraste-02-400.avif",
+      "1024": "com-contraste-02-1024.avif",
+      "jpg": "com-contraste-02-1024.jpg",
+      "1080": "com-contraste-02-1080.avif",
+      "max": "com-contraste-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-contraste-03-400.avif",
+      "1024": "com-contraste-03-1024.avif",
+      "jpg": "com-contraste-03-1024.jpg",
+      "1080": "com-contraste-03-1080.avif",
+      "max": "com-contraste-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-contraste-04-400.avif",
+      "1024": "com-contraste-04-1024.avif",
+      "jpg": "com-contraste-04-1024.jpg",
+      "1080": "com-contraste-04-1080.avif",
+      "max": "com-contraste-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-contraste-05-400.avif",
+      "1024": "com-contraste-05-1024.avif",
+      "jpg": "com-contraste-05-1024.jpg",
+      "1080": "com-contraste-05-1080.avif",
+      "max": "com-contraste-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-contraste-06-400.avif",
+      "1024": "com-contraste-06-1024.avif",
+      "jpg": "com-contraste-06-1024.jpg",
+      "1080": "com-contraste-06-1080.avif",
+      "max": "com-contraste-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-contraste-sin-01-400.avif",
+      "720": "com-contraste-sin-01-720.avif",
+      "jpg": "com-contraste-sin-01-720.jpg",
+      "max": "com-contraste-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-contraste-sin-02-400.avif",
+      "720": "com-contraste-sin-02-720.avif",
+      "jpg": "com-contraste-sin-02-720.jpg",
+      "max": "com-contraste-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-contraste-sin-03-400.avif",
+      "720": "com-contraste-sin-03-720.avif",
+      "jpg": "com-contraste-sin-03-720.jpg",
+      "max": "com-contraste-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-contraste-sin-04-400.avif",
+      "720": "com-contraste-sin-04-720.avif",
+      "jpg": "com-contraste-sin-04-720.jpg",
+      "max": "com-contraste-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-contraste-sin-05-400.avif",
+      "720": "com-contraste-sin-05-720.avif",
+      "jpg": "com-contraste-sin-05-720.jpg",
+      "max": "com-contraste-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-contraste-sin-06-400.avif",
+      "720": "com-contraste-sin-06-720.avif",
+      "jpg": "com-contraste-sin-06-720.jpg",
+      "max": "com-contraste-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-contraste",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-contraste"
+  },
+  {
+   "id": "com-el-orden",
+   "titulo": "El orden",
+   "serie": "Comunicación",
+   "resumen": "El mismo argumento, en otro orden, es otro argumento.",
+   "nota": "No cuentes lo que pasó. Cuenta lo que hace falta saber para entenderlo.",
+   "etiquetas": [
+    "estructura",
+    "orden",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-el-orden.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-el-orden.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-el-orden.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-el-orden.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-orden-01-400.avif",
+      "1024": "com-el-orden-01-1024.avif",
+      "jpg": "com-el-orden-01-1024.jpg",
+      "1080": "com-el-orden-01-1080.avif",
+      "max": "com-el-orden-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-orden-02-400.avif",
+      "1024": "com-el-orden-02-1024.avif",
+      "jpg": "com-el-orden-02-1024.jpg",
+      "1080": "com-el-orden-02-1080.avif",
+      "max": "com-el-orden-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-orden-03-400.avif",
+      "1024": "com-el-orden-03-1024.avif",
+      "jpg": "com-el-orden-03-1024.jpg",
+      "1080": "com-el-orden-03-1080.avif",
+      "max": "com-el-orden-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-orden-04-400.avif",
+      "1024": "com-el-orden-04-1024.avif",
+      "jpg": "com-el-orden-04-1024.jpg",
+      "1080": "com-el-orden-04-1080.avif",
+      "max": "com-el-orden-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-orden-05-400.avif",
+      "1024": "com-el-orden-05-1024.avif",
+      "jpg": "com-el-orden-05-1024.jpg",
+      "1080": "com-el-orden-05-1080.avif",
+      "max": "com-el-orden-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-orden-06-400.avif",
+      "1024": "com-el-orden-06-1024.avif",
+      "jpg": "com-el-orden-06-1024.jpg",
+      "1080": "com-el-orden-06-1080.avif",
+      "max": "com-el-orden-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-orden-sin-01-400.avif",
+      "720": "com-el-orden-sin-01-720.avif",
+      "jpg": "com-el-orden-sin-01-720.jpg",
+      "max": "com-el-orden-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-orden-sin-02-400.avif",
+      "720": "com-el-orden-sin-02-720.avif",
+      "jpg": "com-el-orden-sin-02-720.jpg",
+      "max": "com-el-orden-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-orden-sin-03-400.avif",
+      "720": "com-el-orden-sin-03-720.avif",
+      "jpg": "com-el-orden-sin-03-720.jpg",
+      "max": "com-el-orden-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-orden-sin-04-400.avif",
+      "720": "com-el-orden-sin-04-720.avif",
+      "jpg": "com-el-orden-sin-04-720.jpg",
+      "max": "com-el-orden-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-orden-sin-05-400.avif",
+      "720": "com-el-orden-sin-05-720.avif",
+      "jpg": "com-el-orden-sin-05-720.jpg",
+      "max": "com-el-orden-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-orden-sin-06-400.avif",
+      "720": "com-el-orden-sin-06-720.avif",
+      "jpg": "com-el-orden-sin-06-720.jpg",
+      "max": "com-el-orden-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-el-orden",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-el-orden"
+  },
+  {
+   "id": "com-el-tono",
+   "titulo": "El tono",
+   "serie": "Comunicación",
+   "resumen": "El tono llega antes que las palabras.",
+   "nota": "Antes de elegir las palabras, elige cómo van a sonar.",
+   "etiquetas": [
+    "no verbal",
+    "tono",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-el-tono.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-el-tono.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-el-tono.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-el-tono.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-tono-01-400.avif",
+      "1024": "com-el-tono-01-1024.avif",
+      "jpg": "com-el-tono-01-1024.jpg",
+      "1080": "com-el-tono-01-1080.avif",
+      "max": "com-el-tono-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-tono-02-400.avif",
+      "1024": "com-el-tono-02-1024.avif",
+      "jpg": "com-el-tono-02-1024.jpg",
+      "1080": "com-el-tono-02-1080.avif",
+      "max": "com-el-tono-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-tono-03-400.avif",
+      "1024": "com-el-tono-03-1024.avif",
+      "jpg": "com-el-tono-03-1024.jpg",
+      "1080": "com-el-tono-03-1080.avif",
+      "max": "com-el-tono-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-tono-04-400.avif",
+      "1024": "com-el-tono-04-1024.avif",
+      "jpg": "com-el-tono-04-1024.jpg",
+      "1080": "com-el-tono-04-1080.avif",
+      "max": "com-el-tono-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-tono-05-400.avif",
+      "1024": "com-el-tono-05-1024.avif",
+      "jpg": "com-el-tono-05-1024.jpg",
+      "1080": "com-el-tono-05-1080.avif",
+      "max": "com-el-tono-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-el-tono-06-400.avif",
+      "1024": "com-el-tono-06-1024.avif",
+      "jpg": "com-el-tono-06-1024.jpg",
+      "1080": "com-el-tono-06-1080.avif",
+      "max": "com-el-tono-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-tono-sin-01-400.avif",
+      "720": "com-el-tono-sin-01-720.avif",
+      "jpg": "com-el-tono-sin-01-720.jpg",
+      "max": "com-el-tono-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-tono-sin-02-400.avif",
+      "720": "com-el-tono-sin-02-720.avif",
+      "jpg": "com-el-tono-sin-02-720.jpg",
+      "max": "com-el-tono-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-tono-sin-03-400.avif",
+      "720": "com-el-tono-sin-03-720.avif",
+      "jpg": "com-el-tono-sin-03-720.jpg",
+      "max": "com-el-tono-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-tono-sin-04-400.avif",
+      "720": "com-el-tono-sin-04-720.avif",
+      "jpg": "com-el-tono-sin-04-720.jpg",
+      "max": "com-el-tono-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-tono-sin-05-400.avif",
+      "720": "com-el-tono-sin-05-720.avif",
+      "jpg": "com-el-tono-sin-05-720.jpg",
+      "max": "com-el-tono-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-el-tono-sin-06-400.avif",
+      "720": "com-el-tono-sin-06-720.avif",
+      "jpg": "com-el-tono-sin-06-720.jpg",
+      "max": "com-el-tono-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-el-tono",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-el-tono"
+  },
+  {
+   "id": "com-escasez",
+   "titulo": "La escasez",
+   "serie": "Comunicación",
+   "resumen": "Lo que se acaba se mira distinto.",
+   "nota": "No inventes urgencia. Explica la que ya hay.",
+   "etiquetas": [
+    "escasez",
+    "urgencia",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-escasez.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-escasez.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-escasez.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-escasez.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-escasez-01-400.avif",
+      "1024": "com-escasez-01-1024.avif",
+      "jpg": "com-escasez-01-1024.jpg",
+      "1080": "com-escasez-01-1080.avif",
+      "max": "com-escasez-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-escasez-02-400.avif",
+      "1024": "com-escasez-02-1024.avif",
+      "jpg": "com-escasez-02-1024.jpg",
+      "1080": "com-escasez-02-1080.avif",
+      "max": "com-escasez-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-escasez-03-400.avif",
+      "1024": "com-escasez-03-1024.avif",
+      "jpg": "com-escasez-03-1024.jpg",
+      "1080": "com-escasez-03-1080.avif",
+      "max": "com-escasez-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-escasez-04-400.avif",
+      "1024": "com-escasez-04-1024.avif",
+      "jpg": "com-escasez-04-1024.jpg",
+      "1080": "com-escasez-04-1080.avif",
+      "max": "com-escasez-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-escasez-05-400.avif",
+      "1024": "com-escasez-05-1024.avif",
+      "jpg": "com-escasez-05-1024.jpg",
+      "1080": "com-escasez-05-1080.avif",
+      "max": "com-escasez-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-escasez-06-400.avif",
+      "1024": "com-escasez-06-1024.avif",
+      "jpg": "com-escasez-06-1024.jpg",
+      "1080": "com-escasez-06-1080.avif",
+      "max": "com-escasez-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-escasez-sin-01-400.avif",
+      "720": "com-escasez-sin-01-720.avif",
+      "jpg": "com-escasez-sin-01-720.jpg",
+      "max": "com-escasez-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-escasez-sin-02-400.avif",
+      "720": "com-escasez-sin-02-720.avif",
+      "jpg": "com-escasez-sin-02-720.jpg",
+      "max": "com-escasez-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-escasez-sin-03-400.avif",
+      "720": "com-escasez-sin-03-720.avif",
+      "jpg": "com-escasez-sin-03-720.jpg",
+      "max": "com-escasez-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-escasez-sin-04-400.avif",
+      "720": "com-escasez-sin-04-720.avif",
+      "jpg": "com-escasez-sin-04-720.jpg",
+      "max": "com-escasez-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-escasez-sin-05-400.avif",
+      "720": "com-escasez-sin-05-720.avif",
+      "jpg": "com-escasez-sin-05-720.jpg",
+      "max": "com-escasez-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-escasez-sin-06-400.avif",
+      "720": "com-escasez-sin-06-720.avif",
+      "jpg": "com-escasez-sin-06-720.jpg",
+      "max": "com-escasez-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-escasez",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-escasez"
+  },
+  {
+   "id": "com-jerga",
+   "titulo": "La jerga",
+   "serie": "Comunicación",
+   "resumen": "La jerga no es precisión. Es un peaje.",
+   "nota": "Habla el idioma del otro, no el tuyo.",
+   "etiquetas": [
+    "claridad",
+    "jerga",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-jerga.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-jerga.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-jerga.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-jerga.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-jerga-01-400.avif",
+      "1024": "com-jerga-01-1024.avif",
+      "jpg": "com-jerga-01-1024.jpg",
+      "1080": "com-jerga-01-1080.avif",
+      "max": "com-jerga-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-jerga-02-400.avif",
+      "1024": "com-jerga-02-1024.avif",
+      "jpg": "com-jerga-02-1024.jpg",
+      "1080": "com-jerga-02-1080.avif",
+      "max": "com-jerga-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-jerga-03-400.avif",
+      "1024": "com-jerga-03-1024.avif",
+      "jpg": "com-jerga-03-1024.jpg",
+      "1080": "com-jerga-03-1080.avif",
+      "max": "com-jerga-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-jerga-04-400.avif",
+      "1024": "com-jerga-04-1024.avif",
+      "jpg": "com-jerga-04-1024.jpg",
+      "1080": "com-jerga-04-1080.avif",
+      "max": "com-jerga-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-jerga-05-400.avif",
+      "1024": "com-jerga-05-1024.avif",
+      "jpg": "com-jerga-05-1024.jpg",
+      "1080": "com-jerga-05-1080.avif",
+      "max": "com-jerga-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-jerga-06-400.avif",
+      "1024": "com-jerga-06-1024.avif",
+      "jpg": "com-jerga-06-1024.jpg",
+      "1080": "com-jerga-06-1080.avif",
+      "max": "com-jerga-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-jerga-sin-01-400.avif",
+      "720": "com-jerga-sin-01-720.avif",
+      "jpg": "com-jerga-sin-01-720.jpg",
+      "max": "com-jerga-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-jerga-sin-02-400.avif",
+      "720": "com-jerga-sin-02-720.avif",
+      "jpg": "com-jerga-sin-02-720.jpg",
+      "max": "com-jerga-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-jerga-sin-03-400.avif",
+      "720": "com-jerga-sin-03-720.avif",
+      "jpg": "com-jerga-sin-03-720.jpg",
+      "max": "com-jerga-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-jerga-sin-04-400.avif",
+      "720": "com-jerga-sin-04-720.avif",
+      "jpg": "com-jerga-sin-04-720.jpg",
+      "max": "com-jerga-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-jerga-sin-05-400.avif",
+      "720": "com-jerga-sin-05-720.avif",
+      "jpg": "com-jerga-sin-05-720.jpg",
+      "max": "com-jerga-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-jerga-sin-06-400.avif",
+      "720": "com-jerga-sin-06-720.avif",
+      "jpg": "com-jerga-sin-06-720.jpg",
+      "max": "com-jerga-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-jerga",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-jerga"
+  },
+  {
+   "id": "com-la-brevedad",
+   "titulo": "La brevedad",
+   "serie": "Comunicación",
+   "resumen": "Ser breve no es decir menos.",
+   "nota": "No hables menos. Habla de menos cosas.",
+   "etiquetas": [
+    "brevedad",
+    "edición",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-la-brevedad.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-la-brevedad.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-la-brevedad.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-la-brevedad.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-brevedad-01-400.avif",
+      "1024": "com-la-brevedad-01-1024.avif",
+      "jpg": "com-la-brevedad-01-1024.jpg",
+      "1080": "com-la-brevedad-01-1080.avif",
+      "max": "com-la-brevedad-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-brevedad-02-400.avif",
+      "1024": "com-la-brevedad-02-1024.avif",
+      "jpg": "com-la-brevedad-02-1024.jpg",
+      "1080": "com-la-brevedad-02-1080.avif",
+      "max": "com-la-brevedad-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-brevedad-03-400.avif",
+      "1024": "com-la-brevedad-03-1024.avif",
+      "jpg": "com-la-brevedad-03-1024.jpg",
+      "1080": "com-la-brevedad-03-1080.avif",
+      "max": "com-la-brevedad-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-brevedad-04-400.avif",
+      "1024": "com-la-brevedad-04-1024.avif",
+      "jpg": "com-la-brevedad-04-1024.jpg",
+      "1080": "com-la-brevedad-04-1080.avif",
+      "max": "com-la-brevedad-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-brevedad-05-400.avif",
+      "1024": "com-la-brevedad-05-1024.avif",
+      "jpg": "com-la-brevedad-05-1024.jpg",
+      "1080": "com-la-brevedad-05-1080.avif",
+      "max": "com-la-brevedad-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-brevedad-06-400.avif",
+      "1024": "com-la-brevedad-06-1024.avif",
+      "jpg": "com-la-brevedad-06-1024.jpg",
+      "1080": "com-la-brevedad-06-1080.avif",
+      "max": "com-la-brevedad-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-brevedad-sin-01-400.avif",
+      "720": "com-la-brevedad-sin-01-720.avif",
+      "jpg": "com-la-brevedad-sin-01-720.jpg",
+      "max": "com-la-brevedad-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-brevedad-sin-02-400.avif",
+      "720": "com-la-brevedad-sin-02-720.avif",
+      "jpg": "com-la-brevedad-sin-02-720.jpg",
+      "max": "com-la-brevedad-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-brevedad-sin-03-400.avif",
+      "720": "com-la-brevedad-sin-03-720.avif",
+      "jpg": "com-la-brevedad-sin-03-720.jpg",
+      "max": "com-la-brevedad-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-brevedad-sin-04-400.avif",
+      "720": "com-la-brevedad-sin-04-720.avif",
+      "jpg": "com-la-brevedad-sin-04-720.jpg",
+      "max": "com-la-brevedad-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-brevedad-sin-05-400.avif",
+      "720": "com-la-brevedad-sin-05-720.avif",
+      "jpg": "com-la-brevedad-sin-05-720.jpg",
+      "max": "com-la-brevedad-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-brevedad-sin-06-400.avif",
+      "720": "com-la-brevedad-sin-06-720.avif",
+      "jpg": "com-la-brevedad-sin-06-720.jpg",
+      "max": "com-la-brevedad-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-la-brevedad",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-la-brevedad"
+  },
+  {
+   "id": "com-la-memoria",
+   "titulo": "La memoria",
+   "serie": "Comunicación",
+   "resumen": "No recuerdan lo que dijiste. Recuerdan lo que hicieron con ello.",
+   "nota": "No lo repitas. Dale un sitio y un momento.",
+   "etiquetas": [
+    "memoria",
+    "recuerdo",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-la-memoria.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-la-memoria.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-la-memoria.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-la-memoria.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-memoria-01-400.avif",
+      "1024": "com-la-memoria-01-1024.avif",
+      "jpg": "com-la-memoria-01-1024.jpg",
+      "1080": "com-la-memoria-01-1080.avif",
+      "max": "com-la-memoria-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-memoria-02-400.avif",
+      "1024": "com-la-memoria-02-1024.avif",
+      "jpg": "com-la-memoria-02-1024.jpg",
+      "1080": "com-la-memoria-02-1080.avif",
+      "max": "com-la-memoria-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-memoria-03-400.avif",
+      "1024": "com-la-memoria-03-1024.avif",
+      "jpg": "com-la-memoria-03-1024.jpg",
+      "1080": "com-la-memoria-03-1080.avif",
+      "max": "com-la-memoria-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-memoria-04-400.avif",
+      "1024": "com-la-memoria-04-1024.avif",
+      "jpg": "com-la-memoria-04-1024.jpg",
+      "1080": "com-la-memoria-04-1080.avif",
+      "max": "com-la-memoria-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-memoria-05-400.avif",
+      "1024": "com-la-memoria-05-1024.avif",
+      "jpg": "com-la-memoria-05-1024.jpg",
+      "1080": "com-la-memoria-05-1080.avif",
+      "max": "com-la-memoria-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-memoria-06-400.avif",
+      "1024": "com-la-memoria-06-1024.avif",
+      "jpg": "com-la-memoria-06-1024.jpg",
+      "1080": "com-la-memoria-06-1080.avif",
+      "max": "com-la-memoria-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-memoria-sin-01-400.avif",
+      "720": "com-la-memoria-sin-01-720.avif",
+      "jpg": "com-la-memoria-sin-01-720.jpg",
+      "max": "com-la-memoria-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-memoria-sin-02-400.avif",
+      "720": "com-la-memoria-sin-02-720.avif",
+      "jpg": "com-la-memoria-sin-02-720.jpg",
+      "max": "com-la-memoria-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-memoria-sin-03-400.avif",
+      "720": "com-la-memoria-sin-03-720.avif",
+      "jpg": "com-la-memoria-sin-03-720.jpg",
+      "max": "com-la-memoria-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-memoria-sin-04-400.avif",
+      "720": "com-la-memoria-sin-04-720.avif",
+      "jpg": "com-la-memoria-sin-04-720.jpg",
+      "max": "com-la-memoria-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-memoria-sin-05-400.avif",
+      "720": "com-la-memoria-sin-05-720.avif",
+      "jpg": "com-la-memoria-sin-05-720.jpg",
+      "max": "com-la-memoria-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-memoria-sin-06-400.avif",
+      "720": "com-la-memoria-sin-06-720.avif",
+      "jpg": "com-la-memoria-sin-06-720.jpg",
+      "max": "com-la-memoria-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-la-memoria",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-la-memoria"
+  },
+  {
+   "id": "com-la-prueba",
+   "titulo": "La prueba",
+   "serie": "Comunicación",
+   "resumen": "Una afirmación sin prueba es una opinión con tono seguro.",
+   "nota": "No afirmes más fuerte. Di de dónde lo sacas.",
+   "etiquetas": [
+    "evidencia",
+    "rigor",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-la-prueba.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-la-prueba.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-la-prueba.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-la-prueba.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-prueba-01-400.avif",
+      "1024": "com-la-prueba-01-1024.avif",
+      "jpg": "com-la-prueba-01-1024.jpg",
+      "1080": "com-la-prueba-01-1080.avif",
+      "max": "com-la-prueba-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-prueba-02-400.avif",
+      "1024": "com-la-prueba-02-1024.avif",
+      "jpg": "com-la-prueba-02-1024.jpg",
+      "1080": "com-la-prueba-02-1080.avif",
+      "max": "com-la-prueba-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-prueba-03-400.avif",
+      "1024": "com-la-prueba-03-1024.avif",
+      "jpg": "com-la-prueba-03-1024.jpg",
+      "1080": "com-la-prueba-03-1080.avif",
+      "max": "com-la-prueba-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-prueba-04-400.avif",
+      "1024": "com-la-prueba-04-1024.avif",
+      "jpg": "com-la-prueba-04-1024.jpg",
+      "1080": "com-la-prueba-04-1080.avif",
+      "max": "com-la-prueba-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-prueba-05-400.avif",
+      "1024": "com-la-prueba-05-1024.avif",
+      "jpg": "com-la-prueba-05-1024.jpg",
+      "1080": "com-la-prueba-05-1080.avif",
+      "max": "com-la-prueba-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-la-prueba-06-400.avif",
+      "1024": "com-la-prueba-06-1024.avif",
+      "jpg": "com-la-prueba-06-1024.jpg",
+      "1080": "com-la-prueba-06-1080.avif",
+      "max": "com-la-prueba-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-prueba-sin-01-400.avif",
+      "720": "com-la-prueba-sin-01-720.avif",
+      "jpg": "com-la-prueba-sin-01-720.jpg",
+      "max": "com-la-prueba-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-prueba-sin-02-400.avif",
+      "720": "com-la-prueba-sin-02-720.avif",
+      "jpg": "com-la-prueba-sin-02-720.jpg",
+      "max": "com-la-prueba-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-prueba-sin-03-400.avif",
+      "720": "com-la-prueba-sin-03-720.avif",
+      "jpg": "com-la-prueba-sin-03-720.jpg",
+      "max": "com-la-prueba-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-prueba-sin-04-400.avif",
+      "720": "com-la-prueba-sin-04-720.avif",
+      "jpg": "com-la-prueba-sin-04-720.jpg",
+      "max": "com-la-prueba-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-prueba-sin-05-400.avif",
+      "720": "com-la-prueba-sin-05-720.avif",
+      "jpg": "com-la-prueba-sin-05-720.jpg",
+      "max": "com-la-prueba-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-la-prueba-sin-06-400.avif",
+      "720": "com-la-prueba-sin-06-720.avif",
+      "jpg": "com-la-prueba-sin-06-720.jpg",
+      "max": "com-la-prueba-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-la-prueba",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-la-prueba"
+  },
+  {
+   "id": "com-primera-impresion",
+   "titulo": "La primera impresión",
+   "serie": "Comunicación",
+   "resumen": "La primera impresión no se corrige. Se arrastra.",
+   "nota": "No la compenses. Empieza otra vez.",
+   "etiquetas": [
+    "primera impresión",
+    "sesgo",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-primera-impresion.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-primera-impresion.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-primera-impresion.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-primera-impresion.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primera-impresion-01-400.avif",
+      "1024": "com-primera-impresion-01-1024.avif",
+      "jpg": "com-primera-impresion-01-1024.jpg",
+      "1080": "com-primera-impresion-01-1080.avif",
+      "max": "com-primera-impresion-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primera-impresion-02-400.avif",
+      "1024": "com-primera-impresion-02-1024.avif",
+      "jpg": "com-primera-impresion-02-1024.jpg",
+      "1080": "com-primera-impresion-02-1080.avif",
+      "max": "com-primera-impresion-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primera-impresion-03-400.avif",
+      "1024": "com-primera-impresion-03-1024.avif",
+      "jpg": "com-primera-impresion-03-1024.jpg",
+      "1080": "com-primera-impresion-03-1080.avif",
+      "max": "com-primera-impresion-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primera-impresion-04-400.avif",
+      "1024": "com-primera-impresion-04-1024.avif",
+      "jpg": "com-primera-impresion-04-1024.jpg",
+      "1080": "com-primera-impresion-04-1080.avif",
+      "max": "com-primera-impresion-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primera-impresion-05-400.avif",
+      "1024": "com-primera-impresion-05-1024.avif",
+      "jpg": "com-primera-impresion-05-1024.jpg",
+      "1080": "com-primera-impresion-05-1080.avif",
+      "max": "com-primera-impresion-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primera-impresion-06-400.avif",
+      "1024": "com-primera-impresion-06-1024.avif",
+      "jpg": "com-primera-impresion-06-1024.jpg",
+      "1080": "com-primera-impresion-06-1080.avif",
+      "max": "com-primera-impresion-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primera-impresion-sin-01-400.avif",
+      "720": "com-primera-impresion-sin-01-720.avif",
+      "jpg": "com-primera-impresion-sin-01-720.jpg",
+      "max": "com-primera-impresion-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primera-impresion-sin-02-400.avif",
+      "720": "com-primera-impresion-sin-02-720.avif",
+      "jpg": "com-primera-impresion-sin-02-720.jpg",
+      "max": "com-primera-impresion-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primera-impresion-sin-03-400.avif",
+      "720": "com-primera-impresion-sin-03-720.avif",
+      "jpg": "com-primera-impresion-sin-03-720.jpg",
+      "max": "com-primera-impresion-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primera-impresion-sin-04-400.avif",
+      "720": "com-primera-impresion-sin-04-720.avif",
+      "jpg": "com-primera-impresion-sin-04-720.jpg",
+      "max": "com-primera-impresion-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primera-impresion-sin-05-400.avif",
+      "720": "com-primera-impresion-sin-05-720.avif",
+      "jpg": "com-primera-impresion-sin-05-720.jpg",
+      "max": "com-primera-impresion-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primera-impresion-sin-06-400.avif",
+      "720": "com-primera-impresion-sin-06-720.avif",
+      "jpg": "com-primera-impresion-sin-06-720.jpg",
+      "max": "com-primera-impresion-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-primera-impresion",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-primera-impresion"
+  },
+  {
+   "id": "com-primeras-palabras",
+   "titulo": "Las primeras palabras",
+   "serie": "Comunicación",
+   "resumen": "La primera frase no informa. Decide si hay una segunda.",
+   "nota": "No abras explicando. Abre dando una razón para seguir.",
+   "etiquetas": [
+    "gancho",
+    "apertura",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-primeras-palabras.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-primeras-palabras.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-primeras-palabras.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-primeras-palabras.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primeras-palabras-01-400.avif",
+      "1024": "com-primeras-palabras-01-1024.avif",
+      "jpg": "com-primeras-palabras-01-1024.jpg",
+      "1080": "com-primeras-palabras-01-1080.avif",
+      "max": "com-primeras-palabras-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primeras-palabras-02-400.avif",
+      "1024": "com-primeras-palabras-02-1024.avif",
+      "jpg": "com-primeras-palabras-02-1024.jpg",
+      "1080": "com-primeras-palabras-02-1080.avif",
+      "max": "com-primeras-palabras-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primeras-palabras-03-400.avif",
+      "1024": "com-primeras-palabras-03-1024.avif",
+      "jpg": "com-primeras-palabras-03-1024.jpg",
+      "1080": "com-primeras-palabras-03-1080.avif",
+      "max": "com-primeras-palabras-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primeras-palabras-04-400.avif",
+      "1024": "com-primeras-palabras-04-1024.avif",
+      "jpg": "com-primeras-palabras-04-1024.jpg",
+      "1080": "com-primeras-palabras-04-1080.avif",
+      "max": "com-primeras-palabras-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primeras-palabras-05-400.avif",
+      "1024": "com-primeras-palabras-05-1024.avif",
+      "jpg": "com-primeras-palabras-05-1024.jpg",
+      "1080": "com-primeras-palabras-05-1080.avif",
+      "max": "com-primeras-palabras-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-primeras-palabras-06-400.avif",
+      "1024": "com-primeras-palabras-06-1024.avif",
+      "jpg": "com-primeras-palabras-06-1024.jpg",
+      "1080": "com-primeras-palabras-06-1080.avif",
+      "max": "com-primeras-palabras-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primeras-palabras-sin-01-400.avif",
+      "720": "com-primeras-palabras-sin-01-720.avif",
+      "jpg": "com-primeras-palabras-sin-01-720.jpg",
+      "max": "com-primeras-palabras-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primeras-palabras-sin-02-400.avif",
+      "720": "com-primeras-palabras-sin-02-720.avif",
+      "jpg": "com-primeras-palabras-sin-02-720.jpg",
+      "max": "com-primeras-palabras-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primeras-palabras-sin-03-400.avif",
+      "720": "com-primeras-palabras-sin-03-720.avif",
+      "jpg": "com-primeras-palabras-sin-03-720.jpg",
+      "max": "com-primeras-palabras-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primeras-palabras-sin-04-400.avif",
+      "720": "com-primeras-palabras-sin-04-720.avif",
+      "jpg": "com-primeras-palabras-sin-04-720.jpg",
+      "max": "com-primeras-palabras-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primeras-palabras-sin-05-400.avif",
+      "720": "com-primeras-palabras-sin-05-720.avif",
+      "jpg": "com-primeras-palabras-sin-05-720.jpg",
+      "max": "com-primeras-palabras-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-primeras-palabras-sin-06-400.avif",
+      "720": "com-primeras-palabras-sin-06-720.avif",
+      "jpg": "com-primeras-palabras-sin-06-720.jpg",
+      "max": "com-primeras-palabras-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-primeras-palabras",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-primeras-palabras"
+  },
+  {
+   "id": "com-reciprocidad",
+   "titulo": "La reciprocidad",
+   "serie": "Comunicación",
+   "resumen": "Dar primero cambia la conversación.",
+   "nota": "Da algo que no puedas cobrar.",
+   "etiquetas": [
+    "reciprocidad",
+    "ética",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-reciprocidad.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-reciprocidad.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-reciprocidad.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-reciprocidad.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-reciprocidad-01-400.avif",
+      "1024": "com-reciprocidad-01-1024.avif",
+      "jpg": "com-reciprocidad-01-1024.jpg",
+      "1080": "com-reciprocidad-01-1080.avif",
+      "max": "com-reciprocidad-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-reciprocidad-02-400.avif",
+      "1024": "com-reciprocidad-02-1024.avif",
+      "jpg": "com-reciprocidad-02-1024.jpg",
+      "1080": "com-reciprocidad-02-1080.avif",
+      "max": "com-reciprocidad-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-reciprocidad-03-400.avif",
+      "1024": "com-reciprocidad-03-1024.avif",
+      "jpg": "com-reciprocidad-03-1024.jpg",
+      "1080": "com-reciprocidad-03-1080.avif",
+      "max": "com-reciprocidad-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-reciprocidad-04-400.avif",
+      "1024": "com-reciprocidad-04-1024.avif",
+      "jpg": "com-reciprocidad-04-1024.jpg",
+      "1080": "com-reciprocidad-04-1080.avif",
+      "max": "com-reciprocidad-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-reciprocidad-05-400.avif",
+      "1024": "com-reciprocidad-05-1024.avif",
+      "jpg": "com-reciprocidad-05-1024.jpg",
+      "1080": "com-reciprocidad-05-1080.avif",
+      "max": "com-reciprocidad-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-reciprocidad-06-400.avif",
+      "1024": "com-reciprocidad-06-1024.avif",
+      "jpg": "com-reciprocidad-06-1024.jpg",
+      "1080": "com-reciprocidad-06-1080.avif",
+      "max": "com-reciprocidad-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-reciprocidad-sin-01-400.avif",
+      "720": "com-reciprocidad-sin-01-720.avif",
+      "jpg": "com-reciprocidad-sin-01-720.jpg",
+      "max": "com-reciprocidad-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-reciprocidad-sin-02-400.avif",
+      "720": "com-reciprocidad-sin-02-720.avif",
+      "jpg": "com-reciprocidad-sin-02-720.jpg",
+      "max": "com-reciprocidad-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-reciprocidad-sin-03-400.avif",
+      "720": "com-reciprocidad-sin-03-720.avif",
+      "jpg": "com-reciprocidad-sin-03-720.jpg",
+      "max": "com-reciprocidad-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-reciprocidad-sin-04-400.avif",
+      "720": "com-reciprocidad-sin-04-720.avif",
+      "jpg": "com-reciprocidad-sin-04-720.jpg",
+      "max": "com-reciprocidad-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-reciprocidad-sin-05-400.avif",
+      "720": "com-reciprocidad-sin-05-720.avif",
+      "jpg": "com-reciprocidad-sin-05-720.jpg",
+      "max": "com-reciprocidad-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-reciprocidad-sin-06-400.avif",
+      "720": "com-reciprocidad-sin-06-720.avif",
+      "jpg": "com-reciprocidad-sin-06-720.jpg",
+      "max": "com-reciprocidad-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-reciprocidad",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-reciprocidad"
+  },
+  {
+   "id": "com-repeticion",
+   "titulo": "La repetición",
+   "serie": "Comunicación",
+   "resumen": "Repetir no convence. Familiariza.",
+   "nota": "Repite cómo lo cuentas. No repitas la conclusión.",
+   "etiquetas": [
+    "repetición",
+    "sesgo",
+    "comunicación",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-repeticion.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-repeticion.mp4"
+    },
+    {
+     "etq": "PDF · 6 páginas",
+     "url": "descargas/carrusel-com-repeticion.pdf"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-repeticion.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-repeticion-01-400.avif",
+      "1024": "com-repeticion-01-1024.avif",
+      "jpg": "com-repeticion-01-1024.jpg",
+      "1080": "com-repeticion-01-1080.avif",
+      "max": "com-repeticion-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-repeticion-02-400.avif",
+      "1024": "com-repeticion-02-1024.avif",
+      "jpg": "com-repeticion-02-1024.jpg",
+      "1080": "com-repeticion-02-1080.avif",
+      "max": "com-repeticion-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-repeticion-03-400.avif",
+      "1024": "com-repeticion-03-1024.avif",
+      "jpg": "com-repeticion-03-1024.jpg",
+      "1080": "com-repeticion-03-1080.avif",
+      "max": "com-repeticion-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-repeticion-04-400.avif",
+      "1024": "com-repeticion-04-1024.avif",
+      "jpg": "com-repeticion-04-1024.jpg",
+      "1080": "com-repeticion-04-1080.avif",
+      "max": "com-repeticion-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-repeticion-05-400.avif",
+      "1024": "com-repeticion-05-1024.avif",
+      "jpg": "com-repeticion-05-1024.jpg",
+      "1080": "com-repeticion-05-1080.avif",
+      "max": "com-repeticion-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "com-repeticion-06-400.avif",
+      "1024": "com-repeticion-06-1024.avif",
+      "jpg": "com-repeticion-06-1024.jpg",
+      "1080": "com-repeticion-06-1080.avif",
+      "max": "com-repeticion-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-repeticion-sin-01-400.avif",
+      "720": "com-repeticion-sin-01-720.avif",
+      "jpg": "com-repeticion-sin-01-720.jpg",
+      "max": "com-repeticion-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-repeticion-sin-02-400.avif",
+      "720": "com-repeticion-sin-02-720.avif",
+      "jpg": "com-repeticion-sin-02-720.jpg",
+      "max": "com-repeticion-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-repeticion-sin-03-400.avif",
+      "720": "com-repeticion-sin-03-720.avif",
+      "jpg": "com-repeticion-sin-03-720.jpg",
+      "max": "com-repeticion-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-repeticion-sin-04-400.avif",
+      "720": "com-repeticion-sin-04-720.avif",
+      "jpg": "com-repeticion-sin-04-720.jpg",
+      "max": "com-repeticion-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-repeticion-sin-05-400.avif",
+      "720": "com-repeticion-sin-05-720.avif",
+      "jpg": "com-repeticion-sin-05-720.jpg",
+      "max": "com-repeticion-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "com-repeticion-sin-06-400.avif",
+      "720": "com-repeticion-sin-06-720.avif",
+      "jpg": "com-repeticion-sin-06-720.jpg",
+      "max": "com-repeticion-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-repeticion",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-repeticion"
   },
   {
    "id": "com-inoculacion",
