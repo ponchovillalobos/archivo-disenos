@@ -121,15 +121,22 @@ def validar(pedido, voz=None):
             e.append("salida %d: un carrusel PDF apaisado no tiene destino — "
                      "LinkedIn e Instagram consumen vertical o cuadrado" % i)
 
-    # los topes de texto son de la voz, y hasta hoy no los miraba nadie
+    # los topes de texto son de la voz, y hasta hoy no los miraba nadie.
+    # El tope real depende de a dónde vaya la pieza: si hay una salida impresa
+    # manda el tope estricto; si solo hay vídeo, el holgado.
     if voz and t == "guion":
         topes = voz["tipografia"]["topes"]
+        impresa = any(s.get("tipo") in ("carrusel_pdf", "laminas", "zip")
+                      for s in sal)
+        tope = (topes["caracteres_titular"] if impresa
+                else topes.get("caracteres_titular_video", 96))
+        donde = "carrusel" if impresa else "vídeo"
         for i, L in enumerate(en.get("laminas") or [], 1):
             tit = (L.get("titular") or "").strip()
-            if len(tit) > topes["caracteres_titular"]:
+            if len(tit) > tope:
                 e.append("lámina %d: el titular tiene %d caracteres y el tope "
-                         "es %d — se saldrá" % (i, len(tit),
-                                                topes["caracteres_titular"]))
+                         "para %s es %d — se saldrá"
+                         % (i, len(tit), donde, tope))
     return e
 
 

@@ -144,3 +144,39 @@ def indice(capas, fps=30):
         for f in range(int(ini * fps), int(fin * fps) + 1):
             tabla[f] = png
     return tabla
+
+
+def marcas_de_lectura(laminas, base=1.6, car_por_s=19.0, min_s=2.4, max_s=9.0):
+    """Inventa marcas de tiempo por palabra a partir del ritmo de lectura.
+
+    El texto vivo nació para audio, donde cada palabra trae su instante real.
+    Pero un guion escrito no tiene audio, y sin marcas no hay palabra a palabra
+    — solo bloques quietos. Aquí se reparten los tiempos como se leería:
+
+      · cada lámina dura `base + caracteres / car_por_s`, que es el ritmo de
+        subtítulo en español que ya usábamos para los reels sin voz;
+      · dentro de la lámina, cada palabra recibe tiempo **en proporción a su
+        longitud más una constante**. Sin la constante, «y» duraría 30 ms y
+        parpadearía; sin la proporción, «extraordinariamente» duraría lo mismo
+        que «y» y no daría tiempo a leerla.
+
+    Devuelve (palabras, duraciones) listo para `montar_flujo.montar`.
+    """
+    palabras, duraciones, t = [], [], 0.0
+    for L in laminas:
+        texto = " ".join(str(L.get("titular", "")).split())
+        if L.get("cuerpo"):
+            texto += " " + " ".join(str(L["cuerpo"]).split())
+        ps = texto.split()
+        d = max(min_s, min(max_s, base + len(texto) / car_por_s))
+        pesos = [len(p) + 3 for p in ps]          # +3 = la constante
+        total = sum(pesos) or 1
+        c = t
+        for p, w in zip(ps, pesos):
+            dur = d * w / total
+            palabras.append({"palabra": p, "inicio": round(c, 3),
+                             "fin": round(c + dur, 3)})
+            c += dur
+        duraciones.append(round(d, 3))
+        t += d
+    return palabras, duraciones

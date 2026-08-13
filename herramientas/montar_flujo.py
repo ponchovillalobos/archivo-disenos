@@ -108,15 +108,27 @@ def elegir_golpes(an, dur, n=GOLPES, margen=None):
 
 
 def montar(bloques, palabras, audio, fondos_dir, salida, acento="#e0b53c",
-           formato=(1080, 1920), crf=20):
+           formato=(1080, 1920), crf=20, fin=None):
+    """audio=None monta un vídeo MUDO a partir de un guion escrito.
+
+    El texto vivo nació para audio, donde cada palabra trae su instante real.
+    Pero un guion escrito también tiene ritmo —el de lectura— y
+    `texto_palabra.marcas_de_lectura()` lo convierte en marcas por palabra. Sin
+    audio no hay envolvente de energía, así que no hay golpes: el acento
+    tendría que inventarse, y un acento inventado cae donde no toca.
+    """
     W, H = formato
     reel3.formato(W, H)
-    fin = duracion_audio(audio)
+    fin = fin if fin is not None else (
+        duracion_audio(audio) if audio else
+        max(b["inicio"] for b in bloques) + 4.0)
     durs = duraciones(bloques, fin)
     durs[0] += bloques[0]["inicio"]
 
-    an = analizar(audio)
-    golpes = [int(t * FPS) for t in elegir_golpes(an, fin)]
+    golpes = []
+    if audio:
+        an = analizar(audio)
+        golpes = [int(t * FPS) for t in elegir_golpes(an, fin)]
 
     fondos = []
     for b in bloques:
@@ -275,16 +287,20 @@ def montar(bloques, palabras, audio, fondos_dir, salida, acento="#e0b53c",
     if p.wait() != 0:
         raise RuntimeError("ffmpeg falló:\n" + err)
 
-    subprocess.run([FFMPEG, "-y", "-i", mudo, "-i", audio, "-c:v", "copy",
-                    "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
-                    "-shortest", salida], capture_output=True, check=True)
-    os.remove(mudo)
+    if audio:
+        subprocess.run([FFMPEG, "-y", "-i", mudo, "-i", audio, "-c:v", "copy",
+                        "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
+                        "-shortest", salida], capture_output=True, check=True)
+        os.remove(mudo)
+    else:
+        os.replace(mudo, salida)
 
     seg = g_global / FPS
     return {"salida": salida, "imagenes": len(fondos),
             "cambios_de_texto": len(capas),
             "texto_por_min": round(len(capas) / max(0.1, fin) * 60),
             "golpes": len(golpes), "fundidos": len(fondos) - 1,
+            "con_audio": bool(audio),
             "video_s": round(seg, 2), "audio_s": round(fin, 2),
             "desfase_s": round(seg - fin, 2),
             "mb": round(os.path.getsize(salida) / 1e6, 2),

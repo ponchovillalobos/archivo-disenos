@@ -1,0 +1,85 @@
+contrato: 1
+voz: fuente-primaria
+
+pieza:
+  id: com-preguntar
+  titulo: El chef y el alérgico
+  serie: Comunicación
+  resumen: Servimos soluciones sin preguntar qué necesita el otro.
+  nota: >
+    Pieza de opinión, no de dato: no cita ningún estudio, así que no necesita
+    verificación en fuente primaria. Lo que sí lleva es la regla de la casa —
+    ni caras ni manos— resuelta por objetos y espacios vacíos.
+  etiquetas: [preguntas, escucha, ventas]
+  fecha: 2026-08-13
+
+entrada:
+  tipo: guion
+  laminas:
+    - titular: Un chef te cocina su mejor platillo sin preguntarte si eres alérgico.
+      escena: >
+        an elaborate plated dish alone on a stainless pass under warm kitchen
+        light, steam rising, the kitchen bright and completely empty behind
+      objeto: a single plated dish
+
+    - titular: Delicioso… hasta que acabas en el hospital.
+      escena: >
+        an empty hospital corridor with daylight flooding through tall windows,
+        one wheeled bed against the wall, polished floor reflecting the light
+      objeto: an empty hospital corridor
+
+    - titular: Así hablamos casi siempre.
+      cuerpo: Servimos soluciones sin preguntar qué necesita el otro.
+      escena: >
+        a very long banquet table set with twenty identical covered plates,
+        every chair empty, a bright hall with high windows
+      objeto: a long banquet table
+
+    - titular: El que habla, adivina. El que pregunta, sabe.
+      escena: >
+        two doors in a pale stone wall, one shut and one standing wide open
+        onto brilliant daylight, clean and calm
+      objeto: two doors, one open
+
+    - titular: Hablar sin preguntar es como sentarte sin mirar si hay papel.
+      escena: >
+        a bright tiled room with one plain wooden cubicle door left ajar, cold
+        clean daylight from a high window, nobody present
+      objeto: a door left ajar
+
+    - titular: Te enteras demasiado tarde.
+      escena: >
+        an hourglass run out on a sunlit windowsill, ripples of reflected water
+        light moving across the wall behind it
+      objeto: an empty hourglass
+
+    - titular: Tu cliente no compra por lo que le dices.
+      cuerpo: Compra por lo que le preguntas.
+      escena: >
+        an empty pale stone shop counter with one single object on it, generous
+        daylight from a large window, everything else clear and open
+      objeto: an empty counter
+
+    - titular: Tu pareja no quiere tu solución. Quiere tu pregunta.
+      escena: >
+        two empty chairs facing each other across a small table by a window,
+        morning light, two cups untouched
+      objeto: two chairs facing each other
+
+    - titular: Deja de vender respuestas. Empieza a hacer preguntas.
+      escena: >
+        an open notebook and a pen on a sunlit table, the page completely
+        blank, light bouncing off the paper
+      objeto: an open blank notebook
+
+    - titular: ¿Cuál fue la última pregunta que le cambió la cara a alguien?
+      escena: >
+        a doorway opening onto brilliant light, seen from inside a calm bright
+        room, the threshold worn smooth
+      objeto: a doorway full of light
+
+estilo:
+  clave_estilo: com-preguntar     # congela el sorteo: menta + reflejo
+
+salidas:
+  - {tipo: reel, lienzo: reel-9-16, montaje: texto-vivo, nombre: reel-com-preguntar.mp4}

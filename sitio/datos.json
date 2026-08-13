@@ -3366,6 +3366,109 @@
    "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-objeciones"
   },
   {
+   "id": "com-preguntar",
+   "titulo": "El chef y el alérgico",
+   "serie": "Comunicación",
+   "resumen": "Servimos soluciones sin preguntar qué necesita el otro.",
+   "nota": "Pieza de opinión, no de dato. Diez láminas, cada una con una disposición distinta: portada, banda, esquina, cita, placa, marco.",
+   "etiquetas": [
+    "preguntas",
+    "escucha",
+    "ventas",
+    "comunicación"
+   ],
+   "fecha": "2026-08-12",
+   "formato": "1080×1920",
+   "video": "descargas/reel-com-preguntar.mp4",
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-com-preguntar.mp4"
+    },
+    {
+     "etq": "ZIP · 6 láminas",
+     "url": "descargas/laminas-com-preguntar.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "com-preguntar-01-400.avif",
+      "1024": "com-preguntar-01-1024.avif",
+      "jpg": "com-preguntar-01-1024.jpg",
+      "1080": "com-preguntar-01-1080.avif",
+      "max": "com-preguntar-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "com-preguntar-02-400.avif",
+      "1024": "com-preguntar-02-1024.avif",
+      "jpg": "com-preguntar-02-1024.jpg",
+      "1080": "com-preguntar-02-1080.avif",
+      "max": "com-preguntar-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "com-preguntar-03-400.avif",
+      "1024": "com-preguntar-03-1024.avif",
+      "jpg": "com-preguntar-03-1024.jpg",
+      "1080": "com-preguntar-03-1080.avif",
+      "max": "com-preguntar-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "com-preguntar-04-400.avif",
+      "1024": "com-preguntar-04-1024.avif",
+      "jpg": "com-preguntar-04-1024.jpg",
+      "1080": "com-preguntar-04-1080.avif",
+      "max": "com-preguntar-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "com-preguntar-05-400.avif",
+      "1024": "com-preguntar-05-1024.avif",
+      "jpg": "com-preguntar-05-1024.jpg",
+      "1080": "com-preguntar-05-1080.avif",
+      "max": "com-preguntar-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "com-preguntar-06-400.avif",
+      "1024": "com-preguntar-06-1024.avif",
+      "jpg": "com-preguntar-06-1024.jpg",
+      "1080": "com-preguntar-06-1080.avif",
+      "max": "com-preguntar-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/com-preguntar",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/com-preguntar"
+  },
+  {
    "id": "com-inoculacion",
    "titulo": "La inoculación",
    "serie": "Comunicación",

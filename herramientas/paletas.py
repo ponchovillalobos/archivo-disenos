@@ -138,8 +138,12 @@ ANIMOS = {
                 "bright open daylight, luminous, gentle shadows"),
  "brisa":      ("light airy atmosphere, drifting pollen and seeds in the sun",
                 "warm diffused daylight, high key, soft and open"),
- "reflejo":    ("clear air over water",
-                "bright light bouncing off water, shimmering highlights"),
+ # Decía «aire claro SOBRE EL AGUA» y «luz rebotando EN EL AGUA», y el modelo
+ # metió agua literal: inundó cuatro interiores de diez. Es la misma trampa que
+ # convirtió un «spearhead con forma de hoja» en una hoja gigante. El ánimo
+ # describe la CUALIDAD de la luz, nunca un objeto que pueda aparecer.
+ "reflejo":    ("luminous air with soft moving highlights",
+                "bright indirect light with a gentle shimmer, clean and open"),
  "ventanal":   ("calm still interior air, fine dust in the beams",
                 "generous daylight pouring through tall windows, airy and bright"),
  "verano":     ("warm shimmering air, heat haze on the horizon",

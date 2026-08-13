@@ -15,6 +15,7 @@ import http.server
 import os
 import socketserver
 import subprocess
+import sys
 import threading
 import urllib.parse
 import webbrowser
@@ -27,6 +28,53 @@ PUERTO = 8765
 class Manejador(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *a, **kw):
         super().__init__(*a, directory=SITIO, **kw)
+
+    def do_POST(self):
+        """Guarda un pedido editado en el estudio.
+
+        Escribe SOLO dentro de `pedidos/` y solo ficheros .yaml: el nombre se
+        reduce a su base y se comprueba que la ruta resuelta siga cayendo
+        dentro de la carpeta. Que el servidor sea local no es excusa para
+        aceptar cualquier ruta.
+
+        Y valida antes de escribir: un pedido inválido no llega a disco.
+        """
+        import json as _j
+        if self.path != "/guardar-pedido":
+            self.send_error(404)
+            return
+        try:
+            n = int(self.headers.get("Content-Length", 0))
+            d = _j.loads(self.rfile.read(n).decode("utf-8"))
+            nombre = os.path.basename(d.get("archivo") or "")
+            if not nombre.endswith(".yaml") or nombre.startswith("."):
+                raise ValueError("solo se guardan ficheros .yaml")
+            carpeta = os.path.realpath(os.path.join(PROY, "pedidos"))
+            destino = os.path.realpath(os.path.join(carpeta, nombre))
+            if not destino.startswith(carpeta + os.sep):
+                raise ValueError("ruta fuera de pedidos/")
+
+            if os.path.join(PROY, "herramientas") not in sys.path:
+                sys.path.insert(0, os.path.join(PROY, "herramientas"))
+            import contrato
+            import yaml
+            ped = d["pedido"]
+            voz = contrato.cargar_voz(ped.get("voz", "fuente-primaria"))
+            errs = contrato.validar(ped, voz)
+            if errs:
+                raise ValueError(errs[0])
+            with open(destino, "w", encoding="utf-8") as f:
+                yaml.safe_dump(ped, f, allow_unicode=True, sort_keys=False)
+            cuerpo = _j.dumps({"ok": True,
+                               "huella": contrato.huella(contrato.resolver(ped, voz))})
+        except Exception as e:
+            cuerpo = _j.dumps({"ok": False, "error": str(e)[:200]})
+        b = cuerpo.encode("utf-8")
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(b)))
+        self.end_headers()
+        self.wfile.write(b)
 
     def do_GET(self):
         if self.path.startswith("/abrir?"):

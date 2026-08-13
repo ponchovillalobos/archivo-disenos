@@ -24,8 +24,12 @@ tipografia:
     cuerpo: {opsz: 46}
     kicker: {opsz: 20}
   topes:                            # por encima, no se lee sobre imagen
+    # El tope depende del DESTINO: una tarjeta de carrusel se lee de un vistazo
+    # y aguanta 52; un reel se lee mientras avanza y aguanta más — los nuestros
+    # publicados llevan titulares de 68 caracteres y funcionan.
     palabras_titular: 7
-    caracteres_titular: 52
+    caracteres_titular: 52          # carrusel y PDF
+    caracteres_titular_video: 96    # reel y apaisado
     palabras_cuerpo: 16
     caracteres_cuerpo: 70
 
