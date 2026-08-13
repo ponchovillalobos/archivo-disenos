@@ -1,0 +1,201 @@
+# Voz «Fuente Primaria» — la identidad de la casa.
+#
+# Se elige UNA VEZ y todas las piezas la heredan. Que haya que elegir el color
+# de acento en cada vídeo no es una funcionalidad: es un fallo de producto.
+#
+# Criterio de reparto, para saber qué va aquí y qué va en el pedido:
+#   si cambiarlo hace que la pieza deje de parecer NUESTRA → es voz
+#   si cambiarlo solo hace que sea OTRA pieza              → es pedido
+#
+# Todos los valores están leídos del código real, no inventados.
+
+contrato: 1
+nombre: fuente-primaria
+titulo_publico: Fuente Primaria
+lema: "Lo que todos repiten, y lo que dicen las fuentes."
+
+# ── TIPOGRAFÍA ───────────────────────────────────────────────────────────────
+tipografia:
+  familia: fuente-primaria          # clave de fuentes.VOCES
+  escala: [32, 43, 57, 76, 101, 135]   # base 32 × 1,333ⁿ
+  tam_titular: 4                    # índice en la escala
+  ejes:
+    titular: {opsz: 144, SOFT: 0, WONK: 1}
+    cuerpo: {opsz: 46}
+    kicker: {opsz: 20}
+  topes:                            # por encima, no se lee sobre imagen
+    palabras_titular: 7
+    caracteres_titular: 52
+    palabras_cuerpo: 16
+    caracteres_cuerpo: 70
+
+# ── TEXTO EN VÍDEO ───────────────────────────────────────────────────────────
+texto_vivo:
+  max_palabras_linea: 4
+  max_caracteres_linea: 15          # medido en PÍXELES, no en caracteres: a
+                                    # 113 px, 19 de 31 líneas se salían
+  max_hueco_s: 0.6
+  tam_relativo: 0.088
+  realce_escala: 1.06               # por transform, NUNCA por font-size
+  opacidad_pendiente: 0.42
+  entrada_s: 0.35
+  sobrepaso: 0.035
+  subida_px: 14
+
+# ── LIENZOS ──────────────────────────────────────────────────────────────────
+# `latente` son múltiplos de 64, que es lo que SDXL entiende. 1280×720 es 16:9
+# exacto pero 720 no es múltiplo de 64: por eso el apaisado va a 1344×768.
+lienzos:
+  reel-9-16:
+    salida: [1080, 1920]
+    latente: [720, 1280]
+    margen: 72
+    y_texto: 300
+    ancla_texto: arriba
+    scrim_rel: 0.73
+  apaisado-16-9:
+    salida: [1920, 1080]
+    latente: [1344, 768]
+    margen: 144
+    y_texto: 140
+    ancla_texto: abajo
+    scrim_rel: 0.55
+  carrusel-4-5:
+    salida: [1080, 1350]
+    latente: [832, 1024]
+    margen: 88
+    y_texto: 122
+    ancla_texto: arriba
+    scrim_rel: 0.73
+
+scrim:
+  alpha: 150                        # era 234: partía la luminosidad por la mitad
+  curva: 2.2
+  dither: true                      # sin él, franjas planas de hasta 36 px
+
+# ── COLOR ────────────────────────────────────────────────────────────────────
+# Lista EXPLÍCITA y ordenada. Antes el sorteo salía del orden de inserción de un
+# diccionario, así que insertar una paleta en medio reasignaba el color de todo
+# lo ya publicado, en silencio. Añadir al FINAL no mueve nada.
+paletas_activas:
+  - teal-naranja
+  - indigo-ambar
+  - magenta-cian
+  - oliva
+  - sepia
+  - rojo-carbon
+  - purpura
+  - azul-hielo
+  - dorado-selva
+  - esmeralda
+  - cobre
+  - vino
+  - menta
+  - mostaza
+  - ladrillo
+paletas_fuera_de_sorteo: [noir]
+
+animos_luminosos: [amanecer, mediodia, brisa, reflejo, ventanal, verano]
+animos_graves: [niebla, tormenta, nocturno, polvo]
+sesgo_luz: 0.6                      # 60 % luminosos: la serie venía muy oscura
+
+# ── REGLAS DURAS DE IMAGEN ───────────────────────────────────────────────────
+imagen:
+  prefijo_prompt: "epic cinematic film still of "
+  ropa_por_defecto: "dark simple clothing"
+  encuadre_vertical: >
+    wide cinematic shot, any human tiny and distant, seen from behind,
+    no faces, no hands, vast space around
+  encuadre_apaisado: >
+    wide horizontal cinematic composition, subject offset to one side,
+    generous empty space across the lower third, no people in frame or a
+    tiny distant silhouette seen from behind, no faces, no hands
+  peso_veto_color: 1.3
+
+# ── MODELO ───────────────────────────────────────────────────────────────────
+modelo:
+  plantilla: workflows/LAB-ESPARTANO-v2---rapido.json
+  checkpoint: juggernautXL_v9.safetensors
+  lora: sdxl_lightning_8step_lora.safetensors
+  lora_peso: 1.0
+  vae: sdxl_vae_fp16fix.safetensors
+  pasos: 8
+  cfg: 1.0
+  muestreador: euler
+  planificador: sgm_uniform
+  denoise: 1.0
+  semilla: 101010                   # 366 de 371 imágenes la usan; 126 publicadas
+  control_after_generate: fixed     # se AFIRMA, no se hereda de la plantilla
+
+# ── VÍDEO ────────────────────────────────────────────────────────────────────
+video:
+  fps: 30
+  codec: libx264
+  preset: slow
+  crf: 20
+  perfil: high
+  nivel: "4.1"
+  color: bt709
+  audio: {codec: aac, bitrate: 192k}
+  grano: 7                          # ningún píxel completamente quieto
+  vineta: PI/6.5
+
+montaje:
+  reposado:
+    modulo: reel3
+    transicion_s: 1.8
+    tope_transicion_rel: 0.45
+  texto-vivo:
+    modulo: montar_flujo
+    z0: 1.20
+    z1: 1.00
+    velocidad: 0.022                # %/s FIJO, no recorrido fijo por bloque
+    deriva: 0.055
+    fundido_s: 1.25
+    tope_fundido_rel: 0.40
+    golpes: 7
+    golpe_escala: 0.026
+    golpe_fotogramas: 12
+
+lectura:                            # cuando NO manda el audio
+  base_s: 1.6
+  caracteres_por_s: 19.0
+  min_s: 4.4
+  max_s: 10.5
+
+# ── AUDIO ────────────────────────────────────────────────────────────────────
+asr:
+  modelo: mlx-community/whisper-large-v3-turbo
+  idioma: es
+  temperature: 0.0                  # sin fijarla, el mismo audio puede dar
+                                    # transcripciones distintas y con ellas
+                                    # cortes de bloque distintos
+troceo:
+  pausa_s: 0.45
+  pausa_frase_s: 0.30
+  dur_min_s: 2.6
+  dur_max_s: 7.5
+  pausa_oculta: {factor: 2.8, minimo_s: 1.05}
+
+musica:
+  fade_in_s: 1.2
+  fade_out_s: 2.5
+  lufs: -14.0
+  true_peak: -1.5
+
+# ── CARRUSEL ─────────────────────────────────────────────────────────────────
+carrusel:
+  disposiciones: auto               # auto = disposiciones.secuencia()
+  pdf_dpi: 150
+  zip_jpeg_calidad: 92
+
+# ── LO QUE ESTA VOZ NO PERMITE ───────────────────────────────────────────────
+# El activo de Fuente Primaria es la credibilidad: cada dato con su fuente
+# verificada, incluidos los que salen falsos. Un «whoosh» sobre «Dana Carney se
+# retractó por escrito» convierte una pieza de rigor en una de ruido.
+prohibido:
+  - efectos_de_sonido
+  - stickers
+  - emojis
+  - cortes_dentro_de_una_imagen     # se lee como fallo de reproducción
+  - publicar_sin_aprobacion         # si la pieza cita un dato

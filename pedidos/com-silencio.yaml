@@ -1,0 +1,43 @@
+contrato: 1
+voz: fuente-primaria
+
+pieza:
+  id: com-silencio
+  titulo: Cuatro segundos
+  serie: Comunicación
+  resumen: El silencio que nadie nota y a todos afecta.
+  nota: Se eligieron cuatro segundos precisamente porque pasan desapercibidos.
+  etiquetas: [silencio, grupo]
+  fecha: 2026-08-12
+
+entrada:
+  tipo: guion
+  laminas:
+    - titular: Cuatro segundos que nadie nota.
+      escena: a vast snow field at dawn with no tracks at all, one distant silhouette seen from far behind
+    - kicker: Lo que se dice
+      titular: «A los cuatro segundos incomoda.»
+      cuerpo: Se repite en todos los cursos de oratoria como si fuera un umbral medido.
+      escena: an anechoic chamber lined with grey foam wedges, empty, one cold light above
+    - kicker: El giro
+      titular: Los eligieron porque no se notan.
+      cuerpo: No es el umbral del malestar consciente. Es el intervalo elegido para pasar inadvertido.
+      escena: a huge bronze bell hanging still in an empty stone tower, dust in the light
+    - kicker: Lo que midieron
+      titular: El malestar es inconsciente.
+      lista:
+        - ["4 s", "la pausa que se introdujo"]
+        - ["Sin registro", "nadie informó de nada raro"]
+        - ["Pertenencia", "bajó la sensación de grupo"]
+      escena: a frozen lake surface with a single crack running across it, no people, pale flat light
+    - kicker: Lo que significa
+      titular: No lo notas. Te afecta igual.
+      escena: an empty concert hall seen from the stage, every seat empty, one work light
+    - titular: El silencio no incomoda. Excluye.
+      escena: a monastery cloister at dawn, empty arches, mist in the courtyard
+
+salidas:
+  - {tipo: laminas,      lienzo: reel-9-16}
+  - {tipo: carrusel_pdf, lienzo: reel-9-16, nombre: carrusel-com-silencio.pdf}
+  - {tipo: zip,          lienzo: reel-9-16, nombre: laminas-com-silencio.zip}
+  - {tipo: reel,         lienzo: reel-9-16, montaje: reposado, nombre: reel-com-silencio.mp4}

@@ -201,6 +201,46 @@ def guardian_del_catalogo():
     raise AssertionError("el guardián del catálogo NO saltó")
 
 
+def contrato_congruente():
+    """Pedir lo mismo dos veces tiene que dar lo mismo, y el pedido resuelto
+    no puede conservar un solo valor ambiguo: eso es la garantía entera."""
+    import glob
+    import json as _j
+    import contrato
+    rutas = sorted(glob.glob(os.path.join(PROY, "pedidos", "*.yaml")))
+    assert rutas, "no hay ningún pedido que comprobar"
+    for r_ in rutas:
+        a, errs = contrato.plan(r_)
+        assert not errs, "%s: %s" % (os.path.basename(r_), errs[0])
+        b, _ = contrato.plan(r_)
+        assert contrato.huella(a) == contrato.huella(b), \
+            "%s no es reproducible" % os.path.basename(r_)
+        crudo = _j.dumps(contrato._serializable(a), ensure_ascii=False)
+        assert '"auto"' not in crudo, "%s conserva un `auto`" % os.path.basename(r_)
+    # y el validador tiene que rechazar lo que no cabe
+    voz = contrato.cargar_voz("fuente-primaria")
+    malo = contrato.cargar_pedido(rutas[0])
+    malo["salidas"] = []
+    assert contrato.validar(malo, voz), "el validador aceptó un pedido sin salidas"
+    return "%d pedidos · reproducibles · sin ambigüedad" % len(rutas)
+
+
+def voz_no_diverge():
+    """La voz no puede desviarse del código en silencio. Si alguien cambia una
+    constante en un módulo y no en la voz, el contrato quedaría mintiendo."""
+    import contrato
+    import paletas
+    import reel2
+    v = contrato.cargar_voz("fuente-primaria")
+    assert v["tipografia"]["escala"] == reel2.ESCALA, "la escala no coincide"
+    assert set(v["paletas_activas"]) | set(v["paletas_fuera_de_sorteo"]) \
+        == set(paletas.PALETAS), "las paletas de la voz no son las del código"
+    assert set(v["animos_luminosos"]) == set(paletas.LUMINOSOS), \
+        "los ánimos luminosos no coinciden"
+    assert v["video"]["fps"] == reel2.FPS, "los fps no coinciden"
+    return "escala, paletas, ánimos y fps cuadran con el código"
+
+
 def recetario_vivo():
     import recetario
     a = recetario.ARCHIVO
@@ -234,6 +274,8 @@ PRUEBAS = [
     ("montadores de vídeo", montadores),
     ("catálogo sin enlaces rotos", catalogo_sin_roturas),
     ("guardián del catálogo", guardian_del_catalogo),
+    ("contrato congruente", contrato_congruente),
+    ("la voz no diverge", voz_no_diverge),
     ("recetario", recetario_vivo),
 ]
 

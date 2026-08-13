@@ -1,0 +1,34 @@
+contrato: 1
+voz: fuente-primaria
+
+pieza:
+  id: idea1
+  titulo: Idea 1
+  serie: Desde audio
+  resumen: El miedo y la emoción son la misma sensación.
+  nota: >
+    Primer vídeo hecho a partir de un audio. Aviso: «son la misma sensación,
+    exacta» es más fuerte de lo que sostiene Brooks (2014). Verificar antes
+    de publicar.
+  etiquetas: [audio, comunicación]
+  fecha: 2026-08-12
+
+entrada:
+  tipo: audio
+  audio: audio/procesados/Idea 1.wav
+  transcripcion: audio/transcripciones/Idea 1.json
+  vocabulario: [Brooks]
+
+estilo:
+  paleta: dorado-selva      # a mano: el sorteo daba sepia y no le pega
+  clave_estilo: idea1
+  acento: "#e0b53c"
+  aire: clear luminous air, fine golden particles drifting in the light
+  luz: warm generous light flooding the scene, luminous and open, soft shadows
+
+salidas:
+  - {tipo: reel,  lienzo: reel-9-16,     montaje: texto-vivo, nombre: idea1-flujo-vertical.mp4}
+  - {tipo: reel,  lienzo: reel-9-16,     montaje: reposado,   nombre: idea1-vertical.mp4}
+  - {tipo: video, lienzo: apaisado-16-9, montaje: texto-vivo, nombre: idea1-flujo-horizontal.mp4}
+  - {tipo: video, lienzo: apaisado-16-9, montaje: reposado,   nombre: idea1-horizontal.mp4}
+  - {tipo: zip,   lienzo: reel-9-16,     nombre: laminas-idea1-vertical.zip}
