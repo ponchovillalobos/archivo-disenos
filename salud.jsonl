@@ -52,3 +52,5 @@
 {"evento": "avance", "salidas": 4, "ritmo": 20, "t": "12:19:40", "swap": 9488}
 {"evento": "avance", "salidas": 5, "ritmo": 20, "t": "12:21:38", "swap": 9823}
 {"evento": "avance", "salidas": 2, "ritmo": 60, "t": "12:24:44", "swap": 3830}
+{"evento": "avance", "salidas": 1, "ritmo": 30, "t": "12:46:30", "swap": 6252}
+{"evento": "avance", "salidas": 1, "ritmo": 60, "t": "12:47:30", "swap": 5160}

@@ -1,5 +1,5 @@
 {
- "sello": "41ad603219cc",
+ "sello": "ec5ec8359603",
  "generado": "2026-08-12",
  "proyecto": "/Users/maity/Desktop/Confy Imagenes",
  "url_sitio": "file:///Users/maity/Desktop/Confy%20Imagenes/sitio/index.html",
@@ -4153,6 +4153,172 @@
    ],
    "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-25",
    "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-25"
+  },
+  {
+   "id": "esp-26",
+   "titulo": "Día 26 · Lealtad",
+   "serie": "El camino del espartano",
+   "resumen": "La lealtad se demuestra cuando cuesta.",
+   "nota": "La lealtad se nota en el mal año.",
+   "etiquetas": [
+    "lealtad",
+    "espartano",
+    "reto30"
+   ],
+   "fecha": "2026-08-13",
+   "formato": "1080×1920",
+   "video": "descargas/reel-esp-26.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/reel-esp-26.mp4"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-26-01-400.avif",
+      "1024": "esp-26-01-1024.avif",
+      "jpg": "esp-26-01-1024.jpg",
+      "1080": "esp-26-01-1080.avif",
+      "max": "esp-26-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-26-02-400.avif",
+      "1024": "esp-26-02-1024.avif",
+      "jpg": "esp-26-02-1024.jpg",
+      "1080": "esp-26-02-1080.avif",
+      "max": "esp-26-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-26-03-400.avif",
+      "1024": "esp-26-03-1024.avif",
+      "jpg": "esp-26-03-1024.jpg",
+      "1080": "esp-26-03-1080.avif",
+      "max": "esp-26-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-26-04-400.avif",
+      "1024": "esp-26-04-1024.avif",
+      "jpg": "esp-26-04-1024.jpg",
+      "1080": "esp-26-04-1080.avif",
+      "max": "esp-26-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-26-05-400.avif",
+      "1024": "esp-26-05-1024.avif",
+      "jpg": "esp-26-05-1024.jpg",
+      "1080": "esp-26-05-1080.avif",
+      "max": "esp-26-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1920,
+     "src": {
+      "400": "esp-26-06-400.avif",
+      "1024": "esp-26-06-1024.avif",
+      "jpg": "esp-26-06-1024.jpg",
+      "1080": "esp-26-06-1080.avif",
+      "max": "esp-26-06-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [
+    {
+     "pie": "Lámina 1",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-26-sin-01-400.avif",
+      "720": "esp-26-sin-01-720.avif",
+      "jpg": "esp-26-sin-01-720.jpg",
+      "max": "esp-26-sin-01-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-26-sin-02-400.avif",
+      "720": "esp-26-sin-02-720.avif",
+      "jpg": "esp-26-sin-02-720.jpg",
+      "max": "esp-26-sin-02-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-26-sin-03-400.avif",
+      "720": "esp-26-sin-03-720.avif",
+      "jpg": "esp-26-sin-03-720.jpg",
+      "max": "esp-26-sin-03-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-26-sin-04-400.avif",
+      "720": "esp-26-sin-04-720.avif",
+      "jpg": "esp-26-sin-04-720.jpg",
+      "max": "esp-26-sin-04-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-26-sin-05-400.avif",
+      "720": "esp-26-sin-05-720.avif",
+      "jpg": "esp-26-sin-05-720.jpg",
+      "max": "esp-26-sin-05-720.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 720,
+     "h": 1280,
+     "src": {
+      "400": "esp-26-sin-06-400.avif",
+      "720": "esp-26-sin-06-720.avif",
+      "jpg": "esp-26-sin-06-720.jpg",
+      "max": "esp-26-sin-06-720.avif"
+     }
+    }
+   ],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/esp-26",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/esp-26"
   },
   {
    "id": "idea1",
