@@ -9,7 +9,7 @@ Reglas duras de composición, derivadas de lo que ya nos ha fallado:
 Cada tema tiene su propio mundo visual y su color de acento, para que los
 quince se distingan entre sí sin dejar de ser la misma voz.
 """
-import json, os, subprocess, time
+import glob, json, os, subprocess, time
 
 from paletas import PALETAS, paleta_de
 
@@ -62,13 +62,39 @@ def flujo(slug, escena, objeto, encuadre, aire, luz, ancho=720, alto=1280, ropa=
         elif i == 5:  n["widgets_values"] = [neg]
         elif i == 6:  n["widgets_values"] = [ancho, alto, 1]
         elif i == 9:  n["widgets_values"] = ["reels/" + slug]
-    # los flujos generados van a su propia carpeta: llegaron a acumularse 96
-    # sueltos entre el código, y eso hace ilegible herramientas/
+    # Los flujos generados son DESECHABLES: ComfyUI copia el prompt cuando lo
+    # recibe, así que el fichero no vuelve a leerse nunca. Llegaron a acumularse
+    # 214 (5 MB) sin que nadie los mirase.
+    #
+    # Se escriben porque `comfy run --workflow` necesita una ruta, pero se
+    # rotan: solo sobreviven los últimos TOPE_FLUJOS, suficiente para inspeccionar
+    # lo que se acaba de encolar si algo sale raro.
+    #
+    # La memoria de lo que funciona NO vive aquí: vive en `recetario.py`, que la
+    # recupera de los metadatos del propio PNG. Eso es mejor porque queda atado
+    # al resultado real, no a la intención.
     d = os.path.join(S, "flujos")
     os.makedirs(d, exist_ok=True)
     p = os.path.join(d, "L-%s.json" % slug)
     json.dump(wf, open(p, "w"), indent=1)
+    _rotar(d)
     return p
+
+
+TOPE_FLUJOS = 40
+
+
+def _rotar(d, tope=None):
+    """Deja solo los flujos más recientes. Son regenerables: no hay nada que
+    perder y sí un directorio que mantener legible."""
+    tope = tope or TOPE_FLUJOS
+    fs = sorted((os.path.getmtime(x), x)
+                for x in glob.glob(os.path.join(d, "L-*.json")))
+    for _, x in fs[:-tope]:
+        try:
+            os.remove(x)
+        except OSError:
+            pass
 
 
 def encolar(rutas):

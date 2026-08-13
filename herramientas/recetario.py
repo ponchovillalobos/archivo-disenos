@@ -157,3 +157,85 @@ if __name__ == "__main__":
     print("  semilla    usos  publicadas")
     for s, v in sorted(d["semillas"].items(), key=lambda x: -x[1]["publicadas"])[:10]:
         print("   %-10s %4d  %4d" % (s, v["usos"], v["publicadas"]))
+
+
+# ---------------------------------------------------------------------------
+# QUÉ FUNCIONA — la memoria que faltaba
+#
+# El recetario sabía QUÉ se hizo, pero no QUÉ SALIÓ BIEN. Y la diferencia
+# importa: con 371 recetas y 126 aprobadas, hay señal de sobra para no volver a
+# probar a ciegas.
+#
+# «Aprobada» = la imagen llegó a publicarse. No es una opinión: es el resultado
+# de haber pasado la hoja de contacto, así que mide lo que de verdad interesa.
+#
+# UN SESGO QUE HAY QUE TENER EN CUENTA AL LEER LOS NÚMEROS: las paletas
+# antiguas (noir, y en parte rojo-carbón) se usaron en una época en que se
+# generaba de más y se descartaba mucho; las nuevas se generan por pedido y se
+# usan casi todas. Parte de la diferencia es el cambio de método, no solo la
+# calidad de la paleta. Lo que el dato SÍ sostiene es la dirección: el noir con
+# niebla producía descartes que las paletas con veto no producen.
+# ---------------------------------------------------------------------------
+
+def _paleta_de_receta(r):
+    """Deduce la paleta a partir del tratamiento escrito en el PNG.
+
+    No se puede leer el nombre —el flujo guarda el texto, no la clave—, así que
+    se busca la paleta cuyo `look` coincide. Es exacto porque el texto sale
+    literal de `paletas.PALETAS`."""
+    import paletas
+    t = (r.get("textos", {}) or {}).get("tratamiento", "")
+    if not t:
+        return None
+    for nombre, (_, look, _) in paletas.PALETAS.items():
+        if look[:40] and look[:40] in t:
+            return nombre
+    return None
+
+
+def _animo_de_receta(r):
+    import paletas
+    aire = (r.get("textos", {}) or {}).get("aire", "")
+    for nombre, (a, _l) in paletas.ANIMOS.items():
+        if a and a[:30] in aire:
+            return nombre
+    return None
+
+
+def que_funciona(archivo=ARCHIVO):
+    """Tasa de aprobación por paleta y por ánimo, con el volumen detrás.
+
+    Devuelve solo lo que tiene muestra suficiente: por debajo de 6 imágenes un
+    porcentaje no dice nada y confunde más que ayuda.
+    """
+    d = json.load(open(archivo, encoding="utf-8"))
+    por_pal, por_ani = {}, {}
+    for r in d["recetas"]:
+        for clave, tabla in ((_paleta_de_receta(r), por_pal),
+                             (_animo_de_receta(r), por_ani)):
+            if not clave:
+                continue
+            t = tabla.setdefault(clave, [0, 0])
+            t[0] += 1
+            t[1] += bool(r.get("aprobada"))
+
+    def ordena(tabla, minimo=6):
+        fuera = [(k, n, ok, ok / n) for k, (n, ok) in tabla.items() if n >= minimo]
+        return sorted(fuera, key=lambda x: -x[3])
+
+    return {"paletas": ordena(por_pal), "animos": ordena(por_ani),
+            "total": d["total"], "aprobadas": d["aprobadas"]}
+
+
+def informe():
+    q = que_funciona()
+    print("  %d recetas · %d aprobadas (%.0f %%)"
+          % (q["total"], q["aprobadas"], q["aprobadas"] / max(1, q["total"]) * 100))
+    for titulo, filas in (("PALETAS", q["paletas"]), ("ÁNIMOS", q["animos"])):
+        if not filas:
+            continue
+        print("\n  %s — tasa de aprobación (mín. 6 imágenes)" % titulo)
+        for k, n, ok, tasa in filas:
+            barra = "█" * int(tasa * 24)
+            print("   %-14s %3d img · %3d ok · %3.0f %% %s" % (k, n, ok, tasa * 100, barra))
+    return q
