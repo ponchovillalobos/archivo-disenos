@@ -197,7 +197,44 @@ La escala es una **relación**, no un adjetivo:
 Y al negativo: `epic, fantasy art, concept art, cover art, matte painting,
 mountains, storm clouds, ruins, castle, flowing cloak, god rays, lens flare`.
 
-### 3.7 Óptica: qué mueve la aguja y qué es folclore
+### 3.7 El encuadre: por qué «extreme wide shot» nunca funcionó
+
+**Esto explica el fallo que más veces hemos repetido.** Lo pedimos en el cuento
+del elefante y en la prueba de la caja, y las dos veces salió un plano medio.
+
+**La causa está en el paper de Playground v2.5**, sobre el condicionamiento de
+SDXL, literal:
+
+> *«La estrategia de condicionamiento de SDXL **obligó al modelo a aprender a
+> colocar el sujeto en el centro** bajo distintas proporciones.»*
+
+No estábamos peleando con un prompt mal escrito. Peleábamos contra un sesgo
+grabado en el entrenamiento.
+
+**Y hay una rejilla publicada** —SDXL 1.0, 1216×832, CFG 8.5, 25 pasos— que
+prueba término por término qué obedece. El resultado, revisado imagen a imagen:
+
+| | |
+|---|---|
+| **no hacen nada** | `long shot`, `medium full shot`, `full shot`, `upper body shot` — dan lo mismo que `medium shot` |
+| **sí funciona** | **`establishing shot`**, `extreme close-up`, `close-up`, `full body shot` |
+| **el ÁNGULO sí manda** | `from above`, `from below`, `bird's eye view`, `overhead shot`, `top down`, `fisheye view` rompen el encuadre con claridad |
+
+**`extreme wide shot` no aparece en ninguna lista. No es vocabulario del
+modelo.** El término que funciona para plano general es **`establishing shot`**.
+
+Cinco cosas que sí obedecen:
+
+1. **`establishing shot`**, al principio **y repetido después del sujeto**.
+2. **Lienzo apaisado.** El sesgo de proporción es real y está documentado.
+3. **La taxonomía del propio checkpoint.** Juggernaut certifica `Still Mid Shot
+   Photo` y `Full Body Photo` como tokens fiables. Usar la suya, no la de cine.
+4. **El plano como núcleo gramatical**: `A mid-shot of a man standing…`, no
+   `…, mid shot` al final.
+5. **Ángulo antes que distancia.** Si hay que romper el plano medio, `from
+   above` obedece mucho más que cualquier palabra de distancia.
+
+### 3.8 Óptica: qué mueve la aguja y qué es folclore
 
 | funciona | evidencia |
 |---|---|
@@ -221,21 +258,31 @@ estilo. Pide geometría con precisión y estilo con moderación.
 
 Todas verificadas en el código de ComfyUI. Ninguna necesita instalar nada.
 
-### 4.1 `CLIPTextEncodeSDXL` con destino 4096
+### 4.1 `CLIPTextEncodeSDXL` — **dos especialistas se contradicen aquí**
 
-**CÓDIGO.** Con `CLIPTextEncode` plano, ComfyUI rellena `width`/`height` con el
-**tamaño del latente**: el modelo recibe «esto viene de un original de 768×1344».
-Poniendo 4096 le dices «viene de un original de 4096×4096», que en el
-entrenamiento correlaciona con fotos nítidas y grandes.
+El nodo separa el prompt en dos campos, uno por cada codificador de texto de
+SDXL, y eso **no está en discusión**:
 
 ```
-CLIPTextEncodeSDXL: width 4096, height 4096, crop_w 0, crop_h 0,
-                    target_width 4096, target_height 4096
-                    text_g = escena (lenguaje natural, y manda el pooled)
-                    text_l = look y paleta (etiquetas de estilo)
+text_g = escena, en lenguaje natural   (OpenCLIP-bigG · manda el vector pooled)
+text_l = look, paleta y estilo         (CLIP-L · responde al estilo)
 ```
 
-Regalo añadido: separa la escena del tratamiento en dos campos distintos.
+Hay una prueba con semilla fija que invirtió los dos campos y concluyó que
+hacerlo al revés es «la forma equivocada de usarlos». **Esa parte, adoptada.**
+
+**Lo que SÍ está en disputa: poner 4096 en `width`/`height`/`target`.**
+
+| a favor | en contra |
+|---|---|
+| «con 4096 el modelo cree que viene de un original grande, y eso correlaciona con fotos nítidas» — el autor de IPAdapter | la documentación de diffusers dice que bajar `original_size` **degrada el detalle**, no aleja la cámara; y un experimento con rejillas concluye *«el impacto es mínimo»* y recomienda dejar el recorte en 0,0 |
+
+**No está resuelto, y no lo vamos a resolver leyendo.** Es una rejilla de dos
+imágenes con semilla fija: 4096 contra el valor por defecto. Hasta entonces, **no
+figura como recomendación**.
+
+Lo que sí queda claro de la discusión: **`original_size` no sirve para alejar la
+cámara.** Eso se pide con `establishing shot` y con el ángulo (§3.7).
 
 ### 4.2 `ConditioningSetTimestepRange` — que el color llegue tarde
 
@@ -407,7 +454,43 @@ parecido de 0,731 a 0,768. Real, pero insuficiente sola.
 | **GGUF para SDXL** | su autor lo desaconseja: SDXL es convolucional y las conv2d se degradan |
 | **`--lowvram`** | **no-op**: su propia ayuda dice que no hace nada con VRAM dinámica, que está activa por defecto |
 | **FaceDetailer / Impact Pack** | nuestra regla dura es cero caras y manos. Toda esa rama no nos aplica |
-| **Zero123 en Mac** | probado aquí: imágenes negras. Con `--fp32-unet --fp32-vae` salen, pero descoloridas |
+| **`masterpiece`, `8k`, `award winning`** | en SDXL la estética y la resolución son **entradas numéricas propias** del condicionamiento, no tokens. Escribirlas es pedir por la puerta de servicio algo que tiene puerta principal. No están en ninguna lista certificada por autor, y gastan tokens de los 75 |
+| **`octane render`, `unreal engine`** | empujan **activamente** hacia render 3D. Aparecen en prompts que piden fotografía: folclore heredado de SD 1.5 |
+| **`rule of thirds`, `negative space`** | sin ninguna prueba controlada sobre SDXL, y con un mecanismo en contra: el modelo fue condicionado para **centrar el sujeto**. Describir el espacio (`vast empty sky above`) en vez de nombrar la regla |
+| **Nombres de película fotográfica** | salvo `Kodachrome` y `Lomography`, que sí están en el preset oficial de Stability, no hay ninguna comparativa publicada. Decorativo |
+
+---
+
+## 9 bis. Varias tomas del mismo objeto: resuelto
+
+**MEDIDO aquí**, cinco vistas del mismo objeto:
+
+| método | parecido | veredicto |
+|---|---|---|
+| SDXL, cinco tomas por prompt | 0,731 | probablemente **otro** objeto |
+| IPAdapter, capa 3 en −0,5 | 0,768 | el mismo, con variación |
+| **Stable Zero123-C** | **0,884** | **el mismo, sin duda** |
+
+El mínimo pasó de 0,638 a **0,800**: ni el peor par baja de «el mismo objeto».
+
+**SDXL no puede rodear un objeto por prompt.** No es que lo haga mal: no tiene
+representación tridimensional. Cinco tomas dieron cinco cajas distintas, con
+herrajes diferentes en cada una, y la abolladura declarada en una esquina
+concreta no apareció en ninguna.
+
+Zero123 es otra cosa: **no genera desde texto** —no hay prompt en su flujo— sino
+que toma una imagen y produce la vista de **ese** objeto desde el ángulo pedido.
+
+La receta completa está en `herramientas/vistas.py`. Las dos cosas que hacen
+falta, y las dos son obligatorias:
+
+1. **`--gpu-only` al arrancar ComfyUI.** Sin ella, imágenes negras
+   intermitentes: 2 de 5 limpias sin la bandera, **11 de 11 con ella**.
+2. **La imagen de entrada al formato oficial**: fondo blanco puro, recorte al
+   objeto, lado largo ≤200 px, centrado en 256×256.
+
+**Su límite:** no sabe dibujar texto legible — lo dice su propia ficha. Para un
+objeto con marca hay que componer el texto real encima.
 
 ---
 

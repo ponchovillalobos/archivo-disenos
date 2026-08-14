@@ -27,16 +27,69 @@ opuestas:
 Usamos **el de la «c»**. El fabricante dice que rinden igual. Bajar «el que se
 llama bien» habría dejado el proyecto con un modelo que no podemos publicar.
 
-## Limitación conocida antes de probar
+## FUNCIONA. Y hacen falta DOS cosas, no una
 
-Zero123 se entrenó con objetos **recortados, centrados y sobre fondo liso**
-(renders de Objaverse). Nuestras imágenes son fotografías de una habitación
-entera. Es muy posible que eso lo estropee: el modelo no sabe qué parte de la
-imagen es «el objeto» que debe girar.
+**MEDIDO** sobre cinco vistas del mismo objeto:
 
-Se prueba igual con la imagen cruda, porque saberlo medido vale más que
-suponerlo. Si falla, el siguiente paso es recortar el objeto y ponerlo sobre
-fondo liso — no cambiar de modelo.
+    SDXL, cinco tomas por prompt .....  0,731   probablemente otro objeto
+    IPAdapter, capa 3 en -0,5 ........  0,768   el mismo, con variación
+    Zero123-C, cinco ángulos .........  0,884   EL MISMO, SIN DUDA
+
+El mínimo pasó de 0,638 a 0,800: ni el peor par baja de «el mismo objeto».
+
+### 1. Arrancar ComfyUI con `--gpu-only`
+
+Sin esa bandera las imágenes salen **negras de forma intermitente** — misma
+semilla, mismos flags, mismo proceso. Medido: **2 de 5 limpias sin ella, 11 de
+11 con ella**.
+
+No es precisión. Se descartaron midiendo `--fp32-unet` (1 de 3), `--force-fp32`
+(0 de 2), `--bf16-unet` (0 de 1) y `--force-upcast-attention`, que además es un
+**no-op**: ComfyUI ya lo activa solo en macOS ≥ 14.5, con este comentario en su
+propio código —
+
+    # black image bug on recent versions of macOS,
+    # I don't think it's ever getting fixed
+
+El negro es **NaN**, y nace **dentro del UNet** en la primera llamada. Lo que
+arregla `--gpu-only` es que los tensores dejan de ir y venir entre Metal y el
+procesador entre nodos: la corrupción estaba en esos traslados.
+
+**Trampa de diagnóstico ya pagada:** el fallo es intermitente, así que una tanda
+que sale bien no prueba nada. Llegamos a concluir que «azimut 0 funciona y las
+rotaciones no» — era casualidad.
+
+### 2. Preparar la imagen al formato oficial
+
+Del preprocesado de Zero-1-to-3 (`ldm/util.py`, `load_and_preprocess`):
+
+    1. segmentar y poner el fondo en BLANCO PURO
+    2. recortar al rectángulo del objeto
+    3. redimensionar: el lado largo, 200 px como mucho
+    4. centrar en un lienzo blanco de 256x256
+
+Una fotografía de una habitación entera da un borrón: el modelo no sabe qué
+parte girar. Y **no subir la resolución del nodo**: se entrenó a 256x256.
+
+Atajo que evita necesitar un quitafondos: **generar el objeto ya sobre fondo
+blanco** con SDXL —`isolated on a plain pure white background, product
+photograph, soft even studio light`— y recortarlo con un umbral simple.
+
+## La licencia, que casi nos cuesta el proyecto
+
+Dos ficheros, nombres casi idénticos, licencias opuestas:
+
+    stable_zero123.ckpt     objetos CC-BY-NC -> NO COMERCIAL
+    stable_zero123_c.ckpt   solo CC-BY y CC0 -> Stability Community License,
+                            comercial por debajo de 1 M USD/año
+
+Usamos **el de la «c»**. El fabricante dice que rinden igual.
+
+## Lo que NO resuelve
+
+**No sabe dibujar texto legible.** Lo dice su propia ficha: *«el modelo no puede
+renderizar texto legible»*. Para un objeto con marca o etiqueta hay que componer
+el texto real encima — que es lo que hacen los profesionales.
 """
 import json
 import os
