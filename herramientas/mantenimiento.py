@@ -98,6 +98,52 @@ def versiones_superadas(seco=True):
     return len(fuera), peso
 
 
+def imagenes_negras(seco=True):
+    """Borra las imágenes completamente negras. Son fallos, nunca resultados.
+
+    Un PNG con todos los píxeles a cero no es una imagen tenue: es NaN. El
+    decodificado devolvió no-números y al convertir a entero salió cero. No hay
+    ningún caso legítimo en este sistema donde eso sea el resultado deseado.
+
+    Nacen sobre todo de Zero123 sin `--gpu-only`, que las produce de forma
+    intermitente. Una tarde de diagnóstico dejó dos docenas, y el barrido normal
+    no las tocaba porque cada una tiene un nombre distinto y por tanto ninguna
+    es una «versión superada».
+
+    Se comprueba con el máximo del canal, que es instantáneo, y se respeta el
+    mismo escudo que el resto: nada publicado se toca.
+    """
+    try:
+        import numpy as np
+        from PIL import Image
+    except ImportError:
+        return 0, 0
+    publicadas = _publicadas()
+    fuera, peso = [], 0
+    for p in glob.glob(os.path.join(SALIDA, "*.png")):
+        try:
+            if np.array(Image.open(p).convert("RGB")).max() != 0:
+                continue
+            with open(p, "rb") as f:
+                if hashlib.md5(f.read()).hexdigest() in publicadas:
+                    continue
+            peso += os.path.getsize(p)
+            fuera.append(p)
+        except OSError:
+            pass
+    if len(fuera) > TOPE_BORRADO:
+        raise RuntimeError(
+            "el barrido quería borrar %d imágenes negras (tope %d). Eso ya no "
+            "es limpieza: algo produce basura en serie." % (len(fuera), TOPE_BORRADO))
+    if not seco:
+        for p in fuera:
+            try:
+                os.remove(p)
+            except OSError:
+                pass
+    return len(fuera), peso
+
+
 def cache_de_texto(seco=True, dias=TOPE_CACHE_DIAS):
     """Las capas de texto se cachean por el sha1 de su HTML. Cambiar la fuente,
     el tamaño o la versión del navegador las deja huérfanas para siempre."""
@@ -170,10 +216,11 @@ def revisar(seco=True):
     """Pasa todo. `seco=True` solo informa; nada se toca."""
     r = {}
     r["versiones"], p1 = versiones_superadas(seco)
+    r["negras"], p4 = imagenes_negras(seco)
     r["cache"], p2 = cache_de_texto(seco)
     r["temporales"], p3 = temporales(seco)
     r["registros"] = registros(seco)
-    r["mb"] = round((p1 + p2 + p3) / 1e6, 1)
+    r["mb"] = round((p1 + p2 + p3 + p4) / 1e6, 1)
     r["seco"] = seco
     return r
 
@@ -188,6 +235,7 @@ if __name__ == "__main__":
     r = revisar(seco)
     print("  %s" % ("REVISIÓN (nada se ha tocado)" if seco else "LIMPIEZA"))
     print("   versiones superadas  %4d" % r["versiones"])
+    print("   imágenes negras      %4d" % r["negras"])
     print("   capas de texto viejas %3d" % r["cache"])
     print("   temporales            %3d" % r["temporales"])
     print("   registros recortados  %3d" % r["registros"])

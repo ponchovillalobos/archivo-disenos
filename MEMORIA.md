@@ -299,6 +299,81 @@ recetario de semillas dejaría de valer al migrar a Windows.
 
 ---
 
+## 10 bis. El encuadre: peleábamos con el entrenamiento, no con el prompt
+
+**`extreme wide shot` no es vocabulario del modelo.** El término que funciona es
+**`establishing shot`**.
+
+Hay una rejilla publicada donde `long shot`, `medium full shot`, `full shot` y
+`upper body shot` producen **todos lo mismo** que `medium shot`. Y la causa está
+en el paper de Playground v2.5, sobre el condicionamiento de SDXL:
+
+> *«obligó al modelo a aprender a colocar el sujeto **en el centro**»*
+
+Es el fallo que repetimos en el cuento del elefante («el árbol dominando el
+cuadro, el elefante pequeño») y en la prueba de la caja. **Dos semanas culpando
+al prompt.**
+
+Lo que sí obedece es el **ángulo**: `from above`, `bird's eye view`,
+`overhead shot` rompen el encuadre donde ninguna palabra de distancia lo logra.
+
+---
+
+## 10 ter. La métrica premia el parecido de categoría, no la identidad
+
+Dos veces en el mismo día me engañó, y las dos en la misma dirección.
+
+**La acuarela salió última** en el estudio de siete estilos, cuando a ojo es de
+las mejores para un cuento infantil. CLIP puntúa sistemáticamente más alto las
+imágenes fotográficas contra un texto.
+
+**La bota puntuó 0,860 —«el mismo, sin duda»— y estaba mal.** A 180° generó
+**dos botas**, un par, en vez de una bota girada. Como el cuero, los cordones y
+la suela son correctos, el parecido sale altísimo.
+
+La causa, explicada en el paper de DreamBooth: CLIP se entrena con pares
+texto-imagen y codifica lo descriptivo, **no los detalles finos que no aparecen
+en las anotaciones**. Puntúa igual nuestra caja y otra caja distinta de la misma
+clase — que es justo el fallo que queremos detectar.
+
+**Pendiente: cambiar a DINOv2**, entrenado de forma autosupervisada para
+distinguir imágenes entre sí. Los números bajarán y por fin medirán identidad.
+
+**Mientras tanto, la regla se mantiene: se audita cada imagen a ojo.** La métrica
+sola habría publicado un par de botas como si fuera una rotación.
+
+---
+
+## 10 quater. Girar un objeto: se puede, con condiciones
+
+**MEDIDO** sobre cinco vistas:
+
+    SDXL, cinco tomas por prompt .....  0,731   probablemente OTRO objeto
+    IPAdapter, capa 3 en -0,5 ........  0,768   el mismo, con variación
+    Stable Zero123-C .................  0,884   el mismo, sin duda
+
+SDXL **no puede rodear un objeto por prompt**: no tiene representación
+tridimensional. Cinco tomas dieron cinco cajas distintas y la abolladura
+declarada en una esquina concreta no apareció en ninguna.
+
+La receta completa está en `herramientas/vistas.py`. Dos cosas obligatorias:
+**`--gpu-only`** (sin ella salen negras de forma intermitente: 2 de 5 limpias
+frente a 11 de 11) y la **entrada al formato oficial** (blanco puro, recorte al
+objeto, lado largo ≤200 px, centrado en 256×256).
+
+Probado con tres objetos más — tetera, cámara y bota:
+
+| | |
+|---|---|
+| **90° rompe en los tres** | sin excepción. Es el ángulo a evitar |
+| **45° y 180° son fiables** | ahí el objeto sobrevive |
+| **la complejidad manda** | formas sólidas aguantan; objetos mecánicos con piezas finas y texto se desintegran |
+
+Y la prueba dura la pasa: el pico de la tetera está a la izquierda en la original
+y aparece **a la derecha a 180°**. Es una rotación real.
+
+---
+
 ## 11. Reglas duras del proyecto
 
 1. **Nada se publica sin verificar contra la fuente primaria.**

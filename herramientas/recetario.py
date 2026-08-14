@@ -47,9 +47,11 @@ def receta(png):
         return None
 
     r = {"imagen": os.path.basename(png), "textos": {}}
+    ks = None
     for nid, n in d.items():
         c, e = n.get("class_type"), n.get("inputs", {})
         if c == "KSampler":
+            ks = e
             r.update(semilla=e.get("seed"), pasos=e.get("steps"), cfg=e.get("cfg"),
                      muestreador=e.get("sampler_name"), planificador=e.get("scheduler"),
                      denoise=e.get("denoise"))
@@ -64,15 +66,40 @@ def receta(png):
             v = e.get("value", "")
             if isinstance(v, str) and v:
                 r["textos"][CAMPOS.get(int(nid), "n%s" % nid)] = v
-        elif c == "CLIPTextEncode":
-            t = e.get("text")
-            # el negativo llega como texto plano; el positivo llega enlazado
-            if isinstance(t, str) and "(face:" in t:
-                r["negativo"] = t
+        elif c in ("IPAdapterAdvanced", "IPAdapterMS"):
+            r["ipadapter"] = {k: e.get(k) for k in
+                              ("weight", "weight_type", "combine_embeds",
+                               "embeds_scaling", "start_at", "end_at",
+                               "layer_weights") if e.get(k) is not None}
+
+    # El positivo y el negativo se identifican por lo que el MUESTREADOR usa
+    # como tal, no adivinando por el contenido del texto.
+    #
+    # Antes se reconocía el negativo buscando la subcadena "(face:" — un apaño
+    # que solo funcionaba con el flujo de la serie de comunicación. Cualquier
+    # imagen generada por el camino nuevo (formato API) guardaba `textos: {}`:
+    # se archivaban semilla y pasos, y se perdía el prompt, que es lo que de
+    # verdad hay que recuperar. Así ninguna receta nueva servía para reproducir.
+    if ks:
+        for papel in ("positive", "negative"):
+            enlace = ks.get(papel)
+            if not (isinstance(enlace, list) and enlace):
+                continue
+            n = d.get(str(enlace[0]), {})
+            if n.get("class_type") in ("CLIPTextEncode", "CLIPTextEncodeSDXL"):
+                e = n.get("inputs", {})
+                t = e.get("text") or e.get("text_g")
+                if isinstance(t, str) and t:
+                    r["positivo" if papel == "positive" else "negativo"] = t
+
     if not r.get("semilla"):
         return None
+    # La huella entra en el positivo además de los campos troceados: con el
+    # camino API no hay campos, y sin esto todas las recetas nuevas colisionaban
+    # en la misma huella.
     r["huella"] = hashlib.sha1(
-        json.dumps([r.get("semilla"), r["textos"]], sort_keys=True).encode()
+        json.dumps([r.get("semilla"), r["textos"], r.get("positivo", "")],
+                   sort_keys=True).encode()
     ).hexdigest()[:12]
     return r
 

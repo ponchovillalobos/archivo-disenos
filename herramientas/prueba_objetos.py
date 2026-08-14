@@ -129,12 +129,27 @@ OBJETOS = {
 }
 
 
-def prompt(clave):
-    return "%s %s, %s" % (MEDIO, OBJETOS[clave][0], COLA)
+def prompt(descripcion):
+    """El medio delante, el sujeto en medio, los modificadores al final.
+
+    Acepta una clave de OBJETOS o una descripción libre, para que esto sirva
+    como herramienta y no solo como el ensayo de tres objetos que fue."""
+    d = OBJETOS[descripcion][0] if descripcion in OBJETOS else descripcion
+    return "%s %s, %s" % (MEDIO, d, COLA)
+
+
+def base(slug, descripcion, semilla=101010, lado=1024):
+    """UNA imagen de partida sobre fondo blanco, lista para girar.
+
+    Cuadrada a propósito: Zero123 trabaja con un lienzo cuadrado, y partir de
+    uno cuadrado evita que `preparar` tenga que descartar nada."""
+    import flujo_referencia as fr
+    return fr.generar("obj-" + slug, prompt(descripcion), NEG,
+                      ancho=lado, alto=lado, semilla=semilla)
 
 
 def generar_base(semilla=101010, ancho=1024, alto=1024):
-    """Los tres objetos sobre fondo blanco, listos para girar."""
+    """Los tres objetos del ensayo."""
     import flujo_referencia as fr
     return {k: fr.generar("obj-" + k, prompt(k), NEG, ancho=ancho, alto=alto,
                           semilla=semilla)

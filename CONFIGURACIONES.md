@@ -526,6 +526,65 @@ sola habríamos publicado un par de botas como si fuera una rotación.
 
 ---
 
+## 9 ter. La receta de la imagen de partida, para repetirla
+
+Las frontales sobre fondo blanco son **el punto de partida de cualquier giro**, y
+por eso vale la pena poder rehacerlas exactas. Todo lo de abajo está en
+`herramientas/prueba_objetos.py`, y cada PNG lleva además su receta dentro
+(`recetario.py` la recupera: **747 de 747 imágenes**).
+
+**El prompt, en tres partes:**
+
+```
+medio        product photograph of
+sujeto       <la descripción del objeto, concreta y con sus rasgos>
+modificadores isolated on a plain pure white background,
+             soft even studio light, sharp focus, fine detail
+```
+
+**El negativo** — corto, y veta el **medio** equivocado más lo que ensucia el
+recorte posterior:
+
+```
+illustration, drawing, painting, cartoon, anime, 3d render, cgi, octane render,
+sketch, background, room, table, floor, wall, scenery, two objects,
+multiple objects, people, hands, text, watermark, blurry, low quality,
+deformed, cropped
+```
+
+**Los ajustes**, idénticos en las cuatro:
+
+```
+modelo      juggernautXL_v9.safetensors
+tamaño      1024 × 1024   (cuadrado: es lo que Zero123 espera después)
+pasos       30      CFG  5.5
+muestreo    dpmpp_2m / karras     denoise 1.0
+semilla     101010
+```
+
+**El banco actual:**
+
+| slug | objeto | huella |
+|---|---|---|
+| `obj-tetera` | tetera de cerámica azul verdoso, pico y asa de arco | `4d80eee84371` |
+| `obj-camara` | cámara analógica de cuero negro y cromo | `f6fb42c90e36` |
+| `obj-bota` | bota de cuero marrón con ojales de latón | `b6f1a3946561` |
+| `cajablanca` | caja metálica verde con herrajes de latón | — |
+
+Para añadir uno nuevo basta con:
+
+```python
+prueba_objetos.base("mi-objeto", "descripción concreta del objeto")
+prueba_objetos.girar("mi-objeto")     # las cinco vistas
+prueba_objetos.medir("mi-objeto")     # y su parecido
+```
+
+**Por qué fondo blanco desde el principio:** ahorra el segmentador. El recorte
+posterior es un simple umbral sobre lo que no es blanco — nada de descargar
+176 MB de quitafondos.
+
+---
+
 ## 10. Lo que la investigación recomendó y la medición tumbó
 
 Esta sección existe para recordar que **medir manda**.
