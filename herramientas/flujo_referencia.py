@@ -44,7 +44,8 @@ PESO = 0.75
 
 def _api(positivo, negativo, ancho, alto, slug, referencia=None,
          peso=PESO, pasos=30, cfg=5.5, semilla=101010,
-         tipo_peso="linear", inicio=0.0, fin=1.0):
+         tipo_peso="linear", inicio=0.0, fin=1.0,
+         combinar="concat", escalado="V only", capas=None, preparar=None):
     """Grafo en formato API. Con `referencia` mete IPAdapter en medio."""
     g = {
         "1": {"class_type": "CheckpointLoaderSimple",
@@ -71,12 +72,36 @@ def _api(positivo, negativo, ancho, alto, slug, referencia=None,
                    "inputs": {"image": referencia}}
         g["11"] = {"class_type": "IPAdapterUnifiedLoader",
                    "inputs": {"model": ["1", 0], "preset": PRESET}}
-        g["12"] = {"class_type": "IPAdapterAdvanced",
-                   "inputs": {"model": ["11", 0], "ipadapter": ["11", 1],
-                              "image": ["10", 0], "weight": peso,
-                              "weight_type": tipo_peso, "combine_embeds": "concat",
-                              "start_at": inicio, "end_at": fin,
-                              "embeds_scaling": "V only"}}
+        entrada = ["10", 0]
+
+        # CLIPImageProcessor recorta al CENTRO cualquier imagen no cuadrada.
+        # Las nuestras son 1216×832: se perdían 192 px por lado sin avisar, y
+        # llevábamos días alimentando a IPAdapter recortes de nuestras propias
+        # referencias. `pad` mete barras en vez de recortar: entra el objeto
+        # entero.
+        if preparar:
+            g["13"] = {"class_type": "PrepImageForClipVision",
+                       "inputs": {"image": ["10", 0], "interpolation": "LANCZOS",
+                                  "crop_position": preparar, "sharpening": 0.0}}
+            entrada = ["13", 0]
+
+        comun = {"model": ["11", 0], "ipadapter": ["11", 1],
+                 "image": entrada, "weight": peso, "weight_type": tipo_peso,
+                 "combine_embeds": combinar, "start_at": inicio, "end_at": fin,
+                 "embeds_scaling": escalado}
+
+        # `capas` abre el nodo «Mad Scientist», que es el único que deja tocar
+        # capa por capa. Importa porque en SDXL IPAdapter NO escala pesos: aplica
+        # el adaptador a capas de atención concretas, y **la capa 3 es la que
+        # copia la composición**. Poniéndola en negativo se RESTA encuadre en vez
+        # de solo no añadirlo. No está documentado en ningún sitio: está en el
+        # código de cubiq.
+        if capas:
+            g["12"] = {"class_type": "IPAdapterMS",
+                       "inputs": dict(comun, weight_faceidv2=1.0,
+                                      layer_weights=capas)}
+        else:
+            g["12"] = {"class_type": "IPAdapterAdvanced", "inputs": comun}
         g["7"]["inputs"]["model"] = ["12", 0]
     return g
 

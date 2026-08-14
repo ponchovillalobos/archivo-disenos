@@ -94,6 +94,13 @@ va con pesos, por qué la semilla no es lo que parece, los tamaños que SDXL
 entiende de verdad, y las trampas de interpretación literal que ya nos costaron
 regeneraciones.
 
+[`CONFIGURACIONES.md`](CONFIGURACIONES.md) — **qué hay que poner y por qué**, de
+fuentes primarias: la ficha oficial del modelo, el código de ComfyUI, los papers.
+Incluye el filtro de licencia comercial (que descarta más cosas de las que
+parece, y casi siempre las más populares), las plantillas de prompt oficiales de
+Stability, y las mejoras que cuestan cero segundos. Tiene además una sección que
+conviene leer: **lo que la investigación recomendó y la medición tumbó**.
+
 [`MEMORIA.md`](MEMORIA.md) — **todo lo que se ha probado, con su medición y su
 veredicto.** Incluye a propósito lo que salió mal y lo que creímos y era falso,
 porque es lo que evita repetirlo. Ahí están los callejones sin salida ya
