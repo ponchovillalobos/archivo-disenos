@@ -61,23 +61,42 @@ Medido sobre ocho paletas con el mismo encuadre:
 
 **Cinco de ocho cayeron en la franja azul-cian de 156-204°.**
 
-### La solución: el veto
+### La solución: los PESOS en positivo (no el veto)
 
-No se convence al modelo de poner amarillo. Se le **quita el azul**.
+> **CORRECCIÓN, 14-ago-2026.** Este apartado decía que el mérito era del veto y
+> que era «el hallazgo más rentable del proyecto». **Es falso, y estuvo
+> publicado semanas.** Se deja el error a la vista con su desmentido, porque
+> borrarlo invitaría a cometerlo otra vez.
 
-Cada paleta lleva tres campos, no uno: el acento tipográfico, la instrucción en
-positivo **con pesos**, y el **veto** — los colores rivales que van al negativo
-con peso 1.3.
+Los números de la tabla son reales: la mostaza pasó de 156° verde a 36° ámbar.
+Lo que estaba mal era la **atribución**. Se cambiaron dos cosas a la vez —pesos
+en positivo y veto en negativo— y le dimos el mérito a la segunda sin aislarla.
 
-Resultado sobre las mismas escenas:
+**La prueba controlada, cuatro variantes de la misma escena y semilla:**
 
-| paleta | solo positivo | con peso + veto |
-|---|---|---|
-| mostaza | 156° verde, sat 10,7 | **36° ámbar, sat 42,5** |
-| purpura | 204° azul | **321° violeta, sat 35,3** |
-| magenta-cian | 184° cian, sat 15,4 | **292° magenta, sat 26,8** |
+| | pesos en positivo | veto en negativo | resultado |
+|---|---|---|---|
+| A | sí | sí | idéntica a B, **píxel a píxel** |
+| B | sí | no | idéntica a A |
+| C | no | sí | idéntica a D |
+| D | no | no | idéntica a C |
 
-Está en `herramientas/paletas.py`. **Es el hallazgo más rentable del proyecto.**
+El veto **no cambió un solo píxel**. Todo el efecto venía de los pesos.
+
+**Por qué**, confirmado dos veces en el código de ComfyUI: el flujo rápido usa
+CFG 1.0, y ahí `cfg_result = uncond + (cond − uncond) × 1.0 = cond`. El término
+negativo se cancela. Es más: ComfyUI **ni siquiera lo evalúa** —se lo salta por
+rendimiento— y por eso el paso de muestreo cuesta la mitad.
+
+    a CFG 1.0 el prompt negativo NO EXISTE
+
+El veto sigue en `paletas.py` porque en el flujo de CALIDAD (CFG 4.5) sí actúa.
+Pero en producción, que va con el rápido, es texto muerto que se codifica para
+nada.
+
+**La lección que sí vale, y que costó semanas:** cambiar dos cosas a la vez y
+atribuir el resultado a la que más nos gusta. Una variable por prueba, o no es
+una prueba.
 
 Dos detalles que ahorran tiempo:
 

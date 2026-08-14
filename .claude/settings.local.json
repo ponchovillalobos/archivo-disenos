@@ -10,7 +10,11 @@
       "mcp__comfy-mcp__server_info",
       "Bash(curl -s --max-time 8 http://127.0.0.1:8188/system_stats -o /dev/null -w \"HTTP %{http_code}\\\\n\")",
       "Bash(sysctl vm.swapusage)",
-      "Read(//Users/maity/comfy/user/**)"
+      "Read(//Users/maity/comfy/user/**)",
+      "Bash(curl -s --max-time 10 http://127.0.0.1:8188/system_stats)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); s=d['system']; v=d['devices'][0]; print\\('ComfyUI', s.get\\('comfyui_version'\\), '| python', s.get\\('python_version',''\\)[:6]\\); print\\('dispositivo:', v['type'], v['name']\\); print\\('VRAM libre: %.1f GB de %.1f' % \\(v['vram_free']/1e9, v['vram_total']/1e9\\)\\)\")",
+      "Bash(curl -s --max-time 10 http://127.0.0.1:8188/queue)",
+      "Bash(python3 -c \"import json,sys; q=json.load\\(sys.stdin\\); print\\('corriendo:', len\\(q.get\\('queue_running',[]\\)\\), '| pendientes:', len\\(q.get\\('queue_pending',[]\\)\\)\\)\")"
     ]
   }
 }

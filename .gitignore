@@ -12,3 +12,24 @@ sitio/descargas/*.mp4
 # Temporales
 _prueba*.mp4
 _mudo-*.mp4
+
+# Bytecode de Python: se regenera solo y ensucia cada commit
+__pycache__/
+*.pyc
+
+# Flujos DESECHABLES. ComfyUI copia el prompt al recibirlo, así que estos
+# ficheros no se vuelven a leer nunca. Se rotan solos (TOPE_FLUJOS=40) y
+# versionarlos era puro ruido: 39 ficheros cambiando en cada commit.
+# La memoria de lo que funciona vive en recetario.py, atada al PNG real.
+herramientas/flujos/
+
+# Registros de ejecución: crecen sin fin y no son código
+*.log
+salud.jsonl
+noche.json
+seis.json
+coherencia.txt
+
+# Derivadas del laboratorio: se regeneran desde los PNG originales
+sitio/img-lab/
+sitio/tipografia.css

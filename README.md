@@ -87,11 +87,19 @@ porque pesan 7,3 GB:
 Su configuración exacta —pasos, CFG, muestreador, semilla— está en
 `voz/fuente-primaria.yaml`. No hay que adivinar nada.
 
-**Antes de generar tu primera imagen, lee [`MODELO.md`](MODELO.md).** Recoge lo
-que más cuesta descubrir solo: por qué el color va por veto y no por
-instrucción, por qué la semilla no es lo que parece, los tamaños que SDXL
+**Antes de generar tu primera imagen, lee estos dos:**
+
+[`MODELO.md`](MODELO.md) — la pila de imagen y cómo se maneja: por qué el color
+va con pesos, por qué la semilla no es lo que parece, los tamaños que SDXL
 entiende de verdad, y las trampas de interpretación literal que ya nos costaron
 regeneraciones.
+
+[`MEMORIA.md`](MEMORIA.md) — **todo lo que se ha probado, con su medición y su
+veredicto.** Incluye a propósito lo que salió mal y lo que creímos y era falso,
+porque es lo que evita repetirlo. Ahí están los callejones sin salida ya
+pagados (IPAdapter a todos los pesos, fp8, GGUF, FreeU), las tres veces que una
+paleta describió un lugar y se comió la escena, y por qué una noche entera
+produjo ocho imágenes en vez de treinta y seis.
 
 ---
 

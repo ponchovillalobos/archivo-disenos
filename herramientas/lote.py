@@ -14,7 +14,22 @@ import glob, json, os, subprocess, time
 from paletas import PALETAS, paleta_de
 
 S = os.path.dirname(os.path.abspath(__file__))
-BASE = "/Users/maity/reels/workflows/LAB-ESPARTANO-v2---rapido.json"
+# Dos flujos, y la diferencia NO es cosmética:
+#
+#   RAPIDO   8 pasos · CFG 1.0 · con LoRA Lightning ·  57 s
+#   CALIDAD 30 pasos · CFG 5.5 · SIN LoRA           · 144 s
+#
+# A CFG 1.0 la guía sin clasificador está DESACTIVADA: el negativo no influye y
+# el modelo apenas obedece. Medido con cuatro variantes de la misma escena: con
+# veto y sin veto salieron píxel a píxel idénticas. Todo lo que creíamos ganado
+# con el veto venía de los pesos en positivo.
+#
+# Para producción en serie el rápido va bien: la escena manda y basta. Para algo
+# que exija OBEDIENCIA —un personaje fiel, un objeto concreto, una composición
+# pedida— hay que usar el de calidad y pagar los 144 segundos.
+RAPIDO = "/Users/maity/Desktop/Confy Imagenes/workflows/LAB-ESPARTANO-v2---rapido.json"
+CALIDAD = "/Users/maity/Desktop/Confy Imagenes/workflows/LAB-ESPARTANO-v2---CALIDAD.json"
+BASE = RAPIDO
 SALIDA = "/Users/maity/comfy/output/reels"
 
 NOIR = ("black and white film noir, extreme contrast, deep black shadows and bright white "
@@ -32,8 +47,9 @@ NEG = ("(face:1.6), (faces:1.6), (portrait:1.5), (close-up face:1.6), (facial fe
        "(oppressive:1.2), (murky:1.2), muddy colors, washed out")
 
 
-def flujo(slug, escena, objeto, encuadre, aire, luz, ancho=720, alto=1280, ropa="",
-          paleta=None, look=None, negativo=None):
+def flujo(slug, escena, objeto, encuadre, aire, luz, ancho=768, alto=1344, ropa="",
+          paleta=None, look=None, negativo=None, base=None,
+          semilla=None, pasos=None, cfg=None):
     """paleta: nombre de PALETAS. Por defecto noir (blanco y negro).
 
     El color entra por DOS sitios, no uno: la instrucción en positivo y el VETO
@@ -49,7 +65,7 @@ def flujo(slug, escena, objeto, encuadre, aire, luz, ancho=720, alto=1280, ropa=
     look = look or p_look
     neg = negativo or (
         NEG + ("".join(", (%s:1.3)" % c for c in veto.split(", ")) if veto else ""))
-    wf = json.load(open(BASE))
+    wf = json.load(open(base or BASE))
     for n in wf["nodes"]:
         i = n["id"]
         if i == 11: n["widgets_values"] = [escena]
@@ -62,6 +78,23 @@ def flujo(slug, escena, objeto, encuadre, aire, luz, ancho=720, alto=1280, ropa=
         elif i == 5:  n["widgets_values"] = [neg]
         elif i == 6:  n["widgets_values"] = [ancho, alto, 1]
         elif i == 9:  n["widgets_values"] = ["reels/" + slug]
+        # El KSampler NO se tocaba nunca, y ése era el agujero: la semilla se
+        # quedaba con lo que trajese el JSON. Consecuencias reales, las tres
+        # medidas en una auditoría:
+        #   · no había forma de pedir una variante — mismo prompt, misma imagen
+        #   · `contrato.py` resolvía `semilla` y `variar_semilla` y esos campos
+        #     NO llegaban a ningún sitio: código muerto
+        #   · si alguien guardaba la plantilla desde la interfaz con
+        #     «aleatorizar», se perdía la reproducibilidad sin un solo error
+        #
+        # Se escribe siempre "fixed": la variación se pide cambiando `semilla`,
+        # no dejando que el JSON decida a nuestras espaldas.
+        elif i == 7:
+            v = list(n["widgets_values"])
+            n["widgets_values"] = [
+                semilla if semilla is not None else v[0], "fixed",
+                pasos if pasos is not None else v[2],
+                cfg if cfg is not None else v[3], v[4], v[5], v[6]]
     # Los flujos generados son DESECHABLES: ComfyUI copia el prompt cuando lo
     # recibe, así que el fichero no vuelve a leerse nunca. Llegaron a acumularse
     # 214 (5 MB) sin que nadie los mirase.

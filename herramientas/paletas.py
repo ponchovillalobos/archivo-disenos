@@ -26,12 +26,12 @@ PALETAS = {
    "green, teal, magenta"),
 
  "magenta-cian": ("#d84f9e",
-   "(neon magenta and cyan:1.5), (hot pink glow:1.4), (saturated night palette:1.3), "
-   "wet reflective surfaces, deep blacks",
+   "(neon magenta and cyan:1.4), (hot pink glow:1.3), (saturated night palette:1.3), "
+   "deep blacks, high specular contrast",
    "green, yellow, orange, sepia"),
 
  "oliva": ("#9fbf5a",
-   "(olive green and khaki color grade:1.5), (moss green tones:1.3), "
+   "(olive green and khaki color grade:1.4), (moss green tones:1.3), "
    "earthy desaturated palette, soft contrast, 16mm grain",
    "blue, cyan, teal, magenta, purple"),
 
@@ -41,12 +41,12 @@ PALETAS = {
    "blue, cyan, teal, green, magenta"),
 
  "rojo-carbon": ("#d8353d",
-   "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.5), "
+   "(deep charcoal blacks:1.3), (one saturated crimson red accent:1.4), "
    "(scarlet glow:1.3), everything else near monochrome, hard contrast",
    "blue, cyan, teal, green, yellow"),
 
  "purpura": ("#a98fd4",
-   "(violet and deep purple:1.6), (lilac light:1.4), (magenta twilight sky:1.3), "
+   "(violet and deep purple:1.4), (lilac light:1.3), (magenta twilight grade:1.3), "
    "saturated night grade, cinematic haze",
    "blue, cyan, teal, green, yellow, orange"),
 
@@ -55,38 +55,46 @@ PALETAS = {
    "clean contrast",
    "orange, red, yellow, green, magenta"),
 
+ # Ésta es la que costó el hallazgo. Decía «emerald jungle» a peso 1,3 contra
+ # escenas de sabana seca a peso 1,0, y ganaba: cuatro prompts muy distintos
+ # daban la misma foto de follaje verde. Una paleta describe COLOR, nunca un
+ # sitio — si nombra un lugar, compite con la escena y gana por peso.
+ #
+ # Y el veto llevaba `grey`, mientras la ficha del personaje decía «grey skin».
+ # Se estaba vetando el color del propio sujeto. `grey` sale de todos los vetos:
+ # es casi imposible vetarlo sin dañar la escena.
  "dorado-selva": ("#c9a227",
-   "(golden light through deep green foliage:1.5), (emerald jungle:1.3), "
-   "(warm sun shafts:1.3), rich saturated contrast",
-   "blue, cyan, magenta, purple, grey"),
+   "(warm golden and deep green colour grade:1.4), (amber highlights over cool "
+   "green shadows:1.3), rich saturated contrast",
+   "blue, cyan, magenta, purple"),
 
  "esmeralda": ("#4fc4a0",
-   "(emerald green and deep teal:1.5), (saturated jade water tones:1.3), "
+   "(emerald green and deep teal:1.4), (saturated jade tones:1.3), "
    "cool highlights, cinematic depth",
    "orange, red, yellow, magenta, purple"),
 
  "cobre": ("#c47a4a",
-   "(burnished copper and warm rust:1.5), (orange oxidised metal:1.3), "
-   "cool grey stone around it, saturated metal highlights",
+   "(burnished copper and warm rust:1.4), (orange oxidised metal:1.3), "
+   "cool neutral shadows, saturated metal highlights",
    "blue, cyan, green, magenta, purple"),
 
  "vino": ("#b8563c",
-   "(deep wine red and burnt orange:1.5), (candlelit warm darkness:1.3), "
+   "(deep wine red and burnt orange:1.4), (warm low-key grade:1.3), "
    "(maroon shadows:1.3), heavy shadows",
    "blue, cyan, teal, green, magenta"),
 
  "menta": ("#7fd4c0",
-   "(cool mint green and graphite:1.5), (pale seafoam tones:1.3), "
+   "(cool mint green and graphite:1.4), (pale seafoam tones:1.3), "
    "clean modern palette, soft highlights",
    "orange, red, yellow, magenta, purple, blue"),
 
  "mostaza": ("#d4a017",
-   "(mustard yellow and petrol blue:1.6), (ochre yellow light:1.4), "
-   "(golden wheat tones:1.3), bold retro film stock, strong contrast",
-   "green, magenta, purple, grey, monochrome"),
+   "(mustard yellow and petrol blue:1.4), (ochre yellow light:1.3), "
+   "(golden ochre tones:1.3), bold retro film stock, strong contrast",
+   "green, magenta, purple, monochrome"),
 
  "ladrillo": ("#c85a3c",
-   "(terracotta and burnt sienna:1.5), (warm brick red walls:1.4), "
+   "(terracotta and burnt sienna:1.4), (warm brick red tones:1.3), "
    "(clay orange tones:1.3), dry warm light",
    "blue, cyan, teal, green, magenta, purple"),
 
