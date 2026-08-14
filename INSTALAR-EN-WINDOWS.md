@@ -13,7 +13,9 @@ de 2026: 44 módulos, 7.632 líneas de Python.
 
 | Pieza | En Windows | Qué hay que hacer |
 |---|---|---|
-| Generación de imágenes (ComfyUI + SDXL) | ✅ **mejor** | Nada. Con NVIDIA va 4-5× más rápido |
+| Generación de imágenes (ComfyUI + SDXL) | ✅ **mejor** | Nada. Con NVIDIA va **5-8× más rápido** |
+| **Entrenar un LoRA propio** | ✅ **se desbloquea** | En Mac está roto, no lento. Ver §7 |
+| **Las semillas guardadas** | ⚠️ **no reproducen** | Las imágenes no salen idénticas. Ver §7 |
 | Composición de láminas (Chromium) | ✅ | Cambiar la ruta del navegador |
 | Montaje de vídeo (ffmpeg + PIL) | ✅ | Nada |
 | Carrusel PDF y ZIP | ✅ | Nada |
@@ -33,18 +35,56 @@ y una capa de configuración.
 | | Mínimo | Recomendado |
 |---|---|---|
 | SO | Windows 10 x64 | Windows 11 |
-| GPU | Cualquiera (irá por CPU, muy lento) | **NVIDIA con 8 GB de VRAM o más** |
+| GPU | Cualquiera (irá por CPU, muy lento) | **NVIDIA con 12 GB de VRAM** |
 | RAM | 16 GB | 32 GB |
 | Disco | 25 GB libres | 50 GB |
 | Python | **3.12** | 3.12 |
 
-La GPU importa mucho más que el resto. En este M4 con Metal cada imagen tarda
-**57 segundos**; una NVIDIA de gama media hace lo mismo en **10-15**.
+### Cuánta VRAM, y por qué 12 y no 8
 
-Sobre la RAM: con 16 GB este Mac sufre presión de memoria constante y hubo que
-escribir un guardián que reinicia ComfyUI cuando la generación se degrada —
-llegó a pasar de 57 s a **17 minutos por imagen**. Con 32 GB ese problema
-desaparece.
+**12 GB, no 8.** Con 8 GB cabe SDXL solo, pero **no caben SDXL + ControlNet +
+IPAdapter a la vez**, que es justo el flujo que hace falta para mantener un
+personaje entre imágenes. Hay incidencias de falta de memoria documentadas en
+tarjetas de 12 GB con dos IPAdapters encadenados, o sea que 12 es el suelo, no
+el confort.
+
+Aviso de nomenclatura que confunde a todo el mundo: **la RTX 3060 Ti tiene 8 GB;
+la que tiene 12 GB es la RTX 3060 a secas.** Al comprar de segunda mano, mira la
+memoria, no el nombre.
+
+### Velocidad, con la honestidad por delante
+
+**MEDIDO en este Mac** (SDXL 832×1216, 30 pasos, `dpmpp_2m`/`karras`):
+**130 s por imagen** = 4,33 s por paso.
+
+**MEDIDO por terceros** — el único banco de pruebas con metodología declarada
+(repo oficial de ComfyUI, SDXL 1024×1024, 20 pasos, semilla fija):
+
+| GPU | it/s |
+|---|---|
+| RTX 4090 | 6,17 |
+| RTX 3090 | 3,61 |
+| RTX 3060 Ti | 2,05 |
+| RTX 4060 8 GB | 1,72 |
+
+**INFERIDO, no medido:** ese banco **no incluye la 3060 de 12 GB**, que caería
+entre la 4060 y la 3060 Ti → ~1,3-1,7 it/s. Contra nuestros 4,33 s/paso, eso da
+**entre 5× y 8×**: la imagen de 130 s pasaría a **20-25 segundos**.
+
+Circulan cifras de 22, 27 y 30 segundos en blogs. Caen en la misma horquilla,
+pero **ninguno declara muestreador ni pasos** y varios parecen contenido
+generado para posicionar en buscadores. No cuentan como medición.
+
+### Sobre la RAM del sistema
+
+Con 16 GB este Mac va al filo, pero **la causa de las degradaciones no era la
+que creíamos**. Está contada entera en `MEMORIA.md` §2 y §3: el Mac se dormía
+154 veces por noche, y PyTorch tenía permiso para pedir 21,6 GB en una máquina
+de 16. **Ninguno de esos dos problemas existe en Windows con una GPU dedicada**,
+porque la VRAM es un espacio propio y separado de la RAM del sistema.
+
+La RAM del sistema **no acelera la generación**. Sirve para no ir al disco al
+cambiar de modelo. Con 32 GB vas holgado; con 64, de sobra.
 
 ---
 
@@ -171,27 +211,66 @@ Dos parámetros que **no** son opcionales, medidos aquí:
 - `initial_prompt` — bajó el error de 9,17 % a 5,70 %. Es la mejora más barata
   del proyecto y no cuesta ni un byte de disco.
 
-### 3.2 · El guardián de salud — **bloqueante**
+### 3.2 · El guardián de salud — **fácil, pero lee esto antes**
 
-`herramientas\guardian.py` lee la presión de memoria con `sysctl -n
-vm.swapusage`, que es de macOS. También lo usan `alimentador.py` y
-`reto30_producir.py`.
+`herramientas\guardian.py` usa dos cosas de macOS: `sysctl -n vm.swapusage` y
+`pgrep`. También lo usan `alimentador.py`, `reto30_producir.py` y
+`estudio_seis.py`.
 
-Existe porque **tres veces la generación se degradó de 57 s a más de 10 minutos
-por imagen** y las tres lo descubrió el usuario, no el sistema.
-
-En Windows, el equivalente:
+Sustitución mecánica:
 
 ```python
 import psutil
+
 def swap_mb():
     return psutil.swap_memory().used / 1e6
+
+def cpu_de_comfy(muestra=3.0):
+    for p in psutil.process_iter(["pid", "cmdline"]):
+        if p.info["cmdline"] and "main.py" in " ".join(p.info["cmdline"]):
+            p.cpu_percent()          # primera llamada: siempre devuelve 0.0
+            time.sleep(muestra)
+            return p.cpu_percent()
+    return -1.0
 ```
 
-**Pero lo importante no es esa función.** El guardián vigila el **ritmo**, no el
-swap: compara los segundos por imagen contra su propia mediana. Ese diseño
-funciona igual en cualquier sistema; solo cambia la lectura de memoria, que es
-informativa. Con 32 GB de RAM probablemente no salte nunca.
+**Pero lo que hay que llevarse de aquí no es el código, es la historia.** Este
+guardián **destruyó un estudio de seis horas** y el fallo fue de criterio, no de
+sistema operativo — así que se repite igual en Windows si se copia mal:
+
+- El umbral era `max(normal, ritmo) × 3 = 450 s`, un número inventado.
+- Las imágenes tardaban 49 minutos (el Mac se dormía, ver `MEMORIA.md` §2).
+- **Mataba cada imagen a los 7 minutos y medio, siempre, antes de terminar.**
+  Trece veces en seis horas. Ocho imágenes de 36.
+- Y el ritmo no podía corregirse solo, porque solo se actualiza cuando algo
+  avanza — y nada avanzaba nunca.
+
+La versión actual arregla las tres cosas y **eso sí es portable**:
+
+1. **Mide de verdad, no estima.** El ritmo sale de `/history` de ComfyUI, que
+   guarda `execution_start` y `execution_success` de cada trabajo. Ese endpoint
+   es idéntico en Windows.
+2. **No mata a quien está trabajando.** Antes de reiniciar comprueba si el
+   historial creció o si el proceso quema CPU. Cualquiera de las dos = está
+   vivo, no lo toques.
+3. **Suelo absoluto de 30 minutos.** Por debajo no se reinicia jamás, pase lo
+   que pase con la aritmética.
+
+**Con una GPU dedicada este guardián probablemente no salte nunca.** Déjalo
+puesto igual: cuesta nada y el día que algo se atasque, lo dice.
+
+### 3.2b · Lo que hay que QUITAR al pasar a Windows
+
+Hay ajustes en este repositorio que existen **solo** por limitaciones de Apple
+Silicon. En Windows sobran, y dejarlos puestos hace daño:
+
+| Qué | Por qué se quita |
+|---|---|
+| `PYTORCH_MPS_HIGH_WATERMARK_RATIO` y `LOW_WATERMARK` | Son de MPS. En CUDA no existen. |
+| `PYTORCH_ENABLE_MPS_FALLBACK=1` | Ídem. |
+| `--use-pytorch-cross-attention` | En Mac es obligatorio (evita que la atención se fuerce a fp32 por un fallo de macOS). En NVIDIA, ComfyUI ya elige bien solo. |
+| `caffeinate` alrededor de las tandas | Es el comando de macOS que impide dormir. **En Windows el equivalente es necesario igual**: `powercfg /change standby-timeout-ac 0`, o `SetThreadExecutionState`. **No lo olvides: es lo que costó una noche entera.** |
+| `VAEDecodeTiled` | En Mac quita 3,5 GB del pico porque la memoria es compartida. Con 12 GB de VRAM dedicada puedes volver a `VAEDecode` normal y ahorrar tiempo. |
 
 ### 3.3 · Las rutas — **molesto pero mecánico**
 
@@ -283,7 +362,89 @@ No son estilo: cada una viene de un fallo que ya se pagó.
 
 ---
 
-## 7 · Rendimiento medido, para que compares
+## 7 · Lo que cambia de verdad al pasar a NVIDIA
+
+Esta sección es la más importante del documento y se escribió el 14 de agosto de
+2026, después de una auditoría con seis especialistas. Lo demás es instalación;
+esto es lo que cambia el proyecto.
+
+### 7.1 · Se desbloquea entrenar un LoRA del personaje
+
+**Es el motivo real para migrar.** Llevamos días bloqueados en mantener el mismo
+personaje entre imágenes, y todo lo probado ha fallado (está en `MEMORIA.md` §7).
+La solución de fondo es entrenar un **LoRA del personaje**: modifica los pesos
+del modelo en vez de inyectar una imagen en la atención, así que **no tiene
+forma de copiar el encuadre** — que es exactamente lo que arruinaba IPAdapter.
+
+**En Mac esto no es «más lento», es ROTO:**
+
+- `bitsandbytes` es solo CUDA → sin optimizadores de 8 bits
+- `xformers` y `flash-attn` no existen en Apple Silicon
+- kohya desactiva el escalado de gradientes AMP en MPS → **fp16 se va a cero** y
+  hay que entrenar en fp32, más memoria y más lento, en 16 GB compartidos
+
+**En Windows con CUDA:** `kohya_ss` funciona y es lo estándar. Con *gradient
+checkpointing* entra en 12 GB. Un usuario con una 3060 de 12 GB reporta 3-5 h
+para 4000-5000 pasos; con nuestras 20-25 imágenes serían **entre hora y media y
+tres horas por LoRA** (inferido de ese dato, no medido).
+
+El fichero resultante (50-170 MB) se carga con `LoraLoader` y **funciona
+también en el Mac**. O sea que se puede entrenar en el PC y producir en
+cualquiera de los dos.
+
+### 7.2 · Las semillas guardadas NO reproducen las mismas imágenes
+
+**Cuenta con esto antes de migrar, no después.**
+
+La documentación de HuggingFace Diffusers lo dice explícitamente: la
+reproducibilidad se da entre plataformas **«dentro de cierta tolerancia»**, y la
+GPU usa un generador de números aleatorios distinto del de la CPU. Las notas de
+PyTorch añaden que ni con la misma semilla se garantiza el mismo resultado entre
+dispositivos o versiones.
+
+Qué significa en la práctica:
+
+- El recetario (`recetario.py`) **sigue valiendo**: guarda prompts, ajustes y
+  semillas dentro de los metadatos de cada PNG, y todo eso es portable.
+- **La composición general se conserva** — el ruido latente inicial se genera en
+  CPU, así que el punto de partida es el mismo.
+- **Los detalles finos cambian.** Una imagen aprobada no volverá idéntica.
+
+Y una regla que nace de aquí: **nunca uses las variantes `_gpu` del muestreador**
+(`dpmpp_2m_sde_gpu` y compañía). Generan el ruido en el acelerador, así que la
+divergencia entre plataformas es total en vez de sutil. Usa siempre la versión a
+secas.
+
+### 7.3 · Lo que sigue sin servir, aunque tengas NVIDIA
+
+Para que no pierdas tiempo con lo que ya está descartado con medición (detalle
+completo en `MEMORIA.md` §8):
+
+| | |
+|---|---|
+| **fp8** en tarjetas serie 30 | La 3060/3090 son Ampere y **no tienen fp8 nativo** — eso empieza en la serie 40. Solo ahorra memoria, no da velocidad. |
+| **FreeU / FreeU_V2** | Evidencia independiente **medida** de que empeora: FID 25,47 → 33,70 aplicándolo en todos los pasos, que es lo que hace el nodo. |
+| **AlignYourSteps a 30 pasos** | El propio paper de NVIDIA dice que el efecto se desvanece al subir pasos. Solo sirve para bajar a 10-12. |
+| **El refiner de SDXL** | Entrenado sobre latentes de SDXL base; Juggernaut es un ajuste fuerte y ya no son los que espera. |
+| **GGUF para SDXL** | Su propio autor lo desaconseja: SDXL es convolucional y las conv2d se degradan al cuantizar. |
+
+### 7.4 · Lo que sí conviene hacer el primer día en Windows
+
+1. **`powercfg /change standby-timeout-ac 0`** antes de la primera tanda larga.
+   Es el equivalente de `caffeinate` y es el error que costó una noche entera.
+2. **Instalar `kohya_ss`** y entrenar el LoRA del personaje. Es lo que no se
+   podía hacer aquí.
+3. **Volver a `VAEDecode` normal** si lo habías cambiado por el de baldosas.
+4. **Regenerar una imagen ya aprobada con su semilla** y comparar contra la
+   original del Mac. Sirve para ver con tus ojos cuánto cambia, en vez de
+   fiarte de este documento.
+5. **Subir el CFG de exploración**: en Mac tenemos un flujo rápido a CFG 1.0
+   donde el prompt negativo **no existe** (ver `MODELO.md`). Con una GPU rápida,
+   30 pasos a CFG 4,5 cuestan 25 segundos y ya no hace falta ese apaño.
+
+---
+
+## 8 · Rendimiento medido, para que compares
 
 En el Mac mini M4 de 16 GB, con Metal:
 
