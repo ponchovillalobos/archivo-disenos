@@ -492,6 +492,38 @@ falta, y las dos son obligatorias:
 **Su límite:** no sabe dibujar texto legible — lo dice su propia ficha. Para un
 objeto con marca hay que componer el texto real encima.
 
+### Probado con tres objetos más: cuándo sirve y cuándo no
+
+**MEDIDO** sobre una tetera, una cámara analógica y una bota, cinco vistas cada
+una. Elegidos para que pudieran fallar de forma visible.
+
+```
+           0°     45°    90°    180°   alto     parecido
+tetera    0,836  0,750  0,518  0,752  0,587      0,726
+cámara    0,735  0,611  0,289  0,353  0,559      0,538
+bota      0,780  0,719  0,721  0,637  0,689      0,860
+```
+
+**La prueba dura la pasa.** El pico de la tetera está a la izquierda en la
+original y aparece **a la derecha a 180°**: es una rotación real, no otra tetera
+parecida.
+
+Tres reglas que salen de aquí:
+
+| | |
+|---|---|
+| **90° rompe en los tres** | sin excepción. La tetera pierde el pico; la cámara se degrada hasta un cilindro irreconocible. **Es el ángulo a evitar** |
+| **45° y 180° son fiables** | los dos ángulos donde el objeto sobrevive |
+| **la complejidad manda** | formas sólidas y simples (bota) aguantan; objetos mecánicos con piezas finas y texto (cámara) se desintegran |
+
+**Y el aviso que más importa: la métrica premió un fallo.** La bota puntuó
+**0,860 — «el mismo, sin duda»— y a 180° está mal**: generó **dos botas**, un
+par, en vez de una bota girada. Como el cuero, los cordones y la suela son
+correctos, el parecido sale altísimo.
+
+Es exactamente por lo que existe la regla de auditar cada imagen. Con la métrica
+sola habríamos publicado un par de botas como si fuera una rotación.
+
 ---
 
 ## 10. Lo que la investigación recomendó y la medición tumbó
