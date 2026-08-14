@@ -56,6 +56,8 @@ NOMBRES = {
  "acuarela": ("Acuarela", "Aguadas translúcidas, grano de papel, bordes sueltos"),
  "comic": ("Cómic", "Contorno grueso, color plano, trama de puntos"),
  "vector": ("Vector plano", "Formas geométricas, paleta corta, sin contorno"),
+ "epico": ("Épico cinematográfico",
+           "Óptica anamórfica, contraluz volumétrico, etalonaje rico"),
 }
 
 
@@ -244,6 +246,11 @@ section{padding:54px 0 0;scroll-margin-top:70px}
   display:block;margin-top:10px;padding-top:10px;border-top:1px solid var(--filete);
   white-space:pre-wrap;line-height:1.7}
 
+.aviso{background:var(--hueso);border-left:3px solid var(--sangre);
+  border-radius:0 8px 8px 0;padding:16px 20px;margin:22px 0 0;
+  font-size:14.5px;color:var(--media);line-height:1.6;max-width:78ch}
+.aviso b{color:var(--tinta)}
+
 footer{padding:60px 0 50px;margin-top:50px;border-top:1px solid var(--filete);
   color:var(--leve);font-size:12.5px}
 """
@@ -369,33 +376,61 @@ def construir():
 
     # ── la medición ─────────────────────────────────────────────────────────
     p.append('<section id="medicion"><div class="st"><h2>La medición</h2>'
-             '<p>Dos métricas, y hay que pasar las dos</p></div>')
-    p.append('<div class="nota"><p><strong>Coherencia</strong> es cuánto se parecen '
-             'las seis imágenes entre sí — el 90 % que buscamos. Pero sola se puede '
-             'falsificar: sube a 0,99 generando seis veces la misma imagen. Por eso '
-             'va acompañada del <strong>margen</strong>, que mide si cada imagen '
-             'cuenta su propia escena y no la del vecino. '
-             'Una serie con coherencia altísima y margen cero no es un éxito: es el '
-             'modelo ignorando el cuento.</p></div>')
+             '<p>Tres números, y hay que mirarlos juntos</p></div>')
+    p.append('<div class="nota">'
+             '<p><strong>Fidelidad</strong> — cuánto se parece cada imagen a la '
+             'ficha del personaje escrita en texto. Es la que dice si el elefantito '
+             'es el nuestro.</p>'
+             '<p><strong>Margen</strong> — cuánto le saca cada imagen a su propia '
+             'escena frente a las demás. Alto significa que las seis son momentos '
+             'distintos de verdad.</p>'
+             '<p><strong>Parecido</strong> — cuánto se asemejan las seis entre sí. '
+             'Empezamos midiendo solo esto y era un error: <strong>premiaba el '
+             'fracaso</strong>. Sube a 0,99 cuando el modelo ignora las escenas y '
+             'repite el mismo plano. Con seis escenas distintas de verdad, este '
+             'número tiene que <em>bajar</em>.</p></div>')
     if est:
+        # La advertencia va ENCIMA de la tabla, no debajo y en pequeño. Se
+        # descubrió mirando las imágenes después de medir, y publicar el orden
+        # sin ella sería publicar algo que sabemos que engaña.
+        p.append('<div class="aviso"><b>Esta tabla ordena bien dentro de un '
+                 'estilo, y engaña al comparar estilos entre sí.</b> La '
+                 'fidelidad se mide con CLIP comparando cada imagen contra la '
+                 'ficha del personaje escrita en texto — y CLIP puntúa '
+                 'sistemáticamente más alto las imágenes fotográficas. Que los '
+                 'tres primeros sean épico, animación 3D y foto puede estar '
+                 'midiendo <em>qué tan fotográfico es</em> disfrazado de '
+                 '<em>qué tan fiel al personaje</em>. A ojo, la acuarela es de '
+                 'las mejores para un cuento infantil y aquí sale última.</div>')
         p.append('<table class="tabla" style="margin-top:22px"><thead><tr>'
-                 '<th>Estilo</th><th>Coherencia</th><th>Margen</th>'
-                 '<th>Acierta</th><th>Veredicto</th></tr></thead><tbody>')
+                 '<th>Estilo</th><th>Fidelidad</th><th>Margen</th>'
+                 '<th>Parecido</th><th>Acierta</th><th>Veredicto</th>'
+                 '</tr></thead><tbody>')
         import adherencia
         for e in orden:
             v = est.get(e)
             if not v:
-                p.append('<tr><td class="n">%s</td><td colspan="4" '
+                p.append('<tr><td class="n">%s</td><td colspan="5" '
                          'style="color:var(--leve)">sin medir</td></tr>'
                          % escape(NOMBRES[e][0]))
                 continue
             nota = adherencia.nota(v)
             cl = "bien" if nota == "APROBADO" else "mal"
-            p.append('<tr><td class="n">%s</td><td>%.3f</td><td>%+.3f</td>'
-                     '<td>%d/%d</td><td class="%s">%s</td></tr>'
-                     % (escape(NOMBRES[e][0]), v["coherencia"], v["margen"],
-                        v["aciertos"], v["n"], cl, escape(nota)))
+            p.append('<tr><td class="n">%s</td><td>%.4f</td><td>%+.3f</td>'
+                     '<td>%.3f</td><td>%d/%d</td><td class="%s">%s</td></tr>'
+                     % (escape(NOMBRES[e][0]), v.get("fidelidad", 0),
+                        v["margen"], v["coherencia"], v["aciertos"], v["n"],
+                        cl, escape(nota)))
         p.append("</tbody></table>")
+        p.append('<div class="nota" style="margin-top:20px"><p>El patrón que sí '
+                 'se sostiene es la <strong>curva de intercambio</strong>: a más '
+                 'fidelidad al personaje, menos margen de escena, sin una sola '
+                 'excepción en los siete. Y contradice la hipótesis de partida — '
+                 'apostamos a que el dibujo aguantaría al personaje mejor que el '
+                 'realismo.</p><p>Pero el fallo de verdad, mirando las 42, '
+                 '<strong>no es el personaje: es la escena</strong>. El elefantito '
+                 'sale reconocible en los siete estilos. Lo que no sale es que '
+                 'vuele.</p></div>')
     else:
         p.append('<p class="nota" style="color:var(--leve)">Las imágenes se están '
                  'generando. La tabla aparece cuando estén las 36.</p>')
