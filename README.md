@@ -192,11 +192,22 @@ Piezas centrales:
 
 ## Dos cosas medidas que conviene saber
 
-**El color va por veto, no por instrucción.** A CFG 1.0 —que impone el LoRA
-Lightning— el modelo casi no obedece una orden de color en positivo: de ocho
-paletas probadas, cinco caían en la franja azul-cian porque mandaba la escena.
-Metiendo los colores rivales en el **negativo**, la mostaza pasó de 156° (verde)
-a 36° (ámbar) y su saturación de 10,7 a 42,5.
+**El color va por PESOS en positivo, no por veto.** A CFG 1.0 —que impone el
+LoRA Lightning— el modelo casi no obedecía una orden de color: de ocho paletas
+probadas, cinco caían en la franja azul-cian porque mandaba la escena. Con pesos
+en positivo, la mostaza pasó de 156° (verde) a 36° (ámbar) y su saturación de
+10,7 a 42,5.
+
+> Aquí decía que el mérito era del **veto** en el negativo, y era falso. Cuatro
+> variantes controladas salieron idénticas **píxel a píxel** con veto y sin él:
+> a CFG 1.0 ComfyUI ni siquiera evalúa el prompt negativo. El error estuvo
+> publicado semanas por cambiar dos cosas a la vez y atribuir el resultado a la
+> que más nos gustaba. Está contado entero en [`MODELO.md`](MODELO.md).
+
+**Y una paleta describe COLOR, nunca un lugar.** `dorado-selva` decía «emerald
+jungle» con peso 1,3 contra escenas de sabana seca a peso 1,0, y ganaba: cuatro
+prompts muy distintos daban la misma foto de follaje. Si una paleta o un ánimo
+nombran un sitio, compiten con la escena — y ganan.
 
 **El ritmo de un vídeo lo lleva el texto, no los cortes.** Medido: el subtítulo
 palabra a palabra genera 150-210 cambios visuales por minuto, contra unos 40 de
