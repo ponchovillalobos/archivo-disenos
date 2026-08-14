@@ -9,8 +9,25 @@ Por eso cada paleta lleva tres cosas y no una:
   look   → la instrucción en positivo, CON PESOS
   veto   → los colores que hay que meter en el negativo
 
-El veto es la pieza que faltaba: es más fácil quitarle al modelo el azul por
-defecto que convencerle de poner amarillo.
+CORRECCIÓN, 14-ago-2026. Aquí decía «el veto es la pieza que faltaba». **Es
+falso.** Cuatro variantes controladas de la misma escena y semilla salieron
+idénticas píxel a píxel con veto y sin él: a CFG 1.0 la guía sin clasificador
+está desactivada y ComfyUI **ni siquiera evalúa** el prompt negativo. Todo el
+efecto venía de los PESOS en positivo.
+
+El veto se conserva porque en el flujo de CALIDAD (CFG 4,5) sí actúa. En el
+rápido —que es el que produce en serie— es texto muerto que se codifica para
+nada.
+
+Dos reglas que salen de haberlo pagado:
+
+  · **Una paleta describe COLOR, nunca un lugar.** `dorado-selva` decía «emerald
+    jungle» con peso 1,3 contra escenas de sabana seca a peso 1,0, y ganaba.
+    Cuatro prompts muy distintos daban la misma foto de follaje.
+  · **Techo de peso 1,4.** ComfyUI no normaliza los pesos, a diferencia de A1111
+    y Civitai, de donde copiamos 26 números inflados. Y el peso no hace que el
+    modelo «mire más» esa palabra: se aplica después del transformador y arrastra
+    todo el contexto ligado al token.
 """
 
 # nombre: (acento, look, veto)
