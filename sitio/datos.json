@@ -1,5 +1,5 @@
 {
- "sello": "b8d3efeb382d",
+ "sello": "1f798ab74ce7",
  "generado": "2026-08-12",
  "proyecto": "/Users/maity/Desktop/Confy Imagenes",
  "url_sitio": "file:///Users/maity/Desktop/Confy%20Imagenes/sitio/index.html",
@@ -5577,6 +5577,125 @@
    ],
    "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/idea1-vertical",
    "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/idea1-vertical"
+  },
+  {
+   "id": "guerrero-espartano",
+   "titulo": "El guerrero que descubre su poder",
+   "serie": "Historias",
+   "resumen": "Siete tiempos. La armadura que creía que lo protegía era lo que lo hundía.",
+   "nota": "Reconstruido sobre la receta verificada de RECETA-ESPARTANO.md, con 104 imágenes de barrido detrás para saber qué controla el look. Cada lámina auditada en hoja de contacto.",
+   "etiquetas": [
+    "espartano",
+    "historia",
+    "cinematográfico"
+   ],
+   "fecha": "2026-08-15",
+   "formato": "1080×1350",
+   "video": "descargas/guerrero-espartano.mp4",
+   "videos": [],
+   "descargas": [
+    {
+     "etq": "Vídeo MP4",
+     "url": "descargas/guerrero-espartano.mp4"
+    },
+    {
+     "etq": "PDF · 7 páginas",
+     "url": "descargas/carrusel-guerrero-espartano.pdf"
+    },
+    {
+     "etq": "ZIP · 7 láminas",
+     "url": "descargas/laminas-guerrero-espartano.zip"
+    }
+   ],
+   "piezas": [
+    {
+     "pie": "Lámina 1",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "guerrero-01-400.avif",
+      "1024": "guerrero-01-1024.avif",
+      "jpg": "guerrero-01-1024.jpg",
+      "1080": "guerrero-01-1080.avif",
+      "max": "guerrero-01-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 2",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "guerrero-02-400.avif",
+      "1024": "guerrero-02-1024.avif",
+      "jpg": "guerrero-02-1024.jpg",
+      "1080": "guerrero-02-1080.avif",
+      "max": "guerrero-02-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 3",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "guerrero-03-400.avif",
+      "1024": "guerrero-03-1024.avif",
+      "jpg": "guerrero-03-1024.jpg",
+      "1080": "guerrero-03-1080.avif",
+      "max": "guerrero-03-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 4",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "guerrero-04-400.avif",
+      "1024": "guerrero-04-1024.avif",
+      "jpg": "guerrero-04-1024.jpg",
+      "1080": "guerrero-04-1080.avif",
+      "max": "guerrero-04-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 5",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "guerrero-05-400.avif",
+      "1024": "guerrero-05-1024.avif",
+      "jpg": "guerrero-05-1024.jpg",
+      "1080": "guerrero-05-1080.avif",
+      "max": "guerrero-05-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 6",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "guerrero-06-400.avif",
+      "1024": "guerrero-06-1024.avif",
+      "jpg": "guerrero-06-1024.jpg",
+      "1080": "guerrero-06-1080.avif",
+      "max": "guerrero-06-1080.avif"
+     }
+    },
+    {
+     "pie": "Lámina 7",
+     "w": 1080,
+     "h": 1350,
+     "src": {
+      "400": "guerrero-07-400.avif",
+      "1024": "guerrero-07-1024.avif",
+      "jpg": "guerrero-07-1024.jpg",
+      "1080": "guerrero-07-1080.avif",
+      "max": "guerrero-07-1080.avif"
+     }
+    }
+   ],
+   "sin_texto": [],
+   "carpeta": "file:///Users/maity/Desktop/Confy%20Imagenes/out/guerrero-espartano",
+   "rutaAbs": "/Users/maity/Desktop/Confy Imagenes/out/guerrero-espartano"
   },
   {
    "id": "com-vacio",

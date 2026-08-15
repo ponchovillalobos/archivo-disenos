@@ -357,6 +357,41 @@ def desde_esparta():
     return fuera
 
 
+def desde_guerrero():
+    """El guerrero espartano. Serie propia porque no es una lámina de un reto:
+    es una historia de siete tiempos con su vídeo y su carrusel.
+
+    Las láminas van en la raíz del proyecto como `guerrero-NN.png`, no en
+    LAMINAS/: `estudio2.componer()` las escribe ahí y no hay motivo para
+    moverlas."""
+    d = f"{OUT}/guerrero-espartano"
+    con = piezas("guerrero", d, "guerrero-%02d.png", n=7)
+    if not con:
+        return []
+    desc = []
+    for etq, arch in (("Vídeo MP4", "guerrero-espartano.mp4"),
+                      ("PDF · 7 páginas", "carrusel-guerrero-espartano.pdf"),
+                      ("ZIP · 7 láminas", "laminas-guerrero-espartano.zip")):
+        if existe(arch):
+            desc.append({"etq": etq, "url": "descargas/" + arch})
+    return [{
+        "id": "guerrero-espartano",
+        "titulo": "El guerrero que descubre su poder",
+        "serie": "Historias",
+        "resumen": "Siete tiempos. La armadura que creía que lo protegía era "
+                   "lo que lo hundía.",
+        "nota": "Reconstruido sobre la receta verificada de RECETA-ESPARTANO.md, "
+                "con 104 imágenes de barrido detrás para saber qué controla el "
+                "look. Cada lámina auditada en hoja de contacto.",
+        "etiquetas": ["espartano", "historia", "cinematográfico"],
+        "fecha": "2026-08-15", "formato": "1080×1350",
+        "video": "descargas/guerrero-espartano.mp4"
+        if existe("guerrero-espartano.mp4") else None,
+        "videos": [], "descargas": desc, "piezas": con, "sin_texto": [],
+        "carpeta": "file://" + quote(d), "rutaAbs": d,
+    }]
+
+
 def construir(minimo_proyectos=None, barrer=True):
     """minimo_proyectos: se niega a publicar si salen menos.
 
@@ -370,6 +405,8 @@ def construir(minimo_proyectos=None, barrer=True):
     _cargar_cache()
     proyectos = []
     saltados = []
+
+    proyectos += desde_guerrero()
 
     for slug, tit, res, nota, tags in COM:
         d = f"{OUT}/com-{slug}"
