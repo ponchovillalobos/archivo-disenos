@@ -173,18 +173,35 @@ def puntuar(rutas, escenas, ficha=None):
     return r
 
 
+MIN_FIDELIDAD = 0.33      # calibrado con las series ya vistas, no inventado
+
+
 def nota(p):
-    """Aprueba solo si pasan LAS DOS. Una sola cifra alta no vale nada aquí."""
+    """El veredicto sale de FIDELIDAD y ACIERTOS. El parecido es informativo.
+
+    Antes exigía `coherencia >= 0,90` como si fuera un mérito, y eso quedó
+    obsoleto el mismo día que se escribió `fidelidad`: con seis escenas distintas
+    de verdad el parecido **tiene que bajar**. Pedirlo alto era pedir la trampa.
+
+    El fallo se vio en la serie del guerrero: siete imágenes con el personaje
+    impecable y la historia inexistente, y el veredicto dijo «escenas bien,
+    personaje se pierde» — justo al revés de lo que se veía en pantalla. La tabla
+    ya se había corregido; el veredicto se quedó atrás.
+
+    Manda `aciertos`, que es lo único que dice si cada imagen cuenta SU escena.
+    """
     if not p:
         return "sin datos"
-    ok_c = p["coherencia"] >= MIN_COHERENCIA
-    ok_m = p["margen"] >= MIN_MARGEN
+    fid = p.get("fidelidad")
+    ok_f = fid >= MIN_FIDELIDAD if fid is not None else p["coherencia"] >= MIN_COHERENCIA
     ok_a = p["aciertos"] / p["n"] >= MIN_ACIERTOS
-    if ok_c and ok_m and ok_a:
+    ok_m = p["margen"] >= MIN_MARGEN
+
+    if ok_f and ok_a and ok_m:
         return "APROBADO"
-    if ok_c and not ok_m:
-        return "TRAMPA: mismo plano repetido"
-    if ok_m and not ok_c:
+    if ok_f and not ok_a:
+        return "TRAMPA: personaje bien, escenas repetidas"
+    if ok_a and not ok_f:
         return "escenas bien, personaje se pierde"
     return "no llega"
 

@@ -45,13 +45,15 @@ PESO = 0.75
 def _api(positivo, negativo, ancho, alto, slug, referencia=None,
          peso=PESO, pasos=30, cfg=5.5, semilla=101010,
          tipo_peso="linear", inicio=0.0, fin=1.0,
-         combinar="concat", escalado="V only", capas=None, preparar=None):
+         combinar="concat", escalado="V only", capas=None, preparar=None,
+         tardio=None, corte=0.35):
     """Grafo en formato API. Con `referencia` mete IPAdapter en medio."""
     g = {
         "1": {"class_type": "CheckpointLoaderSimple",
               "inputs": {"ckpt_name": CHECKPOINT}},
         "4": {"class_type": "CLIPTextEncode",
               "inputs": {"text": positivo, "clip": ["1", 1]}},
+        # (si se pasa `tardio`, el nodo 4 se reparte en dos — ver más abajo)
         "5": {"class_type": "CLIPTextEncode",
               "inputs": {"text": negativo, "clip": ["1", 1]}},
         "6": {"class_type": "EmptyLatentImage",
@@ -67,6 +69,33 @@ def _api(positivo, negativo, ancho, alto, slug, referencia=None,
         "9": {"class_type": "SaveImage",
               "inputs": {"images": ["8", 0], "filename_prefix": "reels/" + slug}},
     }
+    # ── El reparto por tramos de muestreo ───────────────────────────────────
+    #
+    # La composición de una imagen se decide en el 20-35 % inicial del muestreo;
+    # el color y la textura, en el resto. Metiendo la ficha de personaje SOLO en
+    # la parte final, no puede competir con la escena por el encuadre — no
+    # porque pese menos, sino porque **llega cuando la composición ya está
+    # decidida**.
+    #
+    # Existe porque el orden del prompt NO era la palanca: se probaron los dos
+    # extremos —ficha primero y acción primero— sobre siete láminas cada uno, y
+    # los dos dieron «personaje bien, escenas repetidas». Cuando dos extremos de
+    # un parámetro dan lo mismo, ese parámetro no es la causa.
+    if tardio:
+        g["4"]["inputs"]["text"] = tardio          # el personaje y el trato
+        g["4b"] = {"class_type": "CLIPTextEncode",
+                   "inputs": {"text": positivo, "clip": ["1", 1]}}   # la escena
+        g["4c"] = {"class_type": "ConditioningSetTimestepRange",
+                   "inputs": {"conditioning": ["4b", 0],
+                              "start": 0.0, "end": corte + 0.05}}
+        g["4d"] = {"class_type": "ConditioningSetTimestepRange",
+                   "inputs": {"conditioning": ["4", 0],
+                              "start": corte, "end": 1.0}}
+        g["4e"] = {"class_type": "ConditioningCombine",
+                   "inputs": {"conditioning_1": ["4c", 0],
+                              "conditioning_2": ["4d", 0]}}
+        g["7"]["inputs"]["positive"] = ["4e", 0]
+
     if referencia:
         g["10"] = {"class_type": "LoadImage",
                    "inputs": {"image": referencia}}
