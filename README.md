@@ -94,6 +94,12 @@ va con pesos, por qué la semilla no es lo que parece, los tamaños que SDXL
 entiende de verdad, y las trampas de interpretación literal que ya nos costaron
 regeneraciones.
 
+[`RECETA-ESPARTANO.md`](RECETA-ESPARTANO.md) — **la receta que produce las
+imágenes buenas**, verificada píxel a píxel, con las tres cosas que la hacen
+funcionar y lo que hay que vigilar (manos, torso). Se perdió durante semanas
+estando dentro de los propios PNG: antes de intentar reproducir un estilo, se
+abre su receta con `recetario.receta(ruta)` — no se reconstruye de memoria.
+
 [`CONFIGURACIONES.md`](CONFIGURACIONES.md) — **qué hay que poner y por qué**, de
 fuentes primarias: la ficha oficial del modelo, el código de ComfyUI, los papers.
 Incluye el filtro de licencia comercial (que descarta más cosas de las que

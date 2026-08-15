@@ -33,3 +33,7 @@ coherencia.txt
 # Derivadas del laboratorio: se regeneran desde los PNG originales
 sitio/img-lab/
 sitio/tipografia.css
+
+# Resultados de barridos: se regeneran ejecutando el módulo
+reconstruir.json
+seis.json
