@@ -377,7 +377,7 @@ def desde_guerrero():
     return [{
         "id": "guerrero-espartano",
         "titulo": "El guerrero que descubre su poder",
-        "serie": "Historias",
+        "serie": "Historia",
         "resumen": "Siete tiempos. La armadura que creía que lo protegía era "
                    "lo que lo hundía.",
         "nota": "Reconstruido sobre la receta verificada de RECETA-ESPARTANO.md, "
@@ -405,8 +405,6 @@ def construir(minimo_proyectos=None, barrer=True):
     _cargar_cache()
     proyectos = []
     saltados = []
-
-    proyectos += desde_guerrero()
 
     for slug, tit, res, nota, tags in COM:
         d = f"{OUT}/com-{slug}"
@@ -450,7 +448,7 @@ def construir(minimo_proyectos=None, barrer=True):
             "carpeta": "file://" + quote(dsin), "rutaAbs": dsin,
         })
 
-    proyectos = desde_esparta() + desde_audio() + proyectos
+    proyectos = desde_guerrero() + desde_esparta() + desde_audio() + proyectos
 
     # Sello del contenido: la página lo consulta cada seis segundos y se
     # recarga sola cuando cambia. Sin esto había que acordarse de pulsar
