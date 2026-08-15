@@ -325,6 +325,27 @@ def montadores():
     return "vertical y apaisado conmutan bien"
 
 
+def memoria_sin_recaidas():
+    """Falla si una afirmación ya desmentida vuelve a escribirse como verdad.
+
+    Nació del caso más caro de documentación del proyecto: «el veto de color hace
+    obedecer al modelo» era FALSO —cuatro variantes controladas salieron
+    idénticas píxel a píxel— y estaba escrito como verdad en CINCO sitios. Se
+    corrigió en cuatro, y el quinto sobrevivió un día entero dentro de un fichero
+    que se estaba editando esa misma tarde.
+
+    El problema no era que faltara memoria: el proyecto tiene 5.436 líneas de
+    ella repartidas en cuatro sitios que no se hablan. Lo que faltaba era algo
+    que FALLE cuando un desmentido reaparece.
+    """
+    import afirmaciones
+    r = afirmaciones.recaidas()
+    assert not r, "afirmaciones ya desmentidas han vuelto: " + "; ".join(
+        "%s:%d" % (f, n) for f, n, _, _ in r[:4])
+    return "%d afirmaciones vigiladas · %d ficheros · sin recaídas" % (
+        len(afirmaciones.RETIRADAS), len(afirmaciones._corpus()))
+
+
 PRUEBAS = [
     ("ComfyUI en pie", comfyui),
     ("salud de producción", salud_de_produccion),
@@ -344,6 +365,7 @@ PRUEBAS = [
     ("nada huérfano", nada_huerfano),
     ("higiene", higiene),
     ("recetario", recetario_vivo),
+    ("memoria sin recaídas", memoria_sin_recaidas),
 ]
 
 

@@ -306,10 +306,12 @@ Y es la mayor parte del valor:
   semilla. No hay que adivinar nada.
 - **El contrato** (`contrato.py`): pedir lo mismo dos veces da lo mismo, y
   `huella()` lo demuestra en 16 caracteres.
-- **Las 16 paletas con su veto** y los 10 ánimos. El veto es lo que hace que el
-  color funcione: a CFG 1.0 el modelo casi no obedece una instrucción de color
-  en positivo, y solo con el positivo cinco de ocho paletas caían en la franja
-  azul-cian.
+- **Las 16 paletas con sus PESOS** y los 10 ánimos. Lo que hace que el color
+  funcione son los pesos en positivo: sin ellos, cinco de ocho paletas caían en
+  la franja azul-cian. El campo `veto` existe y solo actúa en el flujo de
+  CALIDAD; **a CFG 1.0 el prompt negativo ni siquiera se evalúa**, así que en
+  producción es texto muerto. Ver `MODELO.md`, que lleva el desmentido con su
+  prueba controlada.
 - **Las 10 disposiciones de lámina** y las 5 voces tipográficas.
 - **Los montadores**: Ken Burns con velocidad constante, texto palabra a palabra,
   sincronía con audio.

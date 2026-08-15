@@ -22,8 +22,10 @@ sitio. Es la corrección más rentable del proyecto.
 puede llevar 1,5. Se probó subir el encuadre a 1,5 para compensar y salió peor:
 la solución no es gritar más, es callar a quien estorba.
 
-**3. La ficha de personaje va PRIMERA.** CLIP corta en 77 tokens y lo primero
-pesa más. Con la ficha empezando en el token 35 se partía por la mitad.
+**3. La ficha de personaje va PRIMERA.** No porque CLIP trunque —ComfyUI
+trocea en bloques de 77 y los concatena—, sino porque el vector global que
+SDXL usa como condicionamiento aparte sale SOLO del primer bloque, y la
+máscara causal hace que lo primero se acumule en todo lo demás. Con la ficha empezando en el token 35 se partía por la mitad.
 
 **4. Aquí SÍ hay caras.** La regla de «cero caras y cero manos» del sistema es
 para los humanos de la serie de comunicación, donde SDXL las destroza. Un
