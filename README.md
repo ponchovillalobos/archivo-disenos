@@ -152,9 +152,16 @@ No son estilo. Cada una viene de algo que ya se pagó.
 
 1. **Ningún dato sin verificar en fuente primaria.** Si la cita no aguanta, se
    cambia el tema o se publica el desmentido —que suele ser mejor gancho.
-2. **Cero caras y cero manos.** SDXL falla ahí de forma estructural. Siluetas
-   lejanas, de espaldas, a contraluz. Negativo con pesos: `(face:1.6)
-   (hands:1.6) (fingers:1.6)`.
+2. **Cero caras y cero manos.** SDXL falla ahí de forma estructural.
+   Dos maneras de conseguirlo, y la segunda es mejor:
+   · **vetándolo**: siluetas lejanas, de espaldas, a contraluz, con el negativo
+     `(face:1.6) (hands:1.6)`. Cuesta tokens y limita el plano.
+   · **tapándolo con el atrezo**: el casco corintio cubre la cara *por
+     construcción*, y el escudo tapa la mano que sujeta el arma. Sin vetar nada
+     y con el guerrero de cuerpo entero en primer plano.
+   La receta buena (`RECETA-ESPARTANO.md`) usa la segunda y por eso puede poner
+   al personaje en el centro del cuadro. **Vigila la mano suelta**: cuando el
+   arma no va contra el escudo, la mano se funde con el brazal.
 3. **Auditar cada imagen** antes de montar. Se regenera la imagen, no el lote.
 4. **Verificar en pantalla** antes de decir que algo está listo. Renderizar con
    Chromium y mirar la captura. Nunca dar por bueno porque el script terminó sin
